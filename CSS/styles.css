@@ -56,7 +56,7 @@ html {
 }
 
 body {
-    background-color: #197BBD;
+    background-color: #FFFFFF;
 }
 
 footer {
@@ -68,6 +68,14 @@ footer {
     margin-left: auto;
     margin-right: auto;
     bottom: 0;
+}
+
+nav {
+    background-color: #197BBD;
+}
+
+footer {
+    background-color: #197BBD;
 }
 
 /* Mobile */
