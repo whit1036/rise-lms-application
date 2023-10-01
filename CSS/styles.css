@@ -49,12 +49,6 @@ table {
 
 /* Global Styles */
 
-/* html {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
 /* Mobile Login */
 
 #header {
@@ -70,6 +64,7 @@ table {
 }
 
 @media screen and (min-width: 800px) {
+    /* Tablet Login */
     #header {
         display: none;
     }
@@ -80,12 +75,21 @@ table {
         background-color: #197BBD;
     }
 
+    #side-panel-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
     #side-panel-img-2 {
         height: 60vh;
         width: 35vw;
-        object-fit: contain;
+        object-fit: cover;
     }
 }
+
+/* Desktop Login */
 
 /* Mobile Template */
 
