@@ -78,14 +78,22 @@ footer {
     background-color: #197BBD;
 }
 
-/* Mobile */
+/* Mobile Login-Page Template Styles */
 
-.navbar-brand {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+@media (max-width: 390px) {
+    .navbar-brand {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
 }
+
+/* Mobile Template */
 
 /* nav {
     height: 96px;
