@@ -89,6 +89,26 @@ table {
     }
 }
 
+@media screen and (min-width: 1600px) {
+    /* Desktop Login */
+    #side-panel-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+/* extra large screen */
+@media screen and (min-width: 2000px) {
+    #side-panel-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
 /* Desktop Login */
 
 /* Mobile Template */
