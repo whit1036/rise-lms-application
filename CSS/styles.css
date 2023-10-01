@@ -80,6 +80,13 @@ footer {
 
 /* Mobile */
 
+.navbar-brand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 /* nav {
     height: 96px;
     color: #197BBD;
