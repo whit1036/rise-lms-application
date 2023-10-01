@@ -49,6 +49,26 @@ table {
 
 /* Global Styles */
 
+/* Mobile Deafult Template */
+
+#main-header {
+    background-color: #197BBD;
+}
+
+#main-header-img {
+    display: block;
+    left: 50%;
+    overflow: hidden;
+    width: 40%;
+}
+
+.mobile-nav {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px;
+    
+}
+
 /* Mobile Login */
 
 #header {
@@ -61,6 +81,11 @@ table {
     margin-right: auto;
     overflow: hidden;
     width: 100%;
+}
+
+.mobile-home-svg {
+    filter: invert(39%) sepia(46%) saturate(1332%) hue-rotate(170deg) brightness(92%) contrast(93%);
+    width: 3rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -83,9 +108,9 @@ table {
     }
 
     #side-panel-img-2 {
-        height: 60vh;
+        height: 70vh;
         width: 35vw;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 
