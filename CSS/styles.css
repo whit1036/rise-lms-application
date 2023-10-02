@@ -123,6 +123,19 @@ table {
         width: 35vw;
         object-fit: contain;
     }
+    
+    /* Tablet Main */
+
+    #main-header-img {
+        display: block;
+        left: 50%;
+        overflow: hidden;
+        width: 15%;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1600px) {
