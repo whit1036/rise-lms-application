@@ -10,11 +10,13 @@
 <body>
     <main>
       <nav id="main-header" class="navbar fixed-top">
-        <div class="container-fluid">
-          <img class="p-2 m-2" id="main-header-img" src="../Images/RISE_website_logo.png">
-          <a href=""><img class="mobile-nav-svg-1" src="../Images/icons/message.svg"></a>
-          <a href=""><img class="mobile-nav-svg-2" src="../Images/icons/bell.svg"></a>
-        </div>
+          <div class="container-fluid">
+            <img class="p-2 m-2" id="main-header-img" src="../Images/RISE_website_logo.png">
+            <div class="d-flex">
+              <a href=""><img class="mobile-nav-svg-1 pt-2" src="../Images/icons/message.svg"></a>
+              <a href=""><img class="pt-2" src="../Images/icons/bell.svg"></a>
+            </div>
+          </div>
       </nav>
         <!-- <div class="sidebar flex-column flex-shrink-0 p-3 text-white bg-light">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -26,11 +28,23 @@
             <h1 class="fs-1">Welcome!</h1>
         </div> -->
         <nav class="mobile-nav fixed-bottom p-3 m-3">
-          <div class="container-fluid text-center">
-            <a href=""><img class="mobile-home-svg m-auto" src="../Images/icons/mobile_home.svg"></a>
-            <a href=""><img class="mobile-circle-svg" src="../Images/icons/circle.svg"></a>
-            <a href=""><img class="mobile-video-svg" src="../Images/icons/video.svg"></a>
-            <a href=""><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg"></a>
+          <div id="mobile-nav-icons" class="container-fluid text-center d-flex">
+            <div>
+              <a href=""><img class="mobile-home-svg" src="../Images/icons/mobile_home.svg"></a>
+              <p id="nav-mobile-font" class="p-1">Home</p>
+            </div>
+            <div>
+              <a href=""><img class="mobile-circle-svg" src="../Images/icons/circle.svg"></a>
+              <p id="nav-mobile-font" class="p-1">My Assignments</p>
+            </div>
+            <div>
+              <a href=""><img class="mobile-video-svg" src="../Images/icons/video.svg"></a>
+              <p id="nav-mobile-font" class="p-1">My Meetings</p>
+            </div>
+            <div>
+              <a href=""><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg"></a>
+              <p id="nav-mobile-font" class="p-1">Calendar</p>
+            </div>
           </div>
         </nav>
     </main>
