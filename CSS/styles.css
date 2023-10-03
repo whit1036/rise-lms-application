@@ -50,7 +50,7 @@ table {
 /* Global Styles */
 
 /* Global Moble Styles */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 350px) {
     /* Mobile Deafult Template */
     #main-header {
         background-color: #197BBD;
