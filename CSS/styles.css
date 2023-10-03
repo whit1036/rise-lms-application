@@ -50,7 +50,7 @@ table {
 /* Global Styles */
 
 /* Global Moble Styles */
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 400px) {
     /* Mobile Deafult Template */
     #main-header {
         background-color: #197BBD;
@@ -104,7 +104,7 @@ table {
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     /* Tablet Login */
     #header {
         display: none;
@@ -131,8 +131,10 @@ table {
     
     /* Tablet Main */
     #main-header-img {
-        width: 15%;
-        left: 0;
+        position: absolute;
+        left: 5rem;
+        margin-left: auto;
+        width: 10%;
     }
 
     .mobile-nav {
@@ -150,25 +152,33 @@ table {
     }
 }
 
-/* @media screen and (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
     /* Desktop Login */
-    /* #side-panel-img {
+    #side-panel-img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 80%;
     }
-} */
+
+    #main-header-img {
+        width: 10%;
+    }
+}
 
 /* extra large screen */
-/* @media screen and (min-width: 2000px) {
+@media screen and (min-width: 2000px) {
     #side-panel-img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
     }
-} */
+
+    #main-header-img {
+        width: 5%;
+    }
+}
 
 /* Desktop Login */
 
