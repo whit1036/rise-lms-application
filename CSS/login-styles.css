@@ -185,11 +185,12 @@ html {
         border-radius: 20px 20px 0 0;
         padding-top: 18px;
         color: var(--primary-dark-blue);
+        background-color: var(--primary-yellow);
     }
     
     .arc-box1:hover, .arc-box2:hover, .arc-box3:hover {
         background: var(--primary-yellow);
-        color: var(--primary-white);
+        /* color: var(--primary-white); */
     }
     
     .arc-box2 {
@@ -349,11 +350,12 @@ html {
         border-radius: 20px 20px 0 0;
         padding-top: 18px;
         color: var(--primary-dark-blue);
+        background-color: var(--primary-yellow);
     }
     
     .arc-box1:hover, .arc-box2:hover, .arc-box3:hover {
         background: var(--primary-yellow);
-        color: var(--primary-white);
+        /* color: var(--primary-white); */
     }
     
     .arc-box2 {
