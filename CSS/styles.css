@@ -57,6 +57,12 @@ html {
 
 /* Global Styles */
 
+/* removes underline from all website links */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: var(--primaryrise-white);
+}
+
 .courses{
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +74,7 @@ html {
 }
 
 
-.group-wrapper :hover, .logout:hover{
+.group-wrapper :hover, .logout:hover {
 background-color: var(--minion);
 color: #197BBD;
 }
