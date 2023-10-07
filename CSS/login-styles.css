@@ -65,8 +65,11 @@ html {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
-        padding: 3rem;
+        width: 80%;
+    }
+
+    #side-panel-img-2 {
+        display: none;
     }
 }
 
