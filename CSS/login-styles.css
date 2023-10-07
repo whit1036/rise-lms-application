@@ -54,7 +54,9 @@ html {
     margin-right: auto;
 }
 
-@media screen and (min-width: 350px) and (max-width: 700px) {
+/************ Mobile ************/
+
+@media screen and (min-width: 350px) and (max-width: 768px) {
     /* Template Styles - Mobile */
     #header {
         background-color: #197BBD;
@@ -64,7 +66,7 @@ html {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 100%;
     }
 
     .side-panel-tablet {
@@ -76,8 +78,7 @@ html {
     }
 
     /* Login Homescreen Styles - Mobile */
-
-    .login-container {
+    /* .login-container {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -92,20 +93,146 @@ html {
         color: white;
         background-color: rgba(198, 65, 87, 1);
         filter: drop-shadow(2px 2px 2px gray);
-    }
+    } */
 
-    h1 {
-        font-size: 45px;
-        color: rgba(27, 57, 100, 1);
+    /* student's login page */
+    #studentlogin>div>div>h1 {
+        color: var(--primary-dark-blue);
+        font-size: var(--rise-h2-font-size);
+        font-weight: var(--h1-font-weight);
     }
-
-    h2 {
-        font-size: 30px;
-        color: #197BBD;
+    
+    .studentloginText {
+        color: var(--primary-light-blue);
+        font-size: var(--RISE-h4-font-size);
+        font-weight: var(--RISE-h4-font-weight);
+    }
+    
+    .emailInput {
+        border: 1.5px solid var(--primary-light-blue);
+    }
+    
+    .fpassword a {
+        text-decoration: none;
+        color: var(--primary-light-blue);
+    }
+    
+    .welcomeText {
+        font-size: var(--RISE-h4-font-size);
+        font-weight: var(--RISE-h4-font-weight);
+        color: var(--primary-light-blue);
+    }
+    
+    .welcomeText-2 {
+        font-size: var(--RISE-body-bold-font-size);
+        color: var(--primary-light-blue);
+    
+    }
+    
+    .textform {
+        color: var(--primary-light-blue);
+    
+    }
+    
+    /* selelct, login, getlink btn */
+    .getLinkBtn,
+    .logInBtn {
+        margin-top: 30px;
+        width: 100%;
+        height: 40px;
+        background: var(--secondary-pink);
+        color: var(--primary-white);
+        border-radius: 10px;
+    }
+    
+    .getLinkBtn:hover,
+    .logInBtn:hover,
+    .selectBtn:hover {
+        background: var(--primary-light-blue);
+        color: var(--primary-white);
+    }
+    
+    /* welcome page heading*/
+    #login>h1 {
+        color: var(--primary-dark-blue);
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 90px;
+    }
+    
+    #login>h2 {
+        color: var(--primary-light-blue);
+        font-weight: bold;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+    
+    /* welcome page student border wrapper */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .arc-box1 {
+        width: 300px;
+        height: 50px;
+        border: 2px solid var(--primary-light-blue);
+        border-radius: 20px 20px 0 0;
+        padding-top: 18px;
+        color: var(--primary-dark-blue);
+    }
+    
+    .arc-box1:hover, .arc-box2:hover, .arc-box3:hover {
+        background: var(--primary-yellow);
+        color: var(--primary-white);
+    }
+    
+    .arc-box2 {
+        width: 300px;
+        height: 50px;
+        border: 2px solid var(--primary-light-blue);
+        border-radius: 0px 0 0;
+        border-top: none;
+        color: var(--primary-dark-blue);
+        padding-top: 18px;
+    }
+    
+    .arc-box3 {
+        width: 300px;
+        height: 50px;
+        border: 2px solid var(--primary-light-blue);
+        border-radius: 0px 0px 20px 20px;
+        border-top: none;
+        color: var(--primary-dark-blue);
+        padding-top: 18px;
+    }
+    
+    /* welcome page button */
+    .selectBtn {
+        --bs-btn-padding-y: .5rem;
+        --bs-btn-padding-x: .5rem;
+        --bs-btn-font-size: 1.5rem;
+        width: 250px;
+        height: 50px;
+        background-color: var(--secondary-pink);
+        color: white;
+        font-weight: bold;
+    }
+    
+    .button {
+        width: 250px;
+        height: 50px;
     }
 }
 
-@media (min-width: 700px) and (max-width: 4000px) {
+/************ Tablet & Desktop ************/
+
+@media (min-width: 768px) and (max-width: 4000px) {
     /* Template Styles - Tablet + Desktop */
     #header {
         display: none;
@@ -133,6 +260,138 @@ html {
     }
 
     /* Login Homescreen Styles - Tablet + Desktop */
+    #studentlogin>div>div>h1 {
+        color: var(--primary-dark-blue);
+        font-size: var(--rise-h2-font-size);
+        font-weight: var(--h1-font-weight);
+    }
+    
+    .studentloginText {
+        color: var(--primary-light-blue);
+        font-size: var(--RISE-h4-font-size);
+        font-weight: var(--RISE-h4-font-weight);
+    }
+    
+    .emailInput {
+        border: 1.5px solid var(--primary-light-blue);
+    }
+    
+    .fpassword a {
+        text-decoration: none;
+        color: var(--primary-light-blue);
+    }
+    
+    .welcomeText {
+        font-size: var(--RISE-h4-font-size);
+        font-weight: var(--RISE-h4-font-weight);
+        color: var(--primary-light-blue);
+    }
+    
+    .welcomeText-2 {
+        font-size: var(--RISE-body-bold-font-size);
+        color: var(--primary-light-blue);
+    
+    }
+    
+    .textform {
+        color: var(--primary-light-blue);
+    
+    }
+    
+    /* selelct, login, getlink btn */
+    .getLinkBtn,
+    .logInBtn {
+        margin-top: 30px;
+        width: 100%;
+        height: 40px;
+        background: var(--secondary-pink);
+        color: var(--primary-white);
+        border-radius: 10px;
+    }
+    
+    .getLinkBtn:hover,
+    .logInBtn:hover,
+    .selectBtn:hover {
+        background: var(--primary-light-blue);
+        color: var(--primary-white);
+    }
+    
+    /* welcome page heading*/
+    #login>h1 {
+        color: var(--primary-dark-blue);
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    
+    #login>h2 {
+        color: var(--primary-light-blue);
+        font-weight: bold;
+        margin-top: 50px;
+        font-size: 35px;
+    }
+    
+    /* welcome page student border wrapper */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .arc-box1 {
+        width: 350px;
+        height: 60px;
+        border: 2px solid var(--primary-light-blue);
+        border-radius: 20px 20px 0 0;
+        padding-top: 18px;
+        color: var(--primary-dark-blue);
+    }
+    
+    .arc-box1:hover, .arc-box2:hover, .arc-box3:hover {
+        background: var(--primary-yellow);
+        color: var(--primary-white);
+    }
+    
+    .arc-box2 {
+        width: 350px;
+        height: 60px;
+        border: 2px solid var(--primary-light-blue);
+        border-radius: 0px 0 0;
+        border-top: none;
+        color: var(--primary-dark-blue);
+        padding-top: 18px;
+    }
+    
+    .arc-box3 {
+        width: 350px;
+        height: 60px;
+        border: 2px solid var(--primary-light-blue);
+        border-radius: 0px 0px 20px 20px;
+        border-top: none;
+        color: var(--primary-dark-blue);
+        padding-top: 18px;
+    }
+    
+    /* welcome page button */
+    .selectBtn {
+        --bs-btn-padding-y: .80rem;
+        --bs-btn-padding-x: 1rem;
+        --bs-btn-font-size: 1.5rem;
+        width: 350px;
+        height: 60px;
+        background-color: var(--secondary-pink);
+        color: white;
+        font-weight: bold;
+    }
+    
+    .button {
+        width: 250px;
+        height: 50px;
+    }
 }
 
 @media screen and (min-width: 2000px) {
