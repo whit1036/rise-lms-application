@@ -136,7 +136,7 @@ html {
 }
 
 @media screen and (min-width: 2000px) {
-    /* Desktop Login */
+    /* XXL Desktop Login */
     #side-panel-img {
         display: block;
         margin-left: auto;
