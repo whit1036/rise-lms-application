@@ -30,8 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-family: "Montserrat";
-    font-weight: 400;
+    font-family: 'Avenir LT Pro', Helvetica;
 }
 ol, ul {
 	list-style: none;
@@ -68,8 +67,41 @@ html {
         width: 80%;
     }
 
+    .side-panel-tablet {
+        display: none;
+    }
+
     #side-panel-img-2 {
         display: none;
+    }
+
+    /* Login Homescreen Styles - Mobile */
+
+    .login-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .select{
+        border-radius: 20px;
+        padding-inline: 100px;
+        padding-block: 10px;
+        border: none;
+        color: white;
+        background-color: rgba(198, 65, 87, 1);
+        filter: drop-shadow(2px 2px 2px gray);
+    }
+
+    h1 {
+        font-size: 45px;
+        color: rgba(27, 57, 100, 1);
+    }
+
+    h2 {
+        font-size: 30px;
+        color: #197BBD;
     }
 }
 
@@ -99,4 +131,6 @@ html {
         padding-top: 1rem;
         opacity: 0.05;
     }
+
+    /* Login Homescreen Styles - Tablet + Desktop */
 }

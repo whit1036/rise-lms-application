@@ -30,8 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-family: "Montserrat";
-    font-weight: 400;
+  font-family: 'Avenir LT Pro', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -190,9 +189,9 @@ color: #197BBD;
         margin-left: -0.5rem;
       }
 
-      .icon-line-category {
+      /* .icon-line-category {
         background-color: none;
-    }
+    } */
 
     .logout {
         margin-top: 50vh;
