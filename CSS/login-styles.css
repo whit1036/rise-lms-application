@@ -126,15 +126,17 @@ html {
     }
     
     .welcomeText {
-        font-size: var(--RISE-h4-font-size);
-        font-weight: var(--RISE-h4-font-weight);
-        color: var(--primary-light-blue);
+        color: var(--primary-dark-blue);
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 90px;
     }
     
     .welcomeText-2 {
-        font-size: var(--RISE-body-bold-font-size);
         color: var(--primary-light-blue);
-    
+        font-weight: bold;
+        margin-top: 50px;
+        font-size: 25px;
     }
     
     .textform {
@@ -304,15 +306,17 @@ html {
     }
     
     .welcomeText {
-        font-size: var(--RISE-h4-font-size);
-        font-weight: var(--RISE-h4-font-weight);
-        color: var(--primary-light-blue);
+        color: var(--primary-dark-blue);
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 30px;
     }
     
     .welcomeText-2 {
-        font-size: var(--RISE-body-bold-font-size);
         color: var(--primary-light-blue);
-    
+        font-weight: bold;
+        margin-top: 50px;
+        font-size: 25px;
     }
     
     .textform {
