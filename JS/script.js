@@ -51,9 +51,18 @@ function showMessage(message, className) {
     }, 5000); // Remove the message after 5 seconds (adjust as needed)
 }
 
-const selectLogin = document.getElementById('selectLogin');
+// const selectLogin = document.getElementById('selectLogin');
 
-selectLogin.addEventListener('click', function () {
-    window.location.href = 'login-student.html';
-    console.log('button clicked')
+// selectLogin.addEventListener('click', function () {
+//     window.location.href = 'login-student.html';
+//     console.log('button clicked');
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Your code here, including event listener attachment
+    const selectLogin = document.getElementById('selectLogin');
+    selectLogin.addEventListener('click', function () {
+        window.location.href = 'login-student.html';
+        console.log('button clicked')
+    });
 });
