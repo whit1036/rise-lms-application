@@ -77,24 +77,6 @@ html {
         display: none;
     }
 
-    /* Login Homescreen Styles - Mobile */
-    /* .login-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .select{
-        border-radius: 20px;
-        padding-inline: 100px;
-        padding-block: 10px;
-        border: none;
-        color: white;
-        background-color: rgba(198, 65, 87, 1);
-        filter: drop-shadow(2px 2px 2px gray);
-    } */
-
     /* student's login page */
 
     form {
