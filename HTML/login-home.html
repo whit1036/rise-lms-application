@@ -11,7 +11,7 @@
 </head>
 <body>
     <main>
-      <nav id="header" class="navbar p-5">
+      <nav id="header" class="navbar p-5" role="navigation" aria-label="navigation">
         <div class="container-fluid">
           <img id="header-img" src="../Images/RISE_website_logo.png" alt="riselogo">
         </div>
@@ -22,17 +22,17 @@
           <img class="p-5" id="side-panel-img" src="../Images/RISE_website_logo.png" alt="sidepanelimage">
           <img class="pt-5" id="side-panel-img-2" src="../Images/Rise_white_visual_logo_only.png" alt="sidepaneloverlay">
         </div>
-        <div id="login" class="mx-auto flex-column m-1 text-center justify-content-center d-flex">
+        <div id="login" class="mx-auto flex-column m-1 text-center justify-content-center d-flex" aria-label="login">
           <h1 class="heading1">Welcome to <br>R.I.S.E. Academy</h2>
           <h2>Log In as...</h2>
           <div class="wrapper">
             <div class="list-group rounded">
-                <h3 class="arc-box1">Student</h3>
-                <h3 class="arc-box2">Facilitator </h3>
-                <h3 class="arc-box3">Administrator</h3>
+                <h3 class="arc-box1" aria-label="student" role="student-selector">Student</h3>
+                <h3 class="arc-box2" aria-label="facilitator" role="facilitator-selector">Facilitator </h3>
+                <h3 class="arc-box3" aria-label="administrator" role="administrator-selector">Administrator</h3>
             </div>
             <a href="login-student.html">
-              <button type="button" id="selectLogin" class="btn selectBtn m-5 rounded-pill unique">Select</button>
+              <button type="button" id="selectLogin" class="btn selectBtn m-5 rounded-pill unique" aria-label="selectbutton" role="selectbutton">Select</button>
             </a>
           </div>
           </div>
