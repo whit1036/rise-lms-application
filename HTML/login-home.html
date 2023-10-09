@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="../CSS/styleguide.css">
     <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
 </head>
-<body>
-    <main>
+<body id="top">
+    <main role="main">
       <nav id="header" class="navbar p-5" role="navigation" aria-label="navigation">
         <div class="container-fluid">
-          <img id="header-img" src="../Images/RISE_website_logo.png" alt="riselogo">
+          <img role="img" id="header-img" src="../Images/RISE_website_logo.png" alt="riselogo">
         </div>
       </nav>
       <!-- Flex Container -->
       <div class="flex-column flex-md-row d-flex">
         <div class="side-panel-tablet">
-          <img class="p-5" id="side-panel-img" src="../Images/RISE_website_logo.png" alt="sidepanelimage">
-          <img class="pt-5" id="side-panel-img-2" src="../Images/Rise_white_visual_logo_only.png" alt="sidepaneloverlay">
+          <img role="img" class="p-5" id="side-panel-img" src="../Images/RISE_website_logo.png" alt="sidepanelimage">
+          <img role="img" class="pt-5" id="side-panel-img-2" src="../Images/Rise_white_visual_logo_only.png" alt="sidepaneloverlay">
         </div>
         <div id="login" class="mx-auto flex-column m-1 text-center justify-content-center d-flex" aria-label="login">
-          <h1 class="heading1">Welcome to <br>R.I.S.E. Academy</h2>
-          <h2>Log In as...</h2>
+          <h1 role="heading" class="heading1">Welcome to <br>R.I.S.E. Academy</h2>
+          <h2 role="heading">Log In as...</h2>
           <div class="wrapper">
-            <div class="list-group rounded">
+            <div role="list" class="list-group rounded">
                 <h3 class="arc-box1" aria-label="student" role="student-selector">Student</h3>
                 <h3 class="arc-box2" aria-label="facilitator" role="facilitator-selector">Facilitator </h3>
                 <h3 class="arc-box3" aria-label="administrator" role="administrator-selector">Administrator</h3>
@@ -53,6 +53,8 @@
         </div>
       </div> -->
     </main>
+    <!--creates a back to top link, increases font size-->
+    <a href="#top" class="fs-5" aria-label="Click to go back to the top of the page">Back to top</a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="../JS/script.js"></script>
 </body>
