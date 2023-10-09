@@ -66,3 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('button clicked')
     });
 });
+
+function displayText() {
+    const text = document.getElementById("textField");
+    alert("Email sent successfully")
+}
