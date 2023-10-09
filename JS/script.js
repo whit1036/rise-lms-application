@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Displays an alert to show the user that the forgot password email has been sent successfully
 function displayText() {
     const text = document.getElementById("textField");
     alert("Email sent successfully")
