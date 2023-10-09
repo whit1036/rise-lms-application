@@ -13,6 +13,7 @@ console.log('Hello, World!')
 const loginButton = document.getElementById('getLinkBtn');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
+const getPasswordLink = document.getElementById('getPasswordLink')
 
 // Define the correct email and password
 const correctEmail = 'risestudent@riseacademy.com';
@@ -66,3 +67,37 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('button clicked')
     });
 });
+
+// const getPasswordLink = document.getElementById('getPasswordLink')
+
+// function showPasswordMessage(message, className) {
+//     getPasswordLink.addEventListener('click', function(){
+//     const passwordMessageDiv = document.createElement('div');
+//     passwordMessageDiv.textContent = message;
+//     passwordMessageDiv.className = `alert ${className}`;
+//     })
+// }
+
+// getPasswordLink.addEventListener('click', function (e) {
+//     e.preventDefault();
+
+//     if (getPasswordLink.clicked === true) {
+//         showMessage('E-Mail sent succesfully.', 'text-success');
+//         window.location.href = 'login-password.html'
+//     } else {
+//         showMessage('Please enter a valid e-mail.', 'text-danger');
+//     }
+// });
+
+// function showMessage(passwordMessage, className){
+//     const passwordMessageDiv = document.createElement('div');
+//     passwordMessageDiv.textContent = passwordMessage;
+//     passwordMessageDiv.className = `alert ${className}`;
+
+//     const forgotPasswordForm = document.getElementById('forgotPass');
+//     forgotPasswordForm.insertBefore(passwordMessageDiv, forgotPasswordForm.firstChild);
+
+//     setTimeout(function () {
+//         passwordMessageDiv.remove();
+//     }, 5000); 
+// }
