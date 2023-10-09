@@ -13,6 +13,7 @@ console.log('Hello, World!')
 const loginButton = document.getElementById('getLinkBtn');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
+const getPasswordLink = document.getElementById('getPasswordLink')
 
 // Define the correct email and password
 const correctEmail = 'risestudent@riseacademy.com';
