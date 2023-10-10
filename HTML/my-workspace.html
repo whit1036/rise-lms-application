@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R.I.S.E Template</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>R.I.S.E Master Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/main-styles.css">
     <link rel="stylesheet" href="../CSS/styleguide.css">
+    <link rel="stylesheet" href="../CSS/workspace-styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ioi4mhc.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-        <nav id="main-header" class="navbar">
-            <div class="container-fluid">
-                <div class="p-4" id="main-home-button">
-                    <a href="">
-                        <img src="../Images/icons/home.svg">
-                    </a>
-                </div>
-                <img class="p-2 m-2" id="main-header-img" src="../Images/RISE_website_logo.png">
-                <div class="d-flex">
-                    <a href=""><img class="mobile-nav-svg-1 pt-2" src="../Images/icons/message.svg"></a>
-                    <a href=""><img class="pt-2" src="../Images/icons/bell.svg"></a>
-                </div>
+  <!--Bootstrap Accessibility Skip Links-->
+  <a class="visually-hidden-focusable" href="#main-header">Skip to main nav</a>
+  <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+  <!-- Header -->
+    <header role="heading">
+    <div class="sticky-content">
+      <nav role="navigation" id="main-header" class="navbar">
+        <div class="container-fluid">
+            <div class="p-4" id="main-home-button">
+              <a href="">
+                  <img role="img" src="../Images/icons/home.svg" alt="homeicon">
+              </a>
+              <span class="fs-1 p-2 text-white">|</span>
             </div>
-        </nav>
+              <img role="img" class="p-2 m-2" id="main-header-img" src="../Images/RISE_website_logo.png" alt="riselogo">
+            <div class="d-flex align-items-center">
+              <a href=""><img role="img" class="pt-2 m-2" id="videoicon" src="../Images/icons/video.svg" alt="videoicon"></a>
+              <a href=""><img role="img" class="pt-2 m-2" src="../Images/icons/message.svg" alt="messageicon"></a>
+              <a href=""><img role="img" class="pt-2 m-2" src="../Images/icons/bell.svg" alt="bellicon"></a>
+              <div class="profile d-flex bg">
+                <span id="line-break" class="fs-1 p-1 mx-2 text-white">|</span>
+                <h4 class="py-3 text-white" id="profilename">Sarah Smith</h4>
+                <span class="circle p-3 mx-3 rounded-5 fw-bold" id="profilephoto">SS</span>
+              </div>
+            </div>
+          </div>
+      </nav>
     </header>
-    <main class="container-fluid">
+    <!-- Main -->
+    <main role="main" id="content" class="container-fluid">
         <div class="row">
-            <div class="side-panel-main col-3">
-                <div class="sidebar-info">
-                    <div class="student-sidebar-hifi container-fluid">
-                        <div class="group">
-                            <div class="overlap-group">
-                                <div class="text-wrapper">My Workspace</div>
-                                <img class="icon-line-category" src="../Images/icons/category.svg" />
-                            </div>
-                        </div>
-                        <div class="my-facilitator">
-                            <div class="text-wrapper-2">My Facilitator</div>
-                            <img class="icon-line-user" src="../Images/icons/user.svg" />
-                        </div>
-                        <div class="group-wrapper">
-                            <div class="group-2">
-                                <div class="text-wrapper-3">My Assignments</div>
-                                <img class="icon-line-edit" src="../Images/icons/circle.svg" />
-                            </div>
-                        </div>
+          <!-- Side Panel -->
+          <div role="region" class="side-panel-main col-3">
+            <!-- Sidebar Info -->
+            <div class="sidebar-info m-1 mt-5">
+              <div class="student-sidebar-hifi d-flex flex-column">
+                <!-- My Workspace -->
+                <div class="group-wrapper">
+                  <a href="">
+                    <div class="my-workspace align-items-center justify-content-left d-flex py-3 rounded-5">
+                      <img role="img" id="w-workspace" class="icon-line-category px-3" src="../Images/icons/category.svg" alt="workspace">
+                      <!-- <img id="d-workspace" class="icon-line-edit px-3" src="../Images/icons/circle-dark-blue.svg" alt="workspace"> -->
+                      <div class="text-wrapper px-1">My Workspace</div>
                     </div>
+                  </a>
                 </div>
+                <!-- My Facilitator -->
+                <div class="group-wrapper">
+                  <a href="">
+                    <div class="my-facilitator align-items-center d-flex justify-content-left py-3 rounded-5">
+                      <img role="img" class="icon-line-user px-3" src="../Images/icons/user.svg" alt="my-facilitator">
+                      <div class="text-wrapper-2 px-1">My Facilitator</div>
+                    </div>
+                  </a>
+                </div>
+                <!-- My Assignments -->
+                <div class="group-wrapper">
+                  <a href="">
+                    <div class="my-assignments d-flex align-items-center justify-content-left py-3 rounded-5">
+                      <img role="img" class="icon-line-edit px-3" src="../Images/icons/circle.svg" alt="my-assignments">
+                      <div class="text-wrapper-3 px-1">My Assignments</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="box col">
-                <div class="background">
-                    <div class="p-5">
-                        <h1 class="fs-1">Welcome back, Sarah!</h1>
+            <!-- Log Out -->
+            <div class="group-wrapper">
+              <a href="">
+                <div class="logout d-flex justify-content-center rounded-5">
+                    <img role="img" src="../Images/icons/logout.svg" alt="logout">
+                    <div class="m-3">Log Out</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Content (Border Radius Container) -->
+          <div role="region" class="box col">
+            <div class="background">
+              <div class="p-5">
+                <!-- My Courses -->
+                <!-- <div class="mx-auto flex-column m-1 justify-content-center d-flex">
+                    <h1 class="fs-1">Welcome back, Sarah!</h1>
                         <h2 class="fs-2 my-5">My Courses</h2>
                         <div class="courses">
                             <div class="card" style="width: 18rem;">
@@ -96,38 +134,106 @@
                                 </div>
                             </div>
                         </div>
-
+                    </div> -->
+                <!-- content goes here -->
+                <!-- <div class="property-student mt-5">
+                  <div class="overlap-group">
+                    <div class="rectangle"></div>
+                    <div class="div"></div>
+                  </div>
+                  <div class="text-wrapper">Abigail</div>
+                  <div class="text-wrapper-2">John</div>
+                  <div class="text-wrapper-3">Paul</div>
+                  <div class="text-wrapper-4">My Messages</div>
+                  <span class="icon-line-message"></span>
+                  <img class="line" src="../Images/icons/line-1.svg" />
+                  <img class="img" src="../Images/icons/line-2.svg" />
+                  <img class="line-2" src="../Images/icons/line-2.svg" />
+                  <img class="line-3" src="../Images/icons/line-2.svg" />
+                  <p class="p">Could you review the ...</p>
+                  <p class="text-wrapper-5">Just a reminder to ...</p>
+                  <p class="text-wrapper-6">If you need more inf ...</p>
+                  <img class="rectangle-2" src="../Images/icons/rectangle-145.png" />
+                  <img class="rectangle-3" src="../Images/icons/rectangle-146.png" />
+                  <img class="rectangle-4" src="../Images/icons/rectangle-144.png" />
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+        <!-- Mobile Navigation -->
+        <div class="container-md">
+            <!-- Mobile Headers -->
+            <div class="mobile-headings">
+                <h1 class="welcome-back-text fs-1 fw-bold text-center">Welcome back, Sarah! 😁</h1>
+                <h2 class="fs-2 mt-4 mb-4 fw-bold">My Courses</h2>
+            </div>
+            <!-- Course Container -->
+                <div class="courses">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="/Images/Math.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold m-2">Math</h5>
+                        </div>
                     </div>
+                    <div class="card w-100">
+                        <img class="card-img-top" src="/Images/Business.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold m-2">Business</h5>
+                        </div>
+                    </div>
+                    <div class="card w-100" >
+                        <img class="card-img-top" src="/Images/science.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold m-2">Science</h5>
+                        </div>
+                    </div>
+                    <div class="card w-100">
+                        <img class="card-img-top" src="/Images/English.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold m-2">English</h5>
+                        </div>
+                    </div>
+                    <div class="card w-100">
+                        <img class="card-img-top" src="/Images/Geography.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold m-2">Geography</h5>
+                        </div>
+                    </div>
+                    <div class="card w-100">
+                        <img class="card-img-top" src="/Images/Food.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold m-2">Food & Nutrition</h5>
+                        </div>
+                    </div>
+                    <!-- Margin for page bottom -->
+                    <div class="m-5 p-3"></div>
                 </div>
             </div>
         </div>
-        </div>
-    </main>
-    <nav class="mobile-nav fixed-bottom p-3 m-3">
-        <div id="mobile-nav-icons" class="container-fluid text-center d-flex">
-            <div>
-                <a href=""><img class="mobile-home-svg" src="../Images/icons/mobile_home.svg"></a>
-                <p id="nav-mobile-font" class="p-1">Home</p>
+        <!-- Mobile Navigation -->
+        <nav role="navigation" class="mobile-nav fixed-bottom p-3 m-3">
+          <div id="mobile-nav-icons" class="container-fluid text-center d-flex justify-content-around">
+            <div class="d-flex flex-column justify-content-center">
+              <a href=""><img class="mobile-home-pink-svg" src="../Images/icons/home-workspace.svg" alt="mobilehomeicon"></a>
+              <p id="home-nav-mobile-font-1" class="p-1 fw-bolder">Home</p>
             </div>
-            <div>
-                <a href=""><img class="mobile-circle-svg" src="../Images/icons/circle.svg"></a>
-                <p id="nav-mobile-font" class="p-1">My Assignments</p>
+            <div class="d-flex flex-column justify-content-center">
+              <a href=""><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobileassignmentsicon"></a>
+              <p id="nav-mobile-font-2" class="p-1 fw-bolder">Assignments</p>
             </div>
-            <div>
-                <a href=""><img class="mobile-video-svg" src="../Images/icons/video.svg"></a>
-                <p id="nav-mobile-font" class="p-1">My Meetings</p>
+            <div class="d-flex flex-column justify-content-center">
+              <a href=""><img class="mobile-video-svg" src="../Images/icons/video.svg" alt="mobilevideoicon"></a>
+              <p id="nav-mobile-font-3" class="p-1 fw-bolder">Meetings</p>
             </div>
-            <div>
-                <a href=""><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg"></a>
-                <p id="nav-mobile-font" class="p-1">Calendar</p>
+            <div class="d-flex flex-column justify-content-center">
+              <a href=""><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></a>
+              <p id="nav-mobile-font-4" class="p-1 fw-bolder">Calendar</p>
             </div>
-        </div>
-    </nav>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+          </div>
+        </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="../JS/script.js"></script>
 </body>
-
 </html>
