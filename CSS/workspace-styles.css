@@ -55,7 +55,7 @@ html {
 }
 
 /* My Workspace Mobile Styles */
-@media screen and (min-width: 350px) and (max-width: 650px) {
+@media screen and (min-width: 350px) and (max-width: 700px) {
     #main-header {
         position: fixed;
     }
@@ -92,7 +92,7 @@ html {
     }
 }
 
-@media (min-width: 650px) and (max-width: 4000px) {
+@media (min-width: 700px) and (max-width: 4000px) {
     .courses {
         display: none;
     }
