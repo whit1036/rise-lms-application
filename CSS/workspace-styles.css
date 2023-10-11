@@ -328,4 +328,9 @@ html {
       .icon-line-message{
         background-image: url(/Images/icons/message-2.svg);
       }
+
+      .courses-desktop .card {
+        padding-right: 0;
+        padding-left: 0;
+      }
 }
