@@ -233,6 +233,7 @@ html {
         height: 50px;
     }
 
+    /* 404 Error Styles */
     #message-404 {
         margin-top: 50%;
     }
@@ -430,6 +431,7 @@ html {
         height: 50px;
     }
 
+    /* 404 Error Styles */
     .heading-404 {
         color: var(--primary-dark-blue);
         font-size: 60px;
