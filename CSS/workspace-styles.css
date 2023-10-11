@@ -103,16 +103,29 @@ html {
 
     .card-body-desktop {
         height: 1rem;
+
+    }
+
+    .card-img-top {
+        width: 100%;
+        outline: 1px solid red;
+    }
+
+    /* Profile Dropdown */
+    .profile-dropdown{
+    outline: 1px solid red;
     }
 
     /* Messages Styles Desktop */
     .property-student {
-        position: relative;
+        position: absolute;
         width: 297px;
         height: 296px;
         background-color: #ffffff;
         border-radius: 8px;
         box-shadow: 0px 4px 24px #24616129;
+        margin-left: -8rem;
+        margin-top: -5rem;
       }
       
       .property-student .overlap-group {
