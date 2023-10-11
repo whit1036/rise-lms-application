@@ -33,7 +33,7 @@ body {
     font-family: 'Avenir LT Pro', Helvetica;
 }
 ol, ul {
-	list-style: none;
+	/* list-style: none; */
 }
 blockquote, q {
 	quotes: none;
@@ -70,6 +70,10 @@ html {
     }
 
     .side-panel-tablet {
+        display: none;
+    }
+
+    .side-panel-tablet-policy {
         display: none;
     }
 
@@ -262,6 +266,12 @@ html {
     .side-panel-tablet {
         width: 35vw;
         height: 100vh;
+        background-color: #197BBD;
+    }
+
+    .side-panel-tablet-policy {
+        width: 35vw;
+        height: 100rem;
         background-color: #197BBD;
     }
 
