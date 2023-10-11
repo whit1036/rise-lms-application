@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R.I.S.E Template</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/login-styles.css">
+    <link rel="stylesheet" href="../CSS/styleguide.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <main role="main">
+      <nav id="header" class="navbar p-4" role="navigation" aria-label="navigation">
+        <div class="container">
+          <img role="img" id="header-img" src="../Images/RISE_website_logo.png" alt="riselogo">
+        </div>
+      </nav>
+      <div role="region" class="flex-column flex-md-row d-flex">
+        <div class="side-panel-tablet">
+            <img role="img" class="p-5" id="side-panel-img" src="../Images/RISE_website_logo.png" alt="sidepanelimage">
+            <img role="img" class="pt-5" id="side-panel-img-2" src="../Images/Rise_white_visual_logo_only.png" alt="sidepaneloverlay">
+        </div>
+        <div class="mx-auto flex-column m-1 text-center justify-content-center d-flex mt-sm-5">
+            <div>
+                <div class="d-flex flex-column flex-shrink-0 p-3">
+                    <div id="message-404" class="text-center">
+                        <h1 role="heading" class="heading-404 p-4 mb-3">404 Error... it appears you've reached a dead end.</h1>
+                        <h2 role="heading" class="heading-2-404">Please refresh your browser.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="../JS/script.js"></script>

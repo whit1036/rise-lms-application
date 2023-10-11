@@ -232,6 +232,22 @@ html {
         width: 250px;
         height: 50px;
     }
+
+    #message-404 {
+        margin-top: 50%;
+    }
+
+    .heading-404 {
+        color: var(--primary-dark-blue);
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .heading-2-404 {
+        color: var(--primary-light-blue);
+        font-size: 25px;
+        font-weight: bold;
+    }
 }
 
 /************ Tablet & Desktop ************/
@@ -412,6 +428,18 @@ html {
     .button {
         width: 250px;
         height: 50px;
+    }
+
+    .heading-404 {
+        color: var(--primary-dark-blue);
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .heading-2-404 {
+        color: var(--primary-light-blue);
+        font-size: 30px;
+        font-weight: bold;
     }
 
 }
