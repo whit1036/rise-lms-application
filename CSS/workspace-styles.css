@@ -100,4 +100,220 @@ html {
     .mobile-headings {
         display: none;
     }
+
+    .card-body-desktop {
+        height: 1rem;
+    }
+
+    /* Messages Styles Desktop */
+    .property-student {
+        position: relative;
+        width: 297px;
+        height: 296px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 24px #24616129;
+      }
+      
+      .property-student .overlap-group {
+        position: absolute;
+        width: 6px;
+        height: 210px;
+        top: 69px;
+        left: 275px;
+        border-radius: 30px;
+      }
+      
+      .property-student .rectangle {
+        position: absolute;
+        width: 6px;
+        height: 210px;
+        top: 0;
+        left: 0;
+        background-color: var(--primaryrise-green);
+        border-radius: 30px;
+        opacity: 0.3;
+      }
+      
+      .property-student .div {
+        position: absolute;
+        width: 6px;
+        height: 56px;
+        top: 29px;
+        left: 0;
+        background-color: var(--primaryrise-green);
+        border-radius: 30px;
+        border: 0.5px solid;
+        border-color: #000000;
+      }
+      
+      .property-student .text-wrapper {
+        position: absolute;
+        width: 53px;
+        top: 79px;
+        left: 60px;
+        font-family: var(--RISE-body-smal-font-family);
+        font-weight: var(--RISE-body-smal-font-weight);
+        color: #000000;
+        font-size: var(--RISE-body-smal-font-size);
+        letter-spacing: var(--RISE-body-smal-letter-spacing);
+        line-height: var(--RISE-body-smal-line-height);
+        font-style: var(--RISE-body-smal-font-style);
+      }
+      
+      .property-student .text-wrapper-2 {
+        top: 145px;
+        position: absolute;
+        width: 53px;
+        left: 60px;
+        font-family: var(--RISE-body-smal-font-family);
+        font-weight: var(--RISE-body-smal-font-weight);
+        color: #000000;
+        font-size: var(--RISE-body-smal-font-size);
+        letter-spacing: var(--RISE-body-smal-letter-spacing);
+        line-height: var(--RISE-body-smal-line-height);
+        font-style: var(--RISE-body-smal-font-style);
+      }
+      
+      .property-student .text-wrapper-3 {
+        top: 212px;
+        position: absolute;
+        width: 53px;
+        left: 60px;
+        font-family: var(--RISE-body-smal-font-family);
+        font-weight: var(--RISE-body-smal-font-weight);
+        color: #000000;
+        font-size: var(--RISE-body-smal-font-size);
+        letter-spacing: var(--RISE-body-smal-letter-spacing);
+        line-height: var(--RISE-body-smal-line-height);
+        font-style: var(--RISE-body-smal-font-style);
+      }
+      
+      .property-student .text-wrapper-4 {
+        position: absolute;
+        top: 15px;
+        left: 57px;
+        font-family: var(--RISE-h5-font-family);
+        font-weight: var(--RISE-h5-font-weight);
+        color: #246161;
+        font-size: var(--RISE-h5-font-size);
+        letter-spacing: var(--RISE-h5-letter-spacing);
+        line-height: var(--RISE-h5-line-height);
+        white-space: nowrap;
+        font-style: var(--RISE-h5-font-style);
+      }
+      
+      .property-student .icon-line-message {
+        position: absolute;
+        width: 25px;
+        height: 24px;
+        top: 16px;
+        left: 16px;
+      }
+      
+      .property-student .line {
+        width: 265px;
+        top: 55px;
+        left: 16px;
+        position: absolute;
+        height: 1px;
+        object-fit: cover;
+      }
+      
+      .property-student .img {
+        width: 250px;
+        top: 132px;
+        left: 15px;
+        position: absolute;
+        height: 1px;
+        object-fit: cover;
+      }
+      
+      .property-student .line-2 {
+        width: 250px;
+        top: 195px;
+        left: 16px;
+        position: absolute;
+        height: 1px;
+        object-fit: cover;
+      }
+      
+      .property-student .line-3 {
+        width: 250px;
+        top: 265px;
+        left: 16px;
+        position: absolute;
+        height: 1px;
+        object-fit: cover;
+      }
+      
+      .property-student .p {
+        position: absolute;
+        top: 101px;
+        left: 59px;
+        font-family: var(--RISE-body-smal-font-family);
+        font-weight: var(--RISE-body-smal-font-weight);
+        color: #818181;
+        font-size: var(--RISE-body-smal-font-size);
+        letter-spacing: var(--RISE-body-smal-letter-spacing);
+        line-height: var(--RISE-body-smal-line-height);
+        white-space: nowrap;
+        font-style: var(--RISE-body-smal-font-style);
+      }
+      
+      .property-student .text-wrapper-5 {
+        position: absolute;
+        top: 167px;
+        left: 59px;
+        font-family: var(--RISE-body-smal-font-family);
+        font-weight: var(--RISE-body-smal-font-weight);
+        color: #818181;
+        font-size: var(--RISE-body-smal-font-size);
+        letter-spacing: var(--RISE-body-smal-letter-spacing);
+        line-height: var(--RISE-body-smal-line-height);
+        white-space: nowrap;
+        font-style: var(--RISE-body-smal-font-style);
+      }
+      
+      .property-student .text-wrapper-6 {
+        position: absolute;
+        top: 234px;
+        left: 59px;
+        font-family: var(--RISE-body-smal-font-family);
+        font-weight: var(--RISE-body-smal-font-weight);
+        color: #818181;
+        font-size: var(--RISE-body-smal-font-size);
+        letter-spacing: var(--RISE-body-smal-letter-spacing);
+        line-height: var(--RISE-body-smal-line-height);
+        white-space: nowrap;
+        font-style: var(--RISE-body-smal-font-style);
+      }
+      
+      .property-student .rectangle-2 {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 148px;
+        left: 16px;
+      }
+      
+      .property-student .rectangle-3 {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 215px;
+        left: 16px;
+      }
+      
+      .property-student .rectangle-4 {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 82px;
+        left: 16px;
+      }
+      
+      .icon-line-message{
+        background-image: url(/Images/icons/message-2.svg);
+      }
 }
