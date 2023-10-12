@@ -197,6 +197,23 @@ color: #197BBD;
         margin-top: 50vh;
     }
 
+    .header-icon-hover:hover {
+      border-top: 3px solid white;
+      transition: 0.5s;
+    }
+
+    .meetings-modal-title {
+      background-color: var(--secondary-pink);
+    }
+
+    .meeting-join {
+      background-color: var(--secondary-pink);
+    }
+
+    .my-meeting-button {
+      background-color: var(--primary-light-blue);
+    }
+
     /* Messages Styles Desktop */
     /* .property-student {
         position: relative;
