@@ -59,6 +59,13 @@ html {
 }
 
 @media (min-width: 700px) and (max-width: 4000px) {
+      .courses {
+          display: none;
+      }
+
+      .mobile-headings {
+          display: none;
+      }
     .banner{
         color: white;
         background-image: url(/Images/FoodCourseBanner.png);
