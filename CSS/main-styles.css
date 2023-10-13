@@ -56,6 +56,10 @@ html {
 
 /* Global Styles */
 
+.nopadding {
+    padding: 0 !important;
+}
+
 /* removes underline from all website links */
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
@@ -143,6 +147,10 @@ color: #197BBD;
     .group-wrapper {
         display: none;
     }
+
+    #desktop-notifications {
+        display: none;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 4000px) {
@@ -199,7 +207,6 @@ color: #197BBD;
 
     .header-icon-hover:hover {
       border-top: 3px solid white;
-      transition: 0.5s;
     }
 
     .meetings-modal-title {
@@ -212,6 +219,10 @@ color: #197BBD;
 
     .my-meeting-button {
       background-color: var(--primary-light-blue);
+    }
+
+    .messages-desktop-h {
+        margin-top: 4rem;
     }
     
 }
