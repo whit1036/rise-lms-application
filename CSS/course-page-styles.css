@@ -54,11 +54,16 @@ html {
     margin-right: auto;
 }
 
-@media screen and (min-width: 350px) and (max-width: 768px) {
-
+@media screen and (min-width: 350px) and (max-width: 700px) {
+  
 }
 
 @media (min-width: 700px) and (max-width: 4000px) {
+
+      .logout-outline {
+        margin-top: 10rem;
+      }
+  
       .courses {
           display: none;
       }
@@ -107,11 +112,10 @@ html {
     
       .weekbyweek{
         border-top: 1px solid white;
-        padding-block: 10px;
       }
     
       .week{
-        padding-block: 20px;
+        padding-block: 10px;
         padding-inline: 20px;
       }
     
