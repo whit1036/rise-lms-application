@@ -69,46 +69,129 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Displays an alert to show the user that the forgot password email has been sent successfully
-function displayText() {
-    const text = document.getElementById("textField");
-    alert("Email sent successfully")
-}
 
-// When notification button is clicked, hide and display data (mobile)
+const showMsgInfo = document.getElementById('mobile-messages');
+const showNftInfo = document.getElementById('mobile-notifications');
+const workspaceInfo = document.getElementById('workspace-info');
+const calendarInfo = document.getElementById('mbl-calendar');
+
+
 function notificationsClicked() {
-    const hideNftInfo = document.getElementById('workspace-info')
-    const showNftInfo = document.getElementById('mobile-notifications')
-    const showMsgInfo = document.getElementById('mobile-messages')
-    const hideMsgInfo = document.getElementById('workspace-info')
-    
-    if (hideNftInfo.style.display === 'none') {
-        hideNftInfo.style.display = 'block'
-    } else {
-        hideNftInfo.style.display = 'none'
-    }
+    const showNftInfo = document.getElementById('mobile-notifications');
+    const showMsgInfo = document.getElementById('mobile-messages');
+    const workspaceInfo = document.getElementById('workspace-info');
 
-    if (hideNftInfo.style.display === 'none') {
-        showNftInfo.style.display = 'block'
+    if (showNftInfo.style.display === 'none') {
+        showNftInfo.style.display = 'block';
+        showMsgInfo.style.display = 'none';
+        workspaceInfo.style.display = 'none';
     } else {
-        showNftInfo.style.display = 'none'
+        showNftInfo.style.display = 'none';
+        workspaceInfo.style.display = 'block';
     }
 }
 
 function messagesClicked() {
-    const hideMsgInfo = document.getElementById('workspace-info')
-    const showMsgInfo = document.getElementById('mobile-messages')
-    const showNftInfo = document.getElementById('mobile-notifications')
-    const hideNftInfo = document.getElementById('workspace-info')
+    const showNftInfo = document.getElementById('mobile-notifications');
+    const showMsgInfo = document.getElementById('mobile-messages');
+    const workspaceInfo = document.getElementById('workspace-info');
 
-    if (hideMsgInfo.style.display === 'none') {
-        hideMsgInfo.style.display = 'block'
+    if (showMsgInfo.style.display === 'none') {
+        showMsgInfo.style.display = 'block';
+        showNftInfo.style.display = 'none';
+        workspaceInfo.style.display = 'none';
+        calendarInfo.style.display = 'none';
     } else {
-        hideMsgInfo.style.display = 'none'
-    }
-
-    if (hideMsgInfo.style.display === 'none') {
-        showMsgInfo.style.display = 'block'
-    } else {
-        showMsgInfo.style.display = 'none'
+        showMsgInfo.style.display = 'none';
+        workspaceInfo.style.display = 'block';
     }
 }
+
+function mobileCalendarClicked(){
+    const showNftInfo = document.getElementById('mobile-notifications');
+    const showMsgInfo = document.getElementById('mobile-messages');
+    const workspaceInfo = document.getElementById('workspace-info');
+    const calendarInfo = document.getElementById('mbl-calendar');
+    const calendarIcon = document.getElementById('mobile-calendar-icon');
+    const calendarIconSelected = document.getElementById('mbl-cal-pink');
+    const homeIcon = document.getElementById('mbl-home-reg')
+    const homeIconSelected = document.getElementById('mbl-home-pink')
+
+
+    if (calendarInfo.style.display === 'none') {
+        calendarInfo.style.display = 'block';
+        workspaceInfo.style.display = 'none';
+        showMsgInfo.style.display = 'none';
+        showNftInfo.style.display = 'none';
+        workspaceInfo.style.display = 'none';
+        calendarIcon.style.display = 'none';
+        calendarIconSelected.style.display = 'block';
+        homeIconSelected.style.display = 'none';
+        homeIcon.style.display = 'block';
+    } else {
+        calendarInfo.style.display = 'none';
+        showMsgInfo.style.display = 'none';
+        workspaceInfo.style.display = 'block';
+        calendarIcon.style.display = 'block';
+        calendarIconSelected.style.display = 'none';
+    } 
+
+}
+
+
+// function mobileHomeSelect(){
+
+//     if (homeIconSelected.style.display === 'block'){
+//         homeIconSelected.style.display = 'none';
+//         homeIcon.style.display = 'none';
+//     } else {
+//         homeIconSelected.display = 'none';
+//         homeIcon.display = 'block';
+//     }
+// }
+
+
+// function notificationsClicked() {
+
+//     if (showNftInfo.style.display === 'none') {
+//         showNftInfo.style.display = 'block';
+//         showMsgInfo.style.display = 'none';
+//         workspaceInfo.style.display = 'none';
+//     } else {
+//         showNftInfo.style.display = 'none';
+//         workspaceInfo.style.display = 'block';
+//     }
+// }
+
+// function messagesClicked() {
+
+//     if (showMsgInfo.style.display === 'none') {
+//         showMsgInfo.style.display = 'block';
+//         showNftInfo.style.display = 'none';
+//         workspaceInfo.style.display = 'none'
+//     } else {
+//         showMsgInfo.style.display = 'none';
+//         workspaceInfo.style.display = 'block';
+//     }
+// }
+
+// function mobileCalendarClicked() {
+//     const calendar = document.getElementById('calendar'); 
+
+//     // Check if workspace-info is currently displayed
+//     if (workspaceInfo.style.display === 'block') {
+//         // Hide workspace-info
+//         workspaceInfo.style.display = 'none';
+
+//         // Display the calendar
+//         calendar.style.display = 'block';
+//     }
+//     // If calendar is already displayed, you can choose to hide it or perform another action
+//     // else if (calendar.style.display === 'block') {
+//     //     calendar.style.display = 'none';
+//     // }
+// }
+
+// // Example: Add a click event listener to your mobile calendar icon
+// const mobileCalendarIcon = document.getElementById('mobile-calendar-icon'); // Replace with the actual ID
+// mobileCalendarIcon.addEventListener('click', mobileCalendarClicked);

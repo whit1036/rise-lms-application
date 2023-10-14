@@ -167,11 +167,13 @@
                           <div class="row row-cols-3">
                             <div class="col-10">
                               <div class="row">
+                                
                                 <div class="card col-lg-3 m-2 col-md-5">
                                     <img class="card-img-top" src="/Images/Math.png" alt="Card image cap">
                                     <div class="card-body card-body-desktop">
                                         <h5 class="card-title fs-5 fw-bold m-2">Math</h5>
                                     </div>
+
                                 </div>
                                 <div class="card col-lg-3 m-2 col-md-5">
                                     <img class="card-img-top" src="/Images/Business.png" alt="Card image cap">
@@ -319,6 +321,86 @@
                 </div>
         </main>
         <!-- Mobile Navigation -->
+        <div class="container-md" id="mbl-calendar">
+          <!-- Calendar -->
+          <div class="property-default">
+            <div class="overlap-group">
+              <div class="calendar">
+                <header class="header">
+                  <div class="may">October 2023</div>
+                  <div class="frame">
+                    <img class="chevron" src="../Images/icons/chevron-2.svg" /> <img class="chevron" src="../Images/icons/chevron.svg" />
+                  </div>
+                </header>
+                <div class="days">
+                  <div class="d-flex">
+                    <div class="cell"><div class="text-wrapper">Mo</div></div>
+                    <div class="div-wrapper"><div class="text-wrapper">Tu</div></div>
+                    <div class="div-wrapper"><div class="text-wrapper">We</div></div>
+                    <div class="div-wrapper"><div class="text-wrapper">Th</div></div>
+                    <div class="div-wrapper"><div class="text-wrapper">Fr</div></div>
+                    <div class="div-wrapper"><div class="text-wrapper">Sa</div></div>
+                    <div class="div-wrapper"><div class="text-wrapper">Su</div></div>
+                  </div>
+                  <div class="div">
+                    <div class="cell-2"><div class="text-wrapper-2">1</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">2</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">3</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">4</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">5</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">6</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">7</div></div>
+                  </div>
+                  <div class="div">
+                    <div class="cell-2"><div class="text-wrapper-2">8</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">9</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">10</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">11</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">12</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">13</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">14</div></div>
+                  </div>
+                  <div class="div">
+                    <div class="cell-2"><div class="text-wrapper-2">15</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">16</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">17</div></div>
+                    <div class="cell-4"><div class="text-wrapper-3">18</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">19</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">20</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">21</div></div>
+                  </div>
+                  <div class="div">
+                    <div class="cell-2"><div class="text-wrapper-2">22</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">23</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">24</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">25</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">26</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">27</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">28</div></div>
+                  </div>
+                  <div class="div">
+                    <div class="cell-2"><div class="text-wrapper-2">29</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">30</div></div>
+                    <div class="cell-3"><div class="text-wrapper-2">31</div></div>
+                    <div class="element-wrapper"><div class="element">1</div></div>
+                    <div class="element-wrapper"><div class="element">2</div></div>
+                    <div class="element-wrapper"><div class="element">3</div></div>
+                    <div class="element-wrapper"><div class="element">4</div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ellipse"></div>
+              <div class="ellipse-2"></div>
+              <div class="ellipse-3"></div>
+              <div class="ellipse-4"></div>
+              <div class="ellipse-5"></div>
+            </div>
+            <div class="text-wrapper-4">My Calendar</div>
+            <img class="line" src="../Images/icons/line-1.svg"/>
+            <div class="group"><img class="u-calendar-alt" src="../Images/icons/u_calendar-alt.svg" /></div>
+            <img class="u-list-ul" src="../Images/icons/u_list-ul.svg" />
+          </div>
+        </div>
         <div id="mobile-messages" class="container-md">
           <div class="row">
             <div class="col-11">
@@ -408,8 +490,9 @@
         <nav role="navigation" class="mobile-nav fixed-bottom p-3 m-3">
           <div id="mobile-nav-icons" class="container-fluid text-center d-flex justify-content-around">
             <div class="d-flex flex-column justify-content-center">
-              <a href=""><img class="mobile-home-pink-svg" src="../Images/icons/home-workspace.svg" alt="mobilehomeicon"></a>
-              <p id="home-nav-mobile-font-1" class="p-1 fw-bolder">Home</p>
+              <a href="" type="button" id="mbl-home-reg"><img class="mobile-home-svg" src="../Images/icons/mobile_home.svg" alt="mobilehomeicon"></a>
+              <a onclick="mobileHomeSelect()" type="button" id="mbl-home-pink"><img class="mobile-home-pink-svg" src="../Images/icons/home-workspace.svg" alt="mobilehomeicon"></a>
+              <p class="p-1 fw-bolder">Home</p>
             </div>
             <div class="d-flex flex-column justify-content-center">
               <a href=""><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobileassignmentsicon"></a>
@@ -420,7 +503,8 @@
               <p id="nav-mobile-font-3" class="p-1 fw-bolder">Meetings</p>
             </div>
             <div class="d-flex flex-column justify-content-center">
-              <a href=""><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></a>
+              <a onclick="mobileCalendarClicked()" type="button" id="mobile-calendar-icon"><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></a>
+              <a onclick="mobileCalSelect()" type="button" id="mbl-cal-pink"><img class="mobile-calendar-pink-svg" src="../Images/icons/Calendar.svg" alt="mobilecalendaricon"></a>
               <p id="nav-mobile-font-4" class="p-1 fw-bolder">Calendar</p>
             </div>
           </div>

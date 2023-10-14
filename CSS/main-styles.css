@@ -28,6 +28,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+a {
+    color: blue;
+    text-decoration: none; /* no underline */
+  }
+
 body {
 	line-height: 1;
   font-family: 'Avenir LT Pro', sans-serif;
@@ -93,6 +99,34 @@ color: #197BBD;
     #main-header {
         background-color: #197BBD;
     }
+
+    #mobile-notifications {
+        display: none;
+      }
+  
+      #mobile-messages {
+        display: none;
+      }
+  
+      #scroll-bar-notifications {
+        margin-top: 10.5rem;
+      }
+  
+      .notifications-title {
+        margin-top: 7rem;
+      }
+
+      #mbl-home-reg {
+        display: none;
+      }
+
+    #mbl-cal-pink {
+        display: none;
+      }
+  
+      #mbl-calendar{
+        display: none;
+      }
     
     #videoicon{
         display: none;
@@ -151,14 +185,24 @@ color: #197BBD;
     #desktop-notifications {
         display: none;
     }
+
+
 }
 
 @media (min-width: 700px) and (max-width: 4000px) {
+    #mbl-calendar {
+        display: none;
+      }
+    
     #main-header-img {
         position: absolute;
         left: 5rem;
         margin-left: auto;
         width: 10%;
+    }
+
+    #mobile-messages, #mobile-notifications{
+        display: none;
     }
 
     .mobile-nav {
@@ -268,4 +312,3 @@ footer {
     border-radius: 48px 0px 0px 0px;
     background: #FFF;
 } */
-
