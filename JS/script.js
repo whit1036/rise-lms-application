@@ -73,3 +73,42 @@ function displayText() {
     const text = document.getElementById("textField");
     alert("Email sent successfully")
 }
+
+// When notification button is clicked, hide and display data (mobile)
+function notificationsClicked() {
+    const hideNftInfo = document.getElementById('workspace-info')
+    const showNftInfo = document.getElementById('mobile-notifications')
+    const showMsgInfo = document.getElementById('mobile-messages')
+    const hideMsgInfo = document.getElementById('workspace-info')
+    
+    if (hideNftInfo.style.display === 'none') {
+        hideNftInfo.style.display = 'block'
+    } else {
+        hideNftInfo.style.display = 'none'
+    }
+
+    if (hideNftInfo.style.display === 'none') {
+        showNftInfo.style.display = 'block'
+    } else {
+        showNftInfo.style.display = 'none'
+    }
+}
+
+function messagesClicked() {
+    const hideMsgInfo = document.getElementById('workspace-info')
+    const showMsgInfo = document.getElementById('mobile-messages')
+    const showNftInfo = document.getElementById('mobile-notifications')
+    const hideNftInfo = document.getElementById('workspace-info')
+
+    if (hideMsgInfo.style.display === 'none') {
+        hideMsgInfo.style.display = 'block'
+    } else {
+        hideMsgInfo.style.display = 'none'
+    }
+
+    if (hideMsgInfo.style.display === 'none') {
+        showMsgInfo.style.display = 'block'
+    } else {
+        showMsgInfo.style.display = 'none'
+    }
+}

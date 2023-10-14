@@ -66,11 +66,11 @@
                 </div>
               </div>
               <div class="dropdown">
-                <a href="" type="button" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/message.svg" alt="messageicon"></a>
+                <a onclick="messagesClicked()" href="" type="button" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/message.svg" alt="messageicon"></a>
                   
               </div>
               <div class="dropdown">
-                <a href="" type="button" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bellicon"></a>
+                <a onclick="notificationsClicked()" href="" type="button" data-bs-toggle="dropdown"><img id="mbl-ntf" role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bellicon"></a>
                 <div id="desktop-notifications" class="dropdown-menu">
                   <div class="p-4 my-2 d-flex flex-column">
                     <p class="fs-4 fw-bold">Notifications</p>
@@ -319,7 +319,43 @@
                 </div>
         </main>
         <!-- Mobile Navigation -->
-        <div class="container-md">
+        <div id="mobile-messages" class="container-md">
+          <div class="row">
+            <div class="col-11">
+              <h1 class="notifications-title fs-1 fw-bold p-2">My Messages</h1>
+              <hr class="pb-2">
+              <span class="w-100 rounded-4 bg-success text-white fw-bold text-center p-3">New!</span>
+              <!-- Add link -->
+              <p class="mt-4">New feedback on your "Healthy Acti..."</p>
+              <hr>
+              <p class="">Holiday Event has been created.</p>
+              <hr>
+              <p class="">Midterm report cards due.</p>
+            </div>
+            <div id="scroll-bar-notifications" class="col-1">
+              <img src="../Images/icons/Rectangle 96.svg">
+            </div>
+          </div>
+      </div>
+        <div id="mobile-notifications" class="container-md">
+            <div class="row">
+              <div class="col-11">
+                <h1 class="notifications-title fs-1 fw-bold p-2">Notifications</h1>
+                <hr class="pb-2">
+                <span class="w-100 rounded-4 bg-success text-white fw-bold text-center p-3">New!</span>
+                <!-- Add link -->
+                <p class="mt-4">New feedback on your "Healthy Acti..."</p>
+                <hr>
+                <p class="">Holiday Event has been created.</p>
+                <hr>
+                <p class="">Midterm report cards due.</p>
+              </div>
+              <div id="scroll-bar-notifications" class="col-1">
+                <img src="../Images/icons/Rectangle 96.svg">
+              </div>
+            </div>
+        </div>
+        <div id="workspace-info" class="container-md">
             <!-- Mobile Headers -->
             <div class="mobile-headings">
                 <h1 class="welcome-back-text fs-1 fw-bold text-center">Welcome back, Sarah! 😁</h1>

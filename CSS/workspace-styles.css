@@ -65,6 +65,22 @@ html {
         margin-bottom: 2rem;
     }
 
+    #mobile-notifications {
+      display: none;
+    }
+
+    #mobile-messages {
+      display: none;
+    }
+
+    #scroll-bar-notifications {
+      margin-top: 10.5rem;
+    }
+
+    .notifications-title {
+      margin-top: 7rem;
+    }
+
     .sticky-content {
         position: relative;
         z-index: 1;
