@@ -58,9 +58,29 @@ html {
     .mobile-home-pink-svg {
         width: 2.7rem;
     }
+
+    #bg-img {
+      width: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    }
+
+    #text-over-img {
+      margin-top: -5rem;
+      padding: 2rem;
+      margin-left: -1rem;
+    }
+
+    .to-do {
+      background-color: #d6d6d6;
+      border: 1px solid #d9d9d9;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 4000px) {
+      #mobile-course-pg {
+        display: none;
+      }
+  
       .courses {
           display: none;
       }
