@@ -104,6 +104,10 @@ html {
         border: 1px solid #d9d9d9;
       }
 
+      .logout {
+        margin-top: 10vh;
+    }
+
       .box {
         display: block;
         width: 100%;
@@ -263,6 +267,28 @@ html {
         height: 10px;
         top: 21px;
         left: 156px;
+      }
+
+      /* .weekbyweek{
+        border-top: 2px solid white;
+        padding-block: 10px;
+      } */
+  
+      .week{
+        padding-block: 20px;
+        padding-inline: 20px;
+      }
+  
+      .weekbyweek :hover{
+        background-color: var(--secondarydark-blue)
+      }
+  
+      .nav-item :hover{
+        color: var(--primary-light-blue) !important;
+      }
+  
+      .nav-link active{
+        border-bottom: 2px solid var(--primary-light-blue) !important;
       }
       
 }
