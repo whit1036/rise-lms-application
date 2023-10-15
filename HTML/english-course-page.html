@@ -172,16 +172,16 @@
                         <div class="coursenav">
                         <ul class="nav nav-tabs mt-1" id="workbook" role="tablist">
                             <li class="nav-item" role="workbook">
-                              <button class="nav-link active text-black fw-bold fs-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#workbook-tab-pane" type="button" role="tab" aria-controls="workbook-tab-pane" aria-selected="true">Workbook</button>
+                              <button class="nav-link active text-black fw-bold fs-5" onclick="workbookClicked()" id="home-tab" data-bs-toggle="tab" data-bs-target="#workbook-tab-pane" type="button" role="tab" aria-controls="workbook-tab-pane" aria-selected="true">Workbook</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link text-black fw-bold fs-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#course-outline-tab-pane" type="button" role="tab" aria-controls="course-outline-tab-pane" aria-selected="false">Course Outline</button>
+                              <button class="nav-link text-black fw-bold fs-5" onclick="courseOutlineClicked()" id="profile-tab" data-bs-toggle="tab" data-bs-target="#course-outline-tab-pane" type="button" role="tab" aria-controls="course-outline-tab-pane" aria-selected="false">Course Outline</button>
                             </li>
                           </ul>
                           <p class="nav-item mt-3 mx-3">My Workspace > My Courses > English</p>
                         </div>
                         <h2 class="mx-4 fs-2 mt-5 fw-bold weeknumber" id="weeknumber">Week 1</h2>
-                        <div class="container-fluid">
+                        <div class="container-fluid" id="course-content">
                             <div class="row">
                                 <div class="col-6 nopadding">
                                     <h3 class="mx-4 fs-3 mt-5 fw-bold">To do:</h3>
