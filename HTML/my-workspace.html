@@ -20,141 +20,141 @@
     <div class="sticky-content">
       <nav role="navigation" id="main-header" class="navbar">
         <div class="container-fluid">
-            <div class="p-4" id="main-home-button">
-              <a href="/HTML/my-workspace.html">
-                  <img role="img" class="header-icon-hover" src="../Images/icons/home.svg" alt="homeicon">
-              </a>
-              <span class="fs-1 p-2 text-white">|</span>
-            </div>
-              <img role="img" class="p-2 m-2" id="main-header-img" src="../Images/RISE_website_logo.png" alt="riselogo">
-            <div class="d-flex align-items-center">
-              <div class="dropdown">
-                <a href="" type="button" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" id="videoicon" src="../Images/icons/video.svg" alt="videoicon"></a>
-                <div class="dropdown-menu p-3">
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    My Meetings
-                  </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header meetings-modal-title">
-                        <h1 class="modal-title fs-5 fw-bolder text-white" id="staticBackdropLabel">My Meetings</h1>
-                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p class="fs-5 fw-bold">Upcoming Meetings</p>
-                        <div class="card w-100 mb-3 mt-4">
-                          <div class="card-body">
-                              <h5 class="card-title fw-bold">Steve Kent - Project 2 Discussion</h5>
-                              <p class="card-text">Nov 25, 2023 | 3:00 PM - 3:30 PM</p>
-                              <a href="#" class="btn meeting-join border-warning fw-bolder mt-2">Join</a>
-                          </div>
-                        </div>
-                        <div class="card w-100 mb-3 mt-4">
-                          <div class="card-body">
-                            <h5 class="card-title fw-bold">Allison Addams - Intro to Business Discussion</h5>
-                            <p class="card-text">Nov 26, 2023 | 11:00 AM - 12:00 PM</p>
+          <div class="p-4" id="main-home-button">
+            <a href="/HTML/my-workspace.html">
+                <img role="img" class="header-icon-hover" src="../Images/icons/home.svg" alt="homeicon">
+            </a>
+            <span class="fs-1 p-2 text-white">|</span>
+          </div>
+            <img role="img" class="p-2 m-2" id="main-header-img" src="../Images/RISE_website_logo.png" alt="riselogo">
+          <div class="d-flex align-items-center">
+            <div class="dropdown">
+              <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" id="videoicon" src="../Images/icons/video.svg" alt="videoicon"></a>
+              <div class="dropdown-menu p-3">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  My Meetings
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header meetings-modal-title">
+                      <h1 class="modal-title fs-5 fw-bolder text-white" id="staticBackdropLabel">My Meetings</h1>
+                      <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="fs-5 fw-bold">Upcoming Meetings</p>
+                      <div class="card w-100 mb-3 mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Steve Kent - Project 2 Discussion</h5>
+                            <p class="card-text">Nov 25, 2023 | 3:00 PM - 3:30 PM</p>
                             <a href="#" class="btn meeting-join border-warning fw-bolder mt-2">Join</a>
-                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-100 mb-3 mt-4">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Allison Addams - Intro to Business Discussion</h5>
+                          <p class="card-text">Nov 26, 2023 | 11:00 AM - 12:00 PM</p>
+                          <a href="#" class="btn meeting-join border-warning fw-bolder mt-2">Join</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="dropdown">
-                <a onclick="messagesClicked()" href="" type="button" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/message.svg" alt="messageicon"></a>
-                  <div class="dropdown-menu p-4">
-                    <h1 class="notifications-title fs-4 fw-bold p-2">My Messages</h1>
-              <hr class="pb-2">
-              <!-- User 1 -->
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-144.png" />
-                  <p class="fw-bold fs-4 mx-5">Sarah</p>
-                  <p class="mt-4 fs-5 mx-5">Are you able to please join the...</p>
-              <hr class="pb-2">
-              <!-- User 2 -->
-              <div class="row d-flex">
-                <div class="col-1">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-145.png" />
-                </div>
-                <div class="col-12">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Mike</p>
-                  <p class="mt-4 fs-5 mx-5">Hey! How'd the meeting go?</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 3 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-146.png" />
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">John</p>
-                  <p class="mt-4 fs-5 mx-5">You aced the math test! Congrats!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 4 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle147.jpeg" />
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Keith</p>
-                  <p class="mt-4 fs-5 mx-5">Please remember the homework!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 5 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle-149.jpeg" />
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Holly</p>
-                  <p class="mt-4 fs-5 mx-5">Give me a call when you have a chance!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-                  </div>
-              </div>
-              <div class="dropdown">
-                <a onclick="notificationsClicked()" href="" type="button" data-bs-toggle="dropdown"><img id="mbl-ntf" role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bellicon"></a>
-                <div id="desktop-notifications" class="dropdown-menu">
-                  <div class="p-4 my-2 d-flex flex-column">
-                    <p class="fs-4 fw-bold">Notifications</p>
-                    <hr>
-                    <span class="w-100 rounded-5 bg-success text-white fw-bold text-center pb-2 pt-2">New!</span>
-                    <!-- Add link -->
-                    <p class="mt-2">New feedback on your "Healthy Acti..."</p>
-                    <hr>
-                    <p class="">Holiday Event has been created."</p>
-                    <hr>
-                    <p class="">Midterm report cards due.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="profile d-flex bg">
-                <span id="line-break" class="fs-1 p-1 mx-2 text-white">|</span>
-                <div class="dropdown">
-                  <h4 type="button" data-bs-toggle="dropdown" class="py-3 text-white" id="profilename">Sarah Smith</h4>
-                  <div class="dropdown-menu">
-                    <div class="p-2 pt-3 d-flex flex-column text-center">
-                      <span class="circle p-3 rounded-5 fw-bold mx-5" id="profilephoto">SS</span>
-                      <p class="text-dark fw-bold my-4 mx-1 fs-4 text-center">Sarah Smith</p>
-                      <p class="my-2 mx-3 fs-5 text-center">Edit Profile</p>
+            </div>
+            <div class="dropdown">
+              <a onclick="messagesClicked()" href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/message.svg" alt="messageicon"></a>
+                <div id="msg-dsk" class="dropdown-menu p-4">
+                  <h1 class="notifications-title fs-4 fw-bold p-2">My Messages</h1>
+                  <hr class="pb-2">
+                  <!-- User 1 -->
+                      <img class="mbl-msg-icon" src="/Images/icons/rectangle-144.png" alt="user-icon">
+                      <p class="fw-bold fs-4 mx-5">Sarah</p>
+                      <p class="mt-4 fs-5 mx-5">Are you able to please join the...</p>
+                  <hr class="pb-2">
+                  <!-- User 2 -->
+                  <div class="row d-flex">
+                    <div class="col-1">
+                      <img class="mbl-msg-icon" src="/Images/icons/rectangle-145.png" alt="user-icon">
+                    </div>
+                    <div class="col-12">
+                      <p class="mx-2 fw-bold fs-4 mx-5">Mike</p>
+                      <p class="mt-4 fs-5 mx-5">Hey! How'd the meeting go?</p>
                     </div>
                   </div>
+                  <hr class="pb-2">
+                  <!-- User 3 -->
+                  <div class="row">
+                    <div class="col-2">
+                      <img class="mbl-msg-icon" src="/Images/icons/rectangle-146.png" alt="user-icon">
+                    </div>
+                    <div class="col-9">
+                      <p class="mx-2 fw-bold fs-4 mx-5">John</p>
+                      <p class="mt-4 fs-5 mx-5">You aced the math test! Congrats!</p>
+                    </div>
+                  </div>
+                  <hr class="pb-2">
+                  <!-- User 4 -->
+                  <div class="row">
+                    <div class="col-2">
+                      <img class="mbl-msg-icon rounded-1" src="../Images/rectangle147.jpeg" alt="user-icon">
+                    </div>
+                    <div class="col-9">
+                      <p class="mx-2 fw-bold fs-4 mx-5">Keith</p>
+                      <p class="mt-4 fs-5 mx-5">Please remember the homework!</p>
+                    </div>
+                  </div>
+                  <hr class="pb-2">
+                  <!-- User 5 -->
+                  <div class="row">
+                    <div class="col-2">
+                      <img class="mbl-msg-icon rounded-1" src="../Images/rectangle-149.jpeg" alt="user-icon">
+                    </div>
+                    <div class="col-9">
+                      <p class="mx-2 fw-bold fs-4 mx-5">Holly</p>
+                      <p class="mt-4 fs-5 mx-5">Give me a call when you have a chance!</p>
+                    </div>
+                  </div>
+                  <hr class="pb-2">
                 </div>
-                  <span class="circle p-3 mx-3 rounded-5 fw-bold" id="profilephoto">SS</span>
+            </div>
+            <div class="dropdown">
+              <a onclick="notificationsClicked()" href="" data-bs-toggle="dropdown"><img id="mbl-ntf" role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bellicon"></a>
+              <div id="desktop-notifications" class="dropdown-menu">
+                <div class="p-4 my-2 d-flex flex-column">
+                  <p class="fs-4 fw-bold">Notifications</p>
+                  <hr>
+                  <span class="w-100 rounded-5 bg-success text-white fw-bold text-center pb-2 pt-2">New!</span>
+                  <!-- Add link -->
+                  <p class="mt-2">New feedback on your "Healthy Acti..."</p>
+                  <hr>
+                  <p class="">Holiday Event has been created."</p>
+                  <hr>
+                  <p class="">Midterm report cards due.</p>
                 </div>
+              </div>
+            </div>
+            <div class="profile d-flex bg">
+              <span id="line-break" class="fs-1 p-1 mx-2 text-white">|</span>
+              <div class="dropdown">
+                <h4 data-bs-toggle="dropdown" class="py-3 text-white" id="profilename">Sarah Smith</h4>
+                <div class="dropdown-menu">
+                  <div class="p-2 pt-3 d-flex flex-column text-center">
+                    <span class="circle p-3 rounded-5 fw-bold mx-5" id="profilephoto-drop">SS</span>
+                    <p class="text-dark fw-bold my-4 mx-1 fs-4 text-center">Sarah Smith</p>
+                    <p class="my-2 mx-3 fs-5 text-center">Edit Profile</p>
+                  </div>
+                </div>
+              </div>
+                <span class="circle p-3 mx-3 rounded-5 fw-bold" id="profilephoto">SS</span>
               </div>
             </div>
           </div>
-      </nav>
+        </nav>
+        </div>
     </header>
     <!-- Main -->
     <main role="main" id="content" class="container-fluid">
@@ -274,16 +274,16 @@
                                   <div class="text-wrapper-3">Paul</div>
                                   <div class="text-wrapper-4">My Messages</div>
                                   <span class="icon-line-message"></span>
-                                  <img class="line" src="../Images/icons/line-1.svg" />
-                                  <img class="img" src="../Images/icons/line-2.svg" />
-                                  <img class="line-2" src="../Images/icons/line-2.svg" />
-                                  <img class="line-3" src="../Images/icons/line-2.svg" />
+                                  <img class="line" src="../Images/icons/line-1.svg" alt="line">
+                                  <img class="img" src="../Images/icons/line-2.svg" alt="line">
+                                  <img class="line-2" src="../Images/icons/line-2.svg" alt="line">
+                                  <img class="line-3" src="../Images/icons/line-2.svg" alt="line">
                                   <p class="p">Could you review the ...</p>
                                   <p class="text-wrapper-5">Just a reminder to ...</p>
                                   <p class="text-wrapper-6">If you need more inf ...</p>
-                                  <img class="rectangle-2" src="../Images/icons/rectangle-145.png" />
-                                  <img class="rectangle-3" src="../Images/icons/rectangle-146.png" />
-                                  <img class="rectangle-4" src="../Images/icons/rectangle-144.png" />
+                                  <img class="rectangle-2" src="../Images/icons/rectangle-145.png" alt="profile-icon">
+                                  <img class="rectangle-3" src="../Images/icons/rectangle-146.png" alt="profile-icon">
+                                  <img class="rectangle-4" src="../Images/icons/rectangle-144.png" alt="profile-icon">
                                 </div>
                               </div>
                               <!-- Calendar -->
@@ -293,7 +293,7 @@
                                     <header class="header">
                                       <div class="may">October 2023</div>
                                       <div class="frame">
-                                        <img class="chevron" src="../Images/icons/chevron-2.svg" /> <img class="chevron" src="../Images/icons/chevron.svg" />
+                                        <img class="chevron" src="../Images/icons/chevron-2.svg" alt="left-button"> <img class="chevron" src="../Images/icons/chevron.svg" alt="right-buton">
                                       </div>
                                     </header>
                                     <div class="days">
@@ -360,9 +360,9 @@
                                   <div class="ellipse-5"></div>
                                 </div>
                                 <div class="text-wrapper-4">My Calendar</div>
-                                <img class="line" src="../Images/icons/line-1.svg"/>
-                                <div class="group"><img class="u-calendar-alt" src="../Images/icons/u_calendar-alt.svg" /></div>
-                                <img class="u-list-ul" src="../Images/icons/u_list-ul.svg" />
+                                <img class="line" src="../Images/icons/line-1.svg" alt="line">
+                                <div class="group"><img class="u-calendar-alt" src="../Images/icons/u_calendar-alt.svg" alt="calendar-icon"></div>
+                                <img class="u-list-ul" src="../Images/icons/u_list-ul.svg" alt="calendar-icon">
                               </div>
                             </div>
                           </div>
@@ -371,6 +371,7 @@
                     </div>
                   </div>
                 </div>
+              </div>
         </main>
         <!-- Mobile Navigation -->
         <div class="container-md" id="mbl-calendar">
@@ -381,7 +382,7 @@
                 <header class="header">
                   <div class="may">October 2023</div>
                   <div class="frame">
-                    <img class="chevron" src="../Images/icons/chevron-2.svg" /> <img class="chevron" src="../Images/icons/chevron.svg" />
+                    <img class="chevron" src="../Images/icons/chevron-2.svg" alt="left-button"> <img class="chevron" src="../Images/icons/chevron.svg" alt="right-button">
                   </div>
                 </header>
                 <div class="days">
@@ -448,9 +449,9 @@
               <div class="ellipse-5"></div>
             </div>
             <div class="text-wrapper-4">My Calendar</div>
-            <img class="line" src="../Images/icons/line-1.svg"/>
-            <div class="group"><img class="u-calendar-alt" src="../Images/icons/u_calendar-alt.svg" /></div>
-            <img class="u-list-ul" src="../Images/icons/u_list-ul.svg" />
+            <img class="line" src="../Images/icons/line-1.svg" alt="line">
+            <div class="group"><img class="u-calendar-alt" src="../Images/icons/u_calendar-alt.svg" alt="calendar-icon"></div>
+            <img class="u-list-ul" src="../Images/icons/u_list-ul.svg" alt="calendar-icon">
           </div>
         </div>
         <div id="mobile-messages" class="container-md">
@@ -469,7 +470,7 @@
               <!-- User 1 -->
               <div class="row">
                 <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-144.png" />
+                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-144.png" alt="profile-icon">
                 </div>
                 <div class="col-9">
                   <p class="mx-2 fw-bold fs-4 mx-5">Sarah</p>
@@ -480,7 +481,7 @@
               <!-- User 2 -->
               <div class="row">
                 <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-145.png" />
+                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-145.png" alt="profile-icon">
                 </div>
                 <div class="col-9">
                   <p class="mx-2 fw-bold fs-4 mx-5">Mike</p>
@@ -491,7 +492,7 @@
               <!-- User 3 -->
               <div class="row">
                 <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-146.png" />
+                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-146.png" alt="profile-icon">
                 </div>
                 <div class="col-9">
                   <p class="mx-2 fw-bold fs-4 mx-5">John</p>
@@ -502,7 +503,7 @@
               <!-- User 4 -->
               <div class="row">
                 <div class="col-2">
-                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle147.jpeg" />
+                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle147.jpeg" alt="profile-icon">
                 </div>
                 <div class="col-9">
                   <p class="mx-2 fw-bold fs-4 mx-5">Keith</p>
@@ -513,7 +514,7 @@
               <!-- User 5 -->
               <div class="row">
                 <div class="col-2">
-                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle-149.jpeg" />
+                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle-149.jpeg" alt="profile-icon">
                 </div>
                 <div class="col-9">
                   <p class="mx-2 fw-bold fs-4 mx-5">Holly</p>
@@ -524,8 +525,8 @@
               <!-- Margin for page bottom -->
               <div class="m-5 p-3"></div>
             </div>
-            <div id="scroll-bar-notifications" class="col-1">
-              <img src="../Images/icons/Rectangle 96.svg">
+            <div id="scroll-bar-msg" class="col-1">
+              <img src="../Images/icons/rectangle-96.svg" alt="scroll-bar">
             </div>
           </div>
       </div>
@@ -543,7 +544,7 @@
                 <p class="fs-5">Midterm report cards due.</p>
               </div>
               <div id="scroll-bar-notifications" class="col-1">
-                <img src="../Images/icons/Rectangle 96.svg">
+                <img src="../Images/icons/rectangle-96.svg" alt="scroll-bar">
               </div>
             </div>
         </div>
@@ -595,26 +596,25 @@
                     <div class="m-5 p-3"></div>
                 </div>
             </div>
-        </div>
         <!-- Mobile Navigation -->
         <nav role="navigation" class="mobile-nav fixed-bottom p-3 m-3">
           <div id="mobile-nav-icons" class="container-fluid text-center d-flex justify-content-around">
             <div class="d-flex flex-column justify-content-center">
-              <a href="" type="button" id="mbl-home-reg"><img class="mobile-home-svg" src="../Images/icons/mobile_home.svg" alt="mobilehomeicon"></a>
-              <a onclick="mobileHomeSelect()" type="button" id="mbl-home-pink"><img class="mobile-home-pink-svg" src="../Images/icons/home-workspace.svg" alt="mobilehomeicon"></a>
+              <a href="" id="mbl-home-reg"><img class="mobile-home-svg" src="../Images/icons/mobile_home.svg" alt="mobilehomeicon"></a>
+              <span onclick="mobileHomeSelect()" id="mbl-home-pink"><img class="mobile-home-pink-svg" src="../Images/icons/home-workspace.svg" alt="mobilehomeicon"></span>
               <p class="p-1 fw-bolder">Home</p>
             </div>
             <div class="d-flex flex-column justify-content-center">
-              <a href=""><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobileassignmentsicon"></a>
+              <span><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobileassignmentsicon"></span>
               <p id="nav-mobile-font-2" class="p-1 fw-bolder">Assignments</p>
             </div>
             <div class="d-flex flex-column justify-content-center">
-              <a href=""><img class="mobile-video-svg" src="../Images/icons/video.svg" alt="mobilevideoicon"></a>
+              <span><img class="mobile-video-svg" src="../Images/icons/video.svg" alt="mobilevideoicon"></span>
               <p id="nav-mobile-font-3" class="p-1 fw-bolder">Meetings</p>
             </div>
             <div class="d-flex flex-column justify-content-center">
-              <a onclick="mobileCalendarClicked()" type="button" id="mobile-calendar-icon"><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></a>
-              <a onclick="mobileCalSelect()" type="button" id="mbl-cal-pink"><img class="mobile-calendar-pink-svg" src="../Images/icons/Calendar.svg" alt="mobilecalendaricon"></a>
+              <span onclick="mobileCalendarClicked()" id="mobile-calendar-icon"><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></span>
+              <span onclick="mobileCalSelect()" id="mbl-cal-pink"><img class="mobile-calendar-pink-svg" src="../Images/icons/Calendar.svg" alt="mobilecalendaricon"></span>
               <p id="nav-mobile-font-4" class="p-1 fw-bolder">Calendar</p>
             </div>
           </div>

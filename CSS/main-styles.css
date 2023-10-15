@@ -100,6 +100,10 @@ color: #197BBD;
         background-color: #197BBD;
     }
 
+    #msg-dsk {
+        display: none;
+    }
+
     #mobile-notifications {
         display: none;
       }
@@ -108,7 +112,7 @@ color: #197BBD;
         display: none;
       }
   
-      #scroll-bar-notifications {
+      #scroll-bar-notifications, #scroll-bar-msg {
         margin-top: 10.5rem;
       }
   
@@ -132,7 +136,7 @@ color: #197BBD;
         display: none;
     }
 
-    #profilephoto, #profilename{
+    #profilephoto, #profilephoto-drop, #profilename{
         display: none;
     }
 
@@ -559,7 +563,7 @@ color: #197BBD;
         display: block;
     }
 
-    #profilephoto {
+    #profilephoto, #profilephoto-drop {
         background-color: var(--minion);
     }
 

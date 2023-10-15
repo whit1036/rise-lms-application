@@ -59,12 +59,12 @@ html {
         width: 2.7rem;
     }
 
-    #bg-img {
+    #bg-img-mbl {
       width: 100%;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
     }
 
-    #text-over-img {
+    #text-over-img-mbl {
       margin-top: -5rem;
       padding: 2rem;
       margin-left: -1rem;
@@ -89,11 +89,11 @@ html {
           display: none;
       }
 
-      #bg-img {
+      #bg-img-dsk {
         width: 100%;
       }
 
-      #text-over-img {
+      #text-over-img-dsk {
         display: block;
         margin-top: -7rem;
         padding: 2rem;
