@@ -27,7 +27,7 @@ loginButton.addEventListener('click', function (e) {
 
     if (enteredEmail === correctEmail && enteredPassword === correctPassword) {
         showMessage('Login Successful', 'text-success');
-        window.location.href = 'master-template.html'
+        window.location.href = 'my-workspace.html'
     } else {
         showMessage('Login Incorrect. Please check your credentials.', 'text-danger');
     }
