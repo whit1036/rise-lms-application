@@ -86,7 +86,7 @@ html {
 
 @media (min-width: 700px) and (max-width: 4000px) {
   
-  .courses {
+    .courses {
         display: none;
     }
 
@@ -94,10 +94,9 @@ html {
         display: none;
     }
 
-    .card-body-desktop {
+    /* .card-body-desktop {
         height: 1rem;
-
-    }
+    } */
 
     .card-img-top {
         width: 100%;
@@ -108,547 +107,112 @@ html {
     outline: 1px solid red;
     }
 
-    /* Messages Styles Desktop */
-    .property-student {
-        position: absolute;
-        width: 297px;
-        height: 296px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0px 4px 24px #24616129;
-        margin-left: -8rem;
-        margin-top: -5rem;
-      }
-      
-      .property-student .overlap-group {
-        position: absolute;
-        width: 6px;
-        height: 210px;
-        top: 69px;
-        left: 275px;
-        border-radius: 30px;
-      }
-      
-      .property-student .rectangle {
-        position: absolute;
-        width: 6px;
-        height: 210px;
-        top: 0;
-        left: 0;
-        background-color: var(--primaryrise-green);
-        border-radius: 30px;
-        opacity: 0.3;
-      }
-      
-      .property-student .div {
-        position: absolute;
-        width: 6px;
-        height: 56px;
-        top: 29px;
-        left: 0;
-        background-color: var(--primaryrise-green);
-        border-radius: 30px;
-        border: 0.5px solid;
-        border-color: #000000;
-      }
-      
-      .property-student .text-wrapper {
-        position: absolute;
-        width: 53px;
-        top: 79px;
-        left: 60px;
-        font-family: var(--RISE-body-smal-font-family);
-        font-weight: var(--RISE-body-smal-font-weight);
-        color: #000000;
-        font-size: var(--RISE-body-smal-font-size);
-        letter-spacing: var(--RISE-body-smal-letter-spacing);
-        line-height: var(--RISE-body-smal-line-height);
-        font-style: var(--RISE-body-smal-font-style);
-      }
-      
-      .property-student .text-wrapper-2 {
-        top: 145px;
-        position: absolute;
-        width: 53px;
-        left: 60px;
-        font-family: var(--RISE-body-smal-font-family);
-        font-weight: var(--RISE-body-smal-font-weight);
-        color: #000000;
-        font-size: var(--RISE-body-smal-font-size);
-        letter-spacing: var(--RISE-body-smal-letter-spacing);
-        line-height: var(--RISE-body-smal-line-height);
-        font-style: var(--RISE-body-smal-font-style);
-      }
-      
-      .property-student .text-wrapper-3 {
-        top: 212px;
-        position: absolute;
-        width: 53px;
-        left: 60px;
-        font-family: var(--RISE-body-smal-font-family);
-        font-weight: var(--RISE-body-smal-font-weight);
-        color: #000000;
-        font-size: var(--RISE-body-smal-font-size);
-        letter-spacing: var(--RISE-body-smal-letter-spacing);
-        line-height: var(--RISE-body-smal-line-height);
-        font-style: var(--RISE-body-smal-font-style);
-      }
-      
-      .property-student .text-wrapper-4 {
-        position: absolute;
-        top: 15px;
-        left: 57px;
-        font-family: var(--RISE-h5-font-family);
-        font-weight: var(--RISE-h5-font-weight);
-        color: #246161;
-        font-size: var(--RISE-h5-font-size);
-        letter-spacing: var(--RISE-h5-letter-spacing);
-        line-height: var(--RISE-h5-line-height);
-        white-space: nowrap;
-        font-style: var(--RISE-h5-font-style);
-      }
-      
-      .property-student .icon-line-message {
-        position: absolute;
-        width: 25px;
-        height: 24px;
-        top: 16px;
-        left: 16px;
-      }
-      
-      .property-student .line {
-        width: 265px;
-        top: 55px;
-        left: 16px;
-        position: absolute;
-        height: 1px;
-        object-fit: cover;
-      }
-      
-      .property-student .img {
-        width: 250px;
-        top: 132px;
-        left: 15px;
-        position: absolute;
-        height: 1px;
-        object-fit: cover;
-      }
-      
-      .property-student .line-2 {
-        width: 250px;
-        top: 195px;
-        left: 16px;
-        position: absolute;
-        height: 1px;
-        object-fit: cover;
-      }
-      
-      .property-student .line-3 {
-        width: 250px;
-        top: 265px;
-        left: 16px;
-        position: absolute;
-        height: 1px;
-        object-fit: cover;
-      }
-      
-      .property-student .p {
-        position: absolute;
-        top: 101px;
-        left: 59px;
-        font-family: var(--RISE-body-smal-font-family);
-        font-weight: var(--RISE-body-smal-font-weight);
-        color: #818181;
-        font-size: var(--RISE-body-smal-font-size);
-        letter-spacing: var(--RISE-body-smal-letter-spacing);
-        line-height: var(--RISE-body-smal-line-height);
-        white-space: nowrap;
-        font-style: var(--RISE-body-smal-font-style);
-      }
-      
-      .property-student .text-wrapper-5 {
-        position: absolute;
-        top: 167px;
-        left: 59px;
-        font-family: var(--RISE-body-smal-font-family);
-        font-weight: var(--RISE-body-smal-font-weight);
-        color: #818181;
-        font-size: var(--RISE-body-smal-font-size);
-        letter-spacing: var(--RISE-body-smal-letter-spacing);
-        line-height: var(--RISE-body-smal-line-height);
-        white-space: nowrap;
-        font-style: var(--RISE-body-smal-font-style);
-      }
-      
-      .property-student .text-wrapper-6 {
-        position: absolute;
-        top: 234px;
-        left: 59px;
-        font-family: var(--RISE-body-smal-font-family);
-        font-weight: var(--RISE-body-smal-font-weight);
-        color: #818181;
-        font-size: var(--RISE-body-smal-font-size);
-        letter-spacing: var(--RISE-body-smal-letter-spacing);
-        line-height: var(--RISE-body-smal-line-height);
-        white-space: nowrap;
-        font-style: var(--RISE-body-smal-font-style);
-      }
-      
-      .property-student .rectangle-2 {
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        top: 148px;
-        left: 16px;
-      }
-      
-      .property-student .rectangle-3 {
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        top: 215px;
-        left: 16px;
-      }
-      
-      .property-student .rectangle-4 {
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        top: 82px;
-        left: 16px;
-      }
-      
-      .icon-line-message{
-        background-image: url(/Images/icons/message-2.svg);
-      }
+    .card {
+      border: none;
+    }
 
-      .courses-desktop .card {
+    
+
+      /* .courses-desktop .card {
         padding-right: 0;
         padding-left: 0;
-      }
+      } */
+
+      /* Messages Styles Desktop */
+    .title-cal-message {
+      color: #246161;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .primary-line-message {
+      width: 100%;
+      border: 1px solid #246161;
+    }
+
+    .messages-text {
+      color: darkgrey;
+      font-family: var(--RISE-body-smal-font-family);
+    }
+
+    .messages-title {
+      font-family: var(--RISE-body-smal-font-family);
+    }
+
+    .messages-icons img:hover {
+      background-color: var(--secondary-pink);
+      border-radius: 20%;
+      padding: 2px;
+    }
 
       /* Calendar Desktop */
-      .property-default {
-        position: relative;
-        width: 297px;
-        height: 350px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0px 4px 24px #24616129;
-        margin-left: -8rem;
-        margin-top: 15rem;
-      }
-      
-      .property-default .overlap-group {
-        position: absolute;
-        width: 267px;
-        height: 264px;
-        top: 72px;
-        left: 15px;
-        border-radius: 8.45px;
-      }
-      
-      .property-default .calendar {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6.33px;
-        padding: 15.84px;
-        position: absolute;
-        top: 0;
-        left: -0.5rem;
-        background-color: #ffffff;
-        border-radius: 8.45px;
-        border: 3px solid;
-        border-color: var(--buttonprimary);
-      }
-      
-      .property-default .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        align-self: stretch;
-        width: 100%;
-        flex: 0 0 auto;
-        background-color: transparent;
-      }
-      
-      .property-default .may {
-        position: relative;
-        width: fit-content;
-        font-family: "Inter-Black", Helvetica;
+      .current-month {
         font-weight: 900;
-        color: #000000;
-        font-size: 18px;
-        letter-spacing: 0;
-        line-height: normal;
-        white-space: nowrap;
+        font-size: 13px;
       }
+
+      #calendar-content {
+      border: 1px solid #246161;
+      cursor: pointer;
+    }
+
+    .calendar-arrows img:hover {
+      background-color: var(--secondary-pink);
+      border-radius: 50%;
+     }
+
+     .calendar ul {
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+
+      text-align: center;
+     }
+
+     .calendar ul li {
+      width: calc(100% / 7);
+
+      text-align: center;
+
+      font-size: 8px;
+      font-weight: 600;
+     }
+
+     .weeks ul li{
+      margin: 20px 0 15px 0;
       
-      .property-default .frame {
-        display: inline-flex;
-        align-items: flex-start;
-        gap: 4.22px;
-        position: relative;
-        flex: 0 0 auto;
-      }
-      
-      .property-default .chevron {
-        position: relative;
-        flex: 0 0 auto;
-      }
-      
-      .property-default .days {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        flex: 0 0 auto;
-        overflow: hidden;
-      }
-      
-      .property-default .row {
-        display: inline-flex;
-        align-items: center;
-        position: relative;
-        flex: 0 0 auto;
-      }
-      
-      .property-default .cell {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10.56px;
-        position: relative;
-        flex: 0 0 auto;
-      }
-      
-      .property-default .text-wrapper {
-        position: relative;
-        width: 12.67px;
-        height: 12.67px;
-        margin-top: -0.53px;
-        font-family: "Inter-SemiBold", Helvetica;
-        font-weight: 600;
-        color: #000000;
-        font-size: 7.4px;
-        text-align: center;
-        letter-spacing: 0;
-        line-height: normal;
-      }
-      
-      .property-default .div-wrapper {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10.56px;
-        position: relative;
-        flex: 0 0 auto;
-        margin-left: -0.53px;
-      }
-      
-      .property-default .div {
-        display: inline-flex;
-        align-items: center;
-        position: relative;
-        flex: 0 0 auto;
-        margin-top: -0.53px;
-      }
-      
-      .property-default .cell-2 {
-        border: 0.53px solid;
-        border-color: var(--stroke);
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10.56px;
-        position: relative;
-        flex: 0 0 auto;
-      }
-      
-      .property-default .text-wrapper-2 {
-        position: relative;
-        width: 12.67px;
-        height: 12.67px;
-        margin-top: -0.53px;
-        font-family: "Inter-Regular", Helvetica;
-        font-weight: 400;
-        color: #000000;
-        font-size: 7.4px;
-        text-align: center;
-        letter-spacing: 0;
-        line-height: normal;
-      }
-      
-      .property-default .cell-3 {
-        margin-left: -0.53px;
-        border: 0.53px solid;
-        border-color: var(--stroke);
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10.56px;
-        position: relative;
-        flex: 0 0 auto;
-      }
-      
-      .property-default .cell-4 {
-        margin-left: -0.53px;
-        background-color: var(--secondary-pink);
-        border: 0.53px solid;
-        border-color: var(--stroke);
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10.56px;
-        position: relative;
-        flex: 0 0 auto;
-      }
-      
-      .property-default .text-wrapper-3 {
-        font-family: "Inter-SemiBold", Helvetica;
-        font-weight: 600;
-        position: relative;
-        width: 12.67px;
-        height: 12.67px;
-        margin-top: -0.53px;
-        color: var(--primaryrise-black);
-        font-size: 7.4px;
-        text-align: center;
-        letter-spacing: 0;
-        line-height: normal;
-      }
-      
-      .property-default .element-wrapper {
-        margin-left: -0.53px;
-        background-color: var(--inactive);
-        border: 0.53px solid;
-        border-color: var(--stroke);
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10.56px;
-        position: relative;
-        flex: 0 0 auto;
-      }
-      
-      .property-default .element {
-        position: relative;
-        width: 12.67px;
-        height: 12.67px;
-        margin-top: -0.53px;
-        font-family: "Inter-Regular", Helvetica;
-        font-weight: 400;
-        color: #a7a7a7;
-        font-size: 7.4px;
-        text-align: center;
-        letter-spacing: 0;
-        line-height: normal;
-      }
-      
-      .property-default .ellipse {
-        top: 152px;
-        left: 184.8px;
-        position: absolute;
-        width: 7px;
-        height: 7px;
-        background-color: var(--secondary-pink);
-        border-radius: 3.5px;
-      }
-      
-      .property-default .ellipse-2 {
-        top: 152px;
-        left: 44px;
-        position: absolute;
-        width: 7px;
-        height: 7px;
-        background-color: var(--secondary-pink);
-        border-radius: 3.5px;
-      }
-      
-      .property-default .ellipse-3 {
-        top: 187px;
-        left: 115px;
-        position: absolute;
-        width: 7px;
-        height: 7px;
-        background-color: var(--secondary-pink);
-        border-radius: 3.5px;
-      }
-      
-      .property-default .ellipse-4 {
-        top: 187px;
-        left: 80px;
-        position: absolute;
-        width: 7px;
-        height: 7px;
-        background-color: var(--secondary-pink);
-        border-radius: 3.5px;
-      }
-      
-      .property-default .ellipse-5 {
-        top: 222px;
-        left: 80px;
-        position: absolute;
-        width: 7px;
-        height: 7px;
-        background-color: var(--secondary-pink);
-        border-radius: 3.5px;
-      }
-      
-      .property-default .text-wrapper-4 {
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        font-family: var(--RISE-h5-font-family);
-        font-weight: var(--RISE-h5-font-weight);
-        color: #246161;
-        font-size: var(--RISE-h5-font-size);
-        letter-spacing: var(--RISE-h5-letter-spacing);
-        line-height: var(--RISE-h5-line-height);
-        white-space: nowrap;
-        font-style: var(--RISE-h5-font-style);
-      }
-      
-      .property-default .line {
-        position: absolute;
-        width: 265px;
-        height: 1px;
-        top: 55px;
-        left: 16px;
-        object-fit: cover;
-      }
-      
-      .property-default .group {
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        top: 11px;
-        left: 201px;
-        background-color: var(--secondary-pink);
-        border-radius: 4px;
-      }
-      
-      .property-default .u-calendar-alt {
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        top: 4px;
-        left: 4px;
-      }
-      
-      .property-default .u-list-ul {
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        top: 15px;
-        left: 253px;
-      }
+      font-size: 9px;
+     }
+
+     .days ul li {
+      list-style: none;
+     }
+
+     .days li:hover {
+      background-color: var(--secondary-pink);
+     }
+
+     .days li {
+      border: 1px solid #D5D4DF;
+      padding: 10px;
+     }
+
+     .days li.inactive {
+      background-color: #F2F3F7;
+      color: #A8A8A8;
+     }
+
+     .days li.active {
+      background-color: var(--secondary-pink);
+      color: #000000;
+     }
+
+     .has-event::before {
+      content: '•';
+      font-size: 25px;
+      position: absolute;
+      padding-top: 3px;
+      color: #EBBC9C; 
+    }
 }
