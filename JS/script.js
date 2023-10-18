@@ -74,20 +74,30 @@ function displayText() {
     alert("Email sent successfully")
 }
 
-const showMsgInfo = document.getElementById('mobile-messages');
 const showNftInfo = document.getElementById('mobile-notifications');
+const showMsgInfo = document.getElementById('mobile-messages');
 const workspaceInfo = document.getElementById('workspace-info');
 const calendarInfo = document.getElementById('mbl-calendar');
+const calendarIcon = document.getElementById('mobile-calendar-icon');
+const calendarIconSelected = document.getElementById('mbl-cal-pink');
+const homeIcon = document.getElementById('mbl-home-reg')
+const homeIconSelected = document.getElementById('mbl-home-pink')
 
 
 function notificationsClicked() {
     const showNftInfo = document.getElementById('mobile-notifications');
     const showMsgInfo = document.getElementById('mobile-messages');
     const workspaceInfo = document.getElementById('workspace-info');
+    const calendarInfo = document.getElementById('mbl-calendar');
+    const calendarIcon = document.getElementById('mobile-calendar-icon');
+    const calendarIconSelected = document.getElementById('mbl-cal-pink');
+    const homeIcon = document.getElementById('mbl-home-reg')
+    const homeIconSelected = document.getElementById('mbl-home-pink')
 
     if (showNftInfo.style.display === 'none') {
         showNftInfo.style.display = 'block';
         showMsgInfo.style.display = 'none';
+        calendarInfo.style.display = 'none'
         workspaceInfo.style.display = 'none';
     } else {
         showNftInfo.style.display = 'none';
@@ -99,12 +109,17 @@ function messagesClicked() {
     const showNftInfo = document.getElementById('mobile-notifications');
     const showMsgInfo = document.getElementById('mobile-messages');
     const workspaceInfo = document.getElementById('workspace-info');
+    const calendarInfo = document.getElementById('mbl-calendar');
+    const calendarIcon = document.getElementById('mobile-calendar-icon');
+    const calendarIconSelected = document.getElementById('mbl-cal-pink');
+    const homeIcon = document.getElementById('mbl-home-reg')
+    const homeIconSelected = document.getElementById('mbl-home-pink')
 
     if (showMsgInfo.style.display === 'none') {
         showMsgInfo.style.display = 'block';
         showNftInfo.style.display = 'none';
+        calendarInfo.style.display = 'none'
         workspaceInfo.style.display = 'none';
-        calendarInfo.style.display = 'none';
     } else {
         showMsgInfo.style.display = 'none';
         workspaceInfo.style.display = 'block';
