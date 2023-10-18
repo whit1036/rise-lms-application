@@ -300,3 +300,8 @@ function workbookClicked() {
     </div>
 </div>`);
 }
+
+// Displays an alert to show the user that the profile settings have been updates
+function saveUserProfile() {
+    alert("Changes saved successfully")
+}

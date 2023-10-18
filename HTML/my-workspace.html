@@ -76,8 +76,9 @@
                   <p class="fs-4 fw-bold">Notifications</p>
                   <hr>
                   <span class="w-100 rounded-5 bg-success text-white fw-bold text-center pb-2 pt-2">New!</span>
-                  <!-- Add link -->
-                  <p class="mt-2">New feedback on your "Healthy Acti..."</p>
+                  <!-- Add link Oct 17th starts-->
+                  <p class="mt-2"><a href="#" class="text-black">New feedback on your "Healthy Acti...</a></p>
+                  <!-- Add link Oct 17th ends -->
                   <hr>
                   <p class="">Holiday Event has been created."</p>
                   <hr>
@@ -93,12 +94,53 @@
                   <div class="p-2 pt-3 d-flex flex-column text-center">
                     <span class="circle p-3 rounded-5 fw-bold mx-5" id="profilephoto-drop">SS</span>
                     <p class="text-dark fw-bold my-4 mx-1 fs-4 text-center">Sarah Smith</p>
-                    <p class="my-2 mx-3 fs-5 text-center">Edit Profile</p>
+                    <!-- Oct 17th: Edit Profile Modal Starts here -->
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success my-2 mx-2 text-center fw-bold">Edit Profile</button>
                   </div>
                 </div>
               </div>
                 <span class="circle p-3 mx-3 rounded-5 fw-bold" id="profilephoto">SS</span>
               </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header meetings-modal-title">
+                      <h1 class="fs-5 fw-bolder text-white" id="exampleModalLabel">Edit Profile</h1>
+                      <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="fs-5 fw-bold">Update Profile Picture</p>
+                      <img src="../Images/profile-pic.png" class="w-50 mt-4 mx-auto d-block" alt="profile picture">
+                      <div class="input-group mb-3 mt-3">
+                        <input type="file" class="form-control" id="inputGroupFile02">
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                      </div>
+                      <p class="fs-5 fw-bold mt-4">Update Name</p>
+                      <div class="input-group mt-3">
+                        <span class="input-group-text">Full Name</span>
+                        <input type="text" aria-label="First name" placeholder="Sarah" class="form-control">
+                        <input type="text" aria-label="Last name" placeholder="Smith" class="form-control">
+                      </div>
+                      <p class="fs-5 fw-bold mt-4">Update Email Address</p>
+                      <div class="input-group flex-nowrap mt-3">
+                        <span class="input-group-text" id="addon-wrapping-email">Email</span>
+                        <input type="text" class="form-control" placeholder="sarahsmith@example.com" aria-label="Email" aria-describedby="addon-wrapping-email">
+                      </div>
+                      <p class="fs-5 fw-bold mt-4">Update Password</p>
+                      <div class="input-group flex-nowrap mt-3">
+                        <span class="input-group-text" id="addon-wrapping-password">Password</span>
+                        <input type="text" class="form-control" placeholder="*********" aria-label="Password" aria-describedby="addon-wrapping-password">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" onclick="saveUserProfile()" class="btn btn-success">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Edit profile modal ends here -->
             </div>
           </div>
         </nav>
@@ -108,14 +150,16 @@
     <main role="main" id="content" class="container-fluid">
         <div class="row">
           <!-- Side Panel -->
-          <div role="region" class="side-panel-main col-3">
+          <!-- Oct 18th added no padding to class below -->
+          <div role="region" class="side-panel-main col-3 nopadding">
             <!-- Sidebar Info -->
             <div class="sidebar-info m-1 mt-5">
               <div class="student-sidebar-hifi d-flex flex-column">
                 <!-- My Workspace -->
                 <div class="group-wrapper">
                   <a href="../HTML/my-workspace.html">
-                    <div class="my-workspace align-items-center justify-content-left d-flex py-3 rounded-5">
+                    <!-- Oct 18th added mx-4 -->
+                    <div class="my-workspace align-items-center justify-content-left d-flex py-3 mx-4 rounded-5">
                       <img role="img" id="w-workspace" class="icon-line-category px-3" src="../Images/icons/category.svg" alt="workspace">
                       <!-- <img id="d-workspace" class="icon-line-edit px-3" src="../Images/icons/circle-dark-blue.svg" alt="workspace"> -->
                       <div class="text-wrapper px-1">My Workspace</div>
@@ -125,7 +169,7 @@
                 <!-- My Facilitator -->
                 <div class="group-wrapper">
                   <a href="">
-                    <div class="my-facilitator align-items-center d-flex justify-content-left py-3 rounded-5">
+                    <div class="my-facilitator align-items-center d-flex justify-content-left py-3 mx-4 rounded-5">
                       <img role="img" class="icon-line-user px-3" src="../Images/icons/user.svg" alt="my-facilitator">
                       <div class="text-wrapper-2 px-1">My Facilitator</div>
                     </div>
@@ -134,7 +178,7 @@
                 <!-- My Assignments -->
                 <div class="group-wrapper">
                   <a href="">
-                    <div class="my-assignments d-flex align-items-center justify-content-left py-3 rounded-5">
+                    <div class="my-assignments d-flex align-items-center justify-content-left py-3 mx-4 rounded-5">
                       <img role="img" class="icon-line-edit px-3" src="../Images/icons/circle.svg" alt="my-assignments">
                       <div class="text-wrapper-3 px-1">My Assignments</div>
                     </div>
@@ -159,14 +203,17 @@
                     <!-- This div is to control 2 sides; the first and second div -->
             <div class="row mt-5">
               <!-- This first div is for the title and my courses -->
-              <div class="col-8">
+
+              <!-- Oct 18th adds col-xl-8 and col-8 -->
+              <div class="col-xl-8 col-8">
                 <h1 class="fs-2 fw-bold">Welcome back, Sarah! 😁</h1>
                 <!-- This div is for my courses title and cards -->
                 <div>
                   <h2 class="fs-3 fw-bold mt-5 mb-4">My Courses</h2>
                   <!-- This div is to set up a grid for my courses cards -->
                   <div class="row row-cols-1 row-cols-md-3 g-3">
-                    <div class="col">
+                    <!-- Oct 18th - add col-lg-4 and col-md-5 to cards -->
+                    <div class="col col-lg-4 col-md-6">
                       <a href="../HTML/math-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/Math.png" class="card-img-top" alt="Albert Einstein in a math room">
@@ -176,7 +223,7 @@
                         </div>
                       </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-lg-4 col-md-6">
                       <a href="../HTML/business-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/Business.png" class="card-img-top" alt="Man hands in a meeting with his computer">
@@ -186,7 +233,7 @@
                         </div>
                       </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-lg-4 col-md-6">
                       <a href="../HTML/science-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/science.png" class="card-img-top" alt="A sphere making radiation">
@@ -196,7 +243,7 @@
                         </div>
                       </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-lg-4 col-md-6">
                       <a href="../HTML/english-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/English.png" class="card-img-top" alt="Words in a puzzle">
@@ -206,7 +253,7 @@
                         </div>
                       </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-lg-4 col-md-6">
                       <a href="../HTML/geo-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/Geography.png" class="card-img-top" alt="A world map">
@@ -216,7 +263,7 @@
                         </div>
                       </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-lg-4 col-md-6">
                       <a href="../HTML/food-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/Food.png" class="card-img-top" alt="Various plates of food">
@@ -232,9 +279,10 @@
                 <button class="btn w-25 bg-success text-light fw-bold rounded-5 mt-4 p-2">View All Courses</button>
               </div>
               <!-- This second div is for my messages and my calendar -->
-              <div class="messages-calendar col-3 ms-4 mt-4">
+              <!-- Oct 18th adds col-xl-3 and col-8 -->
+              <div class="messages-calendar col-xl-3 col-8 ms-4 mt-4">
                 <!-- This div is for my messages -->
-                <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="desk-msg shadow p-3 mb-5 bg-body-tertiary rounded">
                   <!-- This div is for the icon of my messages and the title -->
                   <div class="d-flex flex-wrap align-items-center">
                     <img src="/Images/icons/message-2.png" alt="message-icon">
@@ -477,7 +525,7 @@
                 <hr class="pb-2">
                 <span class="w-100 rounded-4 bg-success text-white fw-bold text-center p-3">New!</span>
                 <!-- Add link -->
-                <p class="mt-4 fs-5">New feedback on your "Healthy Acti..."</p>
+                <p class="mt-4 fs-5"><a href="#" class="text-black">New feedback on your "Healthy Acti...</a></p>
                 <hr>
                 <p class="fs-5">Holiday Event has been created.</p>
                 <hr>
