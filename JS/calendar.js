@@ -38,7 +38,8 @@ const renderCalendar = () => {
         const hasEvent = events[dateStr] ? 'has-event' : '';
 
         let isToday = i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ? "active" : "";
-        liTag += `<li class="${isToday} ${hasEvent}">${i}</li>`
+        // Jia and qing add tab index="0"
+        liTag += `<li class="${isToday} ${hasEvent} tabindex=0">${i}</li>`
     }
 
     for (let i = lastDayofMonth; i < 6; i++) {

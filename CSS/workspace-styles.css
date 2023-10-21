@@ -54,6 +54,46 @@ html {
     margin-right: auto;
 }
 
+/* jia and qing  */
+.tab {
+  display: inline;
+  border-radius: 100px;
+}
+
+/* Jia and qing add dot style for notification  */
+
+.notification {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #27bd19;
+  /* Customize the dot color */
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.notification-content {
+  flex-grow: 1;
+}
+
+.notification-title a {
+  font-size: 18px;
+  color: #007bff;
+  /* Customize link color */
+  text-decoration: none;
+}
+
+.notification-description {
+  font-size: 16px;
+  color: #333;
+  /* Customize description text color */
+}
+
 /* My Workspace Mobile Styles */
 @media screen and (min-width: 350px) and (max-width: 700px) {
     #main-header {
@@ -75,9 +115,9 @@ html {
         gap: 20px;
     }
 
-    .card-img-h {
+    /* .card-img-h {
         transform: scale(0.5rem);
-    }
+    } */
 
     .card-body-h {
         height: 3rem;
@@ -154,13 +194,13 @@ html {
       padding: 2px;
     }
 
-      /* Calendar Desktop */
-      .current-month {
-        font-weight: 900;
-        font-size: 13px;
-      }
+    /* Calendar Desktop */
+    .current-month {
+      font-weight: 900;
+      font-size: 13px;
+    }
 
-      #calendar-content {
+    #calendar-content {
       border: 1px solid #246161;
       cursor: pointer;
     }
@@ -174,22 +214,18 @@ html {
       display: flex;
       list-style: none;
       flex-wrap: wrap;
-
       text-align: center;
      }
 
      .calendar ul li {
       width: calc(100% / 7);
-
       text-align: center;
-
       font-size: 8px;
       font-weight: 600;
      }
 
      .weeks ul li{
       margin: 20px 0 15px 0;
-      
       font-size: 9px;
      }
 
