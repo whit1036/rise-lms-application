@@ -190,12 +190,12 @@ function mobileCalendarClicked(){
 function courseOutlineClicked() {
     const courseContent = document.getElementById('course-content');
     const weekNumber = document.getElementById('weeknumber')
-    courseContent.innerHTML = (`<h2 class="mx-4 fs-2 mt-5 fw-bold">Healthy Lifestyle: Nutrition and Disease Prevention</h2>
+    courseContent.innerHTML = (`<h2 aria-label="course outline title" class="mx-4 fs-2 mt-5 fw-bold">Healthy Lifestyle: Nutrition and Disease Prevention</h2>
     <div class="container-fluid" id="course-content">
         <div class="row">
             <div class="col nopadding">
-                <h3 class="mx-4 fs-5 mt-5 fw-bold">Overall Curriculum Expectations</h3>
-                <div class="card w-100 mt-4 mx-4">
+                <h3 aria-label="curriculum expectations" class="mx-4 fs-5 mt-5 fw-bold">Overall Curriculum Expectations</h3>
+                <div aria-label="expectations list" class="card w-100 mt-4 mx-4">
                     <div class="card-body my-2">
                         <p class="fw-bold">LIVING SKILLS</p>
                         <p class="mt-2 lh-sm">Demonstrate personal and interpersonal skills and the use of critical and creative thinking processes as they acquire knowledge and skills in connectionwith the expectations in the Active Living, Movement Competence, and Healthy Living strands for this grade.</p>
@@ -220,8 +220,8 @@ function courseOutlineClicked() {
                         <p class="mt-2 lh-sm">demonstrate the ability to make connections that relate to health and well-being, how their choices and behaviours affect both themselves and others, and how factors in the world around them affect their own and others health and well-being.</p>
                     </div>
                 </div>
-                <h3 class="mx-4 fs-5 mt-5 fw-bold">Experimental Community Learning Program</h3>
-                <div class="card w-100 mt-4 mb-5 mx-4">
+                <h3 aria-label="course outline title" class="mx-4 fs-5 mt-5 fw-bold">Experimental Community Learning Program</h3>
+                <div aria-label="expectations list" class="card w-100 mt-4 mb-5 mx-4">
                     <div class="card-body my-2">
                         <p>Course of Study</p>
                         <p class="mt-3">Training Hours: 80 hours to be split between the Units below:</p>
@@ -237,8 +237,8 @@ function courseOutlineClicked() {
                         </ul>
                     </div>
                 </div>
-                <h3 class="mx-4 fs-5 mt-5 fw-bold">Overall Curriculum Expectations</h3>
-                <div class="card w-100 mt-4 mx-4">
+                <h3 aria-label="course outline title" class="mx-4 fs-5 mt-5 fw-bold">Overall Curriculum Expectations</h3>
+                <div aria-label="expectations list" class="card w-100 mt-4 mx-4">
                     <div class="card-body my-2">
                         <p class="lh-sm">Students will receive ongoing feedback from their facilitators throughout theentire semester. 70% of their final mark will be for term work and 30% will befor their summative at the end of the course.</p>
                         <p class="mt-3">Term Work 70%</p>
@@ -294,12 +294,12 @@ function workbookClicked() {
     // Restore the default content or any other content you want to set as default
     courseContent.innerHTML = (`<div class="row">
     <div class="col-6 nopadding">
-        <h3 class="mx-4 fs-3 mt-5 fw-bold">To do:</h3>
+        <h3 aria-label="to do list" class="mx-4 fs-3 mt-5 fw-bold">To do:</h3>
         <div class="to-do card w-100 mt-5 mx-4">
             <div class="card-body m-4 my-2">
                 <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-1-dsk">
-                    <label class="form-check-label p-1 fs-5" for="flexCheckDefault-1-dsk">
+                    <input aria-label="Check Off Task" class="form-check-input" type="checkbox" value="" id="flexCheckDefault-1-dsk">
+                    <label aria-label="Due Date" class="form-check-label p-1 fs-5" for="flexCheckDefault-1-dsk">
                     10-10-2023
                     </label>
                 </div>
@@ -312,8 +312,8 @@ function workbookClicked() {
         <div class="to-do card w-100 mt-5 mb-5 mx-4">
             <div class="card-body m-4 my-2">
                 <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2-dsk">
-                    <label class="form-check-label p-1 fs-5" for="flexCheckDefault-2-dsk">
+                    <input aria-label="Check Off Task" class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2-dsk">
+                    <label aria-label="Due Date" class="form-check-label p-1 fs-5" for="flexCheckDefault-2-dsk">
                     10-10-2023
                     </label>
                 </div>
