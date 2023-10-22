@@ -91,6 +91,8 @@ function displayText() {
 // }
 
 
+
+
 // function notificationsClicked() {
 //     const showNftInfo = document.getElementById('mobile-notifications');
 //     const showMsgInfo = document.getElementById('mobile-messages');
