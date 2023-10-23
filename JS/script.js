@@ -74,127 +74,39 @@ function displayText() {
     alert("Email sent successfully")
 }
 
-// const showNftInfo = document.getElementById('mobile-notifications');
-// const showMsgInfo = document.getElementById('mobile-messages');
-// const workspaceInfo = document.getElementById('workspace-info');
-// const calendarInfo = document.getElementById('mbl-calendar');
-// const calendarIcon = document.getElementById('mobile-calendar-icon');
-// const calendarIconSelected = document.getElementById('mbl-cal-pink');
-// const homeIcon = document.getElementById('mbl-home-reg')
-// const homeIconSelected = document.getElementById('mbl-home-pink')
-// Page Code
+// Various mobile design varibales with getElementById
+const workspaceInfo = document.getElementById('workspace-info');
+const calendarInfo = document.getElementById('mbl-calendar');
+const calendarIcon = document.getElementById('mobile-calendar-icon');
+const calendarIconSelected = document.getElementById('mbl-cal-pink');
+const homeIcon = document.getElementById('mbl-home-reg');
+const homeIconSelected = document.getElementById('mbl-home-pink');
 
-// function notificationsClicked() {
-//     const showNftInfo = document.getElementById('mobile-notifications');
-//     const workspaceInfo = document.getElementById('workspace-info');
-//     showNftInfo.innerHTML = (``)
-// }
-
-
-
-
-// function notificationsClicked() {
-//     const showNftInfo = document.getElementById('mobile-notifications');
-//     const showMsgInfo = document.getElementById('mobile-messages');
-//     const workspaceInfo = document.getElementById('workspace-info');
-//     const calendarInfo = document.getElementById('mbl-calendar');
-//     const calendarIcon = document.getElementById('mobile-calendar-icon');
-//     const calendarIconSelected = document.getElementById('mbl-cal-pink');
-//     const homeIcon = document.getElementById('mbl-home-reg')
-//     const homeIconSelected = document.getElementById('mbl-home-pink')
-
-//     if (showNftInfo.style.display === 'none') {
-//         showNftInfo.style.display = 'block';
-//         showMsgInfo.style.display = 'none';
-//         calendarInfo.style.display = 'none'
-//         workspaceInfo.style.display = 'none';
-//     } else {
-//         showNftInfo.style.display = 'none';
-//         workspaceInfo.style.display = 'block';
-//     }
-// }
-
-// function messagesClicked() {
-//     const showNftInfo = document.getElementById('mobile-notifications');
-//     const showMsgInfo = document.getElementById('mobile-messages');
-//     const workspaceInfo = document.getElementById('workspace-info');
-//     const calendarInfo = document.getElementById('mbl-calendar');
-//     const calendarIcon = document.getElementById('mobile-calendar-icon');
-//     const calendarIconSelected = document.getElementById('mbl-cal-pink');
-//     const homeIcon = document.getElementById('mbl-home-reg')
-//     const homeIconSelected = document.getElementById('mbl-home-pink')
-
-//     if (showMsgInfo.style.display === 'none') {
-//         showMsgInfo.style.display = 'block';
-//         showNftInfo.style.display = 'none';
-//         calendarInfo.style.display = 'none'
-//         workspaceInfo.style.display = 'none';
-//     } else {
-//         showMsgInfo.style.display = 'none';
-//         workspaceInfo.style.display = 'block';
-//     }
-// }
-
-// function mobileCalendarClicked(){
-//     const showNftInfo = document.getElementById('mobile-notifications');
-//     const showMsgInfo = document.getElementById('mobile-messages');
-//     const workspaceInfo = document.getElementById('workspace-info');
-//     const calendarInfo = document.getElementById('mbl-calendar');
-//     const calendarIcon = document.getElementById('mobile-calendar-icon');
-//     const calendarIconSelected = document.getElementById('mbl-cal-pink');
-//     const homeIcon = document.getElementById('mbl-home-reg')
-//     const homeIconSelected = document.getElementById('mbl-home-pink')
+// Function to launch calendar on mobile when clicked
+function mobileCalendarClicked() {
+    const workspaceInfo = document.getElementById('workspace-info');
+    const calendarInfo = document.getElementById('mbl-calendar');
+    const calendarIcon = document.getElementById('mobile-calendar-icon');
+    const calendarIconSelected = document.getElementById('mbl-cal-pink');
+    const homeIcon = document.getElementById('mbl-home-reg');
+    const homeIconSelected = document.getElementById('mbl-home-pink');
 
 
-//     if (calendarInfo.style.display === 'none') {
-//         calendarInfo.style.display = 'block';
-//         workspaceInfo.style.display = 'none';
-//         showMsgInfo.style.display = 'none';
-//         showNftInfo.style.display = 'none';
-//         workspaceInfo.style.display = 'none';
-//         calendarIcon.style.display = 'none';
-//         calendarIconSelected.style.display = 'block';
-//         homeIconSelected.style.display = 'none';
-//         homeIcon.style.display = 'block';
-//     } else {
-//         calendarInfo.style.display = 'none';
-//         showMsgInfo.style.display = 'none';
-//         workspaceInfo.style.display = 'block';
-//         calendarIcon.style.display = 'block';
-//         calendarIconSelected.style.display = 'none';
-//     }
-// }
-
-// function notificationsClicked() {
-//     toggleScreen('mobile-notifications');
-// }
-
-// function messagesClicked() {
-//     toggleScreen('mobile-messages');
-// }
-
-// function mobileCalendarClicked() {
-//     toggleScreen('mbl-calendar');
-// }
-
-// function toggleScreen(screenId) {
-//     // Get all screens
-//     const screens = document.querySelectorAll('.screen');
-//     const content = document.querySelectorAll('.content')
-
-//     // Hide all screens
-//     screens.forEach(screen => {
-//         // screen.classList.toggle('show');
-//         screen.classList.toggle('hide');
-//     });
-
-//     content.classList.toggle('show');
-
-//     // Show the selected screen
-//     const selectedScreen = document.getElementById(screenId);
-//     selectedScreen.classList.remove('hide');
-//     selectedScreen.classList.add('show');
-// }
+    if (calendarInfo.style.display === 'none') {
+        calendarInfo.style.display = 'block';
+        workspaceInfo.style.display = 'none';
+        workspaceInfo.style.display = 'none';
+        calendarIcon.style.display = 'none';
+        calendarIconSelected.style.display = 'block';
+        homeIconSelected.style.display = 'none';
+        homeIcon.style.display = 'block';
+    } else {
+        calendarInfo.style.display = 'none';
+        workspaceInfo.style.display = 'block';
+        calendarIcon.style.display = 'block';
+        calendarIconSelected.style.display = 'none';
+    }
+}
 
 function courseOutlineClicked() {
     const courseContent = document.getElementById('course-content');
