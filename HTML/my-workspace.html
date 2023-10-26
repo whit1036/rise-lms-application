@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../CSS/workspace-styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/ioi4mhc.css">
     <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
+    <!-- Adding Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/3263212dec.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!--Bootstrap Accessibility Skip Links-->
@@ -65,9 +67,71 @@
                 </div>
               </div>
             </div>
+            <!-- Daniela - This div is for the desktop Messages icon dropdown -->
             <div class="dropdown">
               <a onclick="messagesClicked()" href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/message.svg" alt="message icon"></a>
-                
+              <div class="messages-drop-container dropdown-menu p-3">
+                <div class="d-flex flex-column w-100">
+                  <h2 class="mb-2 mt-3 fs-5 title-cal-message">My Messages</h2>
+                  <form class="form-search d-flex align-items-center" role="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="form-messages" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                </div>
+                <!-- This span is for creating the line that goes below the title and icon of my messages -->
+                <hr class="primary-line-message mt-2">
+                <!-- This div contains the list of my messages -->
+                <div class="d-flex">
+                  <div>
+                    <img src="/Images/icons/rectangle-144.png" alt="profile-icon">
+                  </div>
+                  <div class="ms-3">
+                    <h3 class="mb-2 messages-title">Abigail</h3>
+                    <p class="messages-text">Could you review...</p>
+                  </div>
+                </div>
+                <hr class="secondary-line-message mt-2">
+                <div class="d-flex">
+                  <div>
+                    <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
+                  </div>
+                  <div class="ms-3">
+                    <h3 class="mb-2 messages-title">John</h3>
+                    <p class="messages-text">Just a reminder to...</p>
+                  </div>
+                </div>
+                <hr class="secondary-line-message mt-2">
+                <div class="d-flex">
+                  <div>
+                    <img src="/Images/icons/rectangle-146.png" alt="profile-icon">
+                  </div>
+                  <div class="ms-3">
+                    <h3 class="mb-2 messages-title">Paul</h3>
+                    <p class="messages-text">If you need more inf...</p>
+                  </div>
+                </div>
+                <hr class="secondary-line-message mt-2">
+                <div class="d-flex">
+                  <div>
+                    <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="profile-icon">
+                  </div>
+                  <div class="ms-3">
+                    <h3 class="mb-2 messages-title">Keith</h3>
+                    <p class="messages-text">Please, remember the...</p>
+                  </div>
+                </div>
+                <hr class="secondary-line-message mt-2">
+                <div class="d-flex">
+                  <div>
+                    <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="profile-icon">
+                  </div>
+                  <div class="ms-3">
+                    <h3 class="mb-2 messages-title">Holly</h3>
+                    <p class="messages-text">Give me a call when...</p>
+                  </div>
+                </div>
+                <hr class="secondary-line-message mt-2">
+              </div>
             </div>
             <div class="dropdown">
               <a href="" data-bs-toggle="dropdown"><img id="mbl-ntf" role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bell icon"></a>
@@ -239,76 +303,76 @@
           <!-- Content (Border Radius Container) -->
           <div role="region" class="box col">
             <div class="background">
-                <div class="container">
-                    <!-- This div is to control 2 sides; the first and second div -->
-            <div class="row mt-5">
-              <!-- This first div is for the title and my courses -->
-
-              <!-- Oct 18th adds col-xl-8 and col-8 -->
-              <div class="col-xl-8 col-8">
-                <h1 class="fs-2 fw-bold">Welcome back, Sarah! 😁</h1>
-                <!-- This div is for my courses title and cards -->
-                <div>
+              <div class="container">
+                <!-- This div is to control 2 sides; the first and second div -->
+                <div class="row mt-5">
+                  <!-- This first div is for the title and my courses -->
+                  <!-- Oct 18th adds col-xl-8 and col-8 -->
+                  <!-- Oct 22 - Daniela modified the col-8 for responsiveness -->
+                  <div class="col-xl-8">
+                    <h1 class="fs-2 fw-bold">Welcome back, Sarah! 😁</h1>
+                    <!-- This div is for my courses title and cards -->
+                   <div>
                   <h2 class="fs-3 fw-bold mt-5 mb-4">My Courses</h2>
                   <!-- This div is to set up a grid for my courses cards -->
-                  <div class="row row-cols-1 row-cols-md-3 g-3">
+                  <div class="courses-cards row row-cols-1 row-cols-md-3 g-3">
                     <!-- Oct 18th - add col-lg-4 and col-md-5 to cards -->
-                    <div class="col col-lg-4 col-md-6">
+                    <div class="col">
                       <a href="../HTML/math-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/Math.png" class="card-img-top" alt="Albert Einstein in a math room">
                           <div class="card-body">
-                            <h5 class="card-title fs-5 fw-bold m-1">Math</h5>
+                            <h5 class="card-title fw-bold m-1">Math</h5>
                           </div>
                         </div>
                       </a>
                     </div>
-                    <div class="col col-lg-4 col-md-6">
+                    <div class="col">
                       <a href="../HTML/business-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/Business.png" class="card-img-top" alt="Man hands in a meeting with his computer">
                           <div class="card-body">
-                            <h5 class="card-title fs-5 fw-bold m-1">Business</h5>
+                            <h5 class="card-title fw-bold m-1">Business</h5>
                           </div>
                         </div>
                       </a>
                     </div>
-                    <div class="col col-lg-4 col-md-6">
+                    <div class="col">
                       <a href="../HTML/science-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/science.png" class="card-img-top" alt="A sphere making radiation">
                           <div class="card-body">
-                            <h5 class="card-title fs-5 fw-bold m-1">Science</h5>
+                            <h5 class="card-title fw-bold m-1">Science</h5>
                           </div>
                         </div>
                       </a>
                     </div>
-                    <div class="col col-lg-4 col-md-6">
+                    <div class="col">
                       <a href="../HTML/english-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/English.png" class="card-img-top" alt="Words in a puzzle">
                           <div class="card-body">
-                            <h5 class="card-title fs-5 fw-bold m-1">English</h5>
+                            <h5 class="card-title fw-bold m-1">English</h5>
                           </div>
                         </div>
                       </a>
                     </div>
-                    <div class="col col-lg-4 col-md-6">
+                    <div class="col">
                       <a href="../HTML/geo-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/Geography.png" class="card-img-top" alt="A world map">
                           <div class="card-body">
-                            <h5 class="card-title fs-5 fw-bold m-1">Geography</h5>
+                            <h5 class="card-title fw-bold m-1">Geography</h5>
                           </div>
                         </div>
                       </a>
                     </div>
-                    <div class="col col-lg-4 col-md-6">
+                    <div class="col">
                       <a href="../HTML/food-course-page.html">
                         <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
                           <img src="/Images/Food.png" class="card-img-top" alt="Various plates of food">
                           <div class="card-body">
-                            <h5 class="card-title fs-5 fw-bold m-1">Food &amp; Nutrition</h5>
+                            <h5 class="card-title fw-bold m-1">Food &amp; Nutrition</h5>
                           </div>
                         </div>
                       </a>
@@ -317,23 +381,24 @@
                 </div>
                 <!-- This is for the button that is for view all courses-->
                 <div class="tab" tabindex="0" aria-label="View all courses">
-                  <button class="btn w-25 bg-success text-light fw-bold rounded-5 mt-4 p-2">View All Courses</button>
+                  <!-- Oct 22 - I delete w-25 and modified the padding -->
+                  <button class="btn bg-success text-light fw-bold rounded-5 mt-4 pe-4 ps-4 p-2">View All Courses</button>
                 </div>
               </div>
               <!-- This second div is for my messages and my calendar -->
               <!-- Oct 18th adds col-xl-3 and col-8 -->
-              <div class="messages-calendar col-xl-3 col-8 ms-4 mt-4">
+              <div class="messages-calendar col-xl-3 col-8 ms-4 mt-4 fixed-width">
                 <!-- This div is for my messages -->
                 <div class="desk-msg shadow p-3 mb-5 bg-body-tertiary rounded">
                   <!-- This div is for the icon of my messages and the title -->
-                  <div class="d-flex flex-wrap align-items-center">
+                  <div class="d-flex align-items-center">
                     <img src="/Images/icons/message-2.png" alt="message-icon">
                     <h2 class="ms-4 fs-5 title-cal-message">My Messages</h2>
                   </div>
                   <!-- This span is for creating the line that goes below the title and icon of my messages -->
                   <hr class="primary-line-message mt-2">
                   <!-- This div contains the list of my messages -->
-                  <div class="d-flex flex-wrap">
+                  <div class="d-flex">
                     <div>
                       <img src="/Images/icons/rectangle-144.png" alt="profile-icon">
                     </div>
@@ -343,7 +408,7 @@
                     </div>
                   </div>
                   <hr class="secondary-line-message mt-2">
-                  <div class="d-flex flex-wrap">
+                  <div class="d-flex">
                     <div>
                       <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
                     </div>
@@ -365,14 +430,14 @@
                   <hr class="secondary-line-message mt-2">
                 </div>
                 <!-- This div is for my calendar -->
-                <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
-                  <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 messages-icons">
+                <div class="calendar-container shadow p-3 mb-5 bg-body-tertiary rounded">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons">
                     <h2 class="title-cal-message me-2 fs-5">My Calendar</h2>
-                    <img src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
-                    <img src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
+                    <img id="calendar-icon" class="calendar-icon icon" src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
+                    <img id="list-icon" class="list-cal-icon icon" src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
                   </div>
                   <hr class="primary-line-message mt-2">
-                  <!-- jia and qing add assisibilities  -->
+                  <!-- Jia and Qing add accessibilities  -->
                   <!-- This div is for the calendar -->
                   <div id="calendar-content" class="bg-body-tertiary rounded p-3" tabindex="0"
                   aria-label="View calendar">
@@ -400,6 +465,9 @@
                       </div>
                     </div>
                   </div>
+                  <ul id="events-list" style="display: none">
+                    <!-- Event items will be dynamically added here -->
+                  </ul>
                 </div>
               </div>
             </div>

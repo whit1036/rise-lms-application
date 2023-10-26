@@ -114,7 +114,7 @@ function courseOutlineClicked() {
     courseContent.innerHTML = (`<h2 aria-label="course outline title" class="mx-4 fs-2 mt-5 fw-bold">Healthy Lifestyle: Nutrition and Disease Prevention</h2>
     <div class="container-fluid" id="course-content">
         <div class="row">
-            <div class="col nopadding">
+            <div class="col-8 nopadding">
                 <h3 aria-label="curriculum expectations" class="mx-4 fs-5 mt-5 fw-bold">Overall Curriculum Expectations</h3>
                 <div aria-label="expectations list" class="card w-100 mt-4 mx-4">
                     <div class="card-body my-2">
@@ -183,29 +183,49 @@ function courseOutlineClicked() {
                     <span class="btn w-50 mx-4 bg-success rounded-5 fw-bold mb-5 text-white flex-column"><img class="" src="../images/icons/Share.svg">Course Outline</span>
                 </div>
             </div>
-            <div class="col-6 nopadding my-5">
-                <div class="calendar-hi-fi">
-                    <div class="calendar-list-view">
-                    <div class="text-wrapper">My Calendar</div>
-                    <img class="line" src="../Images/icons/line-1.svg" alt="line">
-                    <img class="img" src="../Images/icons/line-1.svg" alt="line">
-                    <img class="line-2" src="../Images/icons/line-1.svg" alt="line">
-                    <img class="u-calendar-alt" src="../Images/icons/u_calendar-alt.svg" alt="calendar-icon">
-                    <div class="group"><img class="u-list-ul" src="../Images/icons/u_list-ul.svg" alt="calendar-icon"></div>
-                    <div class="overlap-group">
-                        <div class="rectangle"></div>
-                        <div class="div"></div>
-                    </div>
-                    <div class="overlap"><div class="text-wrapper-2">Friday, November 18, 2022</div></div>
-                    <div class="overlap-2">
-                        <div class="text-wrapper-2">Upcoming events</div>
-                    </div>
-                    </div>
+            <div class="col-3 col-sm-3 d-flex flex-column align-items-center">
+              <div class="calendar-container shadow p-3 mb-5 bg-body-tertiary rounded fixed-width">
+                <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons">
+                  <h2 class="title-cal-message me-2 fs-5">My Calendar</h2>
+                  <img id="calendar-icon" class="calendar-icon icon" src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
+                  <img id="list-icon" class="list-cal-icon icon" src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
                 </div>
+                <hr class="primary-line-message mt-2">
+                <!-- Jia and Qing add accessibilities  -->
+                <!-- This div is for the calendar -->
+                <div id="calendar-content" class="bg-body-tertiary rounded p-3" tabindex="0"
+                aria-label="View calendar">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center" tabindex="0">
+                    <p id="current-month" class="current-month"></p>
+                    <div class="calendar-arrows" tabindex="0">
+                      <img id="left" src="/Images/icons/chevron-2.svg" alt="left-button">
+                      <img id="right" src="/Images/icons/chevron.svg" alt="right-button">
+                    </div>
+                  </div>
+                  <div class="calendar d-flex flex-wrap flex-column" tabindex="0">
+                    <div class="weeks" tabindex="0">
+                      <ul>
+                        <li>Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="days" tabindex="0"></ul>
+                    </div>
+                  </div>
+                </div>
+                <ul id="events-list" style="display: none">
+                <!-- Event items will be dynamically added here -->
+                </ul>
+              </div>
             </div>
         </div>
     </div>`);
-    weeknumber.style.display = 'none';
 }
 
 function workbookClicked() {
@@ -245,26 +265,47 @@ function workbookClicked() {
             </div>
         </div>
     </div>
-    <div class="col nopadding">
-        <div class="calendar-hi-fi">
-            <div class="calendar-list-view">
-            <div class="text-wrapper">My Calendar</div>
-            <img class="line" src="../Images/icons/line-1.svg" alt="line">
-            <img class="img" src="../Images/icons/line-1.svg" alt="line">
-            <img class="line-2" src="../Images/icons/line-1.svg" alt="line">
-            <img class="u-calendar-alt" src="../Images/icons/u_calendar-alt.svg" alt="calendar-icon">
-            <div class="group"><img class="u-list-ul" src="../Images/icons/u_list-ul.svg" alt="calendar-icon"></div>
-            <div class="overlap-group">
-                <div class="rectangle"></div>
-                <div class="div"></div>
+    <div class="col-3 col-sm-3 d-flex flex-column align-items-center">
+              <div class="calendar-container shadow p-3 mb-5 bg-body-tertiary rounded fixed-width">
+                <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons">
+                  <h2 class="title-cal-message me-2 fs-5">My Calendar</h2>
+                  <img id="calendar-icon" class="calendar-icon icon" src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
+                  <img id="list-icon" class="list-cal-icon icon" src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
+                </div>
+                <hr class="primary-line-message mt-2">
+                <!-- Jia and Qing add accessibilities  -->
+                <!-- This div is for the calendar -->
+                <div id="calendar-content" class="bg-body-tertiary rounded p-3" tabindex="0"
+                aria-label="View calendar">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center" tabindex="0">
+                    <p id="current-month" class="current-month"></p>
+                    <div class="calendar-arrows" tabindex="0">
+                      <img id="left" src="/Images/icons/chevron-2.svg" alt="left-button">
+                      <img id="right" src="/Images/icons/chevron.svg" alt="right-button">
+                    </div>
+                  </div>
+                  <div class="calendar d-flex flex-wrap flex-column" tabindex="0">
+                    <div class="weeks" tabindex="0">
+                      <ul>
+                        <li>Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="days" tabindex="0"></ul>
+                    </div>
+                  </div>
+                </div>
+                <ul id="events-list" style="display: none">
+                <!-- Event items will be dynamically added here -->
+                </ul>
+              </div>
             </div>
-            <div class="overlap"><div class="text-wrapper-2">Friday, November 18, 2022</div></div>
-            <div class="overlap-2">
-                <div class="text-wrapper-2">Upcoming events</div>
-            </div>
-            </div>
-        </div>
-    </div>
 </div>`);
 }
 

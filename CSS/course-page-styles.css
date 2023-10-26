@@ -54,40 +54,6 @@ html {
     margin-right: auto;
 }
 
-/* Jia and qing add dot style for notification  */
-
-.notification {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: #27bd19;
-  /* Customize the dot color */
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.notification-content {
-  flex-grow: 1;
-}
-
-.notification-title a {
-  font-size: 18px;
-  color: #007bff;
-  /* Customize link color */
-  text-decoration: none;
-}
-
-.notification-description {
-  font-size: 16px;
-  color: #333;
-  /* Customize description text color */
-}
-
 @media screen and (min-width: 350px) and (max-width: 700px) {
     .mobile-home-pink-svg {
         width: 2.7rem;
@@ -105,8 +71,8 @@ html {
     }
 
     .to-do {
-      background-color: #d9d9d9;
-      border: 1px solid #d9d9d9;
+      background-color: #2461616b;
+      border: 1px solid #2461616b;
     }
 }
 
@@ -134,8 +100,8 @@ html {
       }
 
       .to-do {
-        background-color: #d6d6d6;
-        border: 1px solid #d9d9d9;
+        background-color: #2461616b;
+        border: 1px solid #2461616b;
       }
 
       .logout {
@@ -148,10 +114,10 @@ html {
         height: 100%;
         /* margin-left: 2.5rem; */
         background-color: white;
-        border-radius: 48px 0px 0px 0px;
+        border-radius: 65px 0px 0px 0px;
       }
 
-      .calendar-hi-fi {
+      /* .calendar-hi-fi {
         width: 297px;
         height: 218px;
         margin-left: 5rem;
@@ -301,7 +267,7 @@ html {
         height: 10px;
         top: 21px;
         left: 156px;
-      }
+      } */
 
       /* .weekbyweek{
         border-top: 2px solid white;
@@ -323,5 +289,132 @@ html {
   
       .nav-link active{
         border-bottom: 2px solid var(--primary-light-blue) !important;
-      } 
+      }
+
+      /* Daniela - Calendar Desktop */
+  .title-cal-message {
+    color: #246161;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+  }
+  
+  .calendar-container{
+    flex-shrink: 0; 
+    width: 300px;
+  }
+
+  .fixed-width {
+    flex: 0 0 auto; 
+    max-width: 300px; 
+  }
+
+  .calendar-icons img:hover {
+    background-color: var(--secondary-pink);
+    border-radius: 20%;
+    padding: 2px;
+  }
+  
+  .icon.active {
+    background-color: var(--secondary-pink);
+
+    border-radius: 6px;
+    padding: 2px;
+  }
+
+  .current-month {
+    font-weight: 900;
+    font-size: 13px;
+  }
+
+  #calendar-content {
+    border: 1px solid #246161;
+    cursor: pointer;
+  }
+
+  .calendar-arrows img:hover {
+    background-color: var(--secondary-pink);
+    border-radius: 50%;
+  }
+
+  .calendar ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .calendar ul li {
+    width: calc(100% / 7);
+    text-align: center;
+    font-size: 8px;
+    font-weight: 600;
+  }
+
+  .weeks ul li{
+    margin: 20px 0 15px 0;
+    font-size: 9px;
+  }
+
+  .days ul li {
+    list-style: none;
+  }
+
+  .days li:hover {
+    background-color: var(--secondary-pink);
+  }
+
+  .days li {
+    border: 1px solid #D5D4DF;
+    padding: 10px;
+  }
+
+  .days li.inactive {
+    background-color: #F2F3F7;
+    color: #A8A8A8;
+  }
+
+  .days li.active {
+    background-color: var(--secondary-pink);
+    color: #000000;
+  }
+
+  .has-event::before {
+    content: '•';
+    font-size: 25px;
+    position: absolute;
+    padding-top: 3px;
+    color: #EBBC9C; 
+  }
+
+  /* Define styles for the event list items */
+  .event-list-item {
+    padding: 10px;
+    border-radius: 6px;
+
+    background-color: #EBBC9C;
+  }
+
+  .event-list-item, li {
+    list-style-type: none;
+  }
+}
+
+/* Daniela add this media screen so I can control the class box and modified the mesages and calendar when the screen is 1276px or less */
+@media (max-width: 900px) {
+
+  .box {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .calendar-container{
+    flex-shrink: 0; 
+    width: 230px;
+  }
+
+  .fixed-width {
+    flex: 0 0 auto; 
+    max-width: 230px; 
+  }
 }
