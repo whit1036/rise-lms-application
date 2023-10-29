@@ -479,82 +479,44 @@
         <!-- Mobile Navigation -->
         <div class="container-md screen" id="mbl-calendar">
           <!-- Calendar -->
-          <div class="property-default">
-            <div class="overlap-group">
-              <div class="calendar">
-                <header class="header">
-                  <div class="may">October 2023</div>
-                  <div class="frame">
-                    <img class="chevron" src="../Images/icons/chevron-2.svg" alt="left-button"> <img class="chevron" src="../Images/icons/chevron.svg" alt="right-button">
-                  </div>
-                </header>
-                <div class="days">
-                  <div class="d-flex">
-                    <div class="cell"><div class="text-wrapper">Mo</div></div>
-                    <div class="div-wrapper"><div class="text-wrapper">Tu</div></div>
-                    <div class="div-wrapper"><div class="text-wrapper">We</div></div>
-                    <div class="div-wrapper"><div class="text-wrapper">Th</div></div>
-                    <div class="div-wrapper"><div class="text-wrapper">Fr</div></div>
-                    <div class="div-wrapper"><div class="text-wrapper">Sa</div></div>
-                    <div class="div-wrapper"><div class="text-wrapper">Su</div></div>
-                  </div>
-                  <div class="div">
-                    <div class="cell-2"><div class="text-wrapper-2">1</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">2</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">3</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">4</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">5</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">6</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">7</div></div>
-                  </div>
-                  <div class="div">
-                    <div class="cell-2"><div class="text-wrapper-2">8</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">9</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">10</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">11</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">12</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">13</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">14</div></div>
-                  </div>
-                  <div class="div">
-                    <div class="cell-2"><div class="text-wrapper-2">15</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">16</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">17</div></div>
-                    <div class="cell-4"><div class="text-wrapper-3">18</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">19</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">20</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">21</div></div>
-                  </div>
-                  <div class="div">
-                    <div class="cell-2"><div class="text-wrapper-2">22</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">23</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">24</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">25</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">26</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">27</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">28</div></div>
-                  </div>
-                  <div class="div">
-                    <div class="cell-2"><div class="text-wrapper-2">29</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">30</div></div>
-                    <div class="cell-3"><div class="text-wrapper-2">31</div></div>
-                    <div class="element-wrapper"><div class="element">1</div></div>
-                    <div class="element-wrapper"><div class="element">2</div></div>
-                    <div class="element-wrapper"><div class="element">3</div></div>
-                    <div class="element-wrapper"><div class="element">4</div></div>
-                  </div>
+          <div class="calendar-container-mobile shadow bg-body-tertiary rounded">
+            <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons-mobile">
+              <h2 class="title-cal-message-mobile me-2 fs-5">My Calendar</h2>
+              <img id="calendar-icon-mobile" class="calendar-icon-mobile icon-mobile" src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
+              <img id="list-icon-mobile" class="list-cal-icon-mobile icon-mobile" src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
+            </div>
+            <hr class="primary-line-message mt-2">
+            <!-- Jia and Qing add accessibilities  -->
+            <!-- This div is for the calendar -->
+            <div id="calendar-content-mobile" class="bg-body-tertiary rounded p-3" tabindex="0"
+            aria-label="View calendar">
+              <div class="d-flex flex-wrap justify-content-between align-items-center" tabindex="0">
+                <p id="current-month-mobile" class="current-month-mobile"></p>
+                <div class="calendar-arrows-mobile" tabindex="0">
+                  <img id="left-mobile" src="/Images/icons/chevron-2.svg" alt="left-button">
+                  <img id="right-mobile" src="/Images/icons/chevron.svg" alt="right-button">
                 </div>
               </div>
-              <div class="ellipse"></div>
-              <div class="ellipse-2"></div>
-              <div class="ellipse-3"></div>
-              <div class="ellipse-4"></div>
-              <div class="ellipse-5"></div>
+              <div class="calendar-mobile d-flex flex-wrap flex-column" tabindex="0">
+                <div class="weeks-mobile" tabindex="0">
+                  <ul>
+                    <li>Su</li>
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="days-mobile" tabindex="0"></ul>
+                </div>
+              </div>
             </div>
-            <div class="text-wrapper-4">My Calendar</div>
-            <img class="line" src="../Images/icons/line-1.svg" alt="line">
-            <div class="group"><img class="u-calendar-alt" src="../Images/icons/u_calendar-alt.svg" alt="calendar-icon"></div>
-            <img class="u-list-ul" src="../Images/icons/u_list-ul.svg" alt="calendar-icon">
+            <ul id="events-list-mobile" style="display: none">
+              <!-- Event items will be dynamically added here -->
+            </ul>
           </div>
         </div>
         <div id="mobile-messages" class="container-md screen">
@@ -721,6 +683,7 @@
     <!-- Custom Scripts -->
     <script src="../JS/script.js"></script>
     <script src="/JS/calendar.js"></script>
+    <script src="/JS/calendar-mbl.js"></script>
     <script src="../JS/myworkspace.js"></script>
 </body>
 </html>

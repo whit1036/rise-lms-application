@@ -294,328 +294,102 @@ color: #197BBD;
 
 
     /* Calendar Mobile */
-    .property-default {
-      position: relative;
-      width: 297px;
-      height: 350px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0px 4px 24px #24616129;
-      margin-left: 3rem;
-      margin-top: 8rem;
+    #mbl-calendar {
+      margin-top: 10rem;
     }
-    
-    .property-default .overlap-group {
-      position: absolute;
-      width: 267px;
-      height: 264px;
-      top: 72px;
-      left: 15px;
-      border-radius: 8.45px;
-    }
-    
-    .property-default .calendar {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 6.33px;
-      padding: 15.84px;
-      position: absolute;
-      top: 0;
-      left: -0.5rem;
-      background-color: #ffffff;
-      border-radius: 8.45px;
-      border: 3px solid;
-      border-color: var(--buttonprimary);
-    }
-    
-    .property-default .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-      align-self: stretch;
-      width: 100%;
-      flex: 0 0 auto;
-      background-color: transparent;
-    }
-    
-    .property-default .may {
-      position: relative;
-      width: fit-content;
-      font-family: "Inter-Black", Helvetica;
-      font-weight: 900;
-      color: #000000;
-      font-size: 18px;
-      letter-spacing: 0;
-      line-height: normal;
-      white-space: nowrap;
-    }
-    
-    .property-default .frame {
-      display: inline-flex;
-      align-items: flex-start;
-      gap: 4.22px;
-      position: relative;
-      flex: 0 0 auto;
-    }
-    
-    .property-default .chevron {
-      position: relative;
-      flex: 0 0 auto;
-    }
-    
-    .property-default .days {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      flex: 0 0 auto;
-      overflow: hidden;
-    }
-    
-    .property-default .row {
-      display: inline-flex;
-      align-items: center;
-      position: relative;
-      flex: 0 0 auto;
-    }
-    
-    .property-default .cell {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 10.56px;
-      position: relative;
-      flex: 0 0 auto;
-    }
-    
-    .property-default .text-wrapper {
-      position: relative;
-      width: 12.67px;
-      height: 12.67px;
-      margin-top: -0.53px;
-      font-family: "Inter-SemiBold", Helvetica;
-      font-weight: 600;
-      color: #000000;
-      font-size: 7.4px;
-      text-align: center;
-      letter-spacing: 0;
-      line-height: normal;
-    }
-    
-    .property-default .div-wrapper {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 10.56px;
-      position: relative;
-      flex: 0 0 auto;
-      margin-left: -0.53px;
-    }
-    
-    .property-default .div {
-      display: inline-flex;
-      align-items: center;
-      position: relative;
-      flex: 0 0 auto;
-      margin-top: -0.53px;
-    }
-    
-    .property-default .cell-2 {
-      border: 0.53px solid;
-      border-color: var(--stroke);
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 10.56px;
-      position: relative;
-      flex: 0 0 auto;
-    }
-    
-    .property-default .text-wrapper-2 {
-      position: relative;
-      width: 12.67px;
-      height: 12.67px;
-      margin-top: -0.53px;
-      font-family: "Inter-Regular", Helvetica;
-      font-weight: 400;
-      color: #000000;
-      font-size: 7.4px;
-      text-align: center;
-      letter-spacing: 0;
-      line-height: normal;
-    }
-    
-    .property-default .cell-3 {
-      margin-left: -0.53px;
-      border: 0.53px solid;
-      border-color: var(--stroke);
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 10.56px;
-      position: relative;
-      flex: 0 0 auto;
-    }
-    
-    .property-default .cell-4 {
-      margin-left: -0.53px;
-      background-color: var(--secondary-pink);
-      border: 0.53px solid;
-      border-color: var(--stroke);
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 10.56px;
-      position: relative;
-      flex: 0 0 auto;
-    }
-    
-    .property-default .text-wrapper-3 {
-      font-family: "Inter-SemiBold", Helvetica;
-      font-weight: 600;
-      position: relative;
-      width: 12.67px;
-      height: 12.67px;
-      margin-top: -0.53px;
-      color: var(--primaryrise-black);
-      font-size: 7.4px;
-      text-align: center;
-      letter-spacing: 0;
-      line-height: normal;
-    }
-    
-    .property-default .element-wrapper {
-      margin-left: -0.53px;
-      background-color: var(--inactive);
-      border: 0.53px solid;
-      border-color: var(--stroke);
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 10.56px;
-      position: relative;
-      flex: 0 0 auto;
-    }
-    
-    .property-default .element {
-      position: relative;
-      width: 12.67px;
-      height: 12.67px;
-      margin-top: -0.53px;
-      font-family: "Inter-Regular", Helvetica;
-      font-weight: 400;
-      color: #a7a7a7;
-      font-size: 7.4px;
-      text-align: center;
-      letter-spacing: 0;
-      line-height: normal;
-    }
-    
-    .property-default .ellipse {
-      top: 152px;
-      left: 184.8px;
-      position: absolute;
-      width: 7px;
-      height: 7px;
-      background-color: var(--secondary-pink);
-      border-radius: 3.5px;
-    }
-    
-    .property-default .ellipse-2 {
-      top: 152px;
-      left: 44px;
-      position: absolute;
-      width: 7px;
-      height: 7px;
-      background-color: var(--secondary-pink);
-      border-radius: 3.5px;
-    }
-    
-    .property-default .ellipse-3 {
-      top: 187px;
-      left: 115px;
-      position: absolute;
-      width: 7px;
-      height: 7px;
-      background-color: var(--secondary-pink);
-      border-radius: 3.5px;
-    }
-    
-    .property-default .ellipse-4 {
-      top: 187px;
-      left: 80px;
-      position: absolute;
-      width: 7px;
-      height: 7px;
-      background-color: var(--secondary-pink);
-      border-radius: 3.5px;
-    }
-    
-    .property-default .ellipse-5 {
-      top: 222px;
-      left: 80px;
-      position: absolute;
-      width: 7px;
-      height: 7px;
-      background-color: var(--secondary-pink);
-      border-radius: 3.5px;
-    }
-    
-    .property-default .text-wrapper-4 {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      font-family: var(--RISE-h5-font-family);
-      font-weight: var(--RISE-h5-font-weight);
+
+    .title-cal-message-mobile {
       color: #246161;
-      font-size: var(--RISE-h5-font-size);
-      letter-spacing: var(--RISE-h5-letter-spacing);
-      line-height: var(--RISE-h5-line-height);
-      white-space: nowrap;
-      font-style: var(--RISE-h5-font-style);
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 800;
     }
-    
-    .property-default .line {
-      position: absolute;
-      width: 265px;
-      height: 1px;
-      top: 55px;
-      left: 16px;
-      object-fit: cover;
-    }
-    
-    .property-default .group {
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      top: 11px;
-      left: 201px;
+
+
+    .calendar-icons-mobile img:hover {
       background-color: var(--secondary-pink);
-      border-radius: 4px;
+      border-radius: 20%;
+      padding: 2px;
     }
     
-    .property-default .u-calendar-alt {
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      top: 4px;
-      left: 4px;
+    .icon-mobile.active {
+      background-color: var(--secondary-pink);
+  
+      border-radius: 6px;
+      padding: 2px;
     }
-    
-    .property-default .u-list-ul {
+  
+    .current-month-mobile {
+      font-weight: 900;
+      font-size: 13px;
+    }
+  
+    #calendar-content-mobile {
+      border: 1px solid #246161;
+      cursor: pointer;
+    }
+  
+    .calendar-arrows-mobile img:hover {
+      background-color: var(--secondary-pink);
+      border-radius: 50%;
+    }
+  
+    .calendar-mobile ul {
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  
+    .calendar-mobile ul li {
+      width: calc(100% / 7);
+      text-align: center;
+      font-size: 8px;
+      font-weight: 600;
+    }
+  
+    .weeks-mobile ul li{
+      margin: 20px 0 15px 0;
+      font-size: 9px;
+    }
+  
+    .days-mobile ul li {
+      list-style: none;
+    }
+  
+    .days-mobile li:hover {
+      background-color: var(--secondary-pink);
+    }
+  
+    .days-mobile li {
+      border: 1px solid #D5D4DF;
+      padding: 10px;
+    }
+  
+    .days-mobile li.inactive-mobile {
+      background-color: #F2F3F7;
+      color: #A8A8A8;
+    }
+  
+    .days-mobile li.active-mobile {
+      background-color: var(--secondary-pink);
+      color: #000000;
+    }
+  
+    .has-event-mobile::before {
+      content: '•';
+      font-size: 25px;
       position: absolute;
-      width: 24px;
-      height: 24px;
-      top: 15px;
-      left: 253px;
+      padding-top: 3px;
+      color: #EBBC9C; 
+    }
+  
+    /* Define styles for the event list items */
+    .event-list-item-mobile {
+      padding: 10px;
+      border-radius: 6px;
+  
+      background-color: #EBBC9C;
     }
 }
 
