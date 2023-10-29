@@ -111,6 +111,30 @@ function mobileCalendarClicked() {
     }
 }
 
+function mobileCalendarCourseClicked() {
+  const mblCoursePage = document.getElementById('mobile-course-pg');
+  const calendarInfo = document.getElementById('mbl-calendar');
+  const calendarIcon = document.getElementById('mobile-calendar-icon');
+  const calendarIconSelected = document.getElementById('mbl-cal-pink');
+  const homeIcon = document.getElementById('mbl-home-reg');
+  const homeIconSelected = document.getElementById('mbl-home-pink');
+
+
+  if (calendarInfo.style.display === 'none') {
+      calendarInfo.style.display = 'block';
+      mblCoursePage.style.display = 'none';
+      calendarIcon.style.display = 'none';
+      calendarIconSelected.style.display = 'block';
+      homeIconSelected.style.display = 'none';
+      homeIcon.style.display = 'block';
+  } else {
+      calendarInfo.style.display = 'none';
+      mblCoursePage.style.display = 'block';
+      calendarIcon.style.display = 'block';
+      calendarIconSelected.style.display = 'none';
+  }
+}
+
 function courseOutlineClicked() {
     const courseContent = document.getElementById('course-content');
     const weekNumber = document.getElementById('weeknumber')
