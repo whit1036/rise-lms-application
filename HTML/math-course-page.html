@@ -442,8 +442,49 @@
   </main>
   
   <!-- Mobile Navigation -->
+  <div class="container-md screen" id="mbl-calendar">
+    <!-- Calendar -->
+    <div class="calendar-container-mobile shadow bg-body-tertiary rounded">
+      <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons-mobile">
+        <h2 class="title-cal-message-mobile me-2 fs-5">My Calendar</h2>
+        <img id="calendar-icon-mobile" class="calendar-icon-mobile icon-mobile" src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
+        <img id="list-icon-mobile" class="list-cal-icon-mobile icon-mobile" src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
+      </div>
+      <hr class="primary-line-message mt-2">
+      <!-- Jia and Qing add accessibilities  -->
+      <!-- This div is for the calendar -->
+      <div id="calendar-content-mobile" class="bg-body-tertiary rounded p-3" tabindex="0"
+      aria-label="View calendar">
+        <div class="d-flex flex-wrap justify-content-between align-items-center" tabindex="0">
+          <p id="current-month-mobile" class="current-month-mobile"></p>
+          <div class="calendar-arrows-mobile" tabindex="0">
+            <img id="left-mobile" src="/Images/icons/chevron-2.svg" alt="left-button">
+            <img id="right-mobile" src="/Images/icons/chevron.svg" alt="right-button">
+          </div>
+        </div>
+        <div class="calendar-mobile d-flex flex-wrap flex-column" tabindex="0">
+          <div class="weeks-mobile" tabindex="0">
+            <ul>
+              <li>Su</li>
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="days-mobile" tabindex="0"></ul>
+          </div>
+        </div>
+      </div>
+      <ul id="events-list-mobile" style="display: none">
+        <!-- Event items will be dynamically added here -->
+      </ul>
+    </div>
+  </div>
   <div id="mobile-course-pg" class="container-md nopadding">
-    <!-- Content goes under this tag -->
     <img id="bg-img-mbl" src="../Images/MathCourseBannerMbl.jpg" alt="banner">
     <h1 id="text-over-img-mbl" class="fs-3 text-white fw-bold">Math</h1>
     <p role="navigation" class="mt-2 mx-3">My Courses > Math</p>
@@ -483,20 +524,26 @@
   <!-- Mobile Navigation -->
   <nav role="navigation" class="mobile-nav fixed-bottom p-3 m-3">
     <div id="mobile-nav-icons" class="container-fluid text-center d-flex justify-content-around">
+      <!-- Home Button -->
       <div class="d-flex flex-column justify-content-center">
-        <a href=""><img class="mobile-home-pink-svg" src="../Images/icons/home-workspace.svg" alt="mobile home icon"></a>
-        <p id="home-nav-mobile-font-1" class="p-1 fw-bolder">Home</p>
+        <a href="" id="mbl-home-reg" class="screen"><img class="mobile-home-svg" src="../Images/icons/mobile_home.svg" alt="mobile home icon"></a>
+        <span onclick="mobileHomeSelect()" id="mbl-home-pink" class="screen"><a href=""><img class="mobile-home-pink-svg" src="../Images/icons/home-workspace.svg" alt="mobile home icon"></a></span>
+        <p class="p-1 fw-bolder">Home</p>
       </div>
+      <!-- Assignments Button -->
       <div class="d-flex flex-column justify-content-center">
-        <a href=""><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobile assignments icon"></a>
+        <span><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobile assignments icon"></span>
         <p id="nav-mobile-font-2" class="p-1 fw-bolder">Assignments</p>
       </div>
+      <!-- Meetings Button -->
       <div class="d-flex flex-column justify-content-center">
-        <a href=""><img class="mobile-video-svg" src="../Images/icons/video.svg" alt="mobile video icon"></a>
+        <span><img class="mobile-video-svg" src="../Images/icons/video.svg" alt="mobile video icon"></span>
         <p id="nav-mobile-font-3" class="p-1 fw-bolder">Meetings</p>
       </div>
+      <!-- Calendar Button -->
       <div class="d-flex flex-column justify-content-center">
-        <a href=""><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></a>
+        <span onclick="mobileCalendarClicked()" id="mobile-calendar-icon" class="screen"><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></span>
+        <span onclick="mobileCalSelect()" id="mbl-cal-pink" class="screen"><img class="mobile-calendar-pink-svg" src="../Images/icons/Calendar.svg" alt="mobile calendar icon"></span>
         <p id="nav-mobile-font-4" class="p-1 fw-bolder">Calendar</p>
       </div>
     </div>
@@ -508,6 +555,7 @@
   <!-- Custom Scripts -->
   <script src="../JS/script.js"></script>
   <script src="/JS/calendar.js"></script>
+  <script src="/JS/calendar-mbl.js"></script>
   <script src="../JS/myworkspace.js"></script>
 </body>
 </html>

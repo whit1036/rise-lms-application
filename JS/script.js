@@ -76,6 +76,7 @@ function displayText() {
 
 // Various mobile design varibales with getElementById
 const workspaceInfo = document.getElementById('workspace-info');
+const mblCoursePage = document.getElementById('mobile-course-pg');
 const calendarInfo = document.getElementById('mbl-calendar');
 const calendarIcon = document.getElementById('mobile-calendar-icon');
 const calendarIconSelected = document.getElementById('mbl-cal-pink');
@@ -85,6 +86,7 @@ const homeIconSelected = document.getElementById('mbl-home-pink');
 // Function to launch calendar on mobile when clicked
 function mobileCalendarClicked() {
     const workspaceInfo = document.getElementById('workspace-info');
+    const mblCoursePage = document.getElementById('mobile-course-pg');
     const calendarInfo = document.getElementById('mbl-calendar');
     const calendarIcon = document.getElementById('mobile-calendar-icon');
     const calendarIconSelected = document.getElementById('mbl-cal-pink');
@@ -103,6 +105,7 @@ function mobileCalendarClicked() {
     } else {
         calendarInfo.style.display = 'none';
         workspaceInfo.style.display = 'block';
+        mblCoursePage.style.display = 'block';
         calendarIcon.style.display = 'block';
         calendarIconSelected.style.display = 'none';
     }
