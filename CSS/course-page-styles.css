@@ -280,23 +280,3 @@ html {
     max-width: 230px; 
   }
 }
-
-@media (max-width: 1020px) {
-  .to-do-cards {
-    width: 450px;
-  }
-
-  .messages-calendar {
-    margin-left: 0 !important;
-  }
-}
-
-@media (max-width: 900px) {
-  .to-do-cards {
-    width: 300px;
-  }
-
-  .messages-calendar {
-    margin-left: 0 !important;
-  }
-}
