@@ -139,7 +139,3 @@ function mobileCalendarCourseClicked() {
 function saveUserProfile() {
     alert("Changes saved successfully")
 }
-
-function preventRefresh(e) {
-  e.preventDefault()
-}
