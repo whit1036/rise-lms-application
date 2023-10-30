@@ -71,8 +71,8 @@ html {
     }
 
     .to-do {
-      background-color: #2461616b;
-      border: 1px solid #2461616b;
+      background-color: #FADEE5;
+      border: 1px solid #FADEE5;
     }
 }
 
@@ -100,8 +100,8 @@ html {
       }
 
       .to-do {
-        background-color: #2461616b;
-        border: 1px solid #2461616b;
+        background-color: #FADEE5;
+        border: 1px solid #FADEE5;
       }
 
       .logout {
@@ -134,130 +134,169 @@ html {
         border-bottom: 2px solid var(--primary-light-blue) !important;
       }
 
-      /* Daniela - Calendar Desktop */
-    .title-cal-message {
-      color: #246161;
-      font-size: 21px;
-      font-style: normal;
-      font-weight: 800;
-    }
+/* Messages and Calendar Styles DESKTOP */
+  /* Daniela did all the calendar and messages content */
+  /* Oct 22 - Daniela add the .messages-calendar and fixed-width that prevents the container for resizing and stretching */
+  .messages-calendar {
+    flex-shrink: 0; /* This prevent resizing */
+    width: 300px;
+  }
+  
+  .fixed-width {
+    flex: 0 0 auto; /* This prevents the container from stretching */
+    max-width: 300px; 
+  }
     
-    .calendar-container{
-      flex-shrink: 0; 
-      width: 300px;
-    }
+  .title-cal-message {
+    color: #246161;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+  }
 
-    .fixed-width {
-      flex: 0 0 auto; 
-      max-width: 300px; 
-    }
+  .primary-line-message {
+    width: 100%;
+    border: 1px solid #246161;
+  }
 
-    .calendar-icons img:hover {
-      background-color: var(--secondary-pink);
-      border-radius: 20%;
-      padding: 2px;
-    }
-    
-    .icon.active {
-      background-color: var(--secondary-pink);
+  .messages-text {
+    color: darkgrey;
+    font-family: var(--RISE-body-smal-font-family);
+  }
 
-      border-radius: 6px;
-      padding: 2px;
-    }
+  .messages-title {
+    font-family: var(--RISE-body-smal-font-family);
+  }
 
-    .current-month {
-      font-weight: 900;
-      font-size: 13px;
-    }
+  /* Calendar Desktop */
+  .calendar-icons img:hover {
+    background-color: var(--secondary-pink);
+    border-radius: 20%;
+    padding: 2px;
+  }
+  
+  .icon.active {
+    background-color: var(--secondary-pink);
 
-    #calendar-content {
-      border: 1px solid #246161;
-      cursor: pointer;
-    }
+    border-radius: 6px;
+    padding: 2px;
+  }
 
-    .calendar-arrows img:hover {
-      background-color: var(--secondary-pink);
-      border-radius: 50%;
-    }
+  .current-month {
+    font-weight: 900;
+    font-size: 13px;
+  }
 
-    .calendar ul {
-      display: flex;
-      list-style: none;
-      flex-wrap: wrap;
-      text-align: center;
-    }
+  #calendar-content {
+    border: 1px solid #246161;
+    cursor: pointer;
+  }
 
-    .calendar ul li {
-      width: calc(100% / 7);
-      text-align: center;
-      font-size: 8px;
-      font-weight: 600;
-    }
+  .calendar-arrows img:hover {
+    background-color: var(--secondary-pink);
+    border-radius: 50%;
+  }
 
-    .weeks ul li{
-      margin: 20px 0 15px 0;
-      font-size: 9px;
-    }
+  .calendar ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 
-    .days ul li {
-      list-style: none;
-    }
+  .calendar ul li {
+    width: calc(100% / 7);
+    text-align: center;
+    font-size: 8px;
+    font-weight: 600;
+  }
 
-    .days li:hover {
-      background-color: var(--secondary-pink);
-    }
+  .weeks ul li{
+    margin: 20px 0 15px 0;
+    font-size: 9px;
+  }
 
-    .days li {
-      border: 1px solid #D5D4DF;
-      padding: 10px;
-    }
+  .days ul li {
+    list-style: none;
+  }
 
-    .days li.inactive {
-      background-color: #F2F3F7;
-      color: #A8A8A8;
-    }
+  .days li:hover {
+    background-color: var(--secondary-pink);
+  }
 
-    .days li.active {
-      background-color: var(--secondary-pink);
-      color: #000000;
-    }
+  .days li {
+    border: 1px solid #D5D4DF;
+    padding: 10px;
+  }
 
-    .has-event::before {
-      content: '•';
-      font-size: 25px;
-      position: absolute;
-      padding-top: 3px;
-      color: #EBBC9C; 
-    }
+  .days li.inactive {
+    background-color: #F2F3F7;
+    color: #A8A8A8;
+  }
 
-    /* Define styles for the event list items */
-    .event-list-item {
-      padding: 10px;
-      border-radius: 6px;
+  .days li.active {
+    background-color: var(--secondary-pink);
+    color: #000000;
+  }
 
-      background-color: #EBBC9C;
-    }
+  .has-event::before {
+    content: '•';
+    font-size: 25px;
+    position: absolute;
+    padding-top: 3px;
+    color: #EBBC9C; 
+  }
 
-    .event-list-item, li {
-      list-style-type: none;
-    }
+  /* Define styles for the event list items */
+  .event-list-item {
+    padding: 10px;
+    border-radius: 6px;
+
+    background-color: #EBBC9C;
+  }
+
+  .event-list-item, li {
+    list-style: none;
+  }
 }
 
-/* Daniela add this media screen so I can control the class box and modified the mesages and calendar when the screen is 1276px or less */
-@media (max-width: 900px) {
+/* Daniela add this media screen so I can control the class box and modified the mesages and calendar */
+@media (max-width: 1140px) {
 
   .box {
-    max-width: 100%;
+    max-width: auto;
     height: auto;
   }
 
-  .calendar-container{
+  .calendar-container, .desk-msg {
     flex-shrink: 0; 
     width: 230px;
+
+    margin-left: 0;
   }
 
   .fixed-width {
     flex: 0 0 auto; 
     max-width: 230px; 
+  }
+}
+
+@media (max-width: 1020px) {
+  .to-do-cards {
+    width: 450px;
+  }
+
+  .messages-calendar {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .to-do-cards {
+    width: 300px;
+  }
+
+  .messages-calendar {
+    margin-left: 0 !important;
   }
 }
