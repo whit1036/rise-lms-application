@@ -3,48 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geography Page</title>
+    <title>Geography Course Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/main-styles.css">
     <link rel="stylesheet" href="../CSS/styleguide.css">
     <link rel="stylesheet" href="../CSS/course-page-styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/ioi4mhc.css">
     <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
+    <!-- Adding Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/3263212dec.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!--Bootstrap Accessibility Skip Links-->
   <a class="visually-hidden-focusable" href="#main-header">Skip to main nav</a>
   <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
   <!-- Header -->
-    <header role="heading">
+  <header role="heading">
     <div class="sticky-content">
       <nav role="navigation" id="main-header" class="navbar">
         <div class="container-fluid">
-            <div class="p-4" id="main-home-button">
-              <a href="/HTML/my-workspace.html">
-                  <img role="img" class="header-icon-hover" src="../Images/icons/home.svg" alt="home icon">
-              </a>
-              <span class="fs-1 p-2 text-white">|</span>
-            </div>
-              <img role="img" class="p-2 m-2" id="main-header-img" src="../Images/RISE_website_logo.png" alt="rise logo">
-            <div class="d-flex align-items-center">
-              <div class="dropdown">
-                <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" id="videoicon" src="../Images/icons/video.svg" alt="video icon"></a>
-                <div class="dropdown-menu p-3">
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    My Meetings
-                  </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header meetings-modal-title">
-                        <h1 class="modal-title fs-5 fw-bolder text-white" id="staticBackdropLabel">My Meetings</h1>
-                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
+          <div class="p-4" id="main-home-button">
+            <a href="/HTML/my-workspace.html">
+              <img role="img" class="header-icon-hover" src="../Images/icons/home.svg" alt="home icon">
+            </a>
+            <span class="fs-1 p-2 text-white">|</span>
+          </div>
+          <img role="img" class="p-2 m-2" id="main-header-img" src="../Images/RISE_website_logo.png" alt="rise logo">
+          <div class="d-flex align-items-center">
+            <div class="dropdown">
+              <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" id="videoicon" src="../Images/icons/video.svg" alt="video icon"></a>
+              <div class="dropdown-menu p-3">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  My Meetings
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header meetings-modal-title">
+                      <h1 class="modal-title fs-5 fw-bolder text-white" id="staticBackdropLabel">My Meetings</h1>
+                      <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
                         <p class="fs-5 fw-bold">Upcoming Meetings</p>
                         <div class="card w-100 mb-3 mt-4">
                           <div class="card-body">
@@ -65,19 +67,77 @@
                   </div>
                 </div>
               </div>
+              <!-- Daniela - This div is for the desktop Messages icon dropdown -->
               <div class="dropdown">
                 <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/message.svg" alt="message icon"></a>
-                  
+                <div class="messages-drop-container dropdown-menu p-3">
+                  <div class="d-flex flex-column w-100">
+                    <h2 class="mb-2 mt-3 fs-5 title-cal-message">My Messages</h2>
+                    <form class="form-search d-flex align-items-center" role="search">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input class="form-messages" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                  </div>
+                  <!-- This span is for creating the line that goes below the title and icon of my messages -->
+                  <hr class="primary-line-message mt-2">
+                  <!-- This div contains the list of my messages -->
+                  <div class="d-flex">
+                    <div>
+                      <img src="/Images/icons/rectangle-144.png" alt="profile-icon">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="mb-2 messages-title">Abigail</h3>
+                      <p class="messages-text">Could you review...</p>
+                    </div>
+                  </div>
+                  <hr class="secondary-line-message mt-2">
+                  <div class="d-flex">
+                    <div>
+                      <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="mb-2 messages-title">John</h3>
+                      <p class="messages-text">Just a reminder to...</p>
+                    </div>
+                  </div>
+                  <hr class="secondary-line-message mt-2">
+                  <div class="d-flex">
+                    <div>
+                      <img src="/Images/icons/rectangle-146.png" alt="profile-icon">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="mb-2 messages-title">Paul</h3>
+                      <p class="messages-text">If you need more inf...</p>
+                    </div>
+                  </div>
+                  <hr class="secondary-line-message mt-2">
+                  <div class="d-flex">
+                    <div>
+                      <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="profile-icon">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="mb-2 messages-title">Keith</h3>
+                      <p class="messages-text">Please, remember the...</p>
+                    </div>
+                  </div>
+                  <hr class="secondary-line-message mt-2">
+                  <div class="d-flex">
+                    <div>
+                      <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="profile-icon">
+                    </div>
+                    <div class="ms-3">
+                      <h3 class="mb-2 messages-title">Holly</h3>
+                      <p class="messages-text">Give me a call when...</p>
+                    </div>
+                  </div>
+                  <hr class="secondary-line-message mt-2">
+                </div>
               </div>
+              <!-- Daniela - This div is for the desktop notifications icon dropdown -->
               <div class="dropdown">
                 <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bell icon"></a>
                 <!-- Adjsut Notification on Oct 19th starts-->
-              <div id="desktop-notifications" class="dropdown-menu" style="
-              min-width: 500px;
-              width: 100%;
-              top: 18.5rem;
-              transform: translate(-50%, -50%);
-            ">
+              <div id="desktop-notifications" class="dropdown-menu">
                 <div class="p-4 my-2 d-flex flex-column">
                   <p class="fs-4 fw-bold">Notifications</p>
                   <hr>
@@ -143,8 +203,8 @@
                 </div>
                   <span class="circle p-3 mx-3 rounded-5 fw-bold" id="profilephoto" aria-label="profile photo">SS</span>
                 </div>
-                <!-- Jia and Qing add accessibility for personal profile ends-->
-                <!-- Modal -->
+              <!-- Jia and Qing add accessibility for personal profile ends-->
+              <!-- Modal -->
               <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
@@ -182,240 +242,362 @@
                     </div>
                   </div>
                 </div>
-              </div>
               <!-- Edit profile modal ends here -->
               </div>
             </div>
-            </nav>
           </div>
-    </header>
-    <!-- Main -->
-    <main role="main" id="content" class="container-fluid">
-        <div class="row">
-          <!-- Side Panel -->
-          <div role="region" class="side-panel-main col-3 nopadding">
-            <!-- Sidebar Info -->
-            <div class="sidebar-info m-1 mt-5">
-              <div class="student-sidebar-hifi d-flex flex-column">
-                <!-- My Workspace -->
-                <div class="group-wrapper">
-                  <a href="../HTML/my-workspace.html">
-                    <div class="my-workspace align-items-center justify-content-left d-flex py-3 mx-4 rounded-5">
-                      <img role="img" id="w-workspace" class="icon-line-category px-3" src="../Images/icons/category.svg" alt="workspace">
-                      <!-- <img id="d-workspace" class="icon-line-edit px-3" src="../Images/icons/circle-dark-blue.svg" alt="workspace"> -->
-                      <div class="text-wrapper px-1">My Workspace</div>
-                    </div>
-                  </a>
-                </div>
-                <!-- My Facilitator -->
-                <div class="group-wrapper">
-                  <a href="">
-                    <div class="my-facilitator align-items-center d-flex justify-content-left py-3 mx-4 rounded-5">
-                      <img role="img" class="icon-line-user px-3" src="../Images/icons/user.svg" alt="my-facilitator">
-                      <div class="text-wrapper-2 px-1">My Facilitator</div>
-                    </div>
-                  </a>
-                </div>
-                <!-- My Assignments -->
-                <div class="group-wrapper">
-                  <a href="">
-                    <div class="my-assignments d-flex align-items-center justify-content-left py-3 mx-4 rounded-5">
-                      <img role="img" class="icon-line-edit px-3" src="../Images/icons/circle.svg" alt="my-assignments">
-                      <div class="text-wrapper-3 px-1">My Assignments</div>
-                    </div>
-                  </a>
-                </div>
-                <hr class="text-white">
-                <div class="weekbyweek d-flex flex-column text-white mx-4">
-                    <!-- adds accessibility starts  -->
-                    <div class="tab rounded-5" tabindex="0" aria-label="View week 1">
-                      <span id="week-1" onclick='document.getElementById("weeknumber").innerHTML = "Week 1"' class="btn week my-3 rounded-5 text-light text-start">Week 1</span>
-                    </div>
-                    <div class="tab rounded-5" tabindex="0" aria-label="View week 2">
-                      <span id="week-2" onclick='document.getElementById("weeknumber").innerHTML = "Week 2"' class="btn week my-3 rounded-5 text-light text-start">Week 2</span>
-                    </div>
-                    <div class="tab rounded-5" tabindex="0" aria-label="View week 3">
-                      <span id="week-3" onclick='document.getElementById("weeknumber").innerHTML = "Week 3"' class="btn week my-3 rounded-5 text-light text-start">Week 3</span>
-                    </div>
-                    <div class="tab rounded-5" tabindex="0" aria-label="View week 4">
-                      <span id="week-4" onclick='document.getElementById("weeknumber").innerHTML = "Week 4"' class="btn week my-3 rounded-5 text-light text-start">Week 4</span>
-                    </div>
-                    <div class="tab rounded-5" tabindex="0" aria-label="View week 5">
-                      <span id="week-5" onclick='document.getElementById("weeknumber").innerHTML = "Week 5"' class="btn week my-3 rounded-5 text-light text-start">Week 5</span>
-                    </div>
-                    <div class="tab rounded-5" tabindex="0" aria-label="View week 6">
-                      <span id="week-6" onclick='document.getElementById("weeknumber").innerHTML = "Week 6"' class="btn week my-3 rounded-5 text-light text-start">Week 6</span>
-                    </div>
-                    <div class="tab rounded-5" tabindex="0" aria-label="View week 7">
-                      <span id="week-7" onclick='document.getElementById("weeknumber").innerHTML = "Week 7"' class="btn week my-3 rounded-5 text-light text-start">Week 7</span>
-                    </div>
-                    <div class="tab rounded-5" tabindex="0" aria-label="View week 8">
-                      <span id="week-8" onclick='document.getElementById("weeknumber").innerHTML = "Week 8"' class="btn week my-3 rounded-5 text-light text-start">Week 8</span>
-                    </div>
-                    <div class="tab rounded-5" tabindex="0" aria-label="View week 9">
-                      <span id="week-9" onclick='document.getElementById("weeknumber").innerHTML = "Week 9"' class="btn week my-3 rounded-5 text-light text-start">Week 9</span>
-                    </div>
-                    <div class="tab rounded-5" tabindex="0" aria-label="View week 10">
-                      <span id="week-10" onclick='document.getElementById("weeknumber").innerHTML = "Week 10"' class="btn week my-3 rounded-5 text-light text-start">Week 10</span>
-                    </div>
-                </div>
-                <!-- adds accessibility ends  -->
-              </div>
-            </div>
-            <!-- Log Out -->
+      </nav>
+    </div>
+  </header>
+  <!-- Main -->
+  <main role="main" id="content" class="container-fluid">
+    <div class="row">
+      <!-- Side Panel -->
+      <div role="region" class="side-panel-main col-3 nopadding">
+        <!-- Sidebar Info -->
+        <div class="sidebar-info m-1 mt-5">
+          <div class="student-sidebar-hifi d-flex flex-column">
+            <!-- My Workspace -->
             <div class="group-wrapper">
-              <a href="../HTML/login-home.html">
-                <div class="logout d-flex justify-content-center rounded-5">
-                    <img role="img" src="../Images/icons/logout.svg" alt="logout">
-                    <div class="m-3">Log Out</div>
+              <a href="../HTML/my-workspace.html">
+                <div class="my-workspace align-items-center justify-content-left d-flex py-3 mx-4 rounded-5">
+                  <img role="img" id="w-workspace" class="icon-line-category px-3" src="../Images/icons/category.svg" alt="workspace">
+                  <!-- <img id="d-workspace" class="icon-line-edit px-3" src="../Images/icons/circle-dark-blue.svg" alt="workspace"> -->
+                  <div class="text-wrapper px-1">
+                    My Workspace
+                  </div>
                 </div>
               </a>
             </div>
-          </div>
-          <!-- Content (Border Radius Container) -->
-        <div role="region" class="box col nopadding">
-                <img id="bg-img-dsk" class="img-fluid" src="../Images/GeoCourseBanner.png" alt="banner">
-                    <h1 id="text-over-img-dsk" class="fs-1 text-white fw-bold" aria-label="course name">Geography</h1>
-                        <div class="coursenav">
-                        <ul class="nav nav-tabs mt-1" id="workbook" role="tablist">
-                            <li class="nav-item" role="workbook">
-                              <button class="nav-link active text-black fw-bold fs-5" onclick="workbookClicked()" id="home-tab" data-bs-toggle="tab" data-bs-target="#workbook-tab-pane" type="button" role="tab" aria-controls="workbook-tab-pane" aria-selected="true" aria-label="workbook tab pane">Workbook</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link text-black fw-bold fs-5" onclick="courseOutlineClicked()" id="profile-tab" data-bs-toggle="tab" data-bs-target="#course-outline-tab-pane" type="button" role="tab" aria-controls="course-outline-tab-pane" aria-selected="false" aria-label="course outline tab pane">Course Outline</button>
-                            </li>
-                          </ul>
-                          <p role="navigation" class="nav-item mt-3 mx-3">My Workspace > My Courses > Geography</p>
-                        </div>
-                        <h2 aria-label="Week Number" class="mx-4 fs-2 mt-5 fw-bold weeknumber" id="weeknumber">Week 1</h2>
-                        <div class="container-fluid" id="course-content">
-                            <div class="row">
-                                <div class="col-6 nopadding">
-                                    <h3 aria-label="to do list" class="mx-4 fs-3 mt-5 fw-bold">To do:</h3>
-                                    <div class="to-do card w-100 mt-5 mx-4">
-                                        <div class="card-body m-4 my-2">
-                                            <div class="form-check mt-2">
-                                                <input aria-label="Check Off Task" class="form-check-input" type="checkbox" value="" id="flexCheckDefault-1-dsk">
-                                                <label aria-label="Due Date" class="form-check-label p-1 fs-5" for="flexCheckDefault-1-dsk">
-                                                10-10-2023
-                                                </label>
-                                            </div>
-                                            <p class="fs-5 mt-4 fw-bold">Watch and read</p>
-                                            <p class="fs-5 mt-4 lh-lg">Doctor shares foods to eat to help combat diseases l GMAList:<br> Antiangiogenic Foods Dr Li</p>
-                                            <p class="fs-5 mt-4 fw-bold">Complete your Lifestyle: Nutrition and Disease Prevention assignment</p>
-                                            <p class="fs-5 mt-4">Due 09/16 at 11:59 pm.</p>
-                                        </div>
-                                    </div>
-                                    <div class="to-do card w-100 mt-5 mb-5 mx-4">
-                                        <div class="card-body m-4 my-2">
-                                            <div class="form-check mt-2">
-                                                <input aria-label="Check Off Task" class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2-dsk">
-                                                <label aria-label="Due Date" class="form-check-label p-1 fs-5" for="flexCheckDefault-2-dsk">
-                                                10-10-2023
-                                                </label>
-                                            </div>
-                                            <p class="fs-5 mt-4 fw-bold">Watch and read</p>
-                                            <p class="fs-5 mt-4 lh-lg">Doctor shares foods to eat to help combat diseases l GMAList:<br> Antiangiogenic Foods Dr Li</p>
-                                            <p class="fs-5 mt-4 fw-bold">Complete your Lifestyle: Nutrition and Disease Prevention assignment</p>
-                                            <p class="fs-5 mt-4">Due 09/16 at 11:59 pm.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col nopadding">
-                                    <div class="calendar-hi-fi">
-                                        <div class="calendar-list-view">
-                                        <div class="text-wrapper">My Calendar</div>
-                                        <img class="line" src="../Images/icons/line-1.svg" alt="line">
-                                        <img class="img" src="../Images/icons/line-1.svg" alt="line">
-                                        <img class="line-2" src="../Images/icons/line-1.svg" alt="line">
-                                        <img class="u-calendar-alt" src="../Images/icons/u_calendar-alt.svg" alt="calendar-icon">
-                                        <div class="group"><img class="u-list-ul" src="../Images/icons/u_list-ul.svg" alt="calendar-icon"></div>
-                                        <div class="overlap-group">
-                                            <div class="rectangle"></div>
-                                            <div class="div"></div>
-                                        </div>
-                                        <div class="overlap"><div class="text-wrapper-2">Friday, November 18, 2022</div></div>
-                                        <div class="overlap-2">
-                                            <div class="text-wrapper-2">Upcoming events</div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="workbook-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
-                        <div class="tab-pane fade" id="course-outline-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"></div>
-                      </div>
+            <!-- My Facilitator -->
+            <div class="group-wrapper">
+              <a href="">
+                <div class="my-facilitator align-items-center d-flex justify-content-left py-3 mx-4 rounded-5">
+                  <img role="img" class="icon-line-user px-3" src="../Images/icons/user.svg" alt="my-facilitator">
+                  <div class="text-wrapper-2 px-1">
+                    My Facilitator
                   </div>
                 </div>
-        </main>
-        <!-- Mobile Navigation -->
-        <div id="mobile-course-pg" class="container-md nopadding">
-            <!-- Content goes under this tag -->
-            <img id="bg-img-mbl" src="../Images/GeoCourseBannerMbl.jpg" alt="banner">
-            <h1 id="text-over-img-mbl" class="fs-3 text-white fw-bold">Geography</h1>
-            <p role="navigation" class="mt-2 mx-3">My Courses > Geography</p>
-            <h2 aria-label="Week Number" class="mx-3 fs-2 mt-5 fw-bold">Week 1</h2>
-            <h3 aria-label="to do list" class="mx-3 fs-5 mt-3 fw-bold mb-3">To do:</h3>
-            <div class="to-do card w-100">
-                <div class="card-body m-4 my-2">
-                    <div class="form-check mt-2">
-                        <input aria-label="Check Off Task" class="form-check-input" type="checkbox" value="" id="flexCheckDefault-1-mbl">
-                        <label aria-label="Due Date" class="form-check-label p-1 fs-5" for="flexCheckDefault-1-mbl">
-                        10-10-2023
-                        </label>
-                    </div>
-                    <p class="fs-5 mt-4 fw-bold">Watch and read</p>
-                    <p class="fs-5 mt-4 lh-lg">Doctor shares foods to eat to help combat diseases l GMAList:<br> Antiangiogenic Foods Dr Li</p>
-                    <p class="fs-5 mt-4 fw-bold">Complete your Lifestyle: Nutrition and Disease Prevention assignment</p>
-                    <p class="fs-5 mt-4">Due 09/16 at 11:59 pm.</p>
-                </div>
+              </a>
             </div>
-            <div class="to-do card w-100 mt-3">
-                <div class="card-body m-4 my-2">
-                    <div class="form-check mt-2">
-                        <input aria-label="Check Off Task" class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2-mbl">
-                        <label aria-label="Due Date" class="form-check-label p-1 fs-5" for="flexCheckDefault-2-mbl">
-                        10-10-2023
-                        </label>
-                    </div>
-                    <p class="fs-5 mt-4 fw-bold">Watch and read</p>
-                    <p class="fs-5 mt-4 lh-lg">Doctor shares foods to eat to help combat diseases l GMAList:<br> Antiangiogenic Foods Dr Li</p>
-                    <p class="fs-5 mt-4 fw-bold">Complete your Lifestyle: Nutrition and Disease Prevention assignment</p>
-                    <p class="fs-5 mt-4">Due 09/16 at 11:59 pm.</p>
+            <!-- My Assignments -->
+            <div class="group-wrapper">
+              <a href="">
+                <div class="my-assignments d-flex align-items-center justify-content-left py-3 mx-4 rounded-5">
+                  <img role="img" class="icon-line-edit px-3" src="../Images/icons/circle.svg" alt="my-assignments">
+                  <div class="text-wrapper-3 px-1">
+                    My Assignments
+                  </div>
                 </div>
+              </a>
             </div>
-                    <!-- Margin for page bottom -->
-                    <div class="m-5 p-4"></div>
-        </div>
-        <!-- Mobile Navigation -->
-        <nav role="navigation" class="mobile-nav fixed-bottom p-3 m-3">
-          <div id="mobile-nav-icons" class="container-fluid text-center d-flex justify-content-around">
-            <div class="d-flex flex-column justify-content-center">
-                <a href=""><img class="mobile-home-pink-svg" src="../Images/icons/home-workspace.svg" alt="mobile home icon"></a>
-                <p id="home-nav-mobile-font-1" class="p-1 fw-bolder">Home</p>
+            <hr class="text-white">
+            <div class="weekbyweek d-flex flex-column text-white mx-4">
+              <!-- adds accessibility starts  -->
+              <div class="tab rounded-5" tabindex="0" aria-label="View week 1">
+                <span id="week-1" onclick='document.getElementById("weeknumber").innerHTML = "Week 1"' class="btn week my-3 rounded-5 text-light text-start">Week 1</span>
               </div>
-            <div class="d-flex flex-column justify-content-center">
-              <a href=""><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobile assignments icon"></a>
-              <p id="nav-mobile-font-2" class="p-1 fw-bolder">Assignments</p>
+              <div class="tab rounded-5" tabindex="0" aria-label="View week 2">
+                <span id="week-2" onclick='document.getElementById("weeknumber").innerHTML = "Week 2"' class="btn week my-3 rounded-5 text-light text-start">Week 2</span>
+              </div>
+              <div class="tab rounded-5" tabindex="0" aria-label="View week 3">
+                <span id="week-3" onclick='document.getElementById("weeknumber").innerHTML = "Week 3"' class="btn week my-3 rounded-5 text-light text-start">Week 3</span>
+              </div>
+              <div class="tab rounded-5" tabindex="0" aria-label="View week 4">
+                <span id="week-4" onclick='document.getElementById("weeknumber").innerHTML = "Week 4"' class="btn week my-3 rounded-5 text-light text-start">Week 4</span>
+              </div>
+              <div class="tab rounded-5" tabindex="0" aria-label="View week 5">
+                <span id="week-5" onclick='document.getElementById("weeknumber").innerHTML = "Week 5"' class="btn week my-3 rounded-5 text-light text-start">Week 5</span>
+              </div>
+              <div class="tab rounded-5" tabindex="0" aria-label="View week 6">
+                <span id="week-6" onclick='document.getElementById("weeknumber").innerHTML = "Week 6"' class="btn week my-3 rounded-5 text-light text-start">Week 6</span>
+              </div>
+              <div class="tab rounded-5" tabindex="0" aria-label="View week 7">
+                <span id="week-7" onclick='document.getElementById("weeknumber").innerHTML = "Week 7"' class="btn week my-3 rounded-5 text-light text-start">Week 7</span>
+              </div>
+              <div class="tab rounded-5" tabindex="0" aria-label="View week 8">
+                <span id="week-8" onclick='document.getElementById("weeknumber").innerHTML = "Week 8"' class="btn week my-3 rounded-5 text-light text-start">Week 8</span>
+              </div>
+              <div class="tab rounded-5" tabindex="0" aria-label="View week 9">
+                <span id="week-9" onclick='document.getElementById("weeknumber").innerHTML = "Week 9"' class="btn week my-3 rounded-5 text-light text-start">Week 9</span>
+              </div>
+              <div class="tab rounded-5" tabindex="0" aria-label="View week 10">
+                <span id="week-10" onclick='document.getElementById("weeknumber").innerHTML = "Week 10"' class="btn week my-3 rounded-5 text-light text-start">Week 10</span>
+              </div>
             </div>
-            <div class="d-flex flex-column justify-content-center">
-              <a href=""><img class="mobile-video-svg" src="../Images/icons/video.svg" alt="mobile video icon"></a>
-              <p id="nav-mobile-font-3" class="p-1 fw-bolder">Meetings</p>
-            </div>
-            <div class="d-flex flex-column justify-content-center">
-              <a href=""><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></a>
-              <p id="nav-mobile-font-4" class="p-1 fw-bolder">Calendar</p>
-            </div>
+            <!-- adds accessibility ends  -->
           </div>
-        </nav>
-    
-        <!-- Bootstrap Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        </div>
+        <!-- Log Out -->
+        <div class="group-wrapper">
+          <a href="../HTML/login-home.html">
+            <div class="logout d-flex justify-content-center rounded-5">
+              <img role="img" src="../Images/icons/logout.svg" alt="logout">
+              <div class="m-3">
+                Log Out
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Content (Border Radius Container) -->
+      <div role="region" class="box col nopadding">
+        <img id="bg-img-dsk" class="img-fluid" src="../Images/GeoCourseBanner.png" alt="banner">
+        <h1 id="text-over-img-dsk" class="fs-1 text-white fw-bold" aria-label="course name">Geography</h1>
+        <div class="coursenav">
+          <ul class="nav nav-tabs mt-1" id="workbook" role="tablist">
+            <li class="nav-item" role="workbook">
+              <a class="text-dark" href="geo-course-page.html"><button class="nav-link active text-black fw-bold fs-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#workbook-tab-pane" type="button" role="tab" aria-selected="true" aria-label="workbook tab pane">Workbook</button></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="text-dark" href=""><button class="nav-link text-black fw-bold fs-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#course-outline-tab-pane" type="button" role="tab" aria-selected="false" aria-label="course outline tab pane">Course Outline</button></a>
+            </li>
+          </ul>
+          <p role="navigation" class="nav-item mt-3 mx-3">My Workspace > My Courses > Geography</p>
+        </div>
+        <h2 aria-label="Week Number" class="mx-4 fs-2 mt-5 fw-bold weeknumber" id="weeknumber">Week 1</h2>
+        <!-- This div is for the course content or the cards -->
+        <div class="container-fluid" id="course-content">
+          <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-5 me-5 p-0">
+              <h3 aria-label="to do list" class="mx-4 fs-3 mt-5 fw-bold">To do:</h3>
+              <div class="to-do card mt-5 mx-4">
+                <div class="card-body m-4 my-2">
+                  <div class="form-check mt-2">
+                    <input aria-label="Check Off Task" class="form-check-input" type="checkbox" value="" id="flexCheckDefault-1-dsk">
+                    <label aria-label="Due Date" class="form-check-label p-1 fs-5" for="flexCheckDefault-1-dsk">
+                      10-10-2023
+                    </label>
+                  </div>
+                  <p class="fs-5 mt-4 fw-bold">Watch and read</p>
+                  <p class="fs-5 mt-4 lh-lg">Doctor shares foods to eat to help combat diseases l GMAList:<br> Antiangiogenic Foods Dr Li</p>
+                  <p class="fs-5 mt-4 fw-bold">Complete your Lifestyle: Nutrition and Disease Prevention assignment</p>
+                  <p class="fs-5 mt-4">Due 09/16 at 11:59 pm.</p>
+                </div>
+              </div>
+              <div class="to-do card mt-5 mb-5 mx-4">
+                <div class="card-body m-4 my-2">
+                  <div class="form-check mt-2">
+                    <input aria-label="Check Off Task" class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2-dsk">
+                    <label aria-label="Due Date" class="form-check-label p-1 fs-5" for="flexCheckDefault-2-dsk">
+                      10-10-2023
+                    </label>
+                  </div>
+                  <p class="fs-5 mt-4 fw-bold">Watch and read</p>
+                  <p class="fs-5 mt-4 lh-lg">Doctor shares foods to eat to help combat diseases l GMAList:<br> Antiangiogenic Foods Dr Li</p>
+                  <p class="fs-5 mt-4 fw-bold">Complete your Lifestyle: Nutrition and Disease Prevention assignment</p>
+                  <p class="fs-5 mt-4">Due 09/16 at 11:59 pm.</p>
+                </div>
+              </div>
+            </div>
 
-    <!-- Custom Scripts -->
-    <script src="../JS/script.js"></script>
-    <script src="../JS/myworkspace.js"></script>
+            <!-- This second div is for my messages and my calendar -->
+            <!-- This div is for my calendar -->
+            <div class="messages-calendar col-lg-3 col-md-2 col-sm-3 mt-4 fixed-width">
+              <!-- This div is for my messages -->
+              <div class="desk-msg shadow p-3 mb-5 bg-body-tertiary rounded">
+                <!-- This div is for the icon of my messages and the title -->
+                <div class="d-flex align-items-center">
+                  <img src="/Images/icons/message-2.png" alt="message-icon">
+                  <h2 class="ms-4 fs-5 title-cal-message">My Messages</h2>
+                </div>
+                <!-- This span is for creating the line that goes below the title and icon of my messages -->
+                <hr class="primary-line-message mt-2">
+                <!-- This div contains the list of my messages -->
+                <div class="d-flex">
+                  <div>
+                    <img src="/Images/icons/rectangle-144.png" alt="profile-icon">
+                  </div>
+                  <div class="ms-3">
+                    <h3 class="mb-2 messages-title">Abigail</h3>
+                    <p class="messages-text">Could you review...</p>
+                  </div>
+                </div>
+                <hr class="secondary-line-message mt-2">
+                <div class="d-flex">
+                  <div>
+                    <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
+                  </div>
+                  <div class="ms-3">
+                    <h3 class="mb-2 messages-title">John</h3>
+                    <p class="messages-text">Just a reminder to...</p>
+                  </div>
+                </div>
+                <hr class="secondary-line-message mt-2">
+                <div class="d-flex">
+                  <div>
+                    <img src="/Images/icons/rectangle-146.png" alt="profile-icon">
+                  </div>
+                  <div class="ms-3">
+                    <h3 class="mb-2 messages-title">Paul</h3>
+                    <p class="messages-text">If you need more inf...</p>
+                  </div>
+                </div>
+                <hr class="secondary-line-message mt-2">
+              </div>
+              <!-- This div is for my calendar -->
+              <div class="calendar-container shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons">
+                  <h2 class="title-cal-message me-2 fs-5">My Calendar</h2>
+                  <img id="calendar-icon" class="calendar-icon icon" src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
+                  <img id="list-icon" class="list-cal-icon icon" src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
+                </div>
+                <hr class="primary-line-message mt-2">
+                <!-- Jia and Qing add accessibilities  -->
+                <!-- This div is for the calendar -->
+                <div id="calendar-content" class="bg-body-tertiary rounded p-3" tabindex="0"
+                aria-label="View calendar">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center" tabindex="0">
+                    <p id="current-month" class="current-month"></p>
+                    <div class="calendar-arrows" tabindex="0">
+                      <img id="left" src="/Images/icons/chevron-2.svg" alt="left-button">
+                      <img id="right" src="/Images/icons/chevron.svg" alt="right-button">
+                    </div>
+                  </div>
+                  <div class="calendar d-flex flex-wrap flex-column" tabindex="0">
+                    <div class="weeks" tabindex="0">
+                      <ul>
+                        <li>Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="days" tabindex="0"></ul>
+                    </div>
+                  </div>
+                </div>
+                <ul id="events-list" style="display: none">
+                  <!-- Event items will be dynamically added here -->
+                </ul>
+              </div>
+            </div>
+          </div>                           
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Mobile Navigation -->
+  <div class="container-md screen" id="mbl-calendar">
+    <!-- Calendar -->
+    <div class="calendar-container-mobile shadow bg-body-tertiary rounded">
+      <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons-mobile">
+        <h2 class="title-cal-message-mobile me-2 fs-5">My Calendar</h2>
+        <img id="calendar-icon-mobile" class="calendar-icon-mobile icon-mobile" src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
+        <img id="list-icon-mobile" class="list-cal-icon-mobile icon-mobile" src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
+      </div>
+      <hr class="primary-line-message mt-2">
+      <!-- Jia and Qing add accessibilities  -->
+      <!-- This div is for the calendar -->
+      <div id="calendar-content-mobile" class="bg-body-tertiary rounded p-3" tabindex="0"
+      aria-label="View calendar">
+        <div class="d-flex flex-wrap justify-content-between align-items-center" tabindex="0">
+          <p id="current-month-mobile" class="current-month-mobile"></p>
+          <div class="calendar-arrows-mobile" tabindex="0">
+            <img id="left-mobile" src="/Images/icons/chevron-2.svg" alt="left-button">
+            <img id="right-mobile" src="/Images/icons/chevron.svg" alt="right-button">
+          </div>
+        </div>
+        <div class="calendar-mobile d-flex flex-wrap flex-column" tabindex="0">
+          <div class="weeks-mobile" tabindex="0">
+            <ul>
+              <li>Su</li>
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="days-mobile" tabindex="0"></ul>
+          </div>
+        </div>
+      </div>
+      <ul id="events-list-mobile" style="display: none">
+        <!-- Event items will be dynamically added here -->
+      </ul>
+    </div>
+  </div>
+  <div id="mobile-course-pg" class="container-md nopadding">
+    <img id="bg-img-mbl" src="../Images/EnglishCourseBannerMbl.jpg" alt="banner">
+    <h1 id="text-over-img-mbl" class="fs-3 text-white fw-bold">Geography</h1>
+    <p role="navigation" class="mt-2 mx-3">My Courses > Geography</p>
+    <h2 aria-label="Week Number" class="mx-3 fs-2 mt-5 fw-bold">Week 1</h2>
+    <h3 aria-label="to do list" class="mx-3 fs-5 mt-3 fw-bold mb-3">To do:</h3>
+    <div class="to-do card w-100">
+      <div class="card-body m-4 my-2">
+        <div class="form-check mt-2">
+          <input aria-label="Check Off Task" class="form-check-input" type="checkbox" value="" id="flexCheckDefault-1-mbl">
+          <label aria-label="Due Date" class="form-check-label p-1 fs-5" for="flexCheckDefault-1-mbl">
+            10-10-2023
+          </label>
+        </div>
+        <p class="fs-5 mt-4 fw-bold">Watch and read</p>
+        <p class="fs-5 mt-4 lh-lg">Doctor shares foods to eat to help combat diseases l GMAList:<br> Antiangiogenic Foods Dr Li</p>
+        <p class="fs-5 mt-4 fw-bold">Complete your Lifestyle: Nutrition and Disease Prevention assignment</p>
+        <p class="fs-5 mt-4">Due 09/16 at 11:59 pm.</p>
+      </div>
+    </div>
+    <div class="to-do card w-100 mt-3">
+      <div class="card-body m-4 my-2">
+        <div class="form-check mt-2">
+          <input aria-label="Check Off Task" class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2-mbl">
+          <label aria-label="Due Date" class="form-check-label p-1 fs-5" for="flexCheckDefault-2-mbl">
+            10-10-2023
+          </label>
+        </div>
+        <p class="fs-5 mt-4 fw-bold">Watch and read</p>
+        <p class="fs-5 mt-4 lh-lg">Doctor shares foods to eat to help combat diseases l GMAList:<br> Antiangiogenic Foods Dr Li</p>
+        <p class="fs-5 mt-4 fw-bold">Complete your Lifestyle: Nutrition and Disease Prevention assignment</p>
+        <p class="fs-5 mt-4">Due 09/16 at 11:59 pm.</p>
+      </div>
+    </div>
+    <!-- Margin for page bottom -->
+    <div class="m-5 p-4"></div>
+  </div>
+  <!-- Mobile Navigation -->
+  <nav role="navigation" class="mobile-nav fixed-bottom p-3 m-3">
+    <div id="mobile-nav-icons" class="container-fluid text-center d-flex justify-content-around">
+      <!-- Home Button -->
+      <div class="d-flex flex-column justify-content-center">
+        <a href="" id="mbl-home-reg" class="screen"><img class="mobile-home-svg" src="../Images/icons/mobile_home.svg" alt="mobile home icon"></a>
+        <span onclick="mobileHomeSelect()" id="mbl-home-pink" class="screen"><a href=""><img class="mobile-home-pink-svg" src="../Images/icons/home-workspace.svg" alt="mobile home icon"></a></span>
+        <p class="p-1 fw-bolder">Home</p>
+      </div>
+      <!-- Assignments Button -->
+      <div class="d-flex flex-column justify-content-center">
+        <span><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobile assignments icon"></span>
+        <p id="nav-mobile-font-2" class="p-1 fw-bolder">Assignments</p>
+      </div>
+      <!-- Meetings Button -->
+      <div class="d-flex flex-column justify-content-center">
+        <span><img class="mobile-video-svg" src="../Images/icons/video.svg" alt="mobile video icon"></span>
+        <p id="nav-mobile-font-3" class="p-1 fw-bolder">Meetings</p>
+      </div>
+      <!-- Calendar Button -->
+      <div class="d-flex flex-column justify-content-center">
+        <span onclick="mobileCalendarCourseClicked()" id="mobile-calendar-icon" class="screen"><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></span>
+        <span onclick="mobileCalSelect()" id="mbl-cal-pink" class="screen"><img class="mobile-calendar-pink-svg" src="../Images/icons/Calendar.svg" alt="mobile calendar icon"></span>
+        <p id="nav-mobile-font-4" class="p-1 fw-bolder">Calendar</p>
+      </div>
+    </div>
+  </nav>
+    
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
+  <script src="../JS/script.js"></script>
+  <script src="/JS/calendar.js"></script>
+  <script src="/JS/calendar-mbl.js"></script>
+  <script src="../JS/myworkspace.js"></script>
 </body>
 </html>
