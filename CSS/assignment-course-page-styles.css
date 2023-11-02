@@ -1,192 +1,145 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-    font-family: 'Avenir LT Pro', Helvetica;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.assignment-link li a:link,
+.assignment-link li a:visited,
+.assignment-link li a:hover,
+.assignment-link li a:active {
+  color: black;
 }
 
-html {
-    max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
+.choose-course li a:link,
+.choose-course li a:visited,
+.choose-course li a:hover,
+.choose-course li a:active {
+  color: black;
 }
 
-@media screen and (min-width: 350px) and (max-width: 700px) {
-
+#myTabs li a:link,
+#myTabs li a:visited,
+#myTabs li a:hover,
+#myTabs li a:active {
+  color: black;
 }
 
-@media (min-width: 700px) and (max-width: 4000px) {
-    .assignment-link li a:link,
-    .assignment-link li a:visited,
-    .assignment-link li a:hover,
-    .assignment-link li a:active {
-    color: black;
-    }
-
-    .choose-course li a:link,
-    .choose-course li a:visited,
-    .choose-course li a:hover,
-    .choose-course li a:active {
-    color: black;
-    }
-
-    #myTabs li a:link,
-    #myTabs li a:visited,
-    #myTabs li a:hover,
-    #myTabs li a:active {
-    color: black;
-    }
-
-    /* .assignment-link li {
-    text-decoration: none;
-    color: black !important;
-    } */
+/* .assignment-link li {
+  text-decoration: none;
+  color: black !important;
+} */
 
 
-    .assignment-table {
-    width: 100%;
-    border-collapse: collapse;
+.assignment-table {
+  width: 100%;
+  border-collapse: collapse;
 
-    overflow: hidden;
-    }
+  overflow: hidden;
+}
 
-    .assignment-table th {
-    background-color: palevioletred;
-    color: white;
-    }
+.assignment-table th {
+  background-color: palevioletred;
+  color: white;
+}
 
-    .assignment-table th,
-    .assignment-table td {
-    border: 3px solid palevioletred;
+.assignment-table th,
+.assignment-table td {
+  border: 3px solid palevioletred;
 
-    padding: 16px;
-    text-align: center;
-    }
+  padding: 16px;
+  text-align: center;
+}
 
-    strong {
-    font-weight: bold;
-    }
+strong {
+  font-weight: bold;
+}
 
-    /* .tab {
-    display: inline;
-    border-radius: 100px;
-    } */
+.box {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  /* margin-left: 2.5rem; */
+  background-color: white;
+  border-radius: 48px 0px 0px 0px;
+}
 
-    /* add css for assignment-page unread modal */
-    .modal-dialog {
-    width: 30%;
-    max-width: none;
-    position: fixed;
-    top: 100px;
-    left: 800px;
-    }
+.tab {
+  display: inline;
+  border-radius: 100px;
+}
 
-    .modal-body {
-    text-align: left;
-    }
+/* add css for assignment-page unread modal */
+.modal-dialog {
+  width: 30%;
+  max-width: none;
+  position: fixed;
+  top: 100px;
+  left: 800px;
+}
 
-    .arrow {
-    padding-top: 8px;
-    }
+.modal-body {
+  text-align: left;
+}
 
-    /* h2 {
-    padding-top: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-right: 875px;
-    }
+.arrow {
+  padding-top: 8px;
+}
 
-    p {
-    text-align: left;
-    margin-right: -10px;
-    padding-left: 10px;
-    justify-content: left
-    } */
+/* h2 {
+  padding-top: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-right: 875px;
+}
 
-    table td.highlight {
-    background-color: #D1E5F3;
-    color: black;
-    }
+p {
+  text-align: left;
+  margin-right: -10px;
+  padding-left: 10px;
+  justify-content: left
+} */
 
-
-    /* on assignments - assignment in detail page */
-    .radiobutton {
-    margin-top: -1px;
-    }
+table td.highlight {
+  background-color: #D1E5F3;
+  color: black;
+}
 
 
-    /* on assignments - submission page */
-    .scroll-wrapper {
-    width: 1002px;
-    /* 容器宽度加上滚动条宽度 */
-    overflow: hidden;
-    position: relative;
-    margin-left: -20px;
-    }
+/* on assignments - assignment in detail page */
+.radiobutton {
+  margin-top: -1px;
+}
 
-    .scrollable-content {
-    width: 1000px;
-    height: 150px;
-    border: 1px solid palevioletred;
-    border-radius: 10px;
-    overflow-y: scroll;
-    padding: 10px;
-    box-sizing: border-box;
-    }
 
-    .scrollable-content::-webkit-scrollbar {
-    width: 10px;
-    }
+/* on assignments - submission page */
+.scroll-wrapper {
+  width: 1002px;
+  /* 容器宽度加上滚动条宽度 */
+  overflow: hidden;
+  position: relative;
+  margin-left: -20px;
+}
 
-    .scrollable-content::-webkit-scrollbar-thumb {
-    background-color: #E05D7D;
-    border-radius: 10px;
-    }
+.scrollable-content {
+  width: 1000px;
+  height: 150px;
+  border: 1px solid palevioletred;
+  border-radius: 10px;
+  overflow-y: scroll;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
-    .scrollable-content::-webkit-scrollbar-track {
-    background-color: #F6CED8;
+.scrollable-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #E05D7D;
+  border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background-color: #F6CED8;
+}
+
+@media screen and (max-width: 860px) {
+    .table-ctr {
+        width: 100px;
     }
 }
