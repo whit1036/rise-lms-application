@@ -136,27 +136,6 @@ html {
     flex: 0 0 auto; /* This prevents the container from stretching */
     max-width: 300px; 
   }
-    
-  .title-cal-message {
-    color: #246161;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 800;
-  }
-
-  .primary-line-message {
-    width: 100%;
-    border: 1px solid #246161;
-  }
-
-  .messages-text {
-    color: darkgrey;
-    font-family: var(--RISE-body-smal-font-family);
-  }
-
-  .messages-title {
-    font-family: var(--RISE-body-smal-font-family);
-  }
 
   /* Calendar Desktop */
   .calendar-icons img:hover {
