@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/main-styles.css">
     <link rel="stylesheet" href="../CSS/styleguide.css">
+    <link rel="stylesheet" href="../CSS/workspace-styles.css">
     <link rel="stylesheet" href="../CSS/assignment-course-page-styles.css">
     <!-- <link rel="stylesheet" href="../CSS/workspace-styles.css"> -->
     <link rel="stylesheet" href="https://use.typekit.net/ioi4mhc.css">
@@ -306,76 +307,51 @@
               <div class="container-fluid">
                 <!-- Assignment Table Starts Here -->
                 <div class="table-ctr row mt-5">
-                    <div class="col-xxl-10 col-lg-4 nopadding">
+                    <div class="col-xxl-10 col-lg-9 mx-5 nopadding">
                       <!-- tabs  to display different content      -->
-                      <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                      <ul class="nav nav-tabs justify-content-end" id="myTabs" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link active" id="tab1-tab"
+                          <a class="nav-link active fw-bold fs-5" id="tab1-tab"
                             data-bs-toggle="tab" href="#tab1" role="tab"
                             aria-controls="tab1" aria-selected="true">All
                             Assignments</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="tab2-tab" data-bs-toggle="tab"
+                          <a class="nav-link fw-bold fs-5" id="tab2-tab" data-bs-toggle="tab"
                             href="#tab2" role="tab" aria-controls="tab2"
                             aria-selected="false">Upcoming</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="tab3-tab" data-bs-toggle="tab"
+                          <a class="nav-link fw-bold fs-5" id="tab3-tab" data-bs-toggle="tab"
                             href="#tab3" role="tab" aria-controls="tab3"
                             aria-selected="false">Overdue</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link fw-bold fs-5" id="tab4-tab" data-bs-toggle="tab"
+                            href="#tab4" role="tab" aria-controls="tab4"
+                            aria-selected="false">Completed</a>
                         </li>
                       </ul>
                       <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="tab1"
                           role="tabpanel" aria-labelledby="tab1-tab">
-                          <table
-                            class="table assignment-table table-bordered rounded table-rubric m-3 mt-4">
+                          <table class="table assignment-table table-bordered rounded table-rubric">
                             <thead>
                               <tr>
-                                <th scope="col">Courses</th>
-                                <th scope="col">Assignment</th>
-                                <th scope="col">Submission</th>
-                                <th scope="col">Due Date</th>
-                                <th scope="col">Feedback</th>
+                                <th scope="col" class="fw-bold fs-5">Course</th>
+                                <th scope="col" class="fw-bold fs-5 text-center">Assignment</th>
+                                <th scope="col" class="fw-bold fs-5 text-center">Submission</th>
+                                <th scope="col" class="fw-bold fs-5 text-center">Due Date</th>
+                                <th scope="col" class="fw-bold fs-5 text-center">Feedback</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td scope="row">Business</td>
+                                <td scope="row" class="">Business</td>
                                 <td>Assignment 2</td>
                                 <td>1 Submission</td>
                                 <td>September 20th</td>
-                                <td>
-                                  <!-- add modal for this unread message-->
-                                  <span data-bs-toggle="modal"
-                                    data-bs-target="#myModal"><strong>Unread</strong></span>
-                                  <div class="modal fade" id="myModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="modal-title"
-                                            id="exampleModalLabel"><strong>Unread
-                                              Messages</strong></h5>
-                                          <button type="button" class="btn-close"
-                                            data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                          Well done on your Assignment 2. Great Job!
-                                        </div>
-                                        <div class=" modal-footer">
-                                          <button type="button"
-                                            class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- add modal for this unread message ends-->
-                                </td>
+                                <td class="fw-bold">Unread</td>
                                 </td>
                               </tr>
                               <tr>
@@ -419,57 +395,59 @@
                         </div>
                         <div class="tab-pane fade" id="tab2" role="tabpanel"
                           aria-labelledby="tab2-tab">
-                          <table class="table assignment-table table-rubric m-3 mt-5">
+                          <table class="table assignment-table table-bordered rounded table-rubric">
                             <thead>
                               <tr>
-                                <th scope="col">Courses</th>
-                                <th scope="col">Assignment</th>
-                                <th scope="col">Submission</th>
-                                <th scope="col">Due Date</th>
-                                <th scope="col">Feedback</th>
+                                <th scope="col" class="fw-bold fs-5">Course</th>
+                                <th scope="col" class="fw-bold fs-5">Assignment</th>
+                                <th scope="col" class="fw-bold fs-5">Submission</th>
+                                <th scope="col" class="fw-bold fs-5">Due Date</th>
+                                <th scope="col" class="fw-bold fs-5">Feedback</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td scope="row">Business</td>
+                                <td scope="row" class="">Business</td>
                                 <td>Assignment 2</td>
                                 <td>1 Submission</td>
-                                <td>October 20th</td>
-                                <td>Read</td>
+                                <td>September 20th</td>
+                                <td class="fw-bold">Unread</td>
+                                </td>
                               </tr>
                               <tr>
                                 <td scope="row">Communications Technology </td>
                                 <td>Civic Discussion 1</td>
                                 <td>1 Submission</td>
-                                <td>October 20th</td>
+                                <td>September 20th</td>
                                 <td>Read</td>
+      
                               </tr>
                               <tr>
                                 <td scope="row">English</td>
                                 <td>Assignment 2</td>
                                 <td>1 Submission</td>
-                                <td>October 20th</td>
+                                <td>September 20th</td>
                                 <td>Read</td>
                               </tr>
                               <tr>
                                 <td scope="row">Food & Nutrition</td>
                                 <td>Healthy Lifestyle: Nu...</td>
                                 <td>1 Submission</td>
-                                <td>SOctober 20th</td>
+                                <td>September 20th</td>
                                 <td>Read</td>
                               </tr>
                               <tr>
                                 <td scope="row">Geography</td>
                                 <td>Healthy Lifestyle: Nu...</td>
                                 <td>1 Submission</td>
-                                <td>October 20th</td>
+                                <td>September 20th</td>
                                 <td>Read</td>
                               </tr>
                               <tr>
-                                <td scope="row">Mathn</td>
+                                <td scope="row">Math</td>
                                 <td>Healthy Lifestyle: Nu...</td>
                                 <td>1 Submission</td>
-                                <td>October 20th</td>
+                                <td>September 20th</td>
                                 <td>Read</td>
                               </tr>
                             </tbody>
@@ -477,57 +455,119 @@
                         </div>
                         <div class="tab-pane fade" id="tab3" role="tabpanel"
                           aria-labelledby="tab3-tab">
-                          <table class="table assignment-table table-rubric m-3 mt-5">
+                          <table class="table assignment-table table-bordered rounded table-rubric">
                             <thead>
                               <tr>
-                                <th scope="col">Courses</th>
-                                <th scope="col">Assignment</th>
-                                <th scope="col">Submission</th>
-                                <th scope="col">Due Date</th>
-                                <th scope="col">Feedback</th>
+                                <th scope="col" class="fw-bold fs-5">Course</th>
+                                <th scope="col" class="fw-bold fs-5">Assignment</th>
+                                <th scope="col" class="fw-bold fs-5">Submission</th>
+                                <th scope="col" class="fw-bold fs-5">Due Date</th>
+                                <th scope="col" class="fw-bold fs-5">Feedback</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td scope="row">Business</td>
+                                <td scope="row" class="">Business</td>
                                 <td>Assignment 2</td>
                                 <td>1 Submission</td>
-                                <td>August 20th</td>
-                                <td>Read</td>
+                                <td>September 20th</td>
+                                <td class="fw-bold">Unread</td>
+                                </td>
                               </tr>
                               <tr>
                                 <td scope="row">Communications Technology </td>
                                 <td>Civic Discussion 1</td>
                                 <td>1 Submission</td>
-                                <td>August 20th</td>
+                                <td>September 20th</td>
                                 <td>Read</td>
+      
                               </tr>
                               <tr>
                                 <td scope="row">English</td>
                                 <td>Assignment 2</td>
                                 <td>1 Submission</td>
-                                <td>August 20th</td>
+                                <td>September 20th</td>
                                 <td>Read</td>
                               </tr>
                               <tr>
                                 <td scope="row">Food & Nutrition</td>
                                 <td>Healthy Lifestyle: Nu...</td>
                                 <td>1 Submission</td>
-                                <td>August 20th</td>
+                                <td>September 20th</td>
                                 <td>Read</td>
                               </tr>
                               <tr>
                                 <td scope="row">Geography</td>
                                 <td>Healthy Lifestyle: Nu...</td>
                                 <td>1 Submission</td>
-                                <td>August 20th</td>
+                                <td>September 20th</td>
                                 <td>Read</td>
                               </tr>
                               <tr>
-                                <td scope="row">Mathn</td>
+                                <td scope="row">Math</td>
                                 <td>Healthy Lifestyle: Nu...</td>
                                 <td>1 Submission</td>
-                                <td>August 20th</td>
+                                <td>September 20th</td>
+                                <td>Read</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="tab-pane fade" id="tab4" role="tabpanel"
+                          aria-labelledby="tab4-tab">
+                          <table class="table assignment-table table-bordered rounded table-rubric">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="fw-bold fs-5">Course</th>
+                                <th scope="col" class="fw-bold fs-5">Assignment</th>
+                                <th scope="col" class="fw-bold fs-5">Submission</th>
+                                <th scope="col" class="fw-bold fs-5">Due Date</th>
+                                <th scope="col" class="fw-bold fs-5">Feedback</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row" class="">Business</td>
+                                <td>Assignment 2</td>
+                                <td>1 Submission</td>
+                                <td>September 20th</td>
+                                <td class="fw-bold">Unread</td>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Communications Technology </td>
+                                <td>Civic Discussion 1</td>
+                                <td>1 Submission</td>
+                                <td>September 20th</td>
+                                <td>Read</td>
+      
+                              </tr>
+                              <tr>
+                                <td scope="row">English</td>
+                                <td>Assignment 2</td>
+                                <td>1 Submission</td>
+                                <td>September 20th</td>
+                                <td>Read</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Food & Nutrition</td>
+                                <td>Healthy Lifestyle: Nu...</td>
+                                <td>1 Submission</td>
+                                <td>September 20th</td>
+                                <td>Read</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Geography</td>
+                                <td>Healthy Lifestyle: Nu...</td>
+                                <td>1 Submission</td>
+                                <td>September 20th</td>
+                                <td>Read</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Math</td>
+                                <td>Healthy Lifestyle: Nu...</td>
+                                <td>1 Submission</td>
+                                <td>September 20th</td>
                                 <td>Read</td>
                               </tr>
                             </tbody>
@@ -660,7 +700,58 @@
         
         <!-- Oct 19th notification change ends-->
         <div id="workspace-info" class="container-md screen">
-        
+          <!-- Mobile Headers -->
+          <div class="mobile-headings">
+            <h1 class="welcome-back-text fs-1 fw-bold">Welcome back, Sarah! 😁</h1>
+            <h2 class="fs-2 mt-4 mb-4 fw-bold">My Courses</h2>
+        </div>
+        <!-- Course Container -->
+            <div class="courses">
+                <!-- Math -->
+                <div class="shadow card w-100">
+                    <a href="../HTML/math-course-page.html"><img class="card-img-top" src="/Images/MathMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">Math</h5>
+                    </div>
+                </div>
+                <!-- Business -->
+                <div class="shadow card w-100">
+                    <a href="../HTML/business-course-page.html"><img class="card-img-top" src="/Images/BusinessMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">Business</h5>
+                    </div>
+                </div>
+                <!-- Science -->
+                <div class="shadow card w-100" >
+                    <a href="../HTML/science-course-page.html"><img class="card-img-top" src="/Images/ScienceMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">Science</h5>
+                    </div>
+                </div>
+                <!-- English -->
+                <div class="shadow card w-100">
+                    <a href="../HTML/english-course-page.html"><img class="card-img-top" src="/Images/EnglishMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">English</h5>
+                    </div>
+                </div>
+                <!-- Geography -->
+                <div class="shadow card w-100">
+                    <a href="../HTML/geo-course-page.html"><img class="card-img-top" src="/Images/GeographyMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">Geography</h5>
+                    </div>
+                </div>
+                <!-- Food & Nutrition -->
+                <div class="shadow card w-100">
+                    <a href="../HTML/food-course-page.html"><img class="card-img-top" src="/Images/FoodMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">Food &amp; Nutrition</h5>
+                    </div>
+                </div>
+                <!-- Margin for page bottom -->
+                <div class="m-5 p-3"></div>
+            </div>
         </div>
         <!-- Mobile Navigation -->
         <nav role="navigation" class="mobile-nav fixed-bottom p-3 m-3">
