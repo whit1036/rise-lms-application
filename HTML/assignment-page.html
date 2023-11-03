@@ -303,35 +303,38 @@
             </div>
           </div>
           <!-- Content (Border Radius Container) -->
-          <div role="region" class="box col ">
+          <div role="region" class="box col nopadding">
               <div class="container-fluid">
                 <!-- Assignment Table Starts Here -->
-                <div class="table-ctr row mt-5">
-                    <div class="col-xxl-10 col-lg-9 mx-5 nopadding">
+                <div class="row mt-5 me-4 mx-4">
+                    <div class="nopadding">
+                      <h1 aria-label="course outline title" class="fs-2 mt-5 mb-3 fw-bold">My Assignments</h1>
                       <!-- tabs  to display different content      -->
-                      <ul class="nav nav-tabs justify-content-end" id="myTabs" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link active fw-bold fs-5" id="tab1-tab"
-                            data-bs-toggle="tab" href="#tab1" role="tab"
-                            aria-controls="tab1" aria-selected="true">All
-                            Assignments</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link fw-bold fs-5" id="tab2-tab" data-bs-toggle="tab"
-                            href="#tab2" role="tab" aria-controls="tab2"
-                            aria-selected="false">Upcoming</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link fw-bold fs-5" id="tab3-tab" data-bs-toggle="tab"
-                            href="#tab3" role="tab" aria-controls="tab3"
-                            aria-selected="false">Overdue</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link fw-bold fs-5" id="tab4-tab" data-bs-toggle="tab"
-                            href="#tab4" role="tab" aria-controls="tab4"
-                            aria-selected="false">Completed</a>
-                        </li>
-                      </ul>
+                      <div class="table-navi">
+                        <ul class="nav nav-tabs justify-content-end" id="myTabs" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link active fw-bold" id="tab1-tab"
+                              data-bs-toggle="tab" href="#tab1" role="tab"
+                              aria-controls="tab1" aria-selected="true">All
+                              Assignments</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link fw-bold" id="tab2-tab" data-bs-toggle="tab"
+                              href="#tab2" role="tab" aria-controls="tab2"
+                              aria-selected="false">Upcoming</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link fw-bold" id="tab3-tab" data-bs-toggle="tab"
+                              href="#tab3" role="tab" aria-controls="tab3"
+                              aria-selected="false">Overdue</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link fw-bold" id="tab4-tab" data-bs-toggle="tab"
+                              href="#tab4" role="tab" aria-controls="tab4"
+                              aria-selected="false">Completed</a>
+                          </li>
+                        </ul>
+                      </div>
                       <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="tab1"
                           role="tabpanel" aria-labelledby="tab1-tab">

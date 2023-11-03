@@ -108,6 +108,7 @@ color: #197BBD;
     /* Mobile Deafult Template */
     #main-header {
         background-color: #197BBD;
+        width: 100%;
     }
 
     #msg-dsk {
@@ -403,7 +404,7 @@ color: #197BBD;
     }
 }
 
-@media (min-width: 700px) and (max-width: 4000px) {
+@media (min-width: 701px) and (max-width: 4000px) {
     #mbl-calendar {
         display: none;
       }

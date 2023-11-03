@@ -90,7 +90,7 @@ html {
     }
 }
 
-@media (min-width: 700px) and (max-width: 4000px) {
+@media (min-width: 701px) and (max-width: 4000px) {
 
     .courses {
         display: none;

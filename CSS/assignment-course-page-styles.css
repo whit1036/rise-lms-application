@@ -36,9 +36,17 @@
   color: black !important;
 } */
 
+.box {
+  overflow: auto;
+  height: auto;
+}
+
 
 .assignment-table {
   overflow: hidden;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
 }
 
 .assignment-table th {
@@ -94,4 +102,30 @@ table td.highlight {
 /* on assignments - assignment in detail page */
 .radiobutton {
   margin-top: -1px;
+}
+
+.table-navi {
+  font-size: 1.25rem;
+}
+
+
+/* @media (max-width: 701px) {
+  .table-navi {
+    word-break: keep-all;
+    background-color: aliceblue;
+  }
+} */
+
+@media (max-width: 920px) { 
+  td, th, tr {
+    word-break: keep-all ;
+
+    padding: 0;
+  }
+
+  .table-navi {
+    word-break: keep-all;
+    font-size: 15px;
+  }
+
 }
