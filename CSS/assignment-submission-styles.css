@@ -6,6 +6,10 @@
     background-color: white;
     border-radius: 48px 0px 0px 0px;
   }
+
+  #assignment-tbl-info {
+    display: none;
+  }
 }
 
   .assignment-table td {
