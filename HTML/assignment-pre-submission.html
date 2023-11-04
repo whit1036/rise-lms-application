@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/main-styles.css">
     <link rel="stylesheet" href="../CSS/styleguide.css">
+    <link rel="stylesheet" href="../CSS/workspace-styles.css">
     <link rel="stylesheet" href="../CSS/assignment-course-page-styles.css">
     <link rel="stylesheet" href="../CSS/assignment-submission-styles.css">
     <!-- <link rel="stylesheet" href="../CSS/workspace-styles.css"> -->
@@ -366,7 +367,7 @@
                             </thead>
                             <tbody>
                               <tr>
-                                <td scope="row" class="bg-danger-subtle fs-5 lh-base align-middle">Knowledge / <br>Understanding</td>
+                                <td class="bg-danger-subtle fs-5 lh-base align-middle">Knowledge / <br>Understanding</td>
                                 <td class="lh-base">Thoroughly understands the contents of the module.</td>
                                 <td class="lh-base">Understands the contents of the module.</td>
                                 <td class="lh-base">Sort of understands the contents of the module.</td>
@@ -374,7 +375,7 @@
                                 <td class="lh-base">Not attempted</td>
                               </tr>
                               <tr>
-                                <td scope="row" class="bg-danger-subtle fs-5 lh-base align-middle">Thinking and<br>inquiry</td>
+                                <td class="bg-danger-subtle fs-5 lh-base align-middle">Thinking and<br>inquiry</td>
                                 <td class="lh-base">Has thought critically about the contents of the module.</td>
                                 <td class="lh-base">Has thought about the contents of the module.</td>
                                 <td class="lh-base">Sort of thought about the contents of the module.</td>
@@ -382,7 +383,7 @@
                                 <td class="lh-base">Not attempted</td>
                               </tr>
                               <tr>
-                                <td scope="row" class="bg-danger-subtle fs-5 lh-base align-middle">Communication</td>
+                                <td class="bg-danger-subtle fs-5 lh-base align-middle">Communication</td>
                                 <td class="lh-base">Has communicated the issues in the lesson extremely well.</td>
                                 <td class="lh-base">Has communicated the issues in the lesson well.</td>
                                 <td class="lh-base">Has sort of communicated the issues in the lesson.</td>
@@ -390,7 +391,7 @@
                                 <td class="lh-base">Not attempted</td>
                               </tr>
                               <tr>
-                                <td scope="row" class="bg-danger-subtle fs-5 lh-base align-middle">Application</td>
+                                <td class="bg-danger-subtle fs-5 lh-base align-middle">Application</td>
                                 <td class="lh-base">Has applied the content of the module thoroughly and effectively.</td>
                                 <td class="lh-base">Has applied the content of the module effectively.</td>
                                 <td class="lh-base">Has sort of applied the content of the module.</td>
@@ -413,8 +414,8 @@
                           <button id="upload-file" class="btn mt-4 mx-4 text-white fw-bold rounded-5"><img alt="Share Button" class="me-2 upload" src="../images/icons/Upload.svg">Upload File</button>
 
                           <div class="form-check mx-1 mt-4">
-                            <input class="form-check-input fs-5 lh-sm" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label mt-1 fs-5 lh-sm" for="exampleRadios1">
+                            <input class="form-check-input fs-5 lh-sm" type="radio" name="exampleRadios" id="exampleRadios2" value="option1" checked>
+                            <label class="form-check-label mt-1 fs-5 lh-sm" for="exampleRadios2">
                               Text Submission
                             </label>
                           </div>
@@ -432,7 +433,6 @@
                   </div>
               </div>
           </div>
-      </div>
     </main>
         <!-- Mobile Navigation -->
         <div class="container-md screen" id="mbl-calendar">
@@ -477,315 +477,59 @@
             </ul>
           </div>
         </div>
-        <div id="mobile-messages" class="container-md screen">
-          <div class="row">
-            <div class="col-11">
-              <h1 class="notifications-title fs-1 fw-bold p-2">My Messages</h1>
-              <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
-              <hr class="pb-2">
-              <!-- User 1 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-144.png" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Sarah</p>
-                  <p class="mt-4 fs-5 mx-5">Are you able to please join the...</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 2 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-145.png" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Mike</p>
-                  <p class="mt-4 fs-5 mx-5">Hey! How'd the meeting go?</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 3 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-146.png" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">John</p>
-                  <p class="mt-4 fs-5 mx-5">You aced the math test! Congrats!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 4 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle147.jpeg" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Keith</p>
-                  <p class="mt-4 fs-5 mx-5">Please remember the homework!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 5 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle-149.jpeg" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Holly</p>
-                  <p class="mt-4 fs-5 mx-5">Give me a call when you have a chance!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- Margin for page bottom -->
-              <div class="m-5 p-3"></div>
-            </div>
-          </div>
+        <div id="workspace-info" class="container-md screen">
+          <!-- Mobile Headers -->
+          <div class="mobile-headings">
+            <h1 class="welcome-back-text fs-1 fw-bold">Welcome back, Sarah! 😁</h1>
+            <h2 class="fs-2 mt-4 mb-4 fw-bold">My Courses</h2>
         </div>
-        <!-- Oct 19th notification change starts-->
-        
-        <!-- Oct 19th notification change ends-->
-        <div id="assignment-tbl-info" class="container-md screen">
-          <div class="mt-2">
-            <div class="">
-              <!-- tabs  to display different content      -->
-              <ul class="nav nav-tabs justify-content-end" id="myTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link active fw-bold fs-5" id="tab1-tab"
-                    data-bs-toggle="tab" href="#tab1" role="tab"
-                    aria-controls="tab1" aria-selected="true">All
-                    Assignments</a>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="tab1"
-                  role="tabpanel" aria-labelledby="tab1-tab">
-                  <table class="table table-responsive assignment-table table-bordered rounded table-rubric">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="fw-bold fs-5">Course</th>
-                        <th scope="col" class="fw-bold fs-5 text-center">Assignment</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row" class="">Business</td>
-                        <td>Assignment 2</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Science </td>
-                        <td><a class="text-dark" href="assignment-pre-submission.html">Civic Discussion 1</a></td>
-                      </tr>
-                      <tr>
-                        <td scope="row">English</td>
-                        <td>Assignment 2</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Food & Nutrition</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Geography</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Math</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                      </tr>
-                    </tbody>
-                  </table>
+        <!-- Course Container -->
+            <div class="courses">
+                <!-- Math -->
+                <div class="shadow card w-100">
+                    <a href="../HTML/math-course-page.html"><img class="card-img-top" src="/Images/MathMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">Math</h5>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="tab2" role="tabpanel"
-                  aria-labelledby="tab2-tab">
-                  <table class="table assignment-table table-bordered rounded table-rubric">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="fw-bold fs-5">Course</th>
-                        <th scope="col" class="fw-bold fs-5 text-center">Assignment</th>
-                        <th scope="col" class="fw-bold fs-5 text-center">Submission</th>
-                        <th scope="col" class="fw-bold fs-5 text-center">Due Date</th>
-                        <th scope="col" class="fw-bold fs-5 text-center">Feedback</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row" class="">Business</td>
-                        <td>Assignment 2</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td class="fw-bold">Unread</td>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Science </td>
-                        <td>Civic Discussion 1</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-
-                      </tr>
-                      <tr>
-                        <td scope="row">English</td>
-                        <td>Assignment 2</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Food & Nutrition</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Geography</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Math</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <!-- Business -->
+                <div class="shadow card w-100">
+                    <a href="../HTML/business-course-page.html"><img class="card-img-top" src="/Images/BusinessMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">Business</h5>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="tab3" role="tabpanel"
-                  aria-labelledby="tab3-tab">
-                  <table class="table assignment-table table-bordered rounded table-rubric">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="fw-bold fs-5">Course</th>
-                        <th scope="col" class="fw-bold fs-5 text-center">Assignment</th>
-                        <th scope="col" class="fw-bold fs-5 text-center">Submission</th>
-                        <th scope="col" class="fw-bold fs-5 text-center">Due Date</th>
-                        <th scope="col" class="fw-bold fs-5 text-center">Feedback</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row" class="">Business</td>
-                        <td>Assignment 2</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td class="fw-bold">Unread</td>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Science </td>
-                        <td>Civic Discussion 1</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-
-                      </tr>
-                      <tr>
-                        <td scope="row">English</td>
-                        <td>Assignment 2</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Food & Nutrition</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Geography</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Math</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <!-- Science -->
+                <div class="shadow card w-100" >
+                    <a href="../HTML/science-course-page.html"><img class="card-img-top" src="/Images/ScienceMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">Science</h5>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="tab4" role="tabpanel"
-                  aria-labelledby="tab4-tab">
-                  <table class="table assignment-table table-bordered rounded table-rubric">
-                    <tr>
-                      <th scope="col" class="fw-bold fs-5">Course</th>
-                      <th scope="col" class="fw-bold fs-5 text-center">Assignment</th>
-                      <th scope="col" class="fw-bold fs-5 text-center">Submission</th>
-                      <th scope="col" class="fw-bold fs-5 text-center">Due Date</th>
-                      <th scope="col" class="fw-bold fs-5 text-center">Feedback</th>
-                    </tr>
-                    <tbody>
-                      <tr>
-                        <td scope="row" class="">Business</td>
-                        <td>Assignment 2</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td class="fw-bold">Unread</td>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Science </td>
-                        <td>Civic Discussion 1</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-
-                      </tr>
-                      <tr>
-                        <td scope="row">English</td>
-                        <td>Assignment 2</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Food & Nutrition</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Geography</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Math</td>
-                        <td>Healthy Lifestyle: Nu...</td>
-                        <td>1 Submission</td>
-                        <td>September 20th</td>
-                        <td>Read</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <!-- English -->
+                <div class="shadow card w-100">
+                    <a href="../HTML/english-course-page.html"><img class="card-img-top" src="/Images/EnglishMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">English</h5>
+                    </div>
                 </div>
-              </div>
+                <!-- Geography -->
+                <div class="shadow card w-100">
+                    <a href="../HTML/geo-course-page.html"><img class="card-img-top" src="/Images/GeographyMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">Geography</h5>
+                    </div>
+                </div>
+                <!-- Food & Nutrition -->
+                <div class="shadow card w-100">
+                    <a href="../HTML/food-course-page.html"><img class="card-img-top" src="/Images/FoodMbl.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold m-2">Food &amp; Nutrition</h5>
+                    </div>
+                </div>
+                <!-- Margin for page bottom -->
+                <div class="m-5 p-3"></div>
             </div>
-            <!-- Margin for page bottom -->
-            <div class="m-5 p-4"></div>
-          </div>
         </div>
         <!-- Mobile Navigation -->
         <nav role="navigation" class="mobile-nav fixed-bottom p-3 m-3">
@@ -798,7 +542,8 @@
             </div>
             <!-- Assignments Button -->
             <div class="d-flex flex-column justify-content-center">
-              <span><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobile assignments icon"></span>
+              <span onclick="mobileAssignSubmissionClicked()" id="mbl-assign-icon"><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobile assignments icon"></span>
+              <span id="mbl-assign-pink"><img class="mobile-circle-pink-svg" src="../Images/icons/circle-pink.svg" alt="mobile assignments icon"></span>
               <p id="nav-mobile-font-2" class="p-1 fw-bolder">Assignments</p>
             </div>
             <!-- Meetings Button -->
@@ -809,7 +554,7 @@
             <!-- Calendar Button -->
             <div class="d-flex flex-column justify-content-center">
               <span onclick="mobileCalendarClicked()" id="mobile-calendar-icon" class="screen"><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></span>
-              <span onclick="mobileCalSelect()" id="mbl-cal-pink" class="screen"><img class="mobile-calendar-pink-svg" src="../Images/icons/Calendar.svg" alt="mobile calendar icon"></span>
+              <span id="mbl-cal-pink" class="screen"><img class="mobile-calendar-pink-svg" src="../Images/icons/Calendar.svg" alt="mobile calendar icon"></span>
               <p id="nav-mobile-font-4" class="p-1 fw-bolder">Calendar</p>
             </div>
           </div>

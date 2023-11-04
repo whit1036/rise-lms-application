@@ -138,6 +138,10 @@ color: #197BBD;
     #mbl-cal-pink {
         display: none;
       }
+
+      #mbl-assign-pink {
+        display: none;
+      }
   
       #mbl-calendar{
         display: none;
@@ -205,7 +209,7 @@ color: #197BBD;
         display: none;
     } */
 
-    .mobile-home-pink-svg, .mobile-calendar-pink-svg {
+    .mobile-home-pink-svg, .mobile-calendar-pink-svg, .mobile-circle-pink-svg {
         width: 2.7rem;
     }
 
@@ -402,12 +406,20 @@ color: #197BBD;
   
       background-color: #EBBC9C;
     }
+
+    #my-assignments-mbl {
+      margin-top: 8rem;
+    }
 }
 
 @media (min-width: 701px) and (max-width: 4000px) {
     #mbl-calendar {
         display: none;
       }
+
+    #my-assignments-mbl {
+      display: none;
+    }
     
     #main-header-img {
         position: absolute;
