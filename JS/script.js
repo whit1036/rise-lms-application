@@ -109,6 +109,7 @@ function mobileAssignWorkspaceClicked() {
     } else {
         assignInfo.style.display = 'none';
         workspaceInfo.style.display = 'block';
+        calendarInfo.style.display = 'none';
         assignIconSelected.style.display = 'none';
         assignIcon.style.display = 'block';
         calendarIconSelected.style.display = 'none';
@@ -138,6 +139,8 @@ function mobileCalendarClicked() {
         calendarIconSelected.style.display = 'block';
         homeIconSelected.style.display = 'none';
         homeIcon.style.display = 'block';
+        assignIconSelected.style.display = 'none';
+        assignIcon.style.display = 'block';
     } else {
         calendarInfo.style.display = 'none';
         workspaceInfo.style.display = 'block';
