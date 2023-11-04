@@ -146,6 +146,10 @@ color: #197BBD;
       #mbl-calendar{
         display: none;
       }
+
+      #my-assignments-mbl {
+        display: none;
+      }
     
     #videoicon{
         display: none;
@@ -407,8 +411,48 @@ color: #197BBD;
       background-color: #EBBC9C;
     }
 
+    /* My Assignments Mobile Styles */
     #my-assignments-mbl {
       margin-top: 8rem;
+    }
+
+    .assignment-table td {
+      height: 150px;
+      padding: 1rem;
+    }
+
+    .assignment-table th {
+      background-color: var(--secondary-pink);
+      color: #FFFFFF;
+    }
+    
+    .assignment-table th,
+    .assignment-table td {
+      border: 2px solid var(--secondary-pink);
+      padding: 25px;
+    }
+    
+    .assignment-table th {
+      padding: 15px;
+    }
+
+    #myTabs li a:link {
+      color: gray;
+    }
+    
+    #myTabs li a:visited {
+      color: grey;
+    }
+    
+    #myTabs li a:hover {
+      color: var(--secondary-pink);
+      text-decoration: underline;
+      text-decoration-thickness: 5px;
+      text-underline-position: under;
+    }
+    
+    #myTabs li a:active {
+      color: var(--secondary-pink);
     }
 }
 

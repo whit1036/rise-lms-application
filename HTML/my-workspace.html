@@ -519,82 +519,62 @@
             </ul>
           </div>
         </div>
-        <div id="mobile-messages" class="container-md screen">
-          <div class="row">
-            <div class="col-11">
-              <h1 class="notifications-title fs-1 fw-bold p-2">My Messages</h1>
-              <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
-              <hr class="pb-2">
-              <!-- User 1 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-144.png" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Sarah</p>
-                  <p class="mt-4 fs-5 mx-5">Are you able to please join the...</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 2 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-145.png" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Mike</p>
-                  <p class="mt-4 fs-5 mx-5">Hey! How'd the meeting go?</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 3 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-146.png" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">John</p>
-                  <p class="mt-4 fs-5 mx-5">You aced the math test! Congrats!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 4 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle147.jpeg" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Keith</p>
-                  <p class="mt-4 fs-5 mx-5">Please remember the homework!</p>
+        <div id="my-assignments-mbl" class="container-md">
+          <div class="mt-2">
+            <div class="">
+              <!-- tabs  to display different content      -->
+              <ul class="nav nav-tabs justify-content-end" id="myTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active fw-bold fs-5" id="tab1-tab"
+                    data-bs-toggle="tab" href="#tab1" role="tab"
+                    aria-controls="tab1" aria-selected="true">All
+                    Assignments</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab1"
+                  role="tabpanel" aria-labelledby="tab1-tab">
+                  <table class="table table-responsive assignment-table table-bordered rounded table-rubric">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="fw-bold fs-5">Course</th>
+                        <th scope="col" class="fw-bold fs-5 text-center">Assignment</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Business</td>
+                        <td>Assignment 2</td>
+                      </tr>
+                      <tr>
+                        <td>Science </td>
+                        <td><a class="text-dark" href="assignment-pre-submission.html">Civic Discussion 1</a></td>
+                      </tr>
+                      <tr>
+                        <td>English</td>
+                        <td>Assignment 2</td>
+                      </tr>
+                      <tr>
+                        <td>Food & Nutrition</td>
+                        <td>Healthy Lifestyle: Nu...</td>
+                      </tr>
+                      <tr>
+                        <td>Geography</td>
+                        <td>Healthy Lifestyle: Nu...</td>
+                      </tr>
+                      <tr>
+                        <td>Math</td>
+                        <td>Healthy Lifestyle: Nu...</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-              <hr class="pb-2">
-              <!-- User 5 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle-149.jpeg" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Holly</p>
-                  <p class="mt-4 fs-5 mx-5">Give me a call when you have a chance!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- Margin for page bottom -->
-              <div class="m-5 p-3"></div>
             </div>
+            <!-- Margin for page bottom -->
+            <div class="m-5 p-4"></div>
           </div>
         </div>
-        <!-- Oct 19th notification change starts-->
-        
-        <!-- Oct 19th notification change ends-->
         <div id="workspace-info" class="container-md screen">
             <!-- Mobile Headers -->
             <div class="mobile-headings">
@@ -660,7 +640,8 @@
             </div>
             <!-- Assignments Button -->
             <div class="d-flex flex-column justify-content-center">
-              <span><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobile assignments icon"></span>
+              <span onclick="mobileAssignWorkspaceClicked()" id="mbl-assign-icon"><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobile assignments icon"></span>
+              <span id="mbl-assign-pink"><img class="mobile-circle-pink-svg" src="../Images/icons/circle-pink.svg" alt="mobile assignments icon"></span>
               <p id="nav-mobile-font-2" class="p-1 fw-bolder">Assignments</p>
             </div>
             <!-- Meetings Button -->
