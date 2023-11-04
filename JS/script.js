@@ -120,7 +120,6 @@ function mobileAssignWorkspaceClicked() {
 // Function to launch calendar on mobile when clicked
 function mobileCalendarClicked() {
     const workspaceInfo = document.getElementById('workspace-info');
-    const mblCoursePage = document.getElementById('mobile-course-pg');
     const assignInfo = document.getElementById('my-assignments-mbl')
     const calendarInfo = document.getElementById('mbl-calendar');
     const calendarIcon = document.getElementById('mobile-calendar-icon');
@@ -134,47 +133,45 @@ function mobileCalendarClicked() {
     if (calendarInfo.style.display === 'none') {
         calendarInfo.style.display = 'block';
         workspaceInfo.style.display = 'none';
-        assignInfo.style.display - 'none';
+        workspaceInfo.style.display = 'none';
+        assignInfo.style.display = 'none';
         calendarIcon.style.display = 'none';
         calendarIconSelected.style.display = 'block';
         homeIconSelected.style.display = 'none';
         homeIcon.style.display = 'block';
-        assignIconSelected.style.display = 'none';
-        assignIcon.style.display = 'block';
     } else {
         calendarInfo.style.display = 'none';
         workspaceInfo.style.display = 'block';
-        assignInfo.style.display - 'block';
-        mblCoursePage.style.display = 'block';
+        assignInfo.style.display = 'block';
         calendarIcon.style.display = 'block';
         calendarIconSelected.style.display = 'none';
     }
 }
 
-function mobileCalendarCourseClicked() {
-  const mblCoursePage = document.getElementById('mobile-course-pg');
-  const calendarInfo = document.getElementById('mbl-calendar');
-  const calendarIcon = document.getElementById('mobile-calendar-icon');
-  const calendarIconSelected = document.getElementById('mbl-cal-pink');
-  const homeIcon = document.getElementById('mbl-home-reg');
-  const homeIconSelected = document.getElementById('mbl-home-pink');
+// function mobileCalendarCourseClicked() {
+//   const mblCoursePage = document.getElementById('mobile-course-pg');
+//   const calendarInfo = document.getElementById('mbl-calendar');
+//   const calendarIcon = document.getElementById('mobile-calendar-icon');
+//   const calendarIconSelected = document.getElementById('mbl-cal-pink');
+//   const homeIcon = document.getElementById('mbl-home-reg');
+//   const homeIconSelected = document.getElementById('mbl-home-pink');
 
 
-  if (calendarInfo.style.display === 'none') {
-      calendarInfo.style.display = 'block';
-      mblCoursePage.style.display = 'none';
-      calendarIcon.style.display = 'none';
-      calendarIconSelected.style.display = 'block';
-      homeIconSelected.style.display = 'none';
-      homeIcon.style.display = 'block';
-  } else {
-      calendarInfo.style.display = 'none';
-      mblCoursePage.style.display = 'block';
-      assignInfo.style.display = 'block';
-      calendarIcon.style.display = 'block';
-      calendarIconSelected.style.display = 'none';
-  }
-}
+//   if (calendarInfo.style.display === 'none') {
+//       calendarInfo.style.display = 'block';
+//       mblCoursePage.style.display = 'none';
+//       calendarIcon.style.display = 'none';
+//       calendarIconSelected.style.display = 'block';
+//       homeIconSelected.style.display = 'none';
+//       homeIcon.style.display = 'block';
+//   } else {
+//       calendarInfo.style.display = 'none';
+//       mblCoursePage.style.display = 'block';
+//       assignInfo.style.display = 'block';
+//       calendarIcon.style.display = 'block';
+//       calendarIconSelected.style.display = 'none';
+//   }
+// }
 
 // Displays an alert to show the user that the profile settings have been updates
 function saveUserProfile() {
