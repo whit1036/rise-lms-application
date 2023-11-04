@@ -103,9 +103,18 @@ color: #197BBD;
 }
 
 
+
 /* Global Moble Styles */
 @media screen and (min-width: 350px) and (max-width: 700px) {
-    /* Mobile Deafult Template */
+
+  .page {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  
+  /* Mobile Deafult Template */
     #main-header {
         background-color: #197BBD;
         width: 100%;
@@ -129,10 +138,6 @@ color: #197BBD;
   
       .notifications-title {
         margin-top: 9rem;
-      }
-
-      #mbl-home-reg {
-        display: none;
       }
 
       #mbl-cal-pink {
@@ -178,7 +183,7 @@ color: #197BBD;
         width: 5rem;
     }
     
-    .mobile-home-svg, .mobile-circle-svg, .mobile-video-svg, .mobile-calendar-svg {
+    #mobile-home-svg, #mobile-circle-svg, #mobile-video-svg, #mobile-calendar-svg {
         filter: brightness(0) saturate(100%) invert(84%) sepia(1%) saturate(72%) hue-rotate(327deg) brightness(100%) contrast(50%);
         width: 2.7rem;
     }
@@ -412,7 +417,8 @@ color: #197BBD;
     }
 
     /* My Assignments Mobile Styles */
-    #my-assignments-mbl {
+    /* Nov 4 */
+    #my-assignments-mbl, #assignmentsPage, #calendarPage {
       margin-top: 8rem;
     }
 
@@ -457,6 +463,11 @@ color: #197BBD;
 }
 
 @media (min-width: 701px) and (max-width: 4000px) {
+  /* NOV 4 */
+    #homePage, #assignmentsPage, #meetingsPage, #calendarPage {
+      display: none;
+    }
+  
     #mbl-calendar {
         display: none;
       }

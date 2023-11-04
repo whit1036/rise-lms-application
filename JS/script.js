@@ -75,78 +75,78 @@ function displayText() {
 }
 
 // Various mobile design varibales with getElementById
-const workspaceInfo = document.getElementById('workspace-info');
-const mblCoursePage = document.getElementById('mobile-course-pg');
-const calendarInfo = document.getElementById('mbl-calendar');
-const assignInfo = document.getElementById('my-assignments-mbl')
-const calendarIcon = document.getElementById('mobile-calendar-icon');
-const calendarIconSelected = document.getElementById('mbl-cal-pink');
-const homeIcon = document.getElementById('mbl-home-reg');
-const homeIconSelected = document.getElementById('mbl-home-pink');
-const assignIcon = document.getElementById('mbl-assign-icon')
-const assignIconSelected = document.getElementById('mbl-assign-pink')
+// const workspaceInfo = document.getElementById('workspace-info');
+// const mblCoursePage = document.getElementById('mobile-course-pg');
+// const calendarInfo = document.getElementById('mbl-calendar');
+// const assignInfo = document.getElementById('my-assignments-mbl')
+// const calendarIcon = document.getElementById('mobile-calendar-icon');
+// const calendarIconSelected = document.getElementById('mbl-cal-pink');
+// const homeIcon = document.getElementById('mbl-home-reg');
+// const homeIconSelected = document.getElementById('mbl-home-pink');
+// const assignIcon = document.getElementById('mbl-assign-icon')
+// const assignIconSelected = document.getElementById('mbl-assign-pink')
 
 
-function mobileAssignWorkspaceClicked() {
-    const workspaceInfo = document.getElementById('workspace-info');
-    const assignInfo = document.getElementById('my-assignments-mbl');
-    const calendarInfo = document.getElementById('mbl-calendar');
-    const homeIcon = document.getElementById('mbl-home-reg');
-    const homeIconSelected = document.getElementById('mbl-home-pink');
-    const assignIcon = document.getElementById('mbl-assign-icon');
-    const assignIconSelected = document.getElementById('mbl-assign-pink');
-    const calendarIcon = document.getElementById('mobile-calendar-icon');
-    const calendarIconSelected = document.getElementById('mbl-cal-pink');
+// function mobileAssignWorkspaceClicked() {
+//     const workspaceInfo = document.getElementById('workspace-info');
+//     const assignInfo = document.getElementById('my-assignments-mbl');
+//     const calendarInfo = document.getElementById('mbl-calendar');
+//     const homeIcon = document.getElementById('mbl-home-reg');
+//     const homeIconSelected = document.getElementById('mbl-home-pink');
+//     const assignIcon = document.getElementById('mbl-assign-icon');
+//     const assignIconSelected = document.getElementById('mbl-assign-pink');
+//     const calendarIcon = document.getElementById('mobile-calendar-icon');
+//     const calendarIconSelected = document.getElementById('mbl-cal-pink');
 
-    if (assignInfo.style.display === 'none') {
-        assignInfo.style.display = 'block';
-        workspaceInfo.style.display = 'none';
-        calendarInfo.style.display = 'none';
-        homeIconSelected.style.display = 'none';
-        homeIcon.style.display = 'block';
-        assignIconSelected.style.display = 'block';
-        assignIcon.style.display = 'none';
-    } else {
-        assignInfo.style.display = 'none';
-        workspaceInfo.style.display = 'block';
-        calendarInfo.style.display = 'none';
-        assignIconSelected.style.display = 'none';
-        assignIcon.style.display = 'block';
-        calendarIconSelected.style.display = 'none';
-        calendarIcon.style.display = 'block';
-    }
-}
+//     if (assignInfo.style.display === 'none') {
+//         assignInfo.style.display = 'block';
+//         workspaceInfo.style.display = 'none';
+//         calendarInfo.style.display = 'none';
+//         homeIconSelected.style.display = 'none';
+//         homeIcon.style.display = 'block';
+//         assignIconSelected.style.display = 'block';
+//         assignIcon.style.display = 'none';
+//     } else {
+//         assignInfo.style.display = 'none';
+//         workspaceInfo.style.display = 'block';
+//         calendarInfo.style.display = 'none';
+//         assignIconSelected.style.display = 'none';
+//         assignIcon.style.display = 'block';
+//         calendarIconSelected.style.display = 'none';
+//         calendarIcon.style.display = 'block';
+//     }
+// }
 
 // Function to launch calendar on mobile when clicked
-function mobileCalendarClicked() {
-    const workspaceInfo = document.getElementById('workspace-info');
-    const assignInfo = document.getElementById('my-assignments-mbl')
-    const calendarInfo = document.getElementById('mbl-calendar');
-    const calendarIcon = document.getElementById('mobile-calendar-icon');
-    const calendarIconSelected = document.getElementById('mbl-cal-pink');
-    const homeIcon = document.getElementById('mbl-home-reg');
-    const homeIconSelected = document.getElementById('mbl-home-pink');
-    const assignIcon = document.getElementById('mbl-assign-icon');
-    const assignIconSelected = document.getElementById('mbl-assign-pink');
+// function mobileCalendarClicked() {
+//     const workspaceInfo = document.getElementById('workspace-info');
+//     const assignInfo = document.getElementById('my-assignments-mbl')
+//     const calendarInfo = document.getElementById('mbl-calendar');
+//     const calendarIcon = document.getElementById('mobile-calendar-icon');
+//     const calendarIconSelected = document.getElementById('mbl-cal-pink');
+//     const homeIcon = document.getElementById('mbl-home-reg');
+//     const homeIconSelected = document.getElementById('mbl-home-pink');
+//     const assignIcon = document.getElementById('mbl-assign-icon');
+//     const assignIconSelected = document.getElementById('mbl-assign-pink');
 
 
-    if (calendarInfo.style.display === 'none') {
-        calendarInfo.style.display = 'block';
-        workspaceInfo.style.display = 'none';
-        workspaceInfo.style.display = 'none';
-        assignInfo.style.display = 'none';
-        calendarIcon.style.display = 'none';
-        calendarIconSelected.style.display = 'block';
-        homeIconSelected.style.display = 'none';
-        homeIcon.style.display = 'block';
-    } else {
-        calendarInfo.style.display = 'none';
-        workspaceInfo.style.display = 'block';
-        assignInfo.style.display = 'block';
-        calendarIcon.style.display = 'block';
-        calendarIconSelected.style.display = 'none';
-    }
-}
+//     if (calendarInfo.style.display === 'none') {
+//         calendarInfo.style.display = 'block';
+//         workspaceInfo.style.display = 'none';
+//         workspaceInfo.style.display = 'none';
+//         assignInfo.style.display = 'none';
+//         calendarIcon.style.display = 'none';
+//         calendarIconSelected.style.display = 'block';
+//         homeIconSelected.style.display = 'none';
+//         homeIcon.style.display = 'block';
+//     } else {
+//         calendarInfo.style.display = 'none';
+//         workspaceInfo.style.display = 'block';
+//         assignInfo.style.display = 'block';
+//         calendarIcon.style.display = 'block';
+//         calendarIconSelected.style.display = 'none';
+//     }
+// }
 
 // function mobileCalendarCourseClicked() {
 //   const mblCoursePage = document.getElementById('mobile-course-pg');
