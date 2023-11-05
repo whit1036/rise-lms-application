@@ -575,211 +575,210 @@
       </div>
     </main>
         <!-- Mobile Navigation -->
-        <div class="container-md screen" id="mbl-calendar">
-          <!-- Calendar -->
-          <div class="calendar-container-mobile shadow bg-body-tertiary rounded">
-            <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons-mobile">
-              <h2 class="title-cal-message-mobile me-2 fs-5">My Calendar</h2>
-              <img id="calendar-icon-mobile" class="calendar-icon-mobile icon-mobile" src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
-              <img id="list-icon-mobile" class="list-cal-icon-mobile icon-mobile" src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
-            </div>
-            <hr class="primary-line-message mt-2">
-            <!-- Jia and Qing add accessibilities  -->
-            <!-- This div is for the calendar -->
-            <div id="calendar-content-mobile" class="bg-body-tertiary rounded p-3" tabindex="0"
-            aria-label="View calendar">
-              <div class="d-flex flex-wrap justify-content-between align-items-center" tabindex="0">
-                <p id="current-month-mobile" class="current-month-mobile"></p>
-                <div class="calendar-arrows-mobile" tabindex="0">
-                  <img id="left-mobile" src="/Images/icons/chevron-2.svg" alt="left-button">
-                  <img id="right-mobile" src="/Images/icons/chevron.svg" alt="right-button">
-                </div>
-              </div>
-              <div class="calendar-mobile d-flex flex-wrap flex-column" tabindex="0">
-                <div class="weeks-mobile" tabindex="0">
-                  <ul>
-                    <li>Su</li>
-                    <li>Mo</li>
-                    <li>Tu</li>
-                    <li>We</li>
-                    <li>Th</li>
-                    <li>Fr</li>
-                    <li>Sa</li>
-                  </ul>
-                </div>
-                <div>
-                  <ul class="days-mobile" tabindex="0"></ul>
-                </div>
-              </div>
-            </div>
-            <ul id="events-list-mobile" style="display: none">
-              <!-- Event items will be dynamically added here -->
-            </ul>
-          </div>
-        </div>
-        <div id="mobile-messages" class="container-md screen">
-          <div class="row">
-            <div class="col-11">
-              <h1 class="notifications-title fs-1 fw-bold p-2">My Messages</h1>
-              <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
-              <hr class="pb-2">
-              <!-- User 1 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-144.png" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Sarah</p>
-                  <p class="mt-4 fs-5 mx-5">Are you able to please join the...</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 2 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-145.png" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Mike</p>
-                  <p class="mt-4 fs-5 mx-5">Hey! How'd the meeting go?</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 3 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon" src="../Images/icons/rectangle-146.png" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">John</p>
-                  <p class="mt-4 fs-5 mx-5">You aced the math test! Congrats!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 4 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle147.jpeg" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Keith</p>
-                  <p class="mt-4 fs-5 mx-5">Please remember the homework!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- User 5 -->
-              <div class="row">
-                <div class="col-2">
-                  <img class="mbl-msg-icon rounded-1" src="../Images/rectangle-149.jpeg" alt="profile-icon">
-                </div>
-                <div class="col-9">
-                  <p class="mx-2 fw-bold fs-4 mx-5">Holly</p>
-                  <p class="mt-4 fs-5 mx-5">Give me a call when you have a chance!</p>
-                </div>
-              </div>
-              <hr class="pb-2">
-              <!-- Margin for page bottom -->
-              <div class="m-5 p-3"></div>
-            </div>
-          </div>
-        </div>
-        <!-- Oct 19th notification change starts-->
-        
-        <!-- Oct 19th notification change ends-->
-        <div id="workspace-info" class="container-md screen">
-          <!-- Mobile Headers -->
-          <div class="mobile-headings">
-            <h1 class="welcome-back-text fs-1 fw-bold">Welcome back, Sarah! 😁</h1>
-            <h2 class="fs-2 mt-4 mb-4 fw-bold">My Courses</h2>
-        </div>
-        <!-- Course Container -->
-            <div class="courses">
-                <!-- Math -->
-                <div class="shadow card w-100">
-                    <a href="../HTML/math-course-page.html"><img class="card-img-top" src="/Images/MathMbl.png" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title fs-4 fw-bold m-2">Math</h5>
-                    </div>
-                </div>
-                <!-- Business -->
-                <div class="shadow card w-100">
-                    <a href="../HTML/business-course-page.html"><img class="card-img-top" src="/Images/BusinessMbl.png" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title fs-4 fw-bold m-2">Business</h5>
-                    </div>
-                </div>
-                <!-- Science -->
-                <div class="shadow card w-100" >
-                    <a href="../HTML/science-course-page.html"><img class="card-img-top" src="/Images/ScienceMbl.png" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title fs-4 fw-bold m-2">Science</h5>
-                    </div>
-                </div>
-                <!-- English -->
-                <div class="shadow card w-100">
-                    <a href="../HTML/english-course-page.html"><img class="card-img-top" src="/Images/EnglishMbl.png" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title fs-4 fw-bold m-2">English</h5>
-                    </div>
-                </div>
-                <!-- Geography -->
-                <div class="shadow card w-100">
-                    <a href="../HTML/geo-course-page.html"><img class="card-img-top" src="/Images/GeographyMbl.png" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title fs-4 fw-bold m-2">Geography</h5>
-                    </div>
-                </div>
-                <!-- Food & Nutrition -->
-                <div class="shadow card w-100">
-                    <a href="../HTML/food-course-page.html"><img class="card-img-top" src="/Images/FoodMbl.png" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title fs-4 fw-bold m-2">Food &amp; Nutrition</h5>
-                    </div>
-                </div>
-                <!-- Margin for page bottom -->
-                <div class="m-5 p-3"></div>
-            </div>
-        </div>
-        <!-- Mobile Navigation -->
         <nav role="navigation" class="mobile-nav fixed-bottom p-3 m-3">
           <div id="mobile-nav-icons" class="container-fluid text-center d-flex justify-content-around">
             <!-- Home Button -->
             <div class="d-flex flex-column justify-content-center">
-              <a href="" id="mbl-home-reg" class="screen"><img class="mobile-home-svg" src="../Images/icons/mobile_home.svg" alt="mobile home icon"></a>
-              <span onclick="mobileHomeSelect()" id="mbl-home-pink" class="screen"><a href=""><img class="mobile-home-pink-svg" src="../Images/icons/home-workspace.svg" alt="mobile home icon"></a></span>
-              <p class="p-1 fw-bolder">Home</p>
+            <a id="home-btn" class="tog" href="#home" class="screen">
+                <img id="mobile-home-svg" src="../Images/icons/mobile_home.svg" alt="mobile home icon">
+            </a>
+            <p class="p-1 fw-bolder">Home</p>
             </div>
             <!-- Assignments Button -->
             <div class="d-flex flex-column justify-content-center">
-              <span><img class="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobile assignments icon"></span>
-              <p id="nav-mobile-font-2" class="p-1 fw-bolder">Assignments</p>
+            <a class="tog" href="#assignments">
+                <img id="mobile-circle-svg" src="../Images/icons/circle.svg" alt="mobile assignments icon">
+            </a>
+            <p id="nav-mobile-font-2" class="p-1 fw-bolder">Assignments</p>
             </div>
             <!-- Meetings Button -->
             <div class="d-flex flex-column justify-content-center">
-              <span><img class="mobile-video-svg" src="../Images/icons/video.svg" alt="mobile video icon"></span>
-              <p id="nav-mobile-font-3" class="p-1 fw-bolder">Meetings</p>
+            <a class="tog" href="#meetings">
+                <img id="mobile-video-svg" src="../Images/icons/video.svg" alt="mobile video icon">
+            </a>
+            <p id="nav-mobile-font-3" class="p-1 fw-bolder">Meetings</p>
             </div>
             <!-- Calendar Button -->
             <div class="d-flex flex-column justify-content-center">
-              <span onclick="mobileCalendarClicked()" id="mobile-calendar-icon" class="screen"><img class="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon"></span>
-              <span onclick="mobileCalSelect()" id="mbl-cal-pink" class="screen"><img class="mobile-calendar-pink-svg" src="../Images/icons/Calendar.svg" alt="mobile calendar icon"></span>
-              <p id="nav-mobile-font-4" class="p-1 fw-bolder">Calendar</p>
+            <a class="tog" href="#calendar" class="screen">
+                <img id="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon">
+            </a>
+            <p id="nav-mobile-font-4" class="p-1 fw-bolder">Calendar</p>
             </div>
           </div>
         </nav>
+        <!-- Workspace Info -->
+        <div id="homePage" class="page">
+          <div id="workspace-info" class="container-md screen">
+              <!-- Mobile Headers -->
+              <div class="mobile-headings">
+                  <h1 class="welcome-back-text fs-1 fw-bold">Welcome back, Sarah! 😁</h1>
+                  <h2 class="fs-2 mt-4 mb-4 fw-bold">My Courses</h2>
+              </div>
+              <!-- Course Container -->
+                  <div class="courses">
+                      <!-- Math -->
+                      <div class="shadow card w-100">
+                          <a href="../HTML/math-course-page.html"><img class="card-img-top" src="/Images/MathMbl.png" alt="Card image cap"></a>
+                          <div class="card-body">
+                              <h5 class="card-title fs-4 fw-bold m-2">Math</h5>
+                          </div>
+                      </div>
+                      <!-- Business -->
+                      <div class="shadow card w-100">
+                          <a href="../HTML/business-course-page.html"><img class="card-img-top" src="/Images/BusinessMbl.png" alt="Card image cap"></a>
+                          <div class="card-body">
+                              <h5 class="card-title fs-4 fw-bold m-2">Business</h5>
+                          </div>
+                      </div>
+                      <!-- Science -->
+                      <div class="shadow card w-100" >
+                          <a href="../HTML/science-course-page.html"><img class="card-img-top" src="/Images/ScienceMbl.png" alt="Card image cap"></a>
+                          <div class="card-body">
+                              <h5 class="card-title fs-4 fw-bold m-2">Science</h5>
+                          </div>
+                      </div>
+                      <!-- English -->
+                      <div class="shadow card w-100">
+                          <a href="../HTML/english-course-page.html"><img class="card-img-top" src="/Images/EnglishMbl.png" alt="Card image cap"></a>
+                          <div class="card-body">
+                              <h5 class="card-title fs-4 fw-bold m-2">English</h5>
+                          </div>
+                      </div>
+                      <!-- Geography -->
+                      <div class="shadow card w-100">
+                          <a href="../HTML/geo-course-page.html"><img class="card-img-top" src="/Images/GeographyMbl.png" alt="Card image cap"></a>
+                          <div class="card-body">
+                              <h5 class="card-title fs-4 fw-bold m-2">Geography</h5>
+                          </div>
+                      </div>
+                      <!-- Food & Nutrition -->
+                      <div class="shadow card w-100">
+                          <a href="../HTML/food-course-page.html"><img class="card-img-top" src="/Images/FoodMbl.png" alt="Card image cap"></a>
+                          <div class="card-body">
+                              <h5 class="card-title fs-4 fw-bold m-2">Food &amp; Nutrition</h5>
+                          </div>
+                      </div>
+                      <!-- Margin for page bottom -->
+                      <div class="m-5 p-3"></div>
+                  </div>
+              </div>
+          </div>
+          <!-- My Assignments -->
+          <div id="assignmentsPage" class="page">
+            <div id="" class="container-md">
+                <div class="mt-2">
+                  <div class="">
+                    <!-- tabs  to display different content      -->
+                    <ul class="nav nav-tabs justify-content-end" id="myTabs" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link active fw-bold fs-5" id="tab1-tab"
+                          data-bs-toggle="tab" href="#tab1" role="tab"
+                          aria-controls="tab1" aria-selected="true">All
+                          Assignments</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="tab1"
+                        role="tabpanel" aria-labelledby="tab1-tab">
+                        <table class="table table-responsive assignment-table table-bordered rounded table-rubric">
+                          <thead>
+                            <tr>
+                              <th scope="col" class="fw-bold fs-5">Course</th>
+                              <th scope="col" class="fw-bold fs-5 text-center">Assignment</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Business</td>
+                              <td>Assignment 2</td>
+                            </tr>
+                            <tr>
+                              <td>Science </td>
+                              <td><a class="text-dark" href="assignment-pre-submission.html">Civic Discussion 1</a></td>
+                            </tr>
+                            <tr>
+                              <td>English</td>
+                              <td>Assignment 2</td>
+                            </tr>
+                            <tr>
+                              <td>Food & Nutrition</td>
+                              <td>Healthy Lifestyle: Nu...</td>
+                            </tr>
+                            <tr>
+                              <td>Geography</td>
+                              <td>Healthy Lifestyle: Nu...</td>
+                            </tr>
+                            <tr>
+                              <td>Math</td>
+                              <td>Healthy Lifestyle: Nu...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Margin for page bottom -->
+                  <div class="m-5 p-4"></div>
+                </div>
+              </div>
+            </div>
+            <!-- My Meetings -->
+            <div id="meetingsPage" class="page">
+              <p style="margin-top: 20rem;">content 3</p>
+              <!-- Content for the Calendar page -->
+            </div>
+            <div id="calendarPage" class="page">
+              <div class="container-md screen" id="">
+                  <!-- Calendar -->
+                  <div class="calendar-container-mobile shadow bg-body-tertiary rounded">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons-mobile">
+                      <h2 class="title-cal-message-mobile me-2 fs-5">My Calendar</h2>
+                      <img id="calendar-icon-mobile" class="calendar-icon-mobile icon-mobile" src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
+                      <img id="list-icon-mobile" class="list-cal-icon-mobile icon-mobile" src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
+                    </div>
+                    <hr class="primary-line-message mt-2">
+                    <!-- Jia and Qing add accessibilities  -->
+                    <!-- This div is for the calendar -->
+                    <div id="calendar-content-mobile" class="bg-body-tertiary rounded p-3" tabindex="0"
+                    aria-label="View calendar">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center" tabindex="0">
+                        <p id="current-month-mobile" class="current-month-mobile"></p>
+                        <div class="calendar-arrows-mobile" tabindex="0">
+                          <img id="left-mobile" src="/Images/icons/chevron-2.svg" alt="left-button">
+                          <img id="right-mobile" src="/Images/icons/chevron.svg" alt="right-button">
+                        </div>
+                      </div>
+                      <div class="calendar-mobile d-flex flex-wrap flex-column" tabindex="0">
+                        <div class="weeks-mobile" tabindex="0">
+                          <ul>
+                            <li>Su</li>
+                            <li>Mo</li>
+                            <li>Tu</li>
+                            <li>We</li>
+                            <li>Th</li>
+                            <li>Fr</li>
+                            <li>Sa</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <ul class="days-mobile" tabindex="0"></ul>
+                        </div>
+                      </div>
+                    </div>
+                    <ul id="events-list-mobile" style="display: none">
+                      <!-- Event items will be dynamically added here -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
     
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <!-- Custom Scripts -->
     <script src="../JS/script.js"></script>
+    <script src="../JS/togglescript.js"></script>
     <script src="/JS/calendar.js"></script>
     <script src="/JS/calendar-mbl.js"></script>
     <script src="../JS/myworkspace.js"></script>
