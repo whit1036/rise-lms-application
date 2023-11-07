@@ -177,3 +177,33 @@ function displayText() {
 function saveUserProfile() {
     alert("Changes saved successfully")
 }
+
+function submitFile() {
+    const preSubContent = document.getElementById('pre-content')
+    preSubContent.innerHTML = (`
+    <h3 aria-label="curriculum expectations" class="fs-4 mt-5 mb-4 fw-bold">Submission</h3>
+    <p class="mt-3 fs-5 lh-sm">Text Submission</p>
+    <div aria-label="" class="card w-75 mt-3 border-danger">
+                <div class="card-body text-sub-2">
+                    <p class="lh-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium metus a facilisis commodo. Nam posuere elit eu arcu porttitor mollis. Sed varius ex non erat consequat, in pulvinar nibh egestas. Aenean ornare pretium convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Aenean quis sagittis sapien, non vulputate tellus. Nulla finibus vel enim id tristique. Mauris sit amet purus mi. Fusce mollis aliquam tempus. Praesent lacus ligula, finibus sed pharetra eu, consectetur non dui. Vivamus ut quam vitae ipsum suscipit tincidunt eu et mi. Ut vitae mi in elit semper dignissim nec sed eros.</p>
+                </div>
+              </div>
+    <p class="mt-5 fs-5 lh-sm">File Submission</p>
+    <table class="table assignment-table-submission table-bordered rounded table-rubric mt-3 w-75">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="fw-bold fs-5">Submission</th>
+                                <th scope="col" class="fw-bold fs-5 text-center w-50">Date Submitted</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="fs-5 lh-base fw-bold">Assignment01_Sarah_Smith.pdf</td>
+                                <td class="lh-base fs-5">Sept 27, 2022, 10:08 PM</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <a href="../HTML/assignment-page.html">
+                            <button id="done-btn" class="btn mt-2 text-white fw-bold rounded-5">Done</button>
+                          </a>`)
+}

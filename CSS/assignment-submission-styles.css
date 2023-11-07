@@ -17,6 +17,29 @@
     padding: 1rem;
   }
 
+  /* Custom Styles for Assignment Submission Table */
+  .assignment-table-submission {
+    overflow: hidden;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+  }
+  
+  .assignment-table-submission th {
+    background-color: var(--secondary-pink);
+    color: #FFFFFF;
+  }
+  
+  .assignment-table-submission th,
+  .assignment-table-submission td {
+    border: 2px solid var(--secondary-pink);
+    padding: 25px;
+  }
+  
+  .assignment-table-submission th {
+    padding: 15px;
+  }
+
 /* on assignments - submission page */
 /* .scroll-wrapper {
     width: 1002px;
