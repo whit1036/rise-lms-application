@@ -74,6 +74,25 @@ html {
   color: black;
 }
 
+#myTabs-desktop li a:link {
+  color: gray;
+}
+
+#myTabs-desktop li a:visited {
+  color: grey;
+}
+
+#myTabs-desktop li a:hover {
+  color: var(--secondary-pink);
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-position: under;
+}
+
+#myTabs-desktop li a:active {
+  color: var(--secondary-pink);
+}
+
 #myTabs li a:link {
   color: gray;
 }
