@@ -32,9 +32,9 @@ body {
 	line-height: 1;
     font-family: 'Avenir LT Pro', Helvetica;
 }
-ol, ul {
+/* ol, ul {
 	list-style: none;
-}
+} */
 blockquote, q {
 	quotes: none;
 }
