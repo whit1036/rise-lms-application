@@ -60,16 +60,6 @@ html {
   border-radius: 100px;
 }
 
-#contact-btn-select {
-  background-color: #E05D7D;
-  width: 6rem;
-}
-
-#join-btn-select {
-  background-color: #197BBD;
-  width: 8rem;
-}
-
 /* My Workspace Mobile Styles */
 @media screen and (min-width: 350px) and (max-width: 700px) {
     #main-header {

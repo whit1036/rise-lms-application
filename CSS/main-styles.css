@@ -102,7 +102,15 @@ color: #197BBD;
   width: 26px;
 }
 
+#contact-btn-select {
+  background-color: #E05D7D;
+  width: 6rem;
+}
 
+#join-btn-select {
+  background-color: #197BBD;
+  width: 8rem;
+}
 
 /* Global Moble Styles */
 @media screen and (min-width: 350px) and (max-width: 700px) {

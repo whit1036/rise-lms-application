@@ -58,3 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+const myModal = new bootstrap.Modal('#video-chat')
+window.addEventListener('DOMContentLoaded', () => {
+  myModal.show()
+})
