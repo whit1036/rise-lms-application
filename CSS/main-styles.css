@@ -551,6 +551,15 @@ color: #197BBD;
       background-color: var(--secondary-pink);
     }
 
+    /* Styles background color for leave call button in join meeting modal */
+    .leave-call-button {
+      background-color: var(--primary-yellow);
+    }
+
+    .leave-call-button:hover {
+      background-color: var(--primary-yellow);
+    }
+
     .meeting-join {
       background-color: var(--secondary-pink);
     }
