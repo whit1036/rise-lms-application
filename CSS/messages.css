@@ -1,4 +1,4 @@
-
+/* Mobile */
 .chat-messages {
     padding: 15px;
     overflow-y: scroll;
@@ -65,6 +65,79 @@ input {
     width: 5%;
 }
 
-h3 {
+/* h3 {
     color: #387D44;
+} */
+
+/* Desktop */
+/* .chat-messages-desktop {
+    padding: 15px;
+    overflow-y: scroll;
+    max-height: 300px;
+} */
+
+.message-desktop {
+    margin-bottom: 15px;
+    padding: 10px;
+    line-height: 1.7;
 }
+
+.user-message-desktop {
+    clear: right;
+
+    width: 300px;
+    margin-bottom: 25px;
+    border-radius: 25px 25px 0px 25px;
+}
+
+.other-message-desktop {
+    float: right;
+    background-color: #387d433d;
+
+    width: 300px;
+    right: 0;
+    text-align: end;
+
+    border-radius: 25px 25px 0px 25px;
+}
+
+.message-input-desktop {
+    display: flex;
+
+    position: fixed;
+    bottom: 0;
+
+    width: 75%;
+    margin-bottom: 1rem;
+    padding: 8px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ededed;
+    border-radius: 60px;
+}
+
+.input-field-desktop {
+    flex: 1;
+    color: black;
+
+    padding: 8px;
+    border: 1px solid #ededed;
+    background-color: #ededed;
+
+    border-radius: 60px;
+}
+
+input {
+    color: black;
+}
+
+.send-icon-desktop {
+    margin-right: 16px;
+    width: 1.5%;
+}
+
+/* h3 {
+    color: #387D44;
+} */
