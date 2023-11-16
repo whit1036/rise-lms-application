@@ -155,7 +155,7 @@
                   <div>
                     <img src="/Images/icons/rectangle-144.png" alt="profile-icon">
                   </div>
-                  <!-- Mobile Link to display Abigails messages -->
+                  <!-- Mobile Link to display Abigail's messages -->
                   <a class="tog" href="#abigail">
                     <div class="ms-3">
                       <h3 class="mb-2 messages-title text-dark">Abigail</h3>
@@ -168,40 +168,52 @@
                   <div>
                     <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
                   </div>
-                  <div class="ms-3">
-                    <h3 class="mb-2 messages-title">John</h3>
-                    <p class="messages-text">Just a reminder to...</p>
-                  </div>
+                  <!-- Mobile Link to display John's messages -->
+                  <a class="tog" href="#john">
+                    <div class="ms-3">
+                      <h3 class="mb-2 messages-title text-dark">John</h3>
+                      <p class="messages-text">Just a reminder to...</p>
+                    </div>
+                  </a>
                 </div>
                 <hr class="secondary-line-message mt-2">
                 <div class="d-flex">
                   <div>
                     <img src="/Images/icons/rectangle-146.png" alt="profile-icon">
                   </div>
-                  <div class="ms-3">
-                    <h3 class="mb-2 messages-title">Paul</h3>
-                    <p class="messages-text">If you need more inf...</p>
-                  </div>
+                  <!-- Mobile Link to display Paul's messages -->
+                  <a class="tog" href="#paul">
+                    <div class="ms-3">
+                      <h3 class="mb-2 messages-title text-dark">Paul</h3>
+                      <p class="messages-text">If you need more inf...</p>
+                    </div>
+                  </a>
                 </div>
                 <hr class="secondary-line-message mt-2">
                 <div class="d-flex">
                   <div>
                     <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="profile-icon">
                   </div>
-                  <div class="ms-3">
-                    <h3 class="mb-2 messages-title">Keith</h3>
-                    <p class="messages-text">Please, remember the...</p>
-                  </div>
+                  <!-- Mobile Link to display Keith's messages -->
+                  <a class="tog" href="#keith">
+                    <div class="ms-3">
+                      <h3 class="mb-2 messages-title text-dark">Keith</h3>
+                      <p class="messages-text">Please, remember the...</p>
+                    </div>
+                  </a>
                 </div>
                 <hr class="secondary-line-message mt-2">
                 <div class="d-flex">
                   <div>
                     <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="profile-icon">
                   </div>
-                  <div class="ms-3">
-                    <h3 class="mb-2 messages-title">Holly</h3>
-                    <p class="messages-text">Give me a call when...</p>
-                  </div>
+                  <!-- Mobile Link to display Holly's messages -->
+                  <a class="tog" href="#holly">
+                    <div class="ms-3">
+                      <h3 class="mb-2 messages-title text-dark">Holly</h3>
+                      <p class="messages-text">Give me a call when...</p>
+                    </div>
+                  </a>
                 </div>
                 <hr class="secondary-line-message mt-2">
               </div>
@@ -519,7 +531,8 @@
               </div>
               <!-- This second div is for my messages and my calendar -->
               <!-- Oct 18th adds col-xl-3 and col-8 -->
-              <div class="messages-calendar col-xl-3 col-8 ms-4 mt-4 fixed-width">
+              <!-- Nov 15th adds mx-xxl-5 to fix scroll issue -->
+              <div class="messages-calendar col-xl-3 ms-xxl-5 col-8 ms-2 mt-4 fixed-width">
                 <!-- This div is for my messages -->
                 <div class="desk-msg shadow p-3 mb-5 bg-body-tertiary rounded">
                   <!-- This div is for the icon of my messages and the title -->
@@ -642,9 +655,10 @@
           </div>
         </nav>
         <!-- All Message Contacts Starts -->
+
+        <!-- Abigail -->
         <div id="abigailPage" class="page">
           <div id="workspace-info" class="container-md screen">
-                <div class="container-mbl-msg">
                   <div class="d-flex align-items-center mt-5">
                       <img src="/Images/icons/rectangle-144.png" alt="abigail profile picture">
                       <h3 class="ms-3 fw-bold">Abigail</h3>
@@ -669,7 +683,124 @@
                       <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
                       <i class="fa-solid fa-microphone me-3"></i>
                   </div>
+          </div>
+        </div>
+        
+        <!-- John -->
+        <div id="johnPage" class="page">
+          <div id="workspace-info" class="container-md screen">
+            <div class="d-flex align-items-center mt-5">
+              <img src="/Images/icons/rectangle-145.png" alt="john profile picture">
+              <h3 class="ms-3 fw-bold">John</h3>
+            </div>
+            <hr>
+            <div class="chat-message">
+                <div class="message user-message d-flex align-items-center">
+                    <img src="/Images/icons/rectangle-145.png" alt="john profile picture">
+                    <p class="ms-3">Hello Sarah! How was your weekend?</p>
                 </div>
+                <div class="message other-message p-3">
+                    <p>Hi John! Was great, thanks.</p>
+                </div>
+                <div class="message user-message d-flex align-items-center">
+                    <img src="/Images/icons/rectangle-145.png" alt="john profile picture">
+                    <p class="ms-3">Just a reminder to...</p>
+                </div>
+            </div>
+            <div class="message-input fixed-bottom">
+                <i class="fa-solid fa-arrow-up-from-bracket ms-3"></i>
+                <input type="text" class="input-field ms-3" placeholder="Type message here...">
+                <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
+                <i class="fa-solid fa-microphone me-3"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paul -->
+        <div id="paulPage" class="page">
+          <div id="workspace-info" class="container-md screen">
+            <div class="d-flex align-items-center mt-5">
+              <img src="/Images/icons/rectangle-146.png" alt="paul profile picture">
+              <h3 class="ms-3 fw-bold">Paul</h3>
+            </div>
+            <hr>
+            <div class="chat-message">
+                <div class="message user-message d-flex align-items-center">
+                    <img src="/Images/icons/rectangle-146.png" alt="paul profile picture">
+                    <p class="ms-3">Hello Sarah!</p>
+                </div>
+                <div class="message other-message p-3">
+                    <p>Hi Paul! I just read the document. I have problems with...</p>
+                </div>
+                <div class="message user-message d-flex align-items-center">
+                    <img src="/Images/icons/rectangle-146.png" alt="paul profile picture">
+                    <p class="ms-3">If you need more info...</p>
+                </div>
+            </div>
+            <div class="message-input fixed-bottom">
+                <i class="fa-solid fa-arrow-up-from-bracket ms-3"></i>
+                <input type="text" class="input-field ms-3" placeholder="Type message here...">
+                <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
+                <i class="fa-solid fa-microphone me-3"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keith -->
+        <div id="keithPage" class="page">
+          <div id="workspace-info" class="container-md screen">
+            <div class="d-flex align-items-center mt-5">
+              <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="keith profile picture">
+              <h3 class="ms-3 fw-bold">Keith</h3>
+            </div>
+            <hr>
+            <div class="chat-message">
+                <div class="message user-message d-flex align-items-center">
+                    <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="keith profile picture">
+                    <p class="ms-3">Hi Sarah, Hope everything is going well!</p>
+                </div>
+                <div class="message other-message p-3">
+                    <p>Hi Keith! Everything is doing great, tell me?</p>
+                </div>
+                <div class="message user-message d-flex align-items-center">
+                    <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="keith profile picture">
+                    <p class="ms-3">Please, remember the...</p>
+                </div>
+            </div>
+            <div class="message-input fixed-bottom">
+                <i class="fa-solid fa-arrow-up-from-bracket ms-3"></i>
+                <input type="text" class="input-field ms-3 me-3" placeholder="Type message here...">
+                <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
+                <i class="fa-solid fa-microphone me-3"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Holly -->
+        <div id="hollyPage" class="page">
+          <div class="d-flex align-items-center mt-5">
+            <img class="rounded-1 mx-2" src="/Images/rectangle-149.jpeg" alt="holly profile picture">
+            <h3 class="ms-2 fw-bold">Holly</h3>
+          </div>
+          <hr>
+          <div class="chat-message">
+              <div class="message user-message d-flex align-items-center">
+                  <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="holly profile picture">
+                  <p class="ms-3">Hey!</p>
+              </div>
+              <div class="message other-message p-3 mx-3">
+                  <p>Hi Holly! I am in class right now.</p>
+              </div>
+              <div class="message user-message d-flex align-items-center">
+                  <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="holly profile picture">
+                  <p class="ms-3">Give me a call when...</p>
+              </div>
+          </div>
+          <div class="message-input fixed-bottom">
+              <i class="fa-solid fa-arrow-up-from-bracket ms-3"></i>
+              <input type="text" class="input-field ms-3 me-3" placeholder="Type message here...">
+              <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
+              <i class="fa-solid fa-microphone me-3"></i>
           </div>
         </div>
         <!-- All Message Contacts Ends -->

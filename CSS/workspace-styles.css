@@ -91,6 +91,16 @@ html {
 }
 
 @media (min-width: 701px) and (max-width: 4000px) {
+    .messages-container {
+      max-height: 250px; /* Set the desired maximum height */
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    /* Sets Log-Out Button to position fixed */
+    /* .logout {
+      position: fixed;
+      bottom: 0;
+    } */
 
     .courses {
         display: none;

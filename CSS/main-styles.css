@@ -435,7 +435,7 @@ color: #197BBD;
       margin-top: 8rem;
     }
 
-    #abigailPage {
+    #abigailPage, #johnPage, #paulPage, #keithPage, #hollyPage {
       margin-top: 9rem;
     }
 
@@ -481,7 +481,7 @@ color: #197BBD;
 
 @media (min-width: 701px) and (max-width: 4000px) {
   /* NOV 4 */
-    #homePage, #assignmentsPage, #meetingsPage, #calendarPage, #abigailPage {
+    #homePage, #assignmentsPage, #meetingsPage, #calendarPage, #abigailPage, #johnPage, #paulPage, #keithPage, #hollyPage {
       display: none;
     }
 
