@@ -489,6 +489,17 @@ color: #197BBD;
 }
 
 @media (min-width: 701px) and (max-width: 4000px) {
+  .facilitator-info {
+    display: flex;
+    /* align-items: center; */
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+  .facilitator-image {
+    padding-top: 150px;
+  }
+  
   /* NOV 4 */
     #homePage, #assignmentsPage, #meetingsPage, #calendarPage, #abigailPage, #johnPage, #paulPage, #keithPage, #hollyPage, #joinPage {
       display: none;
@@ -544,7 +555,7 @@ color: #197BBD;
     .box {
         display: block;
         width: 100%;
-        height: 100vh;
+        height: auto;
         /* margin-left: 2.5rem; */
         background-color: white;
         border-radius: 48px 0px 0px 0px;
