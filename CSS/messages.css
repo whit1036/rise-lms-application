@@ -1,9 +1,4 @@
 /* Mobile */
-.chat-messages {
-    padding: 15px;
-    overflow-y: scroll;
-    max-height: 300px;
-}
 
 .message {
     margin-bottom: 15px;
@@ -56,26 +51,16 @@
     border-radius: 60px;
 }
 
-input {
+/* input {
     color: black;
-}
+} */
 
 .send-icon {
     margin-right: 16px;
     width: 5%;
 }
 
-/* h3 {
-    color: #387D44;
-} */
-
 /* Desktop */
-/* .chat-messages-desktop {
-    padding: 15px;
-    overflow-y: scroll;
-    max-height: 300px;
-} */
-
 .message-desktop {
     margin-bottom: 15px;
     padding: 10px;
@@ -129,9 +114,9 @@ input {
     border-radius: 60px;
 }
 
-input {
+/* input {
     color: black;
-}
+} */
 
 .send-icon-desktop {
     margin-right: 16px;
@@ -141,3 +126,14 @@ input {
 /* h3 {
     color: #387D44;
 } */
+
+@media (min-width: 1750px) and (max-width: 4000px) {
+    .message-input-desktop {
+        display: flex;
+        margin-bottom: 1rem;
+        padding: 8px;
+        width: 83rem;
+        background-color: #ededed;
+        border-radius: 60px;
+    }
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Workspace</title>
+    <title>Paul Messages</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/main-styles.css">
     <link rel="stylesheet" href="../CSS/styleguide.css">
@@ -99,7 +99,7 @@
                 <hr class="secondary-line-message mt-2">
 
                 <!-- Link for John's Chat on Desktop -->
-                <a href=".john-messages.html">
+                <a href="./john-messages.html">
                   <div class="d-flex">
                     <div>
                       <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
@@ -113,7 +113,7 @@
                 <hr class="secondary-line-message mt-2">
                 
                 <!-- Link for Paul's Chat on Desktop -->
-                <a href=".paul-messages.html">
+                <a href="./paul-messages.html">
                   <div class="d-flex">
                     <div>
                       <img src="/Images/icons/rectangle-146.png" alt="profile-icon">
@@ -475,207 +475,33 @@
           <div role="region" class="box col">
             <div class="background">
               <div class="container">
-                <!-- This div is to control 2 sides; the first and second div -->
-                <div class="row mt-5">
-                  <!-- This first div is for the title and my courses -->
-                  <!-- Oct 18th adds col-xl-8 and col-8 -->
-                  <!-- Oct 22 - Daniela modified the col-8 for responsiveness -->
-                  <div class="col-xl-8">
-                    <h1 class="fs-2 fw-bold">Welcome back, Sarah! 😁</h1>
-                    <!-- This div is for my courses title and cards -->
-                   <div>
-                  <h2 class="fs-3 fw-bold mt-5 mb-4">My Courses</h2>
-                  <!-- This div is to set up a grid for my courses cards -->
-                  <div class="courses-cards row row-cols-1 row-cols-md-3 g-3">
-                    <!-- Oct 18th - add col-lg-4 and col-md-5 to cards -->
-                    <div class="col">
-                      <a href="../HTML/math-course-page.html">
-                        <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
-                          <img src="/Images/Math.png" class="card-img-top" alt="Albert Einstein in a math room">
-                          <div class="card-body">
-                            <h5 class="card-title fw-bold m-1">Math</h5>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="../HTML/business-course-page.html">
-                        <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
-                          <img src="/Images/Business.png" class="card-img-top" alt="Man hands in a meeting with his computer">
-                          <div class="card-body">
-                            <h5 class="card-title fw-bold m-1">Business</h5>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="../HTML/science-course-page.html">
-                        <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
-                          <img src="/Images/science.png" class="card-img-top" alt="A sphere making radiation">
-                          <div class="card-body">
-                            <h5 class="card-title fw-bold m-1">Science</h5>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="../HTML/english-course-page.html">
-                        <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
-                          <img src="/Images/English.png" class="card-img-top" alt="Words in a puzzle">
-                          <div class="card-body">
-                            <h5 class="card-title fw-bold m-1">English</h5>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="../HTML/geo-course-page.html">
-                        <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
-                          <img src="/Images/Geography.png" class="card-img-top" alt="A world map">
-                          <div class="card-body">
-                            <h5 class="card-title fw-bold m-1">Geography</h5>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="../HTML/food-course-page.html">
-                        <div class="crd-ds card h-70 shadow p-1 mb-2 bg-body-tertiary rounded">
-                          <img src="/Images/Food.png" class="card-img-top" alt="Various plates of food">
-                          <div class="card-body">
-                            <h5 class="card-title fw-bold m-1">Food &amp; Nutrition</h5>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                <!-- Message Chat Starts Here -->
+                <div class="d-flex align-items-center mt-5">
+                    <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="holly profile picture">
+                    <h3 class="ms-3 fw-bold">Holly</h3>
                 </div>
-                <!-- This is for the button that is for view all courses-->
-                <div class="tab" tabindex="0" aria-label="View all courses">
-                  <!-- Oct 22 - I delete w-25 and modified the padding -->
-                  <button class="btn bg-success text-light fw-bold rounded-5 mt-4 pe-4 ps-4 p-2">View All Courses</button>
-                </div>
-              </div>
-              <!-- This second div is for my messages and my calendar -->
-              <!-- Oct 18th adds col-xl-3 and col-8 -->
-              <!-- Nov 15th adds mx-xxl-5 to fix scroll issue -->
-              <div class="messages-calendar col-xl-3 ms-xxl-5 col-8 ms-2 mt-4 fixed-width">
-                <!-- This div is for my messages -->
-                <div class="desk-msg shadow p-3 mb-5 bg-body-tertiary rounded">
-                  <!-- This div is for the icon of my messages and the title -->
-                  <div class="d-flex align-items-center">
-                    <img src="/Images/icons/message-2.png" alt="message-icon">
-                    <h2 class="ms-4 fs-5 title-cal-message">My Messages</h2>
-                  </div>
-                  <!-- This span is for creating the line that goes below the title and icon of my messages -->
-                  <hr class="primary-line-message mt-2">
-                  <!-- This div contains the list of my messages -->
-                  <div class="messages-container">
-                    <a href="./abigail-messages.html">
-                      <div class="d-flex">
-                        <div>
-                          <img src="/Images/icons/rectangle-144.png" alt="profile-icon">
-                        </div>
-                        <div class="ms-3">
-                          <h3 class="mb-2 messages-title text-dark">Abigail</h3>
-                          <p class="messages-text">Could you review...</p>
-                        </div>
-                      </div>
-                    </a>
-                    <hr class="secondary-line-message mt-2">
-                    <a href="./john-messages.html">
-                      <div class="d-flex">
-                        <div>
-                          <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
-                        </div>
-                        <div class="ms-3">
-                          <h3 class="mb-2 messages-title text-dark">John</h3>
-                          <p class="messages-text">Just a reminder to...</p>
-                        </div>
-                      </div>
-                    </a>
-                    <hr class="secondary-line-message mt-2">
-                    <a href="./paul-messages.html">
-                      <div class="d-flex">
-                        <div>
-                          <img src="/Images/icons/rectangle-146.png" alt="profile-icon">
-                        </div>
-                        <div class="ms-3">
-                          <h3 class="mb-2 messages-title text-dark">Paul</h3>
-                          <p class="messages-text">If you need more inf...</p>
-                        </div>
-                      </div>
-                    </a>
-                    <hr class="secondary-line-message mt-2">
-                    <a href="./keith-messages.html">
-                      <div class="d-flex">
-                        <div>
-                          <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="profile-icon">
-                        </div>
-                        <div class="ms-3">
-                          <h3 class="mb-2 messages-title text-dark">Keith</h3>
-                          <p class="messages-text">Please, remember the...</p>
-                        </div>
-                      </div>
-                    </a>
-                    <hr class="secondary-line-message mt-2">
-                    <a href="./holly-messages.html">
-                      <div class="d-flex">
-                        <div>
-                          <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="profile-icon">
-                        </div>
-                        <div class="ms-3">
-                          <h3 class="mb-2 messages-title text-dark">Holly</h3>
-                          <p class="messages-text">Give me a call when...</p>
-                        </div>
-                      </div>
-                    </a>
-                    <hr class="secondary-line-message mt-2">
-                  </div>
-                </div>
-                <!-- This div is for my calendar -->
-                <div class="calendar-container shadow p-3 mb-5 bg-body-tertiary rounded">
-                  <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons">
-                    <h2 class="title-cal-message me-2 fs-5">My Calendar</h2>
-                    <img id="calendar-icon" class="calendar-icon icon" src="/Images/icons/u_calendar-alt.svg" alt="calendar-icon">
-                    <img id="list-icon" class="list-cal-icon icon" src="/Images/icons/u_list-ul.svg" alt="calendar-icon">
-                  </div>
-                  <hr class="primary-line-message mt-2">
-                  <!-- Jia and Qing add accessibilities  -->
-                  <!-- This div is for the calendar -->
-                  <div id="calendar-content" class="bg-body-tertiary rounded p-3" tabindex="0"
-                  aria-label="View calendar">
-                    <div class="d-flex flex-wrap justify-content-between align-items-center" tabindex="0">
-                      <p id="current-month" class="current-month"></p>
-                      <div class="calendar-arrows" tabindex="0">
-                        <img id="left" src="/Images/icons/chevron-2.svg" alt="left-button">
-                        <img id="right" src="/Images/icons/chevron.svg" alt="right-button">
-                      </div>
+                <hr>
+                <div class="chat-message-desktop">
+                    <div class="message-desktop user-message-desktop d-flex align-items-center">
+                        <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="holly profile picture">
+                        <p class="ms-3">Hey!</p>
                     </div>
-                    <div class="calendar d-flex flex-wrap flex-column" tabindex="0">
-                      <div class="weeks" tabindex="0">
-                        <ul>
-                          <li>Su</li>
-                          <li>Mo</li>
-                          <li>Tu</li>
-                          <li>We</li>
-                          <li>Th</li>
-                          <li>Fr</li>
-                          <li>Sa</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <ul class="days" tabindex="0"></ul>
-                      </div>
+                    <div class="message-desktop other-message-desktop p-3">
+                        <p>Hi Holly! I am in class right now.</p>
                     </div>
-                  </div>
-                  <ul id="events-list" style="display: none">
-                    <!-- Event items will be dynamically added here -->
-                  </ul>
+                    <div class="message-desktop user-message-desktop d-flex align-items-center">
+                        <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="holly profile picture">
+                        <p class="ms-3">Give me a call when...</p>
+                    </div>
                 </div>
-              </div>
+                <div class="message-input-desktop">
+                    <i class="fa-solid fa-arrow-up-from-bracket ms-3"></i>
+                    <input type="text" class="input-field-desktop ms-3 me-3" placeholder="Type message here...">
+                    <img class="send-icon-desktop" src="/Images/send-icon.svg" alt="send-icon">
+                    <i class="fa-solid fa-microphone me-3"></i>
+                </div>
+                <!-- Message Chat Ends Here -->
             </div>
-          </div>
         </div>
       </div>
       </div>
