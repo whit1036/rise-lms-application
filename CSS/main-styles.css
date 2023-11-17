@@ -489,12 +489,6 @@ color: #197BBD;
 }
 
 @media (min-width: 701px) and (max-width: 4000px) {
-  .facilitator-info {
-    display: flex;
-    /* align-items: center; */
-    align-items: flex-end;
-    justify-content: space-between;
-  }
   
   .facilitator-image {
     padding-top: 150px;
