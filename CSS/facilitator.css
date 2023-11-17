@@ -1,0 +1,33 @@
+/* Daniela add this media screen so I can control the class box and modified the mesages and calendar when the screen is 1276px or less */
+@media (max-width: 1400px) {
+
+    .box {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .btn {
+      margin-bottom: 30px;
+    }
+  
+    .messages-calendar {
+      display: flex;
+  
+      max-width: 100%;
+      width: 100% !important;
+  
+      margin-left: 0;
+    }
+  
+    .desk-msg {
+      width: 50%;
+      margin-right: 30px;
+    }
+  
+    .calendar-container {
+      width: 50%;
+  
+      margin-right: 50px;
+    }
+  
+  }
