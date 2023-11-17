@@ -112,6 +112,10 @@ color: #197BBD;
   width: 8rem;
 }
 
+.meetings-bdr {
+  border-color: var(--secondary-pink);
+}
+
 /* Global Moble Styles */
 @media screen and (min-width: 350px) and (max-width: 700px) {
   /* Hides Desktop Message and Notifications on Mobile */
@@ -137,9 +141,9 @@ color: #197BBD;
         display: none;
     }
 
-      #mobile-notifications {
+      /* #mobile-notifications {
         display: none;
-      }
+      } */
   
       #mobile-messages {
         display: none;
@@ -241,7 +245,7 @@ color: #197BBD;
 
     /* Jia and qing add dot style for notification  */
 
-    #desktop-notifications {
+    #mobile-notifications {
       width: 100%;
       height: 80%;
       position: fixed;
@@ -431,11 +435,11 @@ color: #197BBD;
 
     /* My Assignments Mobile Styles */
     /* Nov 4 */
-    #my-assignments-mbl, #assignmentsPage, #calendarPage {
+    #my-assignments-mbl, #assignmentsPage, #calendarPage, #joinPage {
       margin-top: 8rem;
     }
 
-    #abigailPage, #johnPage, #paulPage, #keithPage, #hollyPage {
+    #abigailPage, #johnPage, #paulPage, #keithPage, #hollyPage, #meetingsPage {
       margin-top: 9rem;
     }
 
@@ -477,11 +481,16 @@ color: #197BBD;
     #myTabs li a:active {
       color: var(--secondary-pink);
     }
+
+    .meeting-join-mobile, .meeting-join-mobile:hover {
+      background-color: var(--secondary-pink);
+      color: #FFFFFF;
+    }
 }
 
 @media (min-width: 701px) and (max-width: 4000px) {
   /* NOV 4 */
-    #homePage, #assignmentsPage, #meetingsPage, #calendarPage, #abigailPage, #johnPage, #paulPage, #keithPage, #hollyPage {
+    #homePage, #assignmentsPage, #meetingsPage, #calendarPage, #abigailPage, #johnPage, #paulPage, #keithPage, #hollyPage, #joinPage {
       display: none;
     }
 
@@ -574,8 +583,9 @@ color: #197BBD;
       background-color: var(--primary-yellow);
     }
 
-    .meeting-join {
+    .meeting-join, .meeting-join:hover {
       background-color: var(--secondary-pink);
+      color: #FFFFFF;
     }
 
     .my-meeting-button {

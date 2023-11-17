@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Messages</title>
+    <title>Holly Messages</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/main-styles.css">
     <link rel="stylesheet" href="../CSS/styleguide.css">
@@ -39,7 +39,7 @@
                   My Meetings
                 </button>
               </div>
-              <!-- Modal -->
+              <!-- My Meetings Modal Starts -->
               <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
@@ -49,24 +49,25 @@
                     </div>
                     <div class="modal-body">
                       <p class="fs-5 fw-bold">Upcoming Meetings</p>
-                      <div class="card w-100 mb-3 mt-4">
+                      <div class="card w-100 mb-3 mt-4 meetings-bdr">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Steve Kent - Project 2 Discussion</h5>
                             <p class="card-text">Nov 25, 2023 | 3:00 PM - 3:30 PM</p>
-                            <a href="#" class="btn meeting-join border-warning fw-bolder mt-2">Join</a>
+                            <a href="./facilitator-join-meeting.html" class="btn meeting-join meetings-bdr fw-bolder mt-2 rounded-5 w-25">Join</a>
                         </div>
                       </div>
-                      <div class="card w-100 mb-3 mt-4">
+                      <div class="card w-100 mb-3 mt-4 meetings-bdr">
                         <div class="card-body">
                           <h5 class="card-title fw-bold">Allison Addams - Intro to Business Discussion</h5>
                           <p class="card-text">Nov 26, 2023 | 11:00 AM - 12:00 PM</p>
-                          <a href="#" class="btn meeting-join border-warning fw-bolder mt-2">Join</a>
+                          <a href="./facilitator-join-meeting.html" class="btn meeting-join meetings-bdr fw-bolder mt-2 rounded-5 w-25">Join</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- My Meetings Modal Ends -->
             </div>
             <!-- Dropdown Messages Desktop Starts -->
             <!-- Daniela - This div is for the desktop Messages icon dropdown -->
@@ -249,7 +250,7 @@
             <div class="dropdown-mobile">
               <a href="" data-bs-toggle="dropdown"><img id="mbl-ntf" role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bell icon"></a>
               <!-- Adjsut Notification on Oct 19th starts-->
-              <div id="desktop-notifications" class="dropdown-menu">
+              <div id="mobile-notifications" class="dropdown-menu">
                 <div class="p-4 my-2 d-flex flex-column">
                   <p class="fs-4 fw-bold">Notifications</p>
                   <hr>
@@ -304,7 +305,7 @@
 
             <!-- Dropdown Notifications Desktop Starts -->
             <div class="dropdown">
-              <a href="" data-bs-toggle="dropdown"><img id="mbl-ntf" role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bell icon"></a>
+              <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bell icon"></a>
               <!-- Adjsut Notification on Oct 19th starts-->
               <div id="desktop-notifications" class="dropdown-menu">
                 <div class="p-4 my-2 d-flex flex-column">
@@ -511,7 +512,7 @@
           <div id="mobile-nav-icons" class="container-fluid text-center d-flex justify-content-around">
             <!-- Home Button -->
             <div class="d-flex flex-column justify-content-center">
-            <a id="home-btn" class="tog" href="#home" class="screen">
+            <a id="home-btn" class="tog screen" href="#home">
                 <img id="mobile-home-svg" src="../Images/icons/mobile_home.svg" alt="mobile home icon">
             </a>
             <p class="p-1 fw-bolder">Home</p>
@@ -532,7 +533,7 @@
             </div>
             <!-- Calendar Button -->
             <div class="d-flex flex-column justify-content-center">
-            <a class="tog" href="#calendar" class="screen">
+            <a class="tog screen" href="#calendar">
                 <img id="mobile-calendar-svg" src="../Images/icons/mobile_calendar.svg" alt="mobilecalendaricon">
             </a>
             <p id="nav-mobile-font-4" class="p-1 fw-bolder">Calendar</p>
@@ -543,10 +544,9 @@
 
         <!-- Abigail -->
         <div id="abigailPage" class="page">
-          <div id="workspace-info" class="container-md screen">
                   <div class="d-flex align-items-center mt-5">
-                      <img src="/Images/icons/rectangle-144.png" alt="abigail profile picture">
-                      <h3 class="ms-3 fw-bold">Abigail</h3>
+                      <img class="rounded-1 mx-2" src="/Images/icons/rectangle-144.png" alt="abigail profile picture">
+                      <h3 class="ms-2 fw-bold">Abigail</h3>
                   </div>
                   <hr>
                   <div class="chat-message">
@@ -568,15 +568,13 @@
                       <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
                       <i class="fa-solid fa-microphone me-3"></i>
                   </div>
-          </div>
         </div>
         
         <!-- John -->
         <div id="johnPage" class="page">
-          <div id="workspace-info" class="container-md screen">
             <div class="d-flex align-items-center mt-5">
-              <img src="/Images/icons/rectangle-145.png" alt="john profile picture">
-              <h3 class="ms-3 fw-bold">John</h3>
+              <img class="rounded-1 mx-2" src="/Images/icons/rectangle-145.png" alt="john profile picture">
+              <h3 class="ms-2 fw-bold">John</h3>
             </div>
             <hr>
             <div class="chat-message">
@@ -598,15 +596,13 @@
                 <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
                 <i class="fa-solid fa-microphone me-3"></i>
             </div>
-          </div>
         </div>
 
         <!-- Paul -->
         <div id="paulPage" class="page">
-          <div id="workspace-info" class="container-md screen">
             <div class="d-flex align-items-center mt-5">
-              <img src="/Images/icons/rectangle-146.png" alt="paul profile picture">
-              <h3 class="ms-3 fw-bold">Paul</h3>
+              <img class="rounded-1 mx-2" src="/Images/icons/rectangle-146.png" alt="paul profile picture">
+              <h3 class="ms-2 fw-bold">Paul</h3>
             </div>
             <hr>
             <div class="chat-message">
@@ -628,15 +624,13 @@
                 <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
                 <i class="fa-solid fa-microphone me-3"></i>
             </div>
-          </div>
         </div>
 
         <!-- Keith -->
         <div id="keithPage" class="page">
-          <div id="workspace-info" class="container-md screen">
             <div class="d-flex align-items-center mt-5">
-              <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="keith profile picture">
-              <h3 class="ms-3 fw-bold">Keith</h3>
+              <img class="rounded-1 mx-2" src="/Images/rectangle-148.jpeg" alt="keith profile picture">
+              <h3 class="ms-2 fw-bold">Keith</h3>
             </div>
             <hr>
             <div class="chat-message">
@@ -658,7 +652,6 @@
                 <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
                 <i class="fa-solid fa-microphone me-3"></i>
             </div>
-          </div>
         </div>
 
         <!-- Holly -->
@@ -749,7 +742,7 @@
           </div>
           <!-- My Assignments -->
           <div id="assignmentsPage" class="page">
-            <div id="" class="container-md">
+            <div class="container-md">
                 <div class="mt-2">
                   <div class="">
                     <!-- tabs  to display different content      -->
@@ -856,11 +849,31 @@
             </div>
             <!-- My Meetings -->
             <div id="meetingsPage" class="page">
-              <p style="margin-top: 20rem;">content 3</p>
-              <!-- Content for the Calendar page -->
+                <h2 class="fs-2 mt-4 mb-4 fw-bold mx-3">My Meetings</h2>
+                <p class="fs-5 fw-bold mx-3 mt-5">Upcoming Meetings</p>
+                <div class="card mt-4 meetings-bdr m-auto">
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold">Steve Kent - Project 2 Discussion</h5>
+                      <p class="card-text">Nov 25, 2023 | 3:00 PM - 3:30 PM</p>
+                      <hr class="text-danger">
+                      <a href="#join" class="tog btn meeting-join-mobile meetings-bdr fw-bolder m-0 rounded-5 w-25">Join</a>
+                  </div>
+                </div>
+                <div class="card w-100 mt-4 meetings-bdr m-auto">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Allison Addams - Intro to Business Discussion</h5>
+                    <p class="card-text">Nov 26, 2023 | 11:00 AM - 12:00 PM</p>
+                    <hr class="text-danger">
+                    <a href="#join" class="tog btn meeting-join-mobile meetings-bdr fw-bolder m-0 rounded-5 w-25">Join</a>
+                  </div>
+                </div>
+            </div>
+            <!-- Join Meeting Page Mobile -->
+            <div id="joinPage" class="page">
+              
             </div>
             <div id="calendarPage" class="page">
-              <div class="container-md screen" id="">
+              <div class="container-md screen">
                   <!-- Calendar -->
                   <div class="calendar-container-mobile shadow bg-body-tertiary rounded">
                     <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 calendar-icons-mobile">
