@@ -108,7 +108,12 @@ html {
 }
 
 @media (min-width: 700px) and (max-width: 4000px) {
-      #mobile-course-pg {
+  .messages-container {
+    max-height: 250px; /* Set the desired maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  #mobile-course-pg {
         display: none;
       }
   
