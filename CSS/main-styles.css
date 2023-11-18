@@ -102,14 +102,22 @@ color: #197BBD;
   width: 26px;
 }
 
-#contact-btn-select {
+.contact-btn-select {
   background-color: #E05D7D;
   width: 6rem;
 }
 
-#join-btn-select {
+.contact-btn-select:hover {
+  background-color: #E05D7D;
+}
+
+.join-btn-select {
   background-color: #197BBD;
   width: 8rem;
+}
+
+.join-btn-select:hover {
+  background-color: #197BBD;
 }
 
 .meetings-bdr {
