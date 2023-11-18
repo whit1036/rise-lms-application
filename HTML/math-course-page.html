@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/main-styles.css">
     <link rel="stylesheet" href="../CSS/styleguide.css">
     <link rel="stylesheet" href="../CSS/course-page-styles.css">
+    <link rel="stylesheet" href="../CSS/messages.css">
     <link rel="stylesheet" href="https://use.typekit.net/ioi4mhc.css">
     <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
     <!-- Adding Fontawesome icons -->
@@ -38,7 +39,7 @@
                   My Meetings
                 </button>
               </div>
-              <!-- Modal -->
+              <!-- My Meetings Modal Starts -->
               <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
@@ -47,96 +48,265 @@
                       <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p class="fs-5 fw-bold">Upcoming Meetings</p>
-                        <div class="card w-100 mb-3 mt-4">
-                          <div class="card-body">
-                              <h5 class="card-title fw-bold">Steve Kent - Project 2 Discussion</h5>
-                              <p class="card-text">Nov 25, 2023 | 3:00 PM - 3:30 PM</p>
-                              <a href="#" class="btn meeting-join border-warning fw-bolder mt-2">Join</a>
-                          </div>
+                      <p class="fs-5 fw-bold">Upcoming Meetings</p>
+                      <div class="card w-100 mb-3 mt-4 meetings-bdr">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Steve Kent - Project 2 Discussion</h5>
+                            <p class="card-text">Nov 25, 2023 | 3:00 PM - 3:30 PM</p>
+                            <a href="./facilitator-join-meeting.html" class="btn meeting-join meetings-bdr fw-bolder mt-2 rounded-5 w-25">Join</a>
                         </div>
-                        <div class="card w-100 mb-3 mt-4">
-                          <div class="card-body">
-                            <h5 class="card-title fw-bold">Allison Addams - Intro to Business Discussion</h5>
-                            <p class="card-text">Nov 26, 2023 | 11:00 AM - 12:00 PM</p>
-                            <a href="#" class="btn meeting-join border-warning fw-bolder mt-2">Join</a>
-                          </div>
+                      </div>
+                      <div class="card w-100 mb-3 mt-4 meetings-bdr">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Allison Addams - Intro to Business Discussion</h5>
+                          <p class="card-text">Nov 26, 2023 | 11:00 AM - 12:00 PM</p>
+                          <a href="./facilitator-join-meeting.html" class="btn meeting-join meetings-bdr fw-bolder mt-2 rounded-5 w-25">Join</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- Daniela - This div is for the desktop Messages icon dropdown -->
-              <div class="dropdown">
-                <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/message.svg" alt="message icon"></a>
-                <div class="messages-drop-container dropdown-menu p-3">
-                  <div class="d-flex flex-column w-100">
-                    <h2 class="mb-2 mt-3 fs-5 title-cal-message">My Messages</h2>
-                    <form class="form-search d-flex align-items-center" role="search">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                      <input class="form-messages" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                  </div>
-                  <!-- This span is for creating the line that goes below the title and icon of my messages -->
-                  <hr class="primary-line-message mt-2">
-                  <!-- This div contains the list of my messages -->
+              <!-- My Meetings Modal Ends -->
+              </div>
+              <!-- Dropdown Messages Desktop Starts -->
+            <!-- Daniela - This div is for the desktop Messages icon dropdown -->
+            <div class="dropdown">
+              <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/message.svg" alt="message icon"></a>
+              <div class="messages-drop-container dropdown-menu p-3">
+                <div class="d-flex flex-column w-100">
+                  <h2 class="mb-2 mt-3 fs-5 title-cal-message">My Messages</h2>
+                  <form class="form-search d-flex align-items-center" role="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="form-messages" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                </div>
+                <!-- This span is for creating the line that goes below the title and icon of my messages -->
+                <hr class="primary-line-message mt-2">
+                <!-- This div contains the list of my messages -->
+
+                <!-- Link for Abigail's Chat on Desktop -->
+                <a href="./abigail-messages.html">
                   <div class="d-flex">
                     <div>
                       <img src="/Images/icons/rectangle-144.png" alt="profile-icon">
                     </div>
-                    <div class="ms-3">
-                      <h3 class="mb-2 messages-title">Abigail</h3>
-                      <p class="messages-text">Could you review...</p>
-                    </div>
+                      <div class="ms-3">
+                        <h3 class="mb-2 messages-title text-dark">Abigail</h3>
+                        <p class="messages-text">Could you review...</p>
+                      </div>
                   </div>
-                  <hr class="secondary-line-message mt-2">
+                </a>
+                <hr class="secondary-line-message mt-2">
+
+                <!-- Link for John's Chat on Desktop -->
+                <a href="./john-messages.html">
                   <div class="d-flex">
                     <div>
                       <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
                     </div>
                     <div class="ms-3">
-                      <h3 class="mb-2 messages-title">John</h3>
+                      <h3 class="mb-2 messages-title text-dark">John</h3>
                       <p class="messages-text">Just a reminder to...</p>
                     </div>
                   </div>
-                  <hr class="secondary-line-message mt-2">
+                </a>
+                <hr class="secondary-line-message mt-2">
+                
+                <!-- Link for Paul's Chat on Desktop -->
+                <a href="./paul-messages.html">
                   <div class="d-flex">
                     <div>
                       <img src="/Images/icons/rectangle-146.png" alt="profile-icon">
                     </div>
                     <div class="ms-3">
-                      <h3 class="mb-2 messages-title">Paul</h3>
+                      <h3 class="mb-2 messages-title text-dark">Paul</h3>
                       <p class="messages-text">If you need more inf...</p>
                     </div>
                   </div>
-                  <hr class="secondary-line-message mt-2">
+                </a>
+                <hr class="secondary-line-message mt-2">
+                
+                <!-- Link for Keith's Chat on Desktop -->
+                <a href="./keith-messages.html">
                   <div class="d-flex">
                     <div>
                       <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="profile-icon">
                     </div>
                     <div class="ms-3">
-                      <h3 class="mb-2 messages-title">Keith</h3>
+                      <h3 class="mb-2 messages-title text-dark">Keith</h3>
                       <p class="messages-text">Please, remember the...</p>
                     </div>
                   </div>
-                  <hr class="secondary-line-message mt-2">
+                </a>
+                <hr class="secondary-line-message mt-2">
+                
+                <!-- Link for Holly's Chat on Desktop -->
+                <a href="./holly-messages.html">
                   <div class="d-flex">
                     <div>
                       <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="profile-icon">
                     </div>
                     <div class="ms-3">
-                      <h3 class="mb-2 messages-title">Holly</h3>
+                      <h3 class="mb-2 messages-title text-dark">Holly</h3>
                       <p class="messages-text">Give me a call when...</p>
                     </div>
                   </div>
-                  <hr class="secondary-line-message mt-2">
+                </a>
+                <hr class="secondary-line-message mt-2">
+              </div>
+            </div>
+            <!-- Dropdown Messages Desktop Ends -->
+            
+            <!-- Dropdown Messages Mobile Starts -->
+            <div class="dropdown-mobile">
+              <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/message.svg" alt="message icon"></a>
+              <div class="messages-drop-container dropdown-menu p-3">
+                <div class="d-flex flex-column w-100">
+                  <h2 class="mb-2 mt-3 fs-5 title-cal-message">My Messages</h2>
+                  <form class="form-search d-flex align-items-center" role="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="form-messages" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                </div>
+                <!-- This span is for creating the line that goes below the title and icon of my messages -->
+                <hr class="primary-line-message mt-2">
+                <!-- This div contains the list of my messages -->
+                
+                <!-- Mobile Link to display Abigail's messages -->
+                <a class="tog" href="#abigail">
+                <div class="d-flex">
+                  <div>
+                    <img src="/Images/icons/rectangle-144.png" alt="profile-icon">
+                  </div>
+                    <div class="ms-3">
+                      <h3 class="mb-2 messages-title text-dark">Abigail</h3>
+                      <p class="messages-text">Could you review...</p>
+                    </div>
+                </div>
+                </a>
+                <hr class="secondary-line-message mt-2">
+                
+                <!-- Mobile Link to display John's messages -->
+                <a class="tog" href="#john">
+                  <div class="d-flex">
+                    <div>
+                      <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
+                    </div>
+                      <div class="ms-3">
+                        <h3 class="mb-2 messages-title text-dark">John</h3>
+                        <p class="messages-text">Just a reminder to...</p>
+                      </div>
+                  </div>
+                </a>
+                <hr class="secondary-line-message mt-2">
+                
+                <!-- Mobile Link to display Paul's messages -->
+                <a class="tog" href="#paul">
+                  <div class="d-flex">
+                    <div>
+                      <img src="/Images/icons/rectangle-146.png" alt="profile-icon">
+                    </div>
+                      <div class="ms-3">
+                        <h3 class="mb-2 messages-title text-dark">Paul</h3>
+                        <p class="messages-text">If you need more inf...</p>
+                      </div>
+                  </div>
+                </a>
+                <hr class="secondary-line-message mt-2">
+                
+                <!-- Mobile Link to display Keith's messages -->
+                <a class="tog" href="#keith">
+                  <div class="d-flex">
+                    <div>
+                      <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="profile-icon">
+                    </div>
+                      <div class="ms-3">
+                        <h3 class="mb-2 messages-title text-dark">Keith</h3>
+                        <p class="messages-text">Please, remember the...</p>
+                      </div>
+                  </div>
+                </a>
+                <hr class="secondary-line-message mt-2">
+                
+                <!-- Mobile Link to display Holly's messages -->
+                <a class="tog" href="#holly">
+                  <div class="d-flex">
+                    <div>
+                      <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="profile-icon">
+                    </div>
+                      <div class="ms-3">
+                        <h3 class="mb-2 messages-title text-dark">Holly</h3>
+                        <p class="messages-text">Give me a call when...</p>
+                      </div>
+                  </div>
+                </a>
+                <hr class="secondary-line-message mt-2">
+              </div>
+            </div>
+             <!-- Dropdown Messages Mobile Ends -->
+
+            <!-- Dropdown Notifications Mobile Starts -->
+            <div class="dropdown-mobile">
+              <a href="" data-bs-toggle="dropdown"><img id="mbl-ntf" role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bell icon"></a>
+              <!-- Adjsut Notification on Oct 19th starts-->
+              <div id="mobile-notifications" class="dropdown-menu">
+                <div class="p-4 my-2 d-flex flex-column">
+                  <p class="fs-4 fw-bold">Notifications</p>
+                  <hr>
+
+                  <div class="notification">
+                    <span class="dot"></span>
+                    <!-- Add link Oct 17th starts-->
+                    <div class="notification-content">
+                      <!-- Adds toggle class to launch mobile assignments table -->
+                      <p class="mt-2">
+                        <a class="tog text-primary" href="#assignments">Assignments due on
+                          Thursday, October 19, 2023 6:00
+                          PM EDT.</a>
+                      </p>
+                      <p class="mt-2">
+                        New feedback on your
+                          "Healthy Acti...
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Add link Oct 17th ends -->
+                  <hr>
+                  <div class="notification">
+                    <span class="dot"></span>
+                    <div class="notification-content">
+                      <!-- Adds toggle class to launch mobile assignments table -->
+                      <p class="mt-2">
+                        <a class="tog text-primary" href="#assignments">Assignments due on
+                          Monday, October 16, 2023 6:00
+                          PM EDT.</a>
+                      </p>
+                      <p class="mt-2">Holiday Event has been created.</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="notification">
+                    <span class="dot"></span>
+                    <div class="notification-content">
+                      <!-- Adds toggle class to launch mobile assignments table -->
+                      <p class="mt-2">
+                        <a class="tog text-primary" href="#assignments">Assignments due on
+                          Friday, October 10, 2023 6:00
+                          PM EDT.</a>
+                      </p>
+                      <p class="mt-2">Midterm report cards due.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- Daniela - This div is for the desktop notifications icon dropdown -->
-              <div class="dropdown">
-                <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bell icon"></a>
-                <!-- Adjsut Notification on Oct 19th starts-->
+            </div>
+            <!-- Dropdown Notifications Mobile Ends -->
+
+            <!-- Dropdown Notifications Desktop Starts -->
+            <div class="dropdown">
+              <a href="" data-bs-toggle="dropdown"><img role="img" class="header-icon-hover pt-2 m-2" src="../Images/icons/bell.svg" alt="bell icon"></a>
+              <!-- Adjsut Notification on Oct 19th starts-->
               <div id="desktop-notifications" class="dropdown-menu">
                 <div class="p-4 my-2 d-flex flex-column">
                   <p class="fs-4 fw-bold">Notifications</p>
@@ -147,13 +317,12 @@
                     <!-- Add link Oct 17th starts-->
                     <div class="notification-content">
                       <p class="mt-2">
-                        <a href="#" class="text-primary">Assignments due on
+                        <a href="./assignment-page.html" class="text-primary">Assignments due on
                           Thursday, October 19, 2023 6:00
                           PM EDT.</a>
                       </p>
-                      <p class="mt-2">
-                        <a href="#" class="text-black">New feedback on your
-                          "Healthy Acti...</a>
+                      <p class="mt-2">New feedback on your
+                          "Healthy Acti...
                       </p>
                     </div>
                   </div>
@@ -163,11 +332,11 @@
                     <span class="dot"></span>
                     <div class="notification-content">
                       <p class="mt-2">
-                        <a href="#" class="text-primary">Assignments due on
+                        <a href="./assignment-page.html" class="text-primary">Assignments due on
                           Monday, October 16, 2023 6:00
                           PM EDT.</a>
                       </p>
-                      <p class="">Holiday Event has been created.</p>
+                      <p class="mt-2">Holiday Event has been created.</p>
                     </div>
                   </div>
                   <hr>
@@ -175,16 +344,17 @@
                     <span class="dot"></span>
                     <div class="notification-content">
                       <p class="mt-2">
-                        <a href="#" class="text-primary">Assignments due on
+                        <a href="./assignment-page.html" class="text-primary">Assignments due on
                           Friday, October 10, 2023 6:00
                           PM EDT.</a>
                       </p>
-                      <p class="">Midterm report cards due.</p>
+                      <p class="mt-2">Midterm report cards due.</p>
                     </div>
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
+            <!-- Dropdown Notifications Desktop Ends -->
               <!-- Adjsut Notification on Oct 19th ends-->
               <div class="profile d-flex bg">
                 <span id="line-break" class="fs-1 p-1 mx-2 text-white">|</span>
@@ -405,36 +575,68 @@
                 <!-- This span is for creating the line that goes below the title and icon of my messages -->
                 <hr class="primary-line-message mt-2">
                 <!-- This div contains the list of my messages -->
-                <div class="d-flex">
-                  <div>
-                    <img src="/Images/icons/rectangle-144.png" alt="profile-icon">
-                  </div>
-                  <div class="ms-3">
-                    <h3 class="mb-2 messages-title">Abigail</h3>
-                    <p class="messages-text">Could you review...</p>
-                  </div>
+                <div class="messages-container">
+                  <a href="./abigail-messages.html">
+                    <div class="d-flex">
+                      <div>
+                        <img src="/Images/icons/rectangle-144.png" alt="profile-icon">
+                      </div>
+                      <div class="ms-3">
+                        <h3 class="mb-2 messages-title text-dark">Abigail</h3>
+                        <p class="messages-text">Could you review...</p>
+                      </div>
+                    </div>
+                  </a>
+                  <hr class="secondary-line-message mt-2">
+                  <a href="./john-messages.html">
+                    <div class="d-flex">
+                      <div>
+                        <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
+                      </div>
+                      <div class="ms-3">
+                        <h3 class="mb-2 messages-title text-dark">John</h3>
+                        <p class="messages-text">Just a reminder to...</p>
+                      </div>
+                    </div>
+                  </a>
+                  <hr class="secondary-line-message mt-2">
+                  <a href="./paul-messages.html">
+                    <div class="d-flex">
+                      <div>
+                        <img src="/Images/icons/rectangle-146.png" alt="profile-icon">
+                      </div>
+                      <div class="ms-3">
+                        <h3 class="mb-2 messages-title text-dark">Paul</h3>
+                        <p class="messages-text">If you need more inf...</p>
+                      </div>
+                    </div>
+                  </a>
+                  <hr class="secondary-line-message mt-2">
+                  <a href="./keith-messages.html">
+                    <div class="d-flex">
+                      <div>
+                        <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="profile-icon">
+                      </div>
+                      <div class="ms-3">
+                        <h3 class="mb-2 messages-title text-dark">Keith</h3>
+                        <p class="messages-text">Please, remember the...</p>
+                      </div>
+                    </div>
+                  </a>
+                  <hr class="secondary-line-message mt-2">
+                  <a href="./holly-messages.html">
+                    <div class="d-flex">
+                      <div>
+                        <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="profile-icon">
+                      </div>
+                      <div class="ms-3">
+                        <h3 class="mb-2 messages-title text-dark">Holly</h3>
+                        <p class="messages-text">Give me a call when...</p>
+                      </div>
+                    </div>
+                  </a>
+                  <hr class="secondary-line-message mt-2">
                 </div>
-                <hr class="secondary-line-message mt-2">
-                <div class="d-flex">
-                  <div>
-                    <img src="/Images/icons/rectangle-145.png" alt="profile-icon">
-                  </div>
-                  <div class="ms-3">
-                    <h3 class="mb-2 messages-title">John</h3>
-                    <p class="messages-text">Just a reminder to...</p>
-                  </div>
-                </div>
-                <hr class="secondary-line-message mt-2">
-                <div class="d-flex">
-                  <div>
-                    <img src="/Images/icons/rectangle-146.png" alt="profile-icon">
-                  </div>
-                  <div class="ms-3">
-                    <h3 class="mb-2 messages-title">Paul</h3>
-                    <p class="messages-text">If you need more inf...</p>
-                  </div>
-                </div>
-                <hr class="secondary-line-message mt-2">
               </div>
               <!-- This div is for my calendar -->
               <div class="calendar-container shadow p-3 mb-5 bg-body-tertiary rounded">
@@ -516,6 +718,148 @@
       </div>
     </div>
   </nav>
+  <!-- All Message Contacts Starts -->
+
+        <!-- Abigail -->
+        <div id="abigailPage" class="page">
+          <div class="d-flex align-items-center mt-5">
+              <img class="rounded-1 mx-2" src="/Images/icons/rectangle-144.png" alt="abigail profile picture">
+              <h3 class="ms-2 fw-bold">Abigail</h3>
+          </div>
+          <hr>
+          <div class="chat-message">
+              <div class="message user-message d-flex align-items-center">
+                  <img src="/Images/icons/rectangle-144.png" alt="abigail profile picture">
+                  <p class="ms-3">Hello Sarah!</p>
+              </div>
+              <div class="message other-message p-3">
+                  <p>Hi Abigail! How can I help you today?</p>
+              </div>
+              <div class="message user-message d-flex align-items-center">
+                  <img src="/Images/icons/rectangle-144.png" alt="abigail profile picture">
+                  <p class="ms-3">Could you review...</p>
+              </div>
+          </div>
+          <div class="message-input fixed-bottom">
+              <i class="fa-solid fa-arrow-up-from-bracket ms-3"></i>
+              <input type="text" class="input-field ms-3 me-3" placeholder="Type message here...">
+              <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
+              <i class="fa-solid fa-microphone me-3"></i>
+          </div>
+</div>
+
+<!-- John -->
+<div id="johnPage" class="page">
+    <div class="d-flex align-items-center mt-5">
+      <img class="rounded-1 mx-2" src="/Images/icons/rectangle-145.png" alt="john profile picture">
+      <h3 class="ms-2 fw-bold">John</h3>
+    </div>
+    <hr>
+    <div class="chat-message">
+        <div class="message user-message d-flex align-items-center">
+            <img src="/Images/icons/rectangle-145.png" alt="john profile picture">
+            <p class="ms-3">Hello Sarah! How was your weekend?</p>
+        </div>
+        <div class="message other-message p-3">
+            <p>Hi John! Was great, thanks.</p>
+        </div>
+        <div class="message user-message d-flex align-items-center">
+            <img src="/Images/icons/rectangle-145.png" alt="john profile picture">
+            <p class="ms-3">Just a reminder to...</p>
+        </div>
+    </div>
+    <div class="message-input fixed-bottom">
+        <i class="fa-solid fa-arrow-up-from-bracket ms-3"></i>
+        <input type="text" class="input-field ms-3" placeholder="Type message here...">
+        <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
+        <i class="fa-solid fa-microphone me-3"></i>
+    </div>
+</div>
+
+<!-- Paul -->
+<div id="paulPage" class="page">
+    <div class="d-flex align-items-center mt-5">
+      <img class="rounded-1 mx-2" src="/Images/icons/rectangle-146.png" alt="paul profile picture">
+      <h3 class="ms-2 fw-bold">Paul</h3>
+    </div>
+    <hr>
+    <div class="chat-message">
+        <div class="message user-message d-flex align-items-center">
+            <img src="/Images/icons/rectangle-146.png" alt="paul profile picture">
+            <p class="ms-3">Hello Sarah!</p>
+        </div>
+        <div class="message other-message p-3">
+            <p>Hi Paul! I just read the document. I have problems with...</p>
+        </div>
+        <div class="message user-message d-flex align-items-center">
+            <img src="/Images/icons/rectangle-146.png" alt="paul profile picture">
+            <p class="ms-3">If you need more info...</p>
+        </div>
+    </div>
+    <div class="message-input fixed-bottom">
+        <i class="fa-solid fa-arrow-up-from-bracket ms-3"></i>
+        <input type="text" class="input-field ms-3" placeholder="Type message here...">
+        <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
+        <i class="fa-solid fa-microphone me-3"></i>
+    </div>
+</div>
+
+<!-- Keith -->
+<div id="keithPage" class="page">
+    <div class="d-flex align-items-center mt-5">
+      <img class="rounded-1 mx-2" src="/Images/rectangle-148.jpeg" alt="keith profile picture">
+      <h3 class="ms-2 fw-bold">Keith</h3>
+    </div>
+    <hr>
+    <div class="chat-message">
+        <div class="message user-message d-flex align-items-center">
+            <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="keith profile picture">
+            <p class="ms-3">Hi Sarah, Hope everything is going well!</p>
+        </div>
+        <div class="message other-message p-3">
+            <p>Hi Keith! Everything is doing great, tell me?</p>
+        </div>
+        <div class="message user-message d-flex align-items-center">
+            <img class="rounded-1" src="/Images/rectangle-148.jpeg" alt="keith profile picture">
+            <p class="ms-3">Please, remember the...</p>
+        </div>
+    </div>
+    <div class="message-input fixed-bottom">
+        <i class="fa-solid fa-arrow-up-from-bracket ms-3"></i>
+        <input type="text" class="input-field ms-3 me-3" placeholder="Type message here...">
+        <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
+        <i class="fa-solid fa-microphone me-3"></i>
+    </div>
+</div>
+
+<!-- Holly -->
+<div id="hollyPage" class="page">
+  <div class="d-flex align-items-center mt-5">
+    <img class="rounded-1 mx-2" src="/Images/rectangle-149.jpeg" alt="holly profile picture">
+    <h3 class="ms-2 fw-bold">Holly</h3>
+  </div>
+  <hr>
+  <div class="chat-message">
+      <div class="message user-message d-flex align-items-center">
+          <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="holly profile picture">
+          <p class="ms-3">Hey!</p>
+      </div>
+      <div class="message other-message p-3 mx-3">
+          <p>Hi Holly! I am in class right now.</p>
+      </div>
+      <div class="message user-message d-flex align-items-center">
+          <img class="rounded-1" src="/Images/rectangle-149.jpeg" alt="holly profile picture">
+          <p class="ms-3">Give me a call when...</p>
+      </div>
+  </div>
+  <div class="message-input fixed-bottom">
+      <i class="fa-solid fa-arrow-up-from-bracket ms-3"></i>
+      <input type="text" class="input-field ms-3 me-3" placeholder="Type message here...">
+      <img class="send-icon" src="/Images/send-icon.svg" alt="send-icon">
+      <i class="fa-solid fa-microphone me-3"></i>
+  </div>
+</div>
+<!-- All Message Contacts Ends -->
   <!-- Workspace Info -->
   <div id="homePage" class="page">
     <div id="mobile-course-pg" class="container-md nopadding">
@@ -665,9 +1009,29 @@
       </div>
       <!-- My Meetings -->
       <div id="meetingsPage" class="page">
-        <p style="margin-top: 20rem;">content 3</p>
-        <!-- Content for the Calendar page -->
-      </div>
+        <h2 class="fs-2 mt-4 mb-4 fw-bold mx-3">My Meetings</h2>
+        <p class="fs-5 fw-bold mx-3 mt-5">Upcoming Meetings</p>
+        <div class="card mt-4 meetings-bdr m-auto">
+          <div class="card-body">
+              <h5 class="card-title fw-bold">Steve Kent - Project 2 Discussion</h5>
+              <p class="card-text">Nov 25, 2023 | 3:00 PM - 3:30 PM</p>
+              <hr class="text-danger">
+              <a href="#join" class="tog btn meeting-join-mobile meetings-bdr fw-bolder m-0 rounded-5 w-25">Join</a>
+          </div>
+        </div>
+        <div class="card w-100 mt-4 meetings-bdr m-auto">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Allison Addams - Intro to Business Discussion</h5>
+            <p class="card-text">Nov 26, 2023 | 11:00 AM - 12:00 PM</p>
+            <hr class="text-danger">
+            <a href="#join" class="tog btn meeting-join-mobile meetings-bdr fw-bolder m-0 rounded-5 w-25">Join</a>
+          </div>
+        </div>
+    </div>
+    <!-- Join Meeting Page Mobile -->
+    <div id="joinPage" class="page">
+      
+    </div>
       <div id="calendarPage" class="page">
         <div class="container-md screen" id="">
             <!-- Calendar -->
