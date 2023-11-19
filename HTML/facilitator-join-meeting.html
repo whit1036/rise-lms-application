@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="../CSS/main-styles.css">
     <link rel="stylesheet" href="../CSS/styleguide.css">
     <link rel="stylesheet" href="../CSS/workspace-styles.css">
+    <link rel="stylesheet" href="../CSS/join-meeting.css">
     <link rel="stylesheet" href="https://use.typekit.net/ioi4mhc.css">
     <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
     <!-- Adding Fontawesome icons -->
     <script src="https://kit.fontawesome.com/3263212dec.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
   <!--Bootstrap Accessibility Skip Links-->
   <a class="visually-hidden-focusable" href="#main-header">Skip to main nav</a>
   <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
@@ -304,21 +305,38 @@
           <div role="region" class="box col">
             <div class="background">
               <div class="container">
-                <!-- This div is to control 2 sides; the first and second div -->
+                <!-- <div id="loader"></div>
+                <div style="display:none;" id="myDiv">
                 <div class="modal fade" id="video-chat" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog modal-xl modal-dialog-centered">
-                      <div class="modal-content">
-                        <img src="/Images/video-chat-banner.png" class="img-fluid w-100">
-                        <img src="/Images/video-chat-banner-sm.png" class="img-fluid w-25">
-                        <div class="modal-body p-0 py-4">
-                            <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal" aria-label="Close"><img src="/Images/icons/Mic off.svg"></button>
-                            <a href="./my-facilitator-page.html">
-                              <button type="button" class="btn leave-call-button rounded-5" data-bs-dismiss="modal" aria-label="Close"><img src="/Images/icons/Phone_missed.svg"></button>
-                            </a>
-                        </div>
+                  <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content" onload="showVideoCall()">
+                      <img src="/Images/video-chat-banner.png" class="img-fluid w-100">
+                      <img src="/Images/video-chat-banner-sm.png" class="img-fluid w-25">
+                      <div class="modal-body p-0 py-4">
+                          <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal" aria-label="Close"><img src="/Images/icons/Mic off.svg"></button>
+                          <a href="./my-facilitator-page.html">
+                            <button type="button" class="btn leave-call-button rounded-5" data-bs-dismiss="modal" aria-label="Close"><img src="/Images/icons/Phone_missed.svg"></button>
+                          </a>
                       </div>
                     </div>
                   </div>
+                </div> -->
+                <div class="card mb-3 mt-5">
+                  <img src="/Images/video-chat-banner-img.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-secondary rounded-5" aria-label="Close"><img src="/Images/icons/Mic off.svg"></button>
+                    <a href="./my-facilitator-page.html">
+                      <button type="button" class="btn leave-call-button rounded-5" aria-label="Close"><img src="/Images/icons/Phone_missed.svg"></button>
+                    </a>
+                  </div>
+                </div>
+                
+                <!-- <div id="loading-overlay" class="overlay">
+                  <div class="spinner"></div>
+                </div> -->
+                
+
+                </div>
             </div>
           </div>
         </div>

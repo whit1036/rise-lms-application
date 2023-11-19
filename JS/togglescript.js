@@ -59,7 +59,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-const myModal = new bootstrap.Modal('#video-chat')
-window.addEventListener('DOMContentLoaded', () => {
-  myModal.show()
-})
+// Join Meeting JS
+
+// Displays the modal automatically without clicking a toggle button
+window.addEventListener('load', function() {
+    // Simulate delay to demonstrate loading state
+    setTimeout(function() {
+      document.getElementById('loading-overlay').style.display = 'none';
+    }, 3000); // Change 3000 to the desired milliseconds of delay
+  });
+
+
