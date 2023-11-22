@@ -1,3 +1,5 @@
+/* This stylesheet is used to style the assignment submission pages. Please note that we have a JS file used to display a mock version of data when the user hits the submit button. See script.js submitFile function for more details  */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -60,7 +62,10 @@ html {
     margin-right: auto;
 }
 
+/* Adds min and max width media query  */
 @media screen and (min-width: 701px) and (max-width: 4000px) {
+
+    /* Sets custom styles for the main border radius container */
     .box {
     display: block;
     width: 100%;
@@ -74,6 +79,7 @@ html {
   }
 }
 
+  /* Sets custom height and padding for assignment submission desktop table */
   .assignment-table td {
     height: 150px;
     padding: 1rem;
@@ -87,17 +93,20 @@ html {
     table-layout: auto;
   }
   
+  /* Adds custom RISE pink color to submission table background, sets font color to white */
   .assignment-table-submission th {
     background-color: var(--secondary-pink);
     color: #FFFFFF;
   }
   
+  /* Adds RISE pink color border around File Submission table, adds custom padding */
   .assignment-table-submission th,
   .assignment-table-submission td {
     border: 2px solid var(--secondary-pink);
     padding: 25px;
   }
   
+  /* Adds padding to File Submission table heading */
   .assignment-table-submission th {
     padding: 15px;
   }
@@ -108,16 +117,15 @@ html {
     overflow: hidden;
     position: relative;
     margin-left: -20px;
-  } */
+  }
   
-  /* .scrollable-content {
-    border: 1px solid var(--secondary-pink);
+  .scrollable-content {
     border-radius: 10px;
     overflow-y: scroll;
     padding: 10px;
     box-sizing: border-box;
-    height: 150px; width: 980px; border: 3px solid var(--secondary-pink); border-radius: 10px; padding: 10px; overflow-y: auto;
-  } */
+    overflow-y: auto;
+  }
   
   .scrollable-content-text {
     text-align: left; margin-left: 5px !important;
@@ -134,18 +142,21 @@ html {
   
   .scrollable-content::-webkit-scrollbar-track {
     background-color: #F6CED8;
-  }
+  } */
 
+  /* Sets custom color for File Submission and text submission radio buttons */
   input[type="radio"]:checked {
     background-color: gray;
     border-color: gray;
   }
 
+  /* creates custom styles for 'upload file' button */
   #upload-file {
     background-color: #E05D7D;
     width: 10rem;
   }
 
+  /* Creates custom styles for file submission 'done' button */
   #done-btn {
       background-color: #E05D7D;
       width: 7rem;
@@ -153,11 +164,13 @@ html {
       font-size: large;
   }
 
+  /* Adds custom styles to submission uploads file button */
   .upload {
     position: relative;
     top: 0.3rem;
   }
 
+  /* Creates custom color border around text submission input area */
   .text-sub {
     border: 1px solid var(--secondary-pink);
     border-radius: 1rem;
