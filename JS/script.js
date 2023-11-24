@@ -1,15 +1,4 @@
-console.log('Hello, World!')
-
-// Student Login
-
-// const loginButton = document.getElementById('getLinkBtn')
-// const emailInput = document.getElementById('email')
-// const passwordInput = document.getElementById('password')
-
-// loginButton.addEventListener('click', function{
-
-// })
-
+// Creates variables to target DOM elements for student login information
 const loginButton = document.getElementById('getLinkBtn');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
@@ -19,12 +8,15 @@ const getPasswordLink = document.getElementById('getPasswordLink')
 const correctEmail = 'risestudent@riseacademy.com';
 const correctPassword = 'riseacademy';
 
+// Creates an addeventlistener function to emulate student login features with custom credentials
 loginButton.addEventListener('click', function (e) {
     e.preventDefault(); // Prevent the form from submitting
-
+    
+    // Sets entered e-mail to whatever is in the input field
     const enteredEmail = emailInput.value;
     const enteredPassword = passwordInput.value;
 
+    // Checks if entered email and password are correct
     if (enteredEmail === correctEmail && enteredPassword === correctPassword) {
         showMessage('Login Successful', 'text-success');
         window.location.href = 'my-workspace.html'
@@ -37,6 +29,7 @@ loginButton.addEventListener('click', function (e) {
     passwordInput.value = '';
 });
 
+// Function that Displays incorrect password message
 function showMessage(message, className) {
     const messageDiv = document.createElement('div');
     messageDiv.textContent = message;
@@ -51,16 +44,9 @@ function showMessage(message, className) {
         messageDiv.remove();
     }, 5000); // Remove the message after 5 seconds (adjust as needed)
 }
-
-// const selectLogin = document.getElementById('selectLogin');
-
-// selectLogin.addEventListener('click', function () {
-//     window.location.href = 'login-student.html';
-//     console.log('button clicked');
-// });
-
+  
+// Adds event listener to student login button, linking to student login page.
 document.addEventListener('DOMContentLoaded', function () {
-    // Your code here, including event listener attachment
     const selectLogin = document.getElementById('selectLogin');
     selectLogin.addEventListener('click', function () {
         window.location.href = 'login-student.html';
@@ -74,110 +60,12 @@ function displayText() {
     alert("Email sent successfully")
 }
 
-// Various mobile design varibales with getElementById
-// const workspaceInfo = document.getElementById('workspace-info');
-// const mblCoursePage = document.getElementById('mobile-course-pg');
-// const calendarInfo = document.getElementById('mbl-calendar');
-// const assignInfo = document.getElementById('my-assignments-mbl')
-// const calendarIcon = document.getElementById('mobile-calendar-icon');
-// const calendarIconSelected = document.getElementById('mbl-cal-pink');
-// const homeIcon = document.getElementById('mbl-home-reg');
-// const homeIconSelected = document.getElementById('mbl-home-pink');
-// const assignIcon = document.getElementById('mbl-assign-icon')
-// const assignIconSelected = document.getElementById('mbl-assign-pink')
-
-
-// function mobileAssignWorkspaceClicked() {
-//     const workspaceInfo = document.getElementById('workspace-info');
-//     const assignInfo = document.getElementById('my-assignments-mbl');
-//     const calendarInfo = document.getElementById('mbl-calendar');
-//     const homeIcon = document.getElementById('mbl-home-reg');
-//     const homeIconSelected = document.getElementById('mbl-home-pink');
-//     const assignIcon = document.getElementById('mbl-assign-icon');
-//     const assignIconSelected = document.getElementById('mbl-assign-pink');
-//     const calendarIcon = document.getElementById('mobile-calendar-icon');
-//     const calendarIconSelected = document.getElementById('mbl-cal-pink');
-
-//     if (assignInfo.style.display === 'none') {
-//         assignInfo.style.display = 'block';
-//         workspaceInfo.style.display = 'none';
-//         calendarInfo.style.display = 'none';
-//         homeIconSelected.style.display = 'none';
-//         homeIcon.style.display = 'block';
-//         assignIconSelected.style.display = 'block';
-//         assignIcon.style.display = 'none';
-//     } else {
-//         assignInfo.style.display = 'none';
-//         workspaceInfo.style.display = 'block';
-//         calendarInfo.style.display = 'none';
-//         assignIconSelected.style.display = 'none';
-//         assignIcon.style.display = 'block';
-//         calendarIconSelected.style.display = 'none';
-//         calendarIcon.style.display = 'block';
-//     }
-// }
-
-// Function to launch calendar on mobile when clicked
-// function mobileCalendarClicked() {
-//     const workspaceInfo = document.getElementById('workspace-info');
-//     const assignInfo = document.getElementById('my-assignments-mbl')
-//     const calendarInfo = document.getElementById('mbl-calendar');
-//     const calendarIcon = document.getElementById('mobile-calendar-icon');
-//     const calendarIconSelected = document.getElementById('mbl-cal-pink');
-//     const homeIcon = document.getElementById('mbl-home-reg');
-//     const homeIconSelected = document.getElementById('mbl-home-pink');
-//     const assignIcon = document.getElementById('mbl-assign-icon');
-//     const assignIconSelected = document.getElementById('mbl-assign-pink');
-
-
-//     if (calendarInfo.style.display === 'none') {
-//         calendarInfo.style.display = 'block';
-//         workspaceInfo.style.display = 'none';
-//         workspaceInfo.style.display = 'none';
-//         assignInfo.style.display = 'none';
-//         calendarIcon.style.display = 'none';
-//         calendarIconSelected.style.display = 'block';
-//         homeIconSelected.style.display = 'none';
-//         homeIcon.style.display = 'block';
-//     } else {
-//         calendarInfo.style.display = 'none';
-//         workspaceInfo.style.display = 'block';
-//         assignInfo.style.display = 'block';
-//         calendarIcon.style.display = 'block';
-//         calendarIconSelected.style.display = 'none';
-//     }
-// }
-
-// function mobileCalendarCourseClicked() {
-//   const mblCoursePage = document.getElementById('mobile-course-pg');
-//   const calendarInfo = document.getElementById('mbl-calendar');
-//   const calendarIcon = document.getElementById('mobile-calendar-icon');
-//   const calendarIconSelected = document.getElementById('mbl-cal-pink');
-//   const homeIcon = document.getElementById('mbl-home-reg');
-//   const homeIconSelected = document.getElementById('mbl-home-pink');
-
-
-//   if (calendarInfo.style.display === 'none') {
-//       calendarInfo.style.display = 'block';
-//       mblCoursePage.style.display = 'none';
-//       calendarIcon.style.display = 'none';
-//       calendarIconSelected.style.display = 'block';
-//       homeIconSelected.style.display = 'none';
-//       homeIcon.style.display = 'block';
-//   } else {
-//       calendarInfo.style.display = 'none';
-//       mblCoursePage.style.display = 'block';
-//       assignInfo.style.display = 'block';
-//       calendarIcon.style.display = 'block';
-//       calendarIconSelected.style.display = 'none';
-//   }
-// }
-
 // Displays an alert to show the user that the profile settings have been updates
 function saveUserProfile() {
     alert("Changes saved successfully")
 }
 
+// Renders new content when submit file button is clicked on the assignment submission page
 function submitFile() {
     const preSubContent = document.getElementById('pre-content')
     preSubContent.innerHTML = (`

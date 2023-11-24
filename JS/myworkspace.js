@@ -1,4 +1,5 @@
-// Qing and Jia
+
+// This JS file adds accessible features to the global Edit Profile Dropdown modal
 
 const sarahName = document.getElementById("profilename");
 const editProfileButton = document.getElementById("edit-profile-button");
