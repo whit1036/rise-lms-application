@@ -1,3 +1,8 @@
+/* We used Anima, a Figma to code plugin to generate and export root styles from the Figma mockup. Anima is a paid plugin, but it could be useful for styling and creating the other pages (Facilitator, Admin) */
+
+/* To note: we used a combo of the root files and some bootstap default colors for styling. This could be modified to match the components of the Figma mockup */
+
+/* creates a root of various variables for custom styling */
 :root {
   --rise-light-green: rgba(167, 192, 192, 1);
   --fern-green: rgba(58, 125, 68, 1);
@@ -16,7 +21,8 @@
   --secondaryrise-blue: rgba(17, 72, 157, 1);
   --secondarydark-blue: rgba(27, 57, 100, 1);
   --secondaryrise-light-blue: rgba(195, 205, 219, 1);
-  /* add color  */
+  
+  /* adds custom colors based on Figma mockup  */
   --primary-white: #ffffff;
   --primary-yellow: #f3cc4f;
   --primary-light-blue: #197bbd;
@@ -173,31 +179,4 @@
   --RISE-background-shadow: 0px 0px 24px 0px rgba(54, 87, 135, 0.24);
   --RISE-card-shadows: 0px 4px 24px 0px rgba(36, 97, 97, 0.16);
   --RISE-inner-shadow: ;
-
-   /* added by Qing - fonts */
-   --rise-button: "Avenir Next LT Pro", sans-serif;
-   --rise-font: "Avenir Next LT Pro", sans-serif;
-   --font-inter: "Inter";
-
-   /* font sizes */
-   --rise-button-size: 16px;
-
-
-   /* Gaps */
-   --gap-3xs: 10px;
-   --gap-xs: 12px;
-   --gap-2xl: 21px;
-   --gap-7xs: 6px;
-
-   /* Paddings */
-   --padding-3xs: 10px;
-   --padding-10xl: 29px;
-
-   /* border radiuses */
-   --br-13xl: 32px;
-   --br-12xs: 1px;
-   --br-2xl: 21px;
-
-   /* Effects */
-   --rise-card-shadows: 0px 4px 24px rgba(36, 97, 97, 0.16);
 }

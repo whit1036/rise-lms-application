@@ -54,11 +54,16 @@ html {
     margin-right: auto;
 }
 
+/* CSS Reset End */
+
+/* Styles for Mobile */
 @media screen and (min-width: 350px) and (max-width: 700px) {
+    /* Fixes position for main navigation bar*/
     #main-header {
         position: fixed;
     }
 
+    /* Moves page content down to make room for navigation bar */
     #homePage {
       margin-top: 5.4rem;
     }
@@ -68,11 +73,13 @@ html {
         margin-bottom: 2rem;
     }
 
+    /* Makes the navigation bar sticky, always keeping it at the same place on the page */
     .sticky-content {
         position: relative;
         z-index: 1;
     }
-
+    
+    /* Main/Workspace Cards? */
     .courses{
         flex-wrap: wrap;
         gap: 20px;
@@ -82,68 +89,78 @@ html {
         transform: scale(0.5rem);
     } */
 
+    /* Main/Workspace Style */
     .card-body-h {
         height: 3rem;
     }
-  
+    
+    /* Setting width for home svg when selected */
     .mobile-home-pink-svg {
         width: 2.7rem;
     }
 
+    /* Adding gradient to background image */
     #bg-img-mbl {
       width: 100%;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
     }
 
+    /* Positioning course name over the image */
     #text-over-img-mbl {
       margin-top: -5rem;
       padding: 2rem;
       margin-left: -1rem;
     }
 
+    /* Sets background colour of to-dos */
     .to-do {
       background-color: #FADEE5;
       border: 1px solid #FADEE5;
     }
 }
-
+  /* Styles for Tablet/Desktop */
 @media (min-width: 700px) and (max-width: 4000px) {
   .messages-container {
     max-height: 250px; /* Set the desired maximum height */
     overflow-y: auto; /* Enable vertical scrolling */
   }
-  
+    /* Sets initial display to none */
   #mobile-course-pg {
         display: none;
       }
-  
+    /* Sets initial display to none */  
       .courses {
           display: none;
       }
-
+    /* Sets initial display to none */
       .mobile-headings {
           display: none;
       }
 
+      /* Sets background image width to cover entire screen */
       #bg-img-dsk {
         width: 100%;
       }
-
+      
+      /* Spacing for course name over background image */
       #text-over-img-dsk {
         display: block;
         margin-top: -7rem;
         padding: 2rem;
       }
 
+      /* Changes background colour of to-dos */
       .to-do {
         background-color: #FADEE5;
         border: 1px solid #FADEE5;
       }
 
+      /* Positions log out button at bottom left */
       .logout {
         margin-top: 3vh;
       }
 
+      /* White background with border radius */
       .box {
         display: block;
         width: 100%;
@@ -152,20 +169,24 @@ html {
         background-color: white;
         border-radius: 65px 0px 0px 0px;
       }
-  
+      
+      /* Padding for each week number in the navigation menu */
       .week{
         padding-block: 10px;
         padding-inline: 20px;
       }
-  
+      
+      /* Week colour changes when hovered */
       .weekbyweek :hover{
         background-color: var(--secondarydark-blue)
       }
-  
+      
+      /* Nav item colour changes when hovered */
       .nav-item :hover{
         color: var(--primary-light-blue) !important;
       }
-  
+      
+      /* Nav item colour changes when active */
       .nav-link active{
         border-bottom: 2px solid var(--primary-light-blue) !important;
       }
@@ -190,6 +211,7 @@ html {
     padding: 2px;
   }
   
+  /* Changes icon colour when active */
   .icon.active {
     background-color: var(--secondary-pink);
 
@@ -197,21 +219,25 @@ html {
     padding: 2px;
   }
 
+  /* Font weight & size for current month in calendar */
   .current-month {
     font-weight: 900;
     font-size: 13px;
   }
 
+  /* Adds black border to calendar */
   #calendar-content {
     border: 1px solid #246161;
     cursor: pointer;
   }
 
+  /* Changes colours of calendar arrows when hovered */
   .calendar-arrows img:hover {
     background-color: var(--secondary-pink);
     border-radius: 50%;
   }
 
+  /* Changes display of days to wrap */
   .calendar ul {
     display: flex;
     list-style: none;
@@ -219,6 +245,7 @@ html {
     text-align: center;
   }
 
+  /* Setting layout for calendar list items */
   .calendar ul li {
     width: calc(100% / 7);
     text-align: center;
@@ -226,34 +253,41 @@ html {
     font-weight: 600;
   }
 
+  /* Spacing and font size for each week */
   .weeks ul li{
     margin: 20px 0 15px 0;
     font-size: 9px;
   }
 
+  /* Removes bullet points from days */
   .days ul li {
     list-style: none;
   }
 
+  /* Changes colour of day when hovered */
   .days li:hover {
     background-color: var(--secondary-pink);
   }
 
+  /* Sections off each day with border and padding */
   .days li {
     border: 1px solid #D5D4DF;
     padding: 10px;
   }
 
+  /* Sets colour to grey when a day has passed */
   .days li.inactive {
     background-color: #F2F3F7;
     color: #A8A8A8;
   }
 
+  /* Sets text colour to black and background colour to pink for current day */
   .days li.active {
     background-color: var(--secondary-pink);
     color: #000000;
   }
 
+  /* To-Do icon over day */
   .has-event::before {
     content: '•';
     font-size: 25px;

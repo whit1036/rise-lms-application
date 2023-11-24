@@ -62,20 +62,25 @@ html {
 
 /* My Workspace Mobile Styles */
 @media screen and (min-width: 350px) and (max-width: 700px) {
+    
+    /* Fixes position of top header on mobile */
     #main-header {
         position: fixed;
     }
 
+    /* Adds spacing to Welcome Back text for student */
     .welcome-back-text {
         margin-top: 9rem;
         margin-bottom: 2rem;
     }
 
+    /* Makes top header stick to top of screen */
     .sticky-content {
         position: relative;
         z-index: 1;
     }
 
+    /* Adds gap and wraps courses to be displayed on mobile */
     .courses{
         flex-wrap: wrap;
         gap: 20px;
@@ -85,13 +90,16 @@ html {
         transform: scale(0.5rem);
     } */
 
+    /* Changes height of each class' card */
     .card-body-h {
         height: 3rem;
     }
 }
 
 @media (min-width: 701px) and (max-width: 4000px) {
-    .messages-container {
+    
+  /* Messages container styles */
+  .messages-container {
       max-height: 250px; /* Set the desired maximum height */
       overflow-y: auto; /* Enable vertical scrolling */
     }
@@ -102,37 +110,26 @@ html {
       bottom: 0;
     } */
 
+    /* Hides mobile course page */
     .courses {
         display: none;
     }
 
+    /* Disables display of mobile headings on desktop */
     .mobile-headings {
         display: none;
     }
 
-    /* .card-body-desktop {
-        height: 1rem;
-    } */
 
+    /* Changes class card image size to 100% of container */
     .card-img-top {
         width: 100%;
     }
 
-    /* Profile Dropdown */
-    .profile-dropdown{
-    outline: 1px solid red;
-    }
-
+    /* Removes border from cards */
     .crd-ds {
       border: none;
     }
-
-    
-
-      /* .courses-desktop .card {
-        padding-right: 0;
-        padding-left: 0;
-      } */
 
   /* Messages and Calendar Styles DESKTOP */
   /* Daniela did all the calendar and messages content */

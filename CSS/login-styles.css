@@ -58,10 +58,12 @@ html {
 
 @media screen and (min-width: 350px) and (max-width: 768px) {
     /* Template Styles - Mobile */
+    /* Changes background colour of main header */
     #header {
         background-color: #197BBD;
     }
     
+    /* Positions R.I.S.E. Logo */
     #header-img {
         display: block;
         margin-left: auto;
@@ -69,68 +71,61 @@ html {
         width: 70%;
     }
 
+    /* Sets initial display to none */
     .side-panel-tablet {
         display: none;
     }
-
+    /* Sets initial display to none */
     .side-panel-tablet-policy {
         display: none;
     }
-
+    /* Sets initial display to none */
     #side-panel-img-2 {
         display: none;
     }
 
-    /* student's login page */
+    /* Student Login Page */
 
+    /* Adds spacing to form elements */
     form {
         margin-top: 20px;
     }
     
-    #studentlogin>div>div>h1 {
-        color: var(--primary-dark-blue);
-        font-size: 35px;
-        font-weight: bold;
-        margin-top: 50px;
-    }
-    
+    /* Changes size and width of "Student Login" */
     .studentloginText {
         color: var(--primary-light-blue);
         font-weight: bold;
         margin-top: 20px;
         font-size: 25px;
+        line-height: 2.5rem;
     }
     
+    /* Adds border and radius to email input box */
     .emailInput {
         border: 2px solid var(--primary-light-blue);
         border-radius: 20px 20px 20px 20px;
     }
     
+    /* Changes styles for forgot password link */
     .fpassword a {
         text-decoration: none;
         color: var(--primary-light-blue);
     }
     
+    /* Changes size and weight for Welcome Message */
     .welcomeText {
         color: var(--primary-dark-blue);
         font-size: 35px;
         font-weight: bold;
         margin-top: 90px;
     }
-    
-    .welcomeText-2 {
-        color: var(--primary-light-blue);
-        font-weight: bold;
-        margin-top: 50px;
-        font-size: 25px;
-        line-height: 2.5rem;
-    }
-    
+
+    /* Changes colour of text inside the form to blue */
     .textform {
         color: var(--primary-light-blue);
     }
     
-    /* selelct, login, getlink btn */
+    /* Adds styles for getLink and logIn buttons */
     .getLinkBtn,
     .logInBtn {
         margin-top: 30px;
@@ -141,6 +136,7 @@ html {
         border-radius: 10px;
     }
     
+    /* Adds background colour on hover for all buttons */
     .getLinkBtn:hover,
     .logInBtn:hover,
     .selectBtn:hover {
@@ -148,7 +144,7 @@ html {
         color: var(--primary-white);
     }
     
-    /* welcome page heading*/
+    /* Sets colour, size, weight, and margin for H1*/
     #login>h1 {
         color: var(--primary-dark-blue);
         font-size: 35px;
@@ -156,6 +152,7 @@ html {
         margin-top: 90px;
     }
     
+    /* Sets colour, size, weight, and margin for H2*/
     #login>h2 {
         color: var(--primary-light-blue);
         font-weight: bold;
@@ -174,6 +171,7 @@ html {
         font-weight: bold;
     }
     
+    /* Student Selection Box */
     .arc-box1 {
         width: 300px;
         height: 50px;
@@ -184,11 +182,13 @@ html {
         background-color: var(--primary-yellow);
     }
     
+    /* Changes colour of box when hovered */
     .arc-box1:hover, .arc-box2:hover, .arc-box3:hover {
         background: var(--primary-yellow);
         /* color: var(--primary-white); */
     }
     
+    /* Facilitator Selection Box */
     .arc-box2 {
         width: 300px;
         height: 50px;
@@ -199,6 +199,7 @@ html {
         padding-top: 18px;
     }
     
+    /* Administrator Selection Box */
     .arc-box3 {
         width: 300px;
         height: 50px;
@@ -209,7 +210,7 @@ html {
         padding-top: 18px;
     }
     
-    /* welcome page button */
+    /* Welcome Page Button Styles */
     .selectBtn {
         --bs-btn-padding-y: .5rem;
         --bs-btn-padding-x: .5rem;
@@ -221,6 +222,7 @@ html {
         font-weight: bold;
     }
 
+    /* Get Password Link Button Styles */
     .getLinkBtn {
         --bs-btn-padding-y: .5rem;
         --bs-btn-padding-x: .5rem;
@@ -232,6 +234,7 @@ html {
         font-weight: bold;
     }
     
+    /* Global Button Styles */
     .button {
         width: 250px;
         height: 50px;
@@ -259,22 +262,26 @@ html {
 
 @media (min-width: 768px) and (max-width: 4000px) {
     /* Template Styles - Tablet + Desktop */
+    /* Sets display of mobile header to none */
     #header {
         display: none;
     }
 
+    /* Positions and sizes side panel */
     .side-panel-tablet {
         width: 35vw;
         height: 100vh;
         background-color: #197BBD;
     }
 
+    /* Positions and sizes side panel privacy policy */
     .side-panel-tablet-policy {
         width: 35vw;
         height: 110rem;
         background-color: #197BBD;
     }
 
+    /* Positions RISE logo */
     #side-panel-img {
         display: block;
         margin-left: auto;
@@ -282,6 +289,7 @@ html {
         width: 100%;
     }
 
+    /* Positions background overlay */
     #side-panel-img-2 {
         height: 65vh;
         width: 35vw;
@@ -291,6 +299,7 @@ html {
     }
 
     /* Login Homescreen Styles - Tablet + Desktop */
+    /* Changes Welcome Message Styles for Desktop */
     #studentlogin>div>div>h1 {
         color: var(--primary-dark-blue);
         font-size: 60px;
@@ -298,6 +307,7 @@ html {
         font-weight: var(--h1-font-weight);
     }
     
+    /* Changes Student Login Text Styles for Desktop */
     .studentloginText {
         color: var(--primary-light-blue);
         font-weight: bold;
@@ -305,21 +315,26 @@ html {
         font-size: 35px;
     }
     
+    /* Changes e-mail input styles for Desktop */
     .emailInput {
         border: 2px solid var(--primary-light-blue);
         border-radius: 20px 20px 20px 20px;
     }
     
+    /* Removes link styles for forgot password link */
     .fpassword a {
         text-decoration: none;
         color: var(--primary-light-blue);
     }
     
+    /*Desktop Page Styles */
     .welcomeText {
         color: var(--primary-dark-blue);
         font-size: 60px;
+        padding-bottom: 50px;
         font-weight: bold;
         margin-top: 30px;
+        font-weight: var(--h1-font-weight);
     }
     
     .welcomeText-2 {
@@ -352,7 +367,7 @@ html {
         color: var(--primary-white);
     }
     
-    /* welcome page heading*/
+    /* Welcome Page Headings Desktop*/
     #login>h1 {
         color: var(--primary-dark-blue);
         font-size: 60px;

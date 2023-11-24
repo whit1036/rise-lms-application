@@ -1,19 +1,23 @@
-/* Mobile */
+/* This stylesheet is used to style the user chat messages pages for mobile and desktop  */
 
+/******* Mobile Chat Messages Styles *******/
+
+/* sets message chat bubble styles for mobile chat messages */
 .message {
     margin-bottom: 15px;
     padding: 10px;
     line-height: 1.7;
 }
 
+/* sets sender message chat bubble styles for mobile chat messages */
 .user-message {
     clear: right;
-
     width: 300px;
     margin-bottom: 25px;
     border-radius: 25px 25px 0px 25px;
 }
 
+/* sets user message chat bubble styles for mobile chat messages */
 .other-message {
     float: right;
     background-color: #387d433d;
@@ -25,25 +29,24 @@
     border-radius: 25px 25px 0px 25px;
 }
 
+/* styles for chat messages input bar for mobile chat messages */
 .message-input {
     display: flex;
     width: 95%;
     margin: 0 auto;
     margin-bottom: 130px;
     padding: 8px;
-    
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
-    
     justify-content: center;
     align-items: center;
-
     background-color: #ededed;
     border-radius: 60px;
 }
 
+/* styles for mobile input field placeholder text container "type message here..." */
 .input-field {
     flex: 1;
     color: black;
@@ -55,82 +58,70 @@
     border-radius: 60px;
 }
 
-/* input {
-    color: black;
-} */
-
+/* sets margin and width to send icon svg on mobile message input bar */
 .send-icon {
     margin-right: 16px;
     width: 5%;
 }
 
-/* Desktop */
+/******* Desktop Chat Messages Styles *******/
+
+/* sets message chat bubble styles for desktop chat messages */
 .message-desktop {
     margin-bottom: 15px;
     padding: 10px;
     line-height: 1.7;
 }
 
+/* sets sender message chat bubble styles for desktop chat messages */
 .user-message-desktop {
     clear: right;
-
     width: 300px;
     margin-bottom: 25px;
     border-radius: 25px 25px 0px 25px;
 }
 
+/* sets user message chat bubble styles for desktop chat messages */
 .other-message-desktop {
     float: right;
     background-color: #387d433d;
-
     width: 300px;
     right: 0;
     text-align: end;
-
     border-radius: 25px 25px 0px 25px;
 }
 
+/* styles for chat messages input bar for desktop chat messages */
 .message-input-desktop {
     display: flex;
-
     position: fixed;
     bottom: 0;
-
     width: 75%;
     margin-bottom: 1rem;
     padding: 8px;
-
     justify-content: center;
     align-items: center;
-
     background-color: #ededed;
     border-radius: 60px;
 }
 
+/* styles for desktop input field placeholder text container "type message here..." */
 .input-field-desktop {
     flex: 1;
     color: black;
-
     padding: 8px;
     border: 1px solid #ededed;
     background-color: #ededed;
-
     border-radius: 60px;
 }
 
-/* input {
-    color: black;
-} */
-
+/* sets margin and width to send icon svg on desktop message input bar */
 .send-icon-desktop {
     margin-right: 16px;
     width: 1.5%;
 }
 
-/* h3 {
-    color: #387D44;
-} */
-
+/* media query used to style the user chat messages input to display at larger screen sizes, preventing overflow */
 @media (min-width: 1750px) and (max-width: 4000px) {
     .message-input-desktop {
         display: flex;

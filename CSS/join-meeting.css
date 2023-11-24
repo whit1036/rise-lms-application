@@ -1,3 +1,4 @@
+/* Reduces opacity to everything outside of modal display */
 .overlay {
     display: flex;
     justify-content: center;
@@ -11,23 +12,20 @@
     z-index: 1;
   }
   
+  /* Styles for loading spinner */
   .spinner {
     border: 4px solid rgba(0, 0, 0, 0.1);
     border-top: 4px solid var(--secondary-pink);
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    /* Animates spinner to spin until page is loaded */
     animation: spin 1s linear infinite;
     display: flex;
   }
   
+  /* Loading Spinner Animation */
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
-
-  .chat-img {
-    position: absolute;
-    bottom: 2rem;
-    left: 50rem;
   }

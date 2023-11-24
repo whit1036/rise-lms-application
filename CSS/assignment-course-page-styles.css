@@ -1,4 +1,4 @@
-/* This stylesheet contains styles for the assignment course and course outline pages */
+/* This stylesheet contains styles for the my assignments home page and course pages */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -120,12 +120,13 @@ html {
   color: var(--secondary-pink);
 }
 
+/* sets overflow and height to auto for main border radius container */
 .box {
   overflow: auto;
   height: auto;
 }
 
-
+/*  */
 .assignment-table {
   overflow: hidden;
   width: 100%;
@@ -133,47 +134,52 @@ html {
   table-layout: auto;
 }
 
+/* Sets custom background color and text color to my assignments desktop home page table */
 .assignment-table th {
   background-color: var(--secondary-pink);
   color: #FFFFFF;
 }
 
+/* Sets custom border color and padding to my assignments desktop home page table */
 .assignment-table th,
 .assignment-table td {
   border: 2px solid var(--secondary-pink);
   padding: 25px;
 }
 
+/* Sets custom padding for my assignments desktop homepage table */
 .assignment-table th {
   padding: 15px;
 }
 
-.tab {
+
+
+/* .tab {
   display: inline;
   border-radius: 100px;
-}
+} */
 
-table td.highlight {
+/* table td.highlight {
   background-color: #D1E5F3;
   color: black;
-}
+} */
 
 /* Sets font size for My Assignments page table navigation tabs */
 .table-navi {
   font-size: 1.25rem;
 }
 
-
+/* creates a media query to have the my assignments desktop table respond to smaller screen sizes */
 @media (max-width: 920px) { 
+  /* prevents text overflow for my assignments desktop table at smaller screen sizes */
   td, th, tr {
-    word-break: keep-all ;
-
+    word-break: keep-all;
     padding: 0;
   }
 
+  /* Sets a small font size to my assignments desktop navigation at max-width of 920px */
   .table-navi {
     word-break: keep-all;
     font-size: 15px;
   }
-
 }

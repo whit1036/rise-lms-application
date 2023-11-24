@@ -1,3 +1,5 @@
+/* This stylesheet is spead across all pages, and styles various global elements featured on most pages */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -60,78 +62,79 @@ html {
     margin-right: auto;
 }
 
-/* Global Styles */
+/****** Global Styles ******/
 
+/* creates a nopadding class to remove bootstrap grid container padding */
 .nopadding {
     padding: 0 !important;
 }
 
-/* removes underline from all website links */
+/* removes underline from all a links */
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: var(--primaryrise-white);
 }
 
+/* Positions course cards */
 .courses{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
 
+/* changes colour of text to white for nav */
 .my-workspace, .facilitator, .group-wrapper{
     color: white;
 }
 
-
+/* changes colour of background to yellow and text to blue when hovered */
 .group-wrapper :hover, .logout:hover {
 background-color: var(--minion);
 color: #197BBD;
 }
 
+/* changes text colour to blue when hovered */
 .log-out-btn :hover {
     color: #197BBD;
 }
 
+/* Styles button to download course outline */
 .downloadIconContainer {
   background-color: var(--secondary-pink);
   align-items: center;
   justify-content: center;
 }
 
+
+/* Download Icon Width, Course Outline Page*/
 .downloadIcon {
   width: 26px;
 }
 
-.contact-btn-select {
+/* Contact & Join Button Styles */
+.contact-btn-select, .contact-btn-select:hover {
   background-color: #E05D7D;
   width: 6rem;
 }
 
-.contact-btn-select:hover {
-  background-color: #E05D7D;
-}
-
-.join-btn-select {
+.join-btn-select, .join-btn-select:hover {
   background-color: #197BBD;
   width: 8rem;
 }
 
-.join-btn-select:hover {
-  background-color: #197BBD;
-}
-
+/* Meetings Border Colour */
 .meetings-bdr {
   border-color: var(--secondary-pink);
 }
 
-/* Global Moble Styles */
+/****** Global Mobile Styles ******/
 @media screen and (min-width: 350px) and (max-width: 700px) {
   /* Hides Desktop Message and Notifications on Mobile */
   .dropdown {
     display: none;
   }
 
-
+  /* Hides/blocks active and non-active mobile pages (see togglescript for more details) */
   .page {
     display: none;
   }
@@ -140,11 +143,14 @@ color: #197BBD;
   }
   
   /* Mobile Deafult Template */
+
+    /* Sets main global desktop and mobile header background color and width */
     #main-header {
         background-color: #197BBD;
         width: 100%;
     }
 
+    /* Hides desktop messages container on mobile */
     #msg-dsk {
         display: none;
     }
@@ -153,46 +159,51 @@ color: #197BBD;
         display: none;
       } */
   
+      /*  */
       #mobile-messages {
         display: none;
       }
   
-      #scroll-bar-notifications, #scroll-bar-msg {
+      /* #scroll-bar-notifications, #scroll-bar-msg {
         margin-top: 10.5rem;
-      }
+      } */
   
-      .notifications-title {
+      /* .notifications-title {
         margin-top: 9rem;
-      }
+      } */
 
-      #mbl-cal-pink {
+      /* #mbl-cal-pink {
         display: none;
       }
 
       #mbl-assign-pink {
         display: none;
-      }
+      } */
   
-      #mbl-calendar{
+      /* #mbl-calendar{
         display: none;
-      }
+      } */
 
-      #my-assignments-mbl {
+      /* #my-assignments-mbl {
         display: none;
-      }
+      } */
     
-    #videoicon{
+    /* Hides video icon on mobile */
+    #videoicon {
         display: none;
     }
 
+    /* hides user profile photo, dropdown and name on mobile */
     #profilephoto, #profilephoto-drop, #profilename{
         display: none;
     }
 
-    .sidebar-info{
+    /* hides desktop sidebar on mobile */
+    .sidebar-info {
         display: none;
     }
 
+    /* Styles Main Header Logo for Mobile siz */
     #main-header-img {
         display: block;
         left: 50%;
@@ -200,41 +211,49 @@ color: #197BBD;
         width: 45%;
     }
     
-    .mobile-nav-svg-1 {
+    /* .mobile-nav-svg-1 {
         margin-right: 1.2rem;
-    }
+    } */
 
-    .mbl-msg-icon {
-        width: 5rem;
-    }
     
+    /* .mbl-msg-icon {
+        width: 5rem;
+    } */
+    
+    /* adds styles for mobile nav menu icons */
     #mobile-home-svg, #mobile-circle-svg, #mobile-video-svg, #mobile-calendar-svg {
         filter: brightness(0) saturate(100%) invert(84%) sepia(1%) saturate(72%) hue-rotate(327deg) brightness(100%) contrast(50%);
         width: 2.7rem;
     }
     
+    /*  centers mobile nav icons */
     #mobile-nav-icons {
         justify-content: center;
     }
     
+    /* styles mobile navbar */
     .mobile-nav {
         background-color: #FFFFFF;
         border-radius: 20px;
         box-shadow: 5px 10px 18px
     }
 
+    /* hides desktop main home header button on mobile */
     #main-home-button {
         display: none;
     }
 
+    /* hides desktop main border radius container on mobile */
     .box {
         display: none;
     }
 
+    /* hides header line break on mobile */
     #line-break {
         display: none;
     }
 
+    /* hides sidebar group wrapper for mobile */
     .group-wrapper {
         display: none;
     }
@@ -243,16 +262,8 @@ color: #197BBD;
         display: none;
     } */
 
-    .mobile-home-pink-svg, .mobile-calendar-pink-svg, .mobile-circle-pink-svg {
-        width: 2.7rem;
-    }
-
-    #home-nav-mobile-font-1 {
-        color: var(--secondary-pink);
-    }
-
-    /* Jia and qing add dot style for notification  */
-
+   
+    /* sets mobile notification dropdown styles */
     #mobile-notifications {
       width: 100%;
       height: 80%;
@@ -268,6 +279,7 @@ color: #197BBD;
       margin-bottom: 15px;
     }
 
+    /* creates styles for mobbile notifications dot */
     .dot {
       width: 10px;
       height: 10px;
@@ -277,10 +289,12 @@ color: #197BBD;
       margin-right: 15px;
     }
 
+    /* sets flex grow for all mobile notifications */
     .notification-content {
       flex-grow: 1;
     }
 
+    /* sets custom styles for all mobile notifications a tags */
     .notification-title a {
       font-size: 18px;
       color: #007bff;
@@ -288,13 +302,14 @@ color: #197BBD;
       text-decoration: none;
     }
 
+    /* sets custom color for mobile notifications description */
     .notification-description {
       font-size: 16px;
       color: #333;
       /* Customize description text color */
     }
 
-    /* Daniela - Messages Icon Dropdown */
+    /* Messages Icon Mobile Dropdown styles */
     .messages-drop-container {
       width: 100%;
       height: 90%;
@@ -307,37 +322,44 @@ color: #197BBD;
       display: block;
       width: max-content;
     } */
-
+    
+    /* adds border to search field in messages */
     .form-search {
       border: 1px solid rgb(88, 88, 88);
       border-radius: 6px;
     }
-
+    
+    /* resets default border styles */
     .form-messages {
       border: none;
     }
-
+    
+    /* Spacing for search icon */
     .fa-magnifying-glass {
       padding: 6px;
     }
-
+    
+    /* My Messages main header*/
     .title-cal-message {
       color: #246161;
       font-size: 21px;
       font-style: normal;
       font-weight: 800;
     }
-  
+    
+    /* Horizontal Line for Messages Dropdown */
     .primary-line-message {
       width: 100%;
       border: 1px solid #246161;
     }
-  
+    
+    /* Message Text */
     .messages-text {
       color: darkgrey;
       font-family: var(--RISE-body-smal-font-family);
     }
-  
+    
+    /* Sender Name */
     .messages-title {
       font-family: var(--RISE-body-smal-font-family);
     }
@@ -347,7 +369,7 @@ color: #197BBD;
     #mbl-calendar {
       margin-top: 10rem;
     }
-
+    /* My Messages main header (mobile) */
     .title-cal-message-mobile {
       color: #246161;
       font-size: 21px;
@@ -355,77 +377,90 @@ color: #197BBD;
       font-weight: 800;
     }
 
-
+    /* changes background colour and styling when hovered */
     .calendar-icons-mobile img:hover {
       background-color: var(--secondary-pink);
       border-radius: 20%;
       padding: 2px;
     }
     
+    /* Changes background colour for icons when active */
     .icon-mobile.active {
       background-color: var(--secondary-pink);
   
       border-radius: 6px;
       padding: 2px;
     }
-  
+    
+    /* Font Styling for current month */
     .current-month-mobile {
       font-weight: 900;
       font-size: 13px;
     }
-  
+    
+    /* adds border to calendar content (mobile) */
     #calendar-content-mobile {
       border: 1px solid #246161;
       cursor: pointer;
     }
   
+    /* changs colour of arrows when hovered */
     .calendar-arrows-mobile img:hover {
       background-color: var(--secondary-pink);
       border-radius: 50%;
     }
-  
+    
+    /* positioning for the calendar */
     .calendar-mobile ul {
       display: flex;
       list-style: none;
       flex-wrap: wrap;
       text-align: center;
     }
-  
+    
+    /* Splits calendar into 7 days */
     .calendar-mobile ul li {
       width: calc(100% / 7);
       text-align: center;
       font-size: 8px;
       font-weight: 600;
     }
-  
+    
+    /* Sets font size for weeks */
     .weeks-mobile ul li{
       margin: 20px 0 15px 0;
       font-size: 9px;
     }
-  
+    
+    /* Removes bullet points for days */
     .days-mobile ul li {
       list-style: none;
     }
-  
+    
+    /* Changes background colour of day to pink once hovered */
     .days-mobile li:hover {
       background-color: var(--secondary-pink);
     }
-  
+    
+    /* Adds border for each day */
     .days-mobile li {
       border: 1px solid #D5D4DF;
       padding: 10px;
     }
   
+    /* Greys out days that aren't in the month */
     .days-mobile li.inactive-mobile {
       background-color: #F2F3F7;
       color: #A8A8A8;
     }
-  
+    
+    /* Days in the month stay visible */
     .days-mobile li.active-mobile {
       background-color: var(--secondary-pink);
       color: #000000;
     }
-  
+    
+    /* Adds dot signaling an event for that day */
     .has-event-mobile::before {
       content: '•';
       font-size: 25px;
@@ -444,34 +479,42 @@ color: #197BBD;
 
     /* My Assignments Mobile Styles */
     /* Nov 4 */
+    
+    /* Positioning for mobile icons */
     #my-assignments-mbl, #assignmentsPage, #calendarPage, #joinPage {
       margin-top: 8rem;
     }
-
+    
+    /* Positioning for messages icons */
     #abigailPage, #johnPage, #paulPage, #keithPage, #hollyPage, #meetingsPage {
       margin-top: 9rem;
     }
 
+    /* sets height for each assignment table item */
     .assignment-table td {
       height: 150px;
       padding: 1rem;
     }
 
+    /* Sets custom background color and text color to my assignments mobile table */
     .assignment-table th {
       background-color: var(--secondary-pink);
       color: #FFFFFF;
     }
     
+    /* Sets custom border color and padding to my assignments mobile table */
     .assignment-table th,
     .assignment-table td {
       border: 2px solid var(--secondary-pink);
       padding: 25px;
     }
     
+    /* Sets custom padding for my assignments mobile table */
     .assignment-table th {
       padding: 15px;
     }
 
+    /* Sets mobile My Assignments table tabs to gray color by default */
     #myTabs li a:link {
       color: gray;
     }
@@ -480,6 +523,7 @@ color: #197BBD;
       color: grey;
     }
     
+    /* Sets Mobile My Assignments table tabs hover state to display RISE pink text underline */
     #myTabs li a:hover {
       color: var(--secondary-pink);
       text-decoration: underline;
@@ -487,23 +531,27 @@ color: #197BBD;
       text-underline-position: under;
     }
     
+    /* Sets Mobile My Assignments table tabs active state color to RISE pink */
     #myTabs li a:active {
       color: var(--secondary-pink);
     }
 
+    /* Sets background color and text color for join meeting button on mobile */
     .meeting-join-mobile, .meeting-join-mobile:hover {
       background-color: var(--secondary-pink);
       color: #FFFFFF;
     }
 }
 
+/* Media Query for 700px and up (Desktop + Tablet) */
 @media (min-width: 701px) and (max-width: 4000px) {
   
+  /* Adds spacing to facilitator images */
   .facilitator-image {
     padding-top: 150px;
   }
   
-  /* NOV 4 */
+  /* Sets initial display of subpages to none */
     #homePage, #assignmentsPage, #meetingsPage, #calendarPage, #abigailPage, #johnPage, #paulPage, #keithPage, #hollyPage, #joinPage {
       display: none;
     }
@@ -512,49 +560,56 @@ color: #197BBD;
     .dropdown-mobile {
       display: none;
     }
-  
+    
+    /* Sets initial display on Desktop to none */
     #mbl-calendar {
         display: none;
       }
 
+    /* Sets initial display on Desktop to none */
     #my-assignments-mbl {
       display: none;
     }
-    
+      
+    /* Positions logo */
     #main-header-img {
         position: absolute;
         left: 5rem;
         margin-left: auto;
         width: 10%;
     }
-
+/* Sets initial display on Desktop to none */
     #mobile-notifications{
         display: none;
     }
-
+/* Sets initial display on Desktop to none */
     #mobile-messages {
         display:  none;
     }
-
+/* Sets initial display on Desktop to none */
     .mobile-nav {
         display: none;
     }
 
+/* Positions and styles side panel */
     .side-panel-main {
         height: 100vh;
         width: 22%;
         background-color: #197BBD;
     }
 
+    /* Sets display mode for home icon */
     #main-home-button {
         display: block;
     }
 
+    /* Styles for mock profile photo */
     #profilephoto, #profilephoto-drop {
         background-color: var(--minion);
     }
 
     /* Sidebar Main */
+    /* Secondary background with border radius */
     .box {
         display: block;
         width: 100%;
@@ -564,26 +619,27 @@ color: #197BBD;
         border-radius: 48px 0px 0px 0px;
       }
 
+    /* Main background color */
       body{
         background-color:#197BBD;
       }
-
+    
+    /* Margin for sidebar content */
       .student-sidebar-hifi {
         margin-left: -0.5rem;
       }
 
-      /* .icon-line-category {
-        background-color: none;
-    } */
-
+      /* Margin for logout button */
     .logout {
         margin-top: 50vh;
     }
 
+    /* Adds border-bottom to header icons when hovered */
     .header-icon-hover:hover {
       border-top: 3px solid white;
     }
 
+    /* Changes background colour of title in My Meetings Modal */
     .meetings-modal-title {
       background-color: var(--secondary-pink);
     }
@@ -593,25 +649,20 @@ color: #197BBD;
       background-color: var(--primary-yellow);
     }
 
-    .leave-call-button:hover {
-      background-color: var(--primary-yellow);
-    }
-
-    .meeting-join, .meeting-join:hover {
+    /* Styles background colour for join meeting button in meeting modal */
+    .meeting-join {
       background-color: var(--secondary-pink);
       color: #FFFFFF;
     }
-
-    .my-meeting-button {
+    
+    /* Styles background colour for my meetings button in meeting modal */
+    .my-meeting-button, .my-meeting-button:hover {
       background-color: var(--primary-light-blue);
-    }
-
-    .messages-desktop-h {
-        margin-top: 4rem;
     }
 
     /* Jia and qing add dot style for notification  */
 
+    /* Sets positioning for desktop notifications modal */
     #desktop-notifications {
       min-width: 500px;
       width: 100%;
@@ -619,12 +670,14 @@ color: #197BBD;
       transform: translate(-50%, -50%);
     }
 
+    /* Sets display for notifications */
     .notification {
       display: flex;
       align-items: center;
       margin-bottom: 15px;
     }
 
+    /* Dot signaling new notification */
     .dot {
       width: 10px;
       height: 10px;
@@ -634,10 +687,7 @@ color: #197BBD;
       margin-right: 15px;
     }
 
-    .notification-content {
-      flex-grow: 1;
-    }
-
+    /* Styles notification as link to assignment */
     .notification-title a {
       font-size: 18px;
       color: #007bff;
@@ -645,6 +695,7 @@ color: #197BBD;
       text-decoration: none;
     }
 
+    /* Notification Description Styles */
     .notification-description {
       font-size: 16px;
       color: #333;
@@ -652,6 +703,7 @@ color: #197BBD;
     }
 
     /* Daniela - Messages Icon Dropdown */
+    /* Sets positioning for messages dropdown */
     .messages-drop-container {
       min-width: 500px;
       width: 100%;
@@ -659,41 +711,49 @@ color: #197BBD;
       transform: translate(-40%, 4%);
     }
 
+    /* Shows dropdown when toggled */
     .dropdown-menu.show {
       display: block;
       width: max-content;
     }
 
+    /* Adds border to search bar in Messages */
     .form-search {
       border: 1px solid rgb(88, 88, 88);
       border-radius: 6px;
     }
-
+    
+    /* removes default border styles from messages */
     .form-messages {
       border: none;
     }
 
+    /* Adds spacing to search icon */
     .fa-magnifying-glass {
       padding: 6px;
     }
-
+    
+    /* My Messages Dropdown Header */
     .title-cal-message {
       color: #246161;
       font-size: 21px;
       font-style: normal;
       font-weight: 800;
     }
-  
+    
+    /* My Messages Horizontal Line */
     .primary-line-message {
       width: 100%;
       border: 1px solid #246161;
     }
-  
+    
+    /* Message text in dropdown */
     .messages-text {
       color: darkgrey;
       font-family: var(--RISE-body-smal-font-family);
     }
-  
+    
+    /* Message Sender */
     .messages-title {
       font-family: var(--RISE-body-smal-font-family);
     }
