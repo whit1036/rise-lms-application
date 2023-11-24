@@ -62,6 +62,8 @@ html {
     margin-right: auto;
 }
 
+/* CSS Reset End */
+
 /****** Global Styles ******/
 
 /* creates a nopadding class to remove bootstrap grid container padding */
@@ -154,39 +156,11 @@ color: #197BBD;
     #msg-dsk {
         display: none;
     }
-
-      /* #mobile-notifications {
-        display: none;
-      } */
   
       /*  */
       #mobile-messages {
         display: none;
       }
-  
-      /* #scroll-bar-notifications, #scroll-bar-msg {
-        margin-top: 10.5rem;
-      } */
-  
-      /* .notifications-title {
-        margin-top: 9rem;
-      } */
-
-      /* #mbl-cal-pink {
-        display: none;
-      }
-
-      #mbl-assign-pink {
-        display: none;
-      } */
-  
-      /* #mbl-calendar{
-        display: none;
-      } */
-
-      /* #my-assignments-mbl {
-        display: none;
-      } */
     
     /* Hides video icon on mobile */
     #videoicon {
@@ -210,15 +184,6 @@ color: #197BBD;
         overflow: hidden;
         width: 45%;
     }
-    
-    /* .mobile-nav-svg-1 {
-        margin-right: 1.2rem;
-    } */
-
-    
-    /* .mbl-msg-icon {
-        width: 5rem;
-    } */
     
     /* adds styles for mobile nav menu icons */
     #mobile-home-svg, #mobile-circle-svg, #mobile-video-svg, #mobile-calendar-svg {
@@ -257,10 +222,6 @@ color: #197BBD;
     .group-wrapper {
         display: none;
     }
-
-    /* #desktop-notifications {
-        display: none;
-    } */
 
    
     /* sets mobile notification dropdown styles */
@@ -317,11 +278,6 @@ color: #197BBD;
       z-index: 9999;
       transform: translate(0%, -100%);
     }
-
-    /* .dropdown-menu.show {
-      display: block;
-      width: max-content;
-    } */
     
     /* adds border to search field in messages */
     .form-search {

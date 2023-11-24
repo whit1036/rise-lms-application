@@ -62,19 +62,7 @@ html {
     margin-right: auto;
 }
 
-/* .assignment-link li a:link,
-.assignment-link li a:visited,
-.assignment-link li a:hover,
-.assignment-link li a:active {
-  color: black;
-}
-
-.choose-course li a:link,
-.choose-course li a:visited,
-.choose-course li a:hover,
-.choose-course li a:active {
-  color: black;
-} */
+/* CSS Reset End */
 
 /* Sets Desktop My Assignments table tabs to gray color by default */
 #myTabs-desktop li a:link {
@@ -151,18 +139,6 @@ html {
 .assignment-table th {
   padding: 15px;
 }
-
-
-
-/* .tab {
-  display: inline;
-  border-radius: 100px;
-} */
-
-/* table td.highlight {
-  background-color: #D1E5F3;
-  color: black;
-} */
 
 /* Sets font size for My Assignments page table navigation tabs */
 .table-navi {

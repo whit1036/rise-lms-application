@@ -1,3 +1,4 @@
+/* This page is used to customize the Join Meeting page, and adds a loading spinner as if connecting to a facilitator. */
 /* Reduces opacity to everything outside of modal display */
 .overlay {
     display: flex;
