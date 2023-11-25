@@ -10,18 +10,26 @@
     <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
 </head>
 <body>
+    <!-- Main Starts -->
     <main role="main">
+      <!-- Header Nav Starts -->
       <nav id="header" class="navbar p-4" role="navigation" aria-label="navigation">
         <div class="container">
           <img role="img" id="header-img" src="../Images/RISE_website_logo.png" alt="riselogo">
         </div>
       </nav>
-        <!-- Flex Container -->
+      <!-- Header Nav Ends -->
+
+        <!-- Side Panel & Login Container Starts -->
         <div role="region" class="flex-column flex-md-row d-flex">
+            <!-- Side Panel Starts -->
             <div class="side-panel-tablet">
                 <img role="img" class="p-5" id="side-panel-img" src="../Images/RISE_website_logo.png" alt="rise logo">
                 <img role="img" class="pt-5" id="side-panel-img-2" src="../Images/Rise_white_visual_logo_only.png" alt="sidepaneloverlay">
             </div>
+            <!-- Side Panel Ends -->
+
+            <!-- Login Container Starts -->
             <div id="login" class="mx-auto flex-column m-1 text-center justify-content-center d-flex">
             <div id="studentlogin">
                 <div class="d-flex flex-column flex-shrink-0 p-3" aria-label="login">
@@ -29,8 +37,10 @@
                         <h1 role="heading" class="p-4">Welcome to<br>R.I.S.E. Academy</h1>
                         <h2 role="heading" class="studentloginText text-center pb-5">Student Log In</h2>
                     </div>
+                    <!-- Form Container Starts -->
                     <div role="region" class="d-flex justify-content-center">
                         <form>
+                            <!-- Email Form Group Container Starts -->
                             <div class="form-group text-start">
                                 <div class="text-start p-2">
                                     <label for="email" class="textform mb-2 fw-bold" aria-label="Enter Email">email</label>
@@ -40,6 +50,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Email Form Group Container Ends -->
+
+                            <!-- Password Form Group Container Starts -->
                             <div class="form-group text-start p-2">
                                 <label for="password" class="textform mb-2 fw-bold" aria-label="Enter Password">password</label>
                                 <div class="input-group inShadow">
@@ -51,14 +64,24 @@
                                 </div>
                             </div>
                             <button role="button" type="submit" id="getLinkBtn" class="btn getLinkBtn btn-md rounded-pill unique mt-3">Login</button>
+                            <!-- Password Form Group Container Ends -->
+
                         </form>
                     </div>
+                    <!-- Form Container Ends -->
                 </div>
             </div>
         </div>
+        <!-- Login Container Starts -->
     </div>
+    <!-- Side Panel & Login Container Ends -->
     </main>
+    <!-- Main Ends -->
+
+    <!-- Bootstrap 5.3 Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Link to custom JS file -->
     <script src="../JS/script.js"></script>
 </body>
 </html>
