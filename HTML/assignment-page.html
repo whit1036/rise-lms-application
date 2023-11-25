@@ -23,6 +23,7 @@
   <!-- Header -->
     <header role="heading">
     <div class="sticky-content">
+      <!-- Navigation Starts -->
       <nav role="navigation" id="main-header" class="navbar">
         <div class="container-fluid">
           <div class="p-4" id="main-home-button">
@@ -386,7 +387,8 @@
                       <h1 class="fs-5 fw-bolder text-white" id="exampleModalLabel">Edit Profile</h1>
                       <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-
+                    
+                     <!-- Edit Profile Information Starts Here -->
                     <div class="modal-body">
                       <p class="fs-5 fw-bold">Update Profile Picture</p>
                       <img src="../Images/profile-pic.png" class="w-50 mt-4 mx-auto d-block" alt="profile picture">
@@ -422,6 +424,7 @@
             </div>
           </div>
         </nav>
+        <!-- Navigation Ends-->
         </div>
     </header>
     <!-- Main -->
@@ -481,7 +484,7 @@
                 <div class="row mt-5 me-4 mx-4">
                     <div class="nopadding">
                       <h1 aria-label="course outline title" class="fs-2 mt-5 mb-3 fw-bold">My Assignments</h1>
-                      <!-- tabs  to display different content      -->
+                      <!-- tabs  to display different content starts      -->
                       <div class="table-navi">
                         <ul class="nav nav-tabs justify-content-end" id="myTabs-desktop" role="tablist">
                           <li class="nav-item" role="presentation">
@@ -507,7 +510,11 @@
                           </li>
                         </ul>
                       </div>
+                      <!-- tabs  to display different content ends     -->
+                      
+                      <!-- Table Container Starts -->
                       <div class="tab-content" id="myTabContent">
+                        <!-- All Assignments Table Starts -->
                         <div class="tab-pane fade show active" id="tab1-dsk"
                           role="tabpanel" aria-labelledby="tab1-tab">
                           <table class="table assignment-table table-bordered rounded table-rubric">
@@ -566,6 +573,9 @@
                             </tbody>
                           </table>
                         </div>
+                        <!-- All Assignments Table Ends -->
+
+                        <!-- Upcoming Assignments Table Starts -->
                         <div class="tab-pane fade" id="tab2" role="tabpanel"
                           aria-labelledby="tab2-tab">
                           <table class="table assignment-table table-bordered rounded table-rubric">
@@ -624,6 +634,9 @@
                             </tbody>
                           </table>
                         </div>
+                        <!-- Upcoming Assignments Table Ends -->
+                        
+                        <!-- Overdue Assignments Table Starts -->
                         <div class="tab-pane fade" id="tab3" role="tabpanel"
                           aria-labelledby="tab3-tab">
                           <table class="table assignment-table table-bordered rounded table-rubric">
@@ -682,6 +695,9 @@
                             </tbody>
                           </table>
                         </div>
+                        <!-- Overdue Assignments Table Ends -->
+
+                        <!-- Completed Assignments Table Starts -->
                         <div class="tab-pane fade" id="tab4" role="tabpanel"
                           aria-labelledby="tab4-tab">
                           <table class="table assignment-table table-bordered rounded table-rubric">
@@ -738,7 +754,10 @@
                             </tbody>
                           </table>
                         </div>
+                        <!-- Completed Assignments Table Ends -->
+
                       </div>
+                      <!-- Table Container Ends -->
                     </div>
                   </div>
               </div>
