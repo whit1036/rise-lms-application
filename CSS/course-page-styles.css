@@ -314,7 +314,6 @@ html {
 @media (max-width: 1140px) {
 
   .box {
-    max-width: auto;
     height: auto;
   }
 
