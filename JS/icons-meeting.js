@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     muteButton.addEventListener('click', function () {
       isMuted = !isMuted;
       if (isMuted) {
-        muteIcon.src = '/Images/icons/Mic off.svg'; // Change to your muted icon
+        muteIcon.src = '/Images/icons/mic-off.svg'; // Change to your muted icon
         muteText.textContent = 'Unmute';
       } else {
         muteIcon.src = '/Images/icons/microphone-on.svg'; // Change to your unmuted icon
