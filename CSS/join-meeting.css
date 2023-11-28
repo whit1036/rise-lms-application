@@ -1,32 +1,87 @@
-/* This page is used to customize the Join Meeting page, and adds a loading spinner as if connecting to a facilitator. */
-/* Reduces opacity to everything outside of modal display */
-.overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    z-index: 1;
+/* This is for control the background control of the box container */
+.box {
+  background-color: #f1f1f1;
+}
+/* The section that goes the icons have a blue background */
+.card-body-video {
+    background-color: #197BBD;
   }
-  
-  /* Styles for loading spinner */
-  .spinner {
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-top: 4px solid var(--secondary-pink);
+/* The icons are in a border radious 50% (circle) and have a background color */
+  .icon-meeting-size {
+    padding: 14px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    /* Animates spinner to spin until page is loaded */
-    animation: spin 1s linear infinite;
-    display: flex;
+    border: 0;
   }
-  
-  /* Loading Spinner Animation */
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+/* This is for control the backgorund color of the icons except for the leave icon */
+  .icons-meeting {
+    background-color: #dddddd;
+  }
+/* This one is for the titles of the icons of the meeting page */
+  .text-meeting {
+    color: white;
+
+    font-weight: 300;
+  }
+/* Controls only the microphone icon and it is necessary to have a width and height for more control of the icons size */
+  #mute-icon {
+    padding: 14px;
+    border-radius: 50%;
+    border: 0;
+    width: 65px;
+    height: 65px;
+  }
+/* Contorls onlky the video icon and function s the same as the #mute-icon */
+  #video-icon {
+    padding: 14px;
+    border-radius: 50%;
+    border: 0;
+    width: 65px;
+    height: 65px; 
+  }
+/* This one is in the section of the message side panel and goes next to the input */
+  .sendIcon {
+    width: 18px;
+  }
+/* This section here is for having more control of the input that goes in the side panel when user clicks to the message icon */
+  .inputField {
+    color: black;
+
+    font-size: smaller;
+
+    padding: 8px;
+    border: 1px solid #ededed;
+    background-color: #ededed;
+  }
+
+  #message-input {
+    background-color: white;
+    height: 1300px;
+  }
+
+/* This is the part that controls the icon, message title of the side pannel of the message when user clicks to the message icon */
+  .message-inputField {
+      position: fixed;
+      bottom: 0;
+      width: 19%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      padding: 8px;
+      align-items: center;
+      justify-content: center;
+      background-color: #ededed;
+      border-radius: 60px;
+  }
+
+  .message-icon-meeting {
+    width: 30px;
+    padding-right: 10px;
+  }
+
+  .message-meeting-title {
+    color: #365787;
+  }
+
+  .fa-x {
+    color: #365787;
+    font-size: small;
   }

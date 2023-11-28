@@ -305,38 +305,70 @@
           <div role="region" class="box col">
             <div class="background">
               <div class="container">
-                <!-- <div id="loader"></div>
-                <div style="display:none;" id="myDiv">
-                <div class="modal fade" id="video-chat" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-                  <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content" onload="showVideoCall()">
-                      <img src="/Images/video-chat-banner.png" class="img-fluid w-100">
-                      <img src="/Images/video-chat-banner-sm.png" class="img-fluid w-25">
-                      <div class="modal-body p-0 py-4">
-                          <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal" aria-label="Close"><img src="/Images/icons/Mic off.svg"></button>
-                          <a href="./my-facilitator-page.html">
-                            <button type="button" class="btn leave-call-button rounded-5" data-bs-dismiss="modal" aria-label="Close"><img src="/Images/icons/Phone_missed.svg"></button>
-                          </a>
+                <div role="region" class="box col pe-0">
+                  <div class="background">
+                    <div class="container">
+                      <div class="row d-flex">
+                        <div class="col">
+                          <div class="card mt-5 me-3">
+                            <img src="/Images/video-chat-banner-img.png" class="card-img-top" alt="meeting image">
+                            <div class="card-body-video d-flex align-items-center justify-content-between rounded-bottom-2">
+                              <!-- This div is for control the icons for microphone and the video with their titles -->
+                              <div class="microphone-video">
+                                <button id="microphone-btn" type="button" class="btn p-0 m-0" aria-label="Toggle Microphone">
+                                  <img id="mute-icon" class="icons-meeting icon-meeting-size" src="/Images/icons/Mic off.svg">
+                                  <p id="mute-text" class="text-meeting">Unmute</p>
+                                </button>
+                                <button id="video-btn" type="button" class="btn p-0 m-0" aria-label="Toogle Video">
+                                  <img id="video-icon" class="icons-meeting icon-meeting-size" src="/Images/icons/video-chat.svg">
+                                  <p id="video-text" class="text-meeting">Stop Video</p>
+                                </button>
+                              </div>
+                              <!-- This div is for control the icons for Share Screen and the Message with their titles -->
+                              <div class="screen-message">
+                                <button type="button" class="btn p-0 m-0">
+                                  <img class="icons-meeting icon-meeting-size" src="/Images/icons/screen-share.svg">
+                                  <p class="text-meeting">Share Screen</p>
+                                </button>
+                                <button id="message-btn" type="button" class="btn p-0 m-0" aria-label="Close">
+                                  <img class="icons-meeting icon-meeting-size" src="/Images/icons/Message 2.svg">
+                                  <p class="text-meeting">Message</p>
+                                </button>
+                              </div>
+                              <!-- This div is for control the icon for Leave the meeting with the title -->
+                              <div class="leaveCall">
+                                <a href="./my-facilitator-page.html">
+                                  <button type="button" class="btn m-0" aria-label="Close">
+                                    <img class="icon-meeting-size leave-call-button" src="/Images/icons/Phone_missed.svg">
+                                    <p class="text-meeting">Leave</p>
+                                  </button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- This div is when the user click to the message icon appears the message side panel -->
+                        <div id="message-input" class="col-3 pe-0 p-0" style="display: none;">
+                          <div class="d-flex align-items-center justify-content-between mt-5">
+                            <div class="d-flex align-items-center">
+                              <img class="message-icon-meeting" src="../Images/icons/Message 2.svg">
+                              <h3 class="fw-bold message-meeting-title">Message</h3>
+                            </div>
+                            <!-- <div class="d-flex align-items-center">
+                              <i class="fa-solid fa-x"></i>
+                            </div> -->
+                          </div>
+                          <hr>
+                          <div class="message-inputField d-flex">
+                            <input type="text" class="ms-3 inputField w-100" placeholder="Type message here...">
+                            <img class="sendIcon" src="/Images/icons/sendIcon.svg" alt="send-icon">
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div> -->
-                <div class="card mb-3 mt-5">
-                  <img src="/Images/video-chat-banner-img.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <button type="button" class="btn btn-secondary rounded-5" aria-label="Close"><img src="/Images/icons/Mic off.svg"></button>
-                    <a href="./my-facilitator-page.html">
-                      <button type="button" class="btn leave-call-button rounded-5" aria-label="Close"><img src="/Images/icons/Phone_missed.svg"></button>
-                    </a>
-                  </div>
                 </div>
-                
-                <!-- <div id="loading-overlay" class="overlay">
-                  <div class="spinner"></div>
-                </div> -->
-                
-
-                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -542,9 +574,9 @@
             </div>
             <!-- My Meetings -->
             <div id="meetingsPage" class="page">
-              <p style="margin-top: 20rem;">content 3</p>
-              <!-- Content for the Calendar page -->
+              <!-- My Meetings Content goes here -->
             </div>
+            <!-- Content for the Calendar page -->
             <div id="calendarPage" class="page">
               <div class="container-md screen" id="">
                   <!-- Calendar -->
@@ -594,6 +626,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <!-- Custom Scripts -->
+    <script src="../JS/icons-meeting.js"></script>
     <script src="../JS/togglescript.js"></script>
     <script src="../JS/script.js"></script>
     <script src="/JS/calendar.js"></script>
