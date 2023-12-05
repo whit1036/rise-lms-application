@@ -154,6 +154,14 @@ html {
         font-weight: bold;
         margin-top: 90px;
     }
+
+    /* Student Login Welcome Text Styles */
+    #studentlogin>div>div>h1 {
+        color: var(--primary-dark-blue);
+        font-size: 35px;
+        padding-bottom: 50px;
+        font-weight: var(--h1-font-weight);
+    }
     
     /* Sets colour, size, weight, and margin for H2*/
     #login>h2 {
